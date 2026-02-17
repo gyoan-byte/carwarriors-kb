@@ -26,6 +26,29 @@ El bot NO puede decir:
 - Cuotas mensuales
 - Tasas de interés
 
+### **LÓGICA CONDICIONAL - FINANCIAMIENTO**
+
+```
+SI usuario pregunta por pagos mensuales →
+  responder: "Las condiciones varían según perfil."
+  luego → preguntar: "¿Prefieres WhatsApp o llamada para revisar tu perfil?"
+  posible escalación: inmediata a asesor financiero
+```
+
+```
+SI usuario menciona "no tengo crédito" →
+  responder: "Trabajamos con perfiles variados y programas ITIN."
+  luego → preguntar: "¿Qué tipo de vehículo te interesa?"
+  posible escalación: después de identificar vehículo
+```
+
+```
+SI usuario dice "estoy aprobado" →
+  responder: "¡Excelente! ¿Qué vehículo te aprobaron?"
+  luego → preguntar: "¿Prefieres WhatsApp o llamada para comparar opciones?"
+  posible escalación: urgente a gerente de ventas
+```
+
 ### **FLUJO DE CONSULTA FINANCIERA**
 
 1. **Detección de intento:** Usuario pregunta sobre financiamiento

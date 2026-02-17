@@ -1,10 +1,25 @@
 # 🧠 BASE DE CONOCIMIENTO - CARWARRIORS LLC
 ## Dealer Autos Usados - Miami, Florida
 
+### **🏆 JERARQUÍA DE AUTORIDAD**
+
+**Prioridad máxima (siempre primero):**
+1. **Seguridad** (Módulos 7, 10) - Restricciones absolutas
+2. **Financiamiento** (Módulo 3) - Alta prioridad
+3. **Disponibilidad** (Módulo 2) - Media prioridad  
+4. **Proceso** (Módulo 4) - Después de cualificación
+5. **Trade-In** (Módulo 5) - Después de vehículo principal
+6. **Tono** (Módulo 8) - Siempre presente
+
+**Regla de oro:** Seguridad > Financiamiento > Todo lo demás
+
+---
+
 ### **📚 ESTRUCTURA DE MÓDULOS**
 
-Esta base de conocimiento está dividida en 10 módulos especializados para optimizar el rendimiento del bot en Go High Level (GHL):
+Esta base de conocimiento está dividida en 13 módulos especializados para optimizar el rendimiento del bot en Go High Level (GHL):
 
+**Módulos Principales (1-10):**
 1. **[01_Identidad_Negocio.md](./01_Identidad_Negocio.md)** - Información básica del dealer
 2. **[02_Inventario.md](./02_Inventario.md)** - Política de inventario y disponibilidad
 3. **[03_Financiamiento.md](./03_Financiamiento.md)** - Opciones y reglas de financiamiento
@@ -15,6 +30,11 @@ Esta base de conocimiento está dividida en 10 módulos especializados para opti
 8. **[08_Tono_Comportamiento.md](./08_Tono_Comportamiento.md)** - Personalidad y estilo
 9. **[09_Escalacion.md](./09_Escalacion.md)** - Señales de prioridad y handoff
 10. **[10_Limites_Bot.md](./10_Limites_Bot.md)** - Capacidades y restricciones funcionales
+
+**Módulos Operativos (11-13):**
+11. **[11_Transiciones.md](./11_Transiciones.md)** - Frases puente y escalación suave
+12. **[12_Conversaciones_Dificiles.md](./12_Conversaciones_Dificiles.md)** - Manejo de situaciones complejas
+13. **[13_Logica_Condicional.md](./13_Logica_Condicional.md)** - Reglas SI/ENTONCES para bot
 
 ### **🎯 OBJETIVO PRINCIPAL**
 
@@ -35,12 +55,17 @@ Esta base de conocimiento está dividida en 10 módulos especializados para opti
 
 **Bloques sugeridos:**
 - Company Info (Módulos 1, 8)
-- Financing Policies (Módulo 3)
+- Financing Policies (Módulo 3, 13)
 - Trade-In Policy (Módulo 5)
 - Buying Process (Módulo 4)
-- Objection Handling (Módulo 6)
-- Compliance Rules (Módulo 7, 10)
-- Escalation Triggers (Módulo 9)
+- Objection Handling (Módulos 6, 12)
+- Compliance Rules (Módulos 7, 10)
+- Escalation Triggers (Módulos 9, 11)
+
+**Nuevos módulos operativos:**
+- **Logic Engine:** Módulo 13 para reglas SI/ENTONCES
+- **Transition Phrases:** Módulo 11 para puentes naturales
+- **Difficult Conversations:** Módulo 12 para contención
 
 ### **⚠️ REGLAS CRÍTICAS**
 
