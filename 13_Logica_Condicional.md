@@ -154,6 +154,15 @@ SI usuario menciona vehículo + contacto + timing →
 ```
 
 ```
+SI usuario indica solo navegando (sin timing definido) →
+  mantener en bot
+  hacer preguntas de cualificación secuenciales: vehículo → contacto → timing
+  no ofrecer escalación hasta completar 3 datos
+  responder: "Entiendo que solo estás comparando. ¿En qué ciudad estás buscando opciones?"
+  luego → preguntar timing/location para completar calificación
+```
+
+```
 SI usuario solo navega (sin intención clara) →
   mantener en bot
   hacer preguntas de cualificación
