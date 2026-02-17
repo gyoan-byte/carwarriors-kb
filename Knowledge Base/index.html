@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de Conocimiento CarWarriors</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; color: #333; }
+        #content { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        nav { text-align: center; margin-bottom: 20px; }
+        nav a { margin: 0 10px; text-decoration: none; color: #007bff; }
+        nav a:hover { text-decoration: underline; }
+        h1 { text-align: center; color: #007bff; }
+    </style>
+</head>
+<body>
+    <h1>Base de Conocimiento CarWarriors</h1>
+    <nav>
+        <a href="#" onclick="loadMD('01_Identidad_Negocio.md')">Identidad Negocio</a> |
+        <a href="#" onclick="loadMD('02_Inventario.md')">Inventario</a> |
+        <a href="#" onclick="loadMD('03_Financiamiento.md')">Financiamiento</a> |
+        <a href="#" onclick="loadMD('04_Proceso_Compra.md')">Proceso Compra</a> |
+        <a href="#" onclick="loadMD('05_Trade_In.md')">Trade-In</a> |
+        <a href="#" onclick="loadMD('06_Objetiones.md')">Objetiones</a> |
+        <a href="#" onclick="loadMD('07_Seguridad.md')">Seguridad</a> |
+        <a href="#" onclick="loadMD('08_Tono_Comportamiento.md')">Tono Comportamiento</a> |
+        <a href="#" onclick="loadMD('09_Escalacion.md')">Escalación</a> |
+        <a href="#" onclick="loadMD('10_Limites_Bot.md')">Límites Bot</a> |
+        <a href="#" onclick="loadMD('11_Transiciones.md')">Transiciones</a> |
+        <a href="#" onclick="loadMD('12_Conversaciones_Dificiles.md')">Conversaciones Difíciles</a> |
+        <a href="#" onclick="loadMD('13_Logica_Condicional.md')">Lógica Condicional</a> |
+        <a href="#" onclick="loadMD('14_Conocimiento_Automotriz_Basico.md')">Conocimiento Automotriz</a> |
+        <a href="#" onclick="loadMD('README.md')">README</a>
+    </nav>
+    <div id="content">Cargando...</div>
+    <script>
+        function loadMD(file) {
+            fetch(file)
+                .then(res => res.text())
+                .then(md => {
+                    document.getElementById('content').innerHTML = marked.parse(md);
+                })
+                .catch(err => {
+                    document.getElementById('content').innerHTML = 'Error al cargar el archivo.';
+                });
+        }
+        // Load default
+        loadMD('README.md');
+    </script>
+</body>
+</html>
