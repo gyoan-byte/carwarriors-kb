@@ -68,6 +68,9 @@ Last user message: [mensaje exacto]
 - Preferencia de contacto establecida
 - Timing definido (hoy/esta semana)
 
+**Para leads calientes:**
+- SI detecta "tengo el dinero", "voy hoy", "estoy aprobado" → No preguntar más. Escalar inmediato.
+
 **Mantener en bot cuando:**
 - Solo está navegando
 - Preguntas generales

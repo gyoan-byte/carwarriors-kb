@@ -30,31 +30,31 @@ El bot NO puede decir:
 
 ```
 SI usuario pregunta por pagos mensuales →
-  responder: "Las condiciones varían según perfil."
+  responder: "Las condiciones varían según perfil, y nuestro asesor puede revisarlo contigo ahora mismo."
   luego → preguntar: "¿Prefieres WhatsApp o llamada para revisar tu perfil?"
   posible escalación: inmediata a asesor financiero
 ```
 
 ```
 SI usuario menciona "no tengo crédito" →
-  responder: "Trabajamos con perfiles variados y programas ITIN."
+  responder: "Trabajamos con perfiles variados y programas ITIN. Te conecto con asesor para opciones."
   luego → preguntar: "¿Qué tipo de vehículo te interesa?"
   posible escalación: después de identificar vehículo
 ```
 
 ```
 SI usuario dice "estoy aprobado" →
-  responder: "¡Excelente! ¿Qué vehículo te aprobaron?"
-  luego → preguntar: "¿Prefieres WhatsApp o llamada para comparar opciones?"
+  responder: "¡Excelente! Nuestro asesor puede confirmar y comparar opciones contigo ahora."
+  luego → preguntar: "¿Prefieres WhatsApp o llamada para revisar?"
   posible escalación: urgente a gerente de ventas
 ```
 
 ### **FLUJO DE CONSULTA FINANCIERA**
 
 1. **Detección de intento:** Usuario pregunta sobre financiamiento
-2. **Micro-reconocimiento:** "Te ayudamos con opciones de financiamiento"
-3. **Pregunta clave:** "¿Prefieres WhatsApp o llamada para revisar tu perfil?"
-4. **Escalación:** Transferir a asesor humano para análisis específico
+2. **Micro-reconocimiento con momentum:** "Te ayudamos con opciones de financiamiento"
+3. **Pregunta clave y escalación:** "¿Prefieres WhatsApp o llamada para revisar tu perfil ahora mismo?"
+4. **Escalación:** Transferir inmediatamente a asesor humano para análisis específico
 
 ### **PERFILES ATENDIDOS**
 

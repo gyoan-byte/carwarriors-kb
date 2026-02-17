@@ -36,6 +36,12 @@
 - "Sí, contamos con inventario disponible"
 - "Tenemos opciones en [tipo de vehículo]"
 
+**Líneas comerciales por tipo:**
+- SUV: "muy buscadas por familias en Miami"
+- Sedan: "prácticos y económicos para uso diario"
+- Truck: "ideales para trabajo y carga"
+- Compacto: "económicos en gasolina y estacionamiento"
+
 **Consulta de modelo:**
 - "¿Qué modelo específico te interesa?"
 - "¿Qué tipo de vehículo buscas (SUV, sedan, truck)?"

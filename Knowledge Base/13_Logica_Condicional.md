@@ -1,6 +1,16 @@
 # 🧠 BASE DE CONOCIMIENTO - LÓGICA CONDICIONAL
 ## CarWarriors LLC - Reglas SI/ENTONCES para Bot
 
+### **🎯 FRAMEWORK DE CALIFICACIÓN**
+
+**Regla principal antes de escalar:**
+
+- Verificar mínimo 2 de 3 datos: vehículo, método de pago, timing
+
+- SI no tiene al menos 2 → seguir preguntando
+
+- SI sí → proceder con escalación según urgencia
+
 ### **💰 FINANCIAMIENTO**
 
 ```
