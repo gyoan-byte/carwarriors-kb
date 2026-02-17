@@ -3,37 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Base de Conocimiento CarWarriors</title>
+    <title>Base de Conocimiento CarWarriors - Guía Completa de Automóviles</title>
+    <meta name="description" content="Base de conocimiento completa de CarWarriors LLC Miami: identidad, inventario, financiamiento, proceso de compra, trade-in y más. Guía especializada para la comunidad latina.">
+    <meta name="keywords" content="CarWarriors, Miami, autos usados, financiamiento, trade-in, compra de autos, dealer, concesionario, comunidad latina">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="CarWarriors LLC">
+    <meta property="og:title" content="Base de Conocimiento CarWarriors">
+    <meta property="og:description" content="Guía completa de automóviles y servicios de CarWarriors Miami">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
         body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; color: #333; }
         #content { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
         nav { text-align: center; margin-bottom: 20px; }
-        nav a { margin: 0 10px; text-decoration: none; color: #007bff; }
-        nav a:hover { text-decoration: underline; }
-        h1 { text-align: center; color: #007bff; }
+        nav ul { justify-content: center; flex-wrap: wrap; }
+        nav button { 
+            margin: 5px; 
+            background: none; 
+            border: 1px solid #007bff; 
+            color: #007bff; 
+            cursor: pointer; 
+            font-family: inherit; 
+            font-size: inherit; 
+            padding: 8px 12px; 
+            border-radius: 4px; 
+            transition: all 0.3s ease;
+        }
+        nav button:hover { 
+            background-color: #0056b3; 
+            color: white; 
+            text-decoration: none;
+        }
+        h1 { text-align: center; color: #007bff; margin-bottom: 10px; }
+        @media (max-width: 768px) {
+            nav ul { flex-direction: column; align-items: center; }
+            nav button { width: 200px; }
+        }
     </style>
 </head>
 <body>
-    <h1>Base de Conocimiento CarWarriors</h1>
-    <nav>
-        <a href="#" onclick="loadMD('01_Identidad_Negocio.md')">Identidad Negocio</a> |
-        <a href="#" onclick="loadMD('02_Inventario.md')">Inventario</a> |
-        <a href="#" onclick="loadMD('03_Financiamiento.md')">Financiamiento</a> |
-        <a href="#" onclick="loadMD('04_Proceso_Compra.md')">Proceso Compra</a> |
-        <a href="#" onclick="loadMD('05_Trade_In.md')">Trade-In</a> |
-        <a href="#" onclick="loadMD('06_Objetiones.md')">Objetiones</a> |
-        <a href="#" onclick="loadMD('07_Seguridad.md')">Seguridad</a> |
-        <a href="#" onclick="loadMD('08_Tono_Comportamiento.md')">Tono Comportamiento</a> |
-        <a href="#" onclick="loadMD('09_Escalacion.md')">Escalación</a> |
-        <a href="#" onclick="loadMD('10_Limites_Bot.md')">Límites Bot</a> |
-        <a href="#" onclick="loadMD('11_Transiciones.md')">Transiciones</a> |
-        <a href="#" onclick="loadMD('12_Conversaciones_Dificiles.md')">Conversaciones Difíciles</a> |
-        <a href="#" onclick="loadMD('13_Logica_Condicional.md')">Lógica Condicional</a> |
-        <a href="#" onclick="loadMD('14_Conocimiento_Automotriz_Basico.md')">Conocimiento Automotriz</a> |
-        <a href="#" onclick="loadMD('README.md')">README</a>
+    <header>
+        <h1>Base de Conocimiento CarWarriors</h1>
+        <p style="text-align: center; color: #666; margin-bottom: 20px;">Guía completa de servicios automotrices en Miami</p>
+    </header>
+    
+    <nav role="navigation" aria-label="Navegación principal">
+        <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+            <li><button onclick="loadMD('01_Identidad_Negocio.md')">Identidad Negocio</button></li>
+            <li><button onclick="loadMD('02_Inventario.md')">Inventario</button></li>
+            <li><button onclick="loadMD('03_Financiamiento.md')">Financiamiento</button></li>
+            <li><button onclick="loadMD('04_Proceso_Compra.md')">Proceso Compra</button></li>
+            <li><button onclick="loadMD('05_Trade_In.md')">Trade-In</button></li>
+            <li><button onclick="loadMD('06_Objetiones.md')">Objetiones</button></li>
+            <li><button onclick="loadMD('07_Seguridad.md')">Seguridad</button></li>
+            <li><button onclick="loadMD('08_Tono_Comportamiento.md')">Tono Comportamiento</button></li>
+            <li><button onclick="loadMD('09_Escalacion.md')">Escalación</button></li>
+            <li><button onclick="loadMD('10_Limites_Bot.md')">Límites Bot</button></li>
+            <li><button onclick="loadMD('11_Transiciones.md')">Transiciones</button></li>
+            <li><button onclick="loadMD('12_Conversaciones_Dificiles.md')">Conversaciones Difíciles</button></li>
+            <li><button onclick="loadMD('13_Logica_Condicional.md')">Lógica Condicional</button></li>
+            <li><button onclick="loadMD('14_Conocimiento_Automotriz_Basico.md')">Conocimiento Automotriz</button></li>
+            <li><button onclick="loadMD('README.md')">README</button></li>
+        </ul>
     </nav>
-    <div id="content">Cargando...</div>
+    
+    <main role="main">
+        <section id="content" aria-live="polite" aria-label="Contenido principal">
+            <p>Cargando...</p>
+        </section>
+    </main>
+    
+    <footer role="contentinfo" style="text-align: center; margin-top: 40px; padding: 20px; color: #666; border-top: 1px solid #ddd;">
+        <p>&copy; 2024 CarWarriors LLC Miami - Todos los derechos reservados</p>
+        <p><strong>Dirección:</strong> 3620 NW 27th Ave, Miami, FL 33142</p>
+        <p><strong>Teléfono:</strong> <a href="tel:+13059220417" style="color: #007bff;">+1 305-922-0417</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/13059220417" style="color: #007bff;" target="_blank" rel="noopener">Enviar mensaje</a></p>
+    </footer>
     <script>
         function loadMD(file) {
             fetch(file)
