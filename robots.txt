@@ -20,7 +20,7 @@ Allow: /14_Conocimiento_Automotriz_Basico.md
 Allow: /README.md
 
 # Sitemap location
-Sitemap: http://localhost:8000/sitemap.xml
+Sitemap: https://gyoan-byte.github.io/carwarriors-kb/sitemap.xml
 
 # Crawl delay para ser amigable con servidores
 Crawl-delay: 1
