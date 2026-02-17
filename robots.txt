@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Permitir acceso a todos los archivos MD
+Allow: *.md
+Allow: /01_Identidad_Negocio.md
+Allow: /02_Inventario.md
+Allow: /03_Financiamiento.md
+Allow: /04_Proceso_Compra.md
+Allow: /05_Trade_In.md
+Allow: /06_Objetiones.md
+Allow: /07_Seguridad.md
+Allow: /08_Tono_Comportamiento.md
+Allow: /09_Escalacion.md
+Allow: /10_Limites_Bot.md
+Allow: /11_Transiciones.md
+Allow: /12_Conversaciones_Dificiles.md
+Allow: /13_Logica_Condicional.md
+Allow: /14_Conocimiento_Automotriz_Basico.md
+Allow: /README.md
+
+# Sitemap location
+Sitemap: http://localhost:8000/sitemap.xml
+
+# Crawl delay para ser amigable con servidores
+Crawl-delay: 1
