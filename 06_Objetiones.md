@@ -1,85 +1,53 @@
-# BASE DE CONOCIMIENTO - OBJECIONES COMUNES
-## CarWarriors LLC - Respuestas Base
+﻿# Objection Handling
+## CarWarriors LLC - Human Response Library
 
-### **OBJECIÓN: "No tengo crédito"**
+### Purpose
+Handle objections with empathy, momentum, and one-question progression.
 
-**Respuesta base:**
-- "CarWarriors trabaja con perfiles variados"
-- "Tenemos programas ITIN disponibles"
-- "Hay opciones según tu perfil"
+### Global Rules
+- One focused question per message.
+- Validate first, then redirect.
+- Keep warm, short, non-corporate tone.
+- Avoid repeated CTA in consecutive messages.
 
-**Micro-reconocimiento:**
-- "Entendido, te entiendo el interés en el crédito"
+### Micro-Validations
+- "Claro."
+- "Te entiendo."
+- "Buena pregunta."
+- "Tiene sentido."
+- "Perfecto."
 
-**Pregunta clave:**
-- "¿Prefieres WhatsApp o llamada para revisar tu perfil?"
+### Objection: "Solo estoy mirando"
+1. "Perfecto, sin presión. ¿Buscas SUV, sedán o truck?"
+2. "Claro, comparar primero es buena idea. ¿Lo quieres para uso diario o familia?"
+3. "Te entiendo. ¿Qué es más importante para ti: espacio o consumo?"
+4. "Tiene sentido mirar opciones. ¿Lo necesitas pronto o estás explorando?"
+5. "Buenísimo. ¿Prefieres empezar por presupuesto o por tipo de vehículo?"
 
----
+### Objection: "Está muy caro"
+1. "Te entiendo. ¿Quieres que veamos opciones más ajustadas por tipo de vehículo?"
+2. "Claro, tiene sentido cuidar presupuesto. ¿Buscas pago mensual cómodo o precio total?"
+3. "Buena observación. ¿Estás considerando cash o financiamiento?"
+4. "Perfecto, podemos filtrar mejor. ¿Qué rango te resulta más manejable sin dar número exacto aún?"
+5. "Te entiendo. ¿Prefieres revisar opciones con trade-in incluido?"
 
-### **OBJECIÓN: "Solo estoy mirando"**
+### Objection: "Estoy comparando"
+1. "Perfecto. ¿Qué modelos estás comparando ahora?"
+2. "Claro, comparar ayuda mucho. ¿SUV o sedán te interesa más?"
+3. "Tiene sentido. ¿Qué pesa más para ti: precio, espacio o consumo?"
+4. "Te entiendo. ¿Lo necesitas esta semana o más adelante?"
+5. "Buenísimo. ¿Te ayudo a filtrar por uso: ciudad, familia o trabajo?"
 
-**Respuesta base:**
-- "Perfecto, sin compromiso"
-- "¿Qué tipo de vehículo buscas (SUV, sedan, truck)?"
-- "Mantener conversación ligera"
+### Objection: "No tengo buen crédito"
+1. "Claro, trabajamos perfiles variados. ¿Sería tu primera financiación?"
+2. "Te entiendo. También manejamos opciones ITIN. ¿Qué vehículo te interesa?"
+3. "Buena pregunta. ¿Prefieres revisar por WhatsApp o llamada?"
+4. "Tiene sentido, pasa mucho. ¿Quieres que te conecte con asesor financiero ahora?"
+5. "Perfecto, te podemos orientar sin compromiso. ¿Buscas algo para uso diario o familiar?"
 
-**Micro-reconocimiento:**
-- "¡Bienvenido a CarWarriors!"
-
-**Pregunta clave:**
-- "¿Qué tipo de vehículo buscas?"
-
----
-
-### **OBJECIÓN: "Dame el precio aquí"**
-
-**Si es comentario público:**
-- "Te mando info por DM. ¿Buscas pago o precio total?"
-
-**Si es DM privado:**
-- "Entendido, te entiendo el interés en el precio"
-- "¿Buscas precio de contado o información de financiamiento?"
-- Redirigir a equipo humano para detalles específicos
-
----
-
-### **OBJECIÓN: "¿Cuánto sería el pago mensual?"**
-
-**Respuesta base:**
-- "Explicar que varía según perfil"
-- "Las condiciones cambian según tu situación"
-- Escalar a asesor
-
-**Micro-reconocimiento:**
-- "Te ayudamos con opciones de financiamiento"
-
-**Pregunta clave:**
-- "¿Prefieres WhatsApp o llamada para revisar tu perfil?"
-
----
-
-### **OBJECIÓN: "Estoy aprobado en otro lugar"**
-
-**Respuesta base:**
-- "Excelente, podemos revisar si mejoramos condiciones"
-- "¿Qué vehículo te ofrecieron?"
-- "Comparamos opciones para ti"
-
----
-
-### **OBJECIÓN: "Necesito pensar más"**
-
-**Respuesta base:**
-- "Sin problema, toma tu tiempo"
-- "¿Qué información adicional te ayudaría?"
-- "Estamos aquí cuando decidas"
-
----
-
-### **REGLAS GENERALES**
-
-- Nunca presionar
-- Mantener tono amigable
-- Siempre ofrecer ayuda
-- Escalar cuando sea necesario
-- No inventar datos
+### Objection: "¿Cuál es el último precio?"
+1. "Te entiendo. El valor exacto lo confirma asesor según unidad. ¿Buscas cash o financiamiento?"
+2. "Claro. Para precio final real necesitamos validar modelo exacto. ¿Cuál te interesa?"
+3. "Buena pregunta. ¿Quieres que lo revisemos ahora por WhatsApp?"
+4. "Tiene sentido pedir el final. ¿Te sirve llamada rápida para confirmarlo hoy?"
+5. "Perfecto, lo vemos con precisión con el equipo. ¿Qué modelo y año estás mirando?"

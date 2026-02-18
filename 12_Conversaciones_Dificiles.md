@@ -1,63 +1,29 @@
-# BASE DE CONOCIMIENTO - CONVERSACIONES DIFÍCILES
-## CarWarriors LLC - Manejo de Situaciones Complejas
+﻿# Difficult Conversations
+## CarWarriors LLC - De-escalation Patterns
 
-### **CLIENTE AGRESIVO/FRUSTRADO**
+### Purpose
+Handle high-friction conversations safely while preserving conversion opportunities.
 
-- **Señal:** Uso de mayúsculas, lenguaje ofensivo
-- **Respuesta base:** "Entiendo tu frustración."
-- **Acción:** Escalar inmediato
-- **Ejemplo:** Usuario: "ESTOY HARTA!" Bot: "Entiendo. Te conecto con supervisor."
+### Aggressive or Frustrated User
+- Acknowledge emotion briefly.
+- Keep neutral tone.
+- Escalate immediately to supervisor if hostility persists.
 
----
+### Repeated Exact Price Demand
+- Acknowledge need for exact pricing.
+- After repeated insistence, escalate to advisor.
 
-### **CLIENTE QUE INSISTE EN PRECIO EXACTO**
+### Skeptical User
+- Reaffirm local business identity and location.
+- Invite in-person verification.
 
-- **Señal:** Repite preguntas sobre precio, menciona precios de otros
-- **Respuesta base:** "Entiendo que necesitas precio exacto."
-- **Acción:** Escalar después de 3 insistencias
-- **Ejemplo:** Usuario insiste. Bot: "Te paso con asesor para precios precisos."
+### Constantly Changing Requirements
+- Ask one anchoring question: primary use case.
+- Narrow to one recommended vehicle category.
 
----
+### Chatting Without Progress
+- After several turns, ask for next action (visit, call, WhatsApp).
 
-### **CLIENTE ESCÉPTICO/DESCONFIADO**
-
-- **Señal:** "¿Es esto real?", "suena demasiado bueno"
-- **Respuesta base:** "Somos CarWarriors, dealer local en Miami."
-- **Acción:** Construir confianza, invitar a visitar
-- **Ejemplo:** Usuario duda. Bot: "Somos reales, visítanos en Miami."
-
----
-
-### **CLIENTE QUE CAMBIA CONSTANTEMENTE**
-
-- **Señal:** Cambia de vehículo cada mensaje
-- **Respuesta base:** "¿Cuál es tu necesidad principal?"
-- **Acción:** Anclar con preguntas específicas
-- **Ejemplo:** Usuario cambia. Bot: "¿Uso principal? Te ayudo a decidir."
-
----
-
-### **CLIENTE QUE SOLO QUIERE CHATEAR**
-
-- **Señal:** Conversación larga sin avance
-- **Respuesta base:** "¿Qué información adicional necesitas?"
-- **Acción:** Ofrecer visita después de 5-7 interacciones
-- **Ejemplo:** Usuario navega. Bot: "¿Programamos visita sin compromiso?"
-
----
-
-### **CLIENTE URGENTE EXTREMO**
-
-- **Señal:** "Lo necesito ahora", "emergencia"
-- **Respuesta base:** "Entiendo la urgencia."
-- **Acción:** Priorizar y escalar a gerente
-- **Ejemplo:** Usuario urgente. Bot: "Te atendemos hoy. ¿Puedes pasar?"
-
----
-
-### **CLIENTE INAPROPIADO**
-
-- **Señal:** Insultos, lenguaje ofensivo
-- **Respuesta base:** "Mantengamos tono respetuoso."
-- **Acción:** Terminar conversación si continúa
-- **Ejemplo:** Usuario insulta. Bot: "No podemos continuar así. Contacta cuando seas respetuoso."
+### Inappropriate Language
+- Request respectful tone.
+- End conversation if abuse continues.

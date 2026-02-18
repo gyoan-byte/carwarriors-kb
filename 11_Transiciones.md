@@ -1,77 +1,29 @@
-# BASE DE CONOCIMIENTO - FRASES DE TRANSICIÓN
-## CarWarriors LLC - Puentes Naturales para Escalación
+﻿# Transition Phrases
+## CarWarriors LLC - Smooth Escalation Language
 
-### **FRASES PUENTE HACIA ESCALACIÓN**
+### Purpose
+Provide natural bridge phrases for moving from bot support to human assistance.
 
-**Para detalles específicos:**
-- "Déjame verificar eso para ti."
-- "Te conecto con quien puede confirmarlo."
-- "Un momento, revisamos eso juntos."
+### For Specific Details
+- "Let me verify that for you with our team."
+- "I can connect you with the advisor who can confirm exact details."
 
-**Para información financiera:**
-- "Nuestro asesor revisa los números."
-- "Te paso con el especialista financiero."
-- "Para cifras exactas, habla con nuestro equipo."
+### For Financing
+- "Our finance advisor can review exact numbers with you."
+- "I can connect you now to review your profile."
 
-**Para disponibilidad exacta:**
-- "Verifico stock en el sistema."
-- "Te confirmo con nuestro inventario."
-- "Déjame chequear disponibilidad."
+### For Availability
+- "I can confirm exact stock with inventory."
+- "Let me connect you for model-level confirmation."
 
-**Para valoraciones de trade-in:**
-- "El valor se ve con inspección."
-- "Te programo evaluación."
-- "Necesitamos ver tu carro."
+### For Trade-In
+- "Trade-in value is confirmed after inspection."
+- "I can connect you to schedule an evaluation."
 
-### **TRANSICIONES SUAVES**
+### Avoid
+- "I cannot help"
+- "I do not know"
+- "That is not my job"
 
-**De bot a humano:**
-- "Un momento, te conecto..."
-- "Te atiende nuestro especialista."
-- "Te paso con quien te ayuda mejor."
-
-**De general a específico:**
-- "Sobre ese punto..."
-- "Respecto a tu pregunta..."
-- "Para esa info específica..."
-
-**De pregunta a acción:**
-- "¿Verificamos ahora?"
-- "Podemos revisar eso hoy."
-- "Te gustaría confirmarlo?"
-
-### **WHATSAPP VS LLAMADA**
-
-**Para WhatsApp:**
-- "Te mando info por WhatsApp."
-- "¿Seguimos por WhatsApp?"
-- "Te escribo con opciones."
-
-**Para llamada:**
-- "Es más rápido por teléfono."
-- "¿Te llamamos para explicar?"
-- "Por llamada revisamos rápido."
-
-### **TIMING DE TRANSICIÓN**
-
-**Inmediato:**
-- "Te conecto ahora."
-- "Espera un momento."
-- "Un segundo, te transfiero."
-
-**Programado:**
-- "Te llamo en 5 minutos."
-- "Nuestro asesor te contacta."
-- "Te confirmamos en breve."
-
-### **EVITAR ESTAS FRASES**
-
-- No usar: "No puedo ayudarte"
-- No usar: "No sé esa info"
-- No usar: "Eso no es mi trabajo"
-- No usar: "Habla con alguien más"
-
-**En su lugar usar:**
-- "Te conecto con quien te ayuda."
-- "Nuestro especialista te responde."
-- "Para eso te atiende nuestro equipo."
+Use instead:
+- "I will connect you with the right specialist."

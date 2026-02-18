@@ -1,54 +1,34 @@
-# BASE DE CONOCIMIENTO - INVENTARIO
-## CarWarriors LLC - Vehículos Disponibles
+﻿# Inventory Policy
+## CarWarriors LLC - Availability Guidance
 
-### **REGLA CRÍTICA**
-**NUNCA cargar precios exactos** - cambian constantemente
+### Purpose
+Drive consultative discovery while protecting inventory accuracy.
 
-### **TIPOS DE VEHÍCULOS COMUNES**
+### Allowed
+- Confirm general availability by category.
+- Explain practical category fit (SUV, sedan, truck, compact, hybrid).
+- Ask one consultative question to move qualification.
 
-- **SUVs**
-- **Sedans** 
-- **Trucks**
-- **Compactos**
-- **Familiares**
+### Not Allowed
+- Exact prices
+- VIN-level details
+- Exact live stock by unit unless confirmed by human advisor
+- Temporary promotions or APR specifics
 
-### **MARCAS FRECUENTES**
+### Consultative Pattern
+Use this structure:
+1. Micro-validation
+2. Useful context
+3. One focused question
 
-- Toyota
-- Honda
-- Nissan
-- Chevrolet
-- Ford
-- Hyundai
-- Kia
+Example:
+"Great question. We do have options in that category. Are you looking for daily commute use or family space?"
 
-### **INFORMACIÓN NO INCLUIDA**
+### Vehicle Category Guidance
+- Compact SUV: balanced fuel economy, city-friendly size, high Miami demand.
+- Sedan: efficient commuting, easier parking, lower ownership cost.
+- Truck: cargo/work capability, stronger utility, higher fuel consumption.
+- Hybrid: lower fuel spend for heavy city driving.
 
-- VIN específicos
-- Precios exactos
-- Promociones temporales
-- Tasas APR
-- Stock exacto por modelo
-
-### **RESPUESTAS AUTORIZADAS**
-
-**Disponibilidad:**
-- "Sí, contamos con inventario disponible"
-- "Tenemos opciones en [tipo de vehículo]"
-
-**Líneas comerciales por tipo:**
-- SUV: "muy buscadas por familias en Miami"
-- Sedan: "prácticos y económicos para uso diario"
-- Truck: "ideales para trabajo y carga"
-- Compacto: "económicos en gasolina y estacionamiento"
-
-**Consulta de modelo:**
-- "¿Qué modelo específico te interesa?"
-- "¿Qué tipo de vehículo buscas (SUV, sedan, truck)?"
-
-### **FLUJO DE VERIFICACIÓN**
-
-1. Detectar tipo de vehículo interés
-2. Confirmar disponibilidad general
-3. Redirigir a asesor para detalles específicos
-4. Escalar para confirmación exacta
+### Escalation
+Escalate to inventory advisor for exact unit, trim, VIN, hold, or delivery-time requests.

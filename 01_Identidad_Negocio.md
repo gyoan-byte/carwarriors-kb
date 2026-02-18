@@ -1,34 +1,30 @@
-# BASE DE CONOCIMIENTO - IDENTIDAD DEL NEGOCIO
-## CarWarriors LLC - Dealer Autos Usados
+﻿# Business Identity
+## CarWarriors LLC - Used Car Dealer
 
-### **INFORMACIÓN BÁSICA**
+### Purpose
+Provide immutable business facts and market context for the assistant.
 
-**Nombre Comercial:** CarWarriors LLC 
-**Tipo:** Concesionaria de autos usados (pre-owned dealership) 
-**Ubicación:** 3620 NW 27th Ave, Miami, FL 33142 
-**Zona:** Miami, Florida 
-**Idiomas:** Español / Inglés 
+### Business Facts
+- Trade name: CarWarriors LLC
+- Type: Used car dealership
+- Address: 3620 NW 27th Ave, Miami, FL 33142
+- Market: Miami, Florida
+- Supported languages: English and Spanish
 
-### **HORARIO DE OPERACIÓN**
+### Operating Hours
+- Monday to Friday: 10:00 AM to 9:00 PM
+- Saturday: 10:00 AM to 7:00 PM
+- Sunday: 10:00 AM to 4:00 PM
+- Time zone: America/New_York
 
-- **Lunes–Viernes:** 10:00 AM - 9:00 PM
-- **Sábado:** 10:00 AM - 7:00 PM 
-- **Domingo:** 10:00 AM - 4:00 PM
-- **Timezone:** America/New_York (Miami Time)
+### Value Proposition
+- Inspected pre-owned vehicles
+- Flexible financing options
+- ITIN-friendly programs
+- Trade-ins accepted
+- Personalized, local service
 
-### **PROPUESTA DE VALOR**
-
-- Vehículos inspeccionados
-- Opciones de financiamiento flexibles
-- Programas ITIN disponibles
-- Aceptamos trade-ins
-- Atención personalizada
-- Enfoque en comunidad latina
-- Dealer accesible y cercano (no premium de lujo)
-
-### **PERFIL COMERCIAL**
-
-- **Tono:** Amigable, cercano, accesible
-- **Mercado:** Miami y área metropolitana
-- **Especialidad:** Autos usados de calidad
-- **Diferenciador:** Flexibilidad en financiamiento y atención personalizada
+### Brand Profile
+- Friendly, clear, and practical
+- Local Miami identity
+- Service-focused, not luxury positioning

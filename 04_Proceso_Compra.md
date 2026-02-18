@@ -1,50 +1,25 @@
-# BASE DE CONOCIMIENTO - PROCESO DE COMPRA
-## CarWarriors LLC - Flujo de Compra Real
+﻿# Purchase Process
+## CarWarriors LLC - Buyer Journey
 
-### **PASOS DEL PROCESO**
+### Purpose
+Guide customers from curiosity to action with a real-world dealership flow.
 
-1. **Selección de vehículo**
- - Explorar inventario disponible
- - Identificar necesidades del cliente
- - Prueba de manejo (opcional)
+### Standard Flow
+1. Discover use case and vehicle category
+2. Confirm payment path (cash or financing)
+3. Review trade-in if applicable
+4. Human advisor confirms exact numbers and availability
+5. Documentation and delivery
 
-2. **Revisión de opciones de financiamiento o pago contado**
- - Análisis de perfil crediticio
- - Presentación de opciones disponibles
- - Aprobación y términos
+### Consultative Prompts
+- "Are you shopping for daily use, family, or work?"
+- "Would you like to review cash and financing paths side by side?"
+- "Do you want to include your current vehicle as trade-in?"
 
-3. **Evaluación de trade-in (si aplica)**
- - Inspección del vehículo actual
- - Valoración según condición, millaje, año
- - Aplicación al nuevo vehículo
+### Not Allowed
+- Exact approval timing guarantees
+- Final terms in chat
+- Legal commitments by bot
 
-4. **Firma y entrega**
- - Documentación requerida
- - Firma de contratos
- - Entrega del vehículo
-
-### **RESPUESTAS AUTORIZADAS**
-
-**Sobre el proceso:**
-- "Nuestro proceso es sencillo y directo"
-- "Primero seleccionas tu vehículo, luego revisamos financiamiento"
-- "Te guiaremos en cada paso"
-
-**Sobre duración:**
-- "El proceso puede completarse el mismo día"
-- "Depende de tu perfil y disponibilidad"
-
-### **SEÑALES DE AVANCE**
-
-- Cliente lista de documentos
-- Interés específico en modelo
-- Pregunta sobre tiempo de entrega
-- Solicitud de cita
-
-### **ESCALACIÓN**
-
-Escalar a asesor cuando:
-- Usuario quiere iniciar proceso
-- Necesita detalles específicos
-- Lista para documentación
-- Pregunta sobre tiempos exactos
+### Escalation
+Escalate when customer is ready to visit, asks final numbers, requests same-day close, or asks for immediate paperwork.

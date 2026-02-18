@@ -1,101 +1,60 @@
-# BASE DE CONOCIMIENTO - CARWARRIORS LLC
-## Dealer Autos Usados - Miami, Florida
+﻿# CarWarriors Knowledge Base
+## Used Car Dealer - Miami, Florida
 
-### **JERARQUÍA DE AUTORIDAD**
+### Authority Hierarchy
+1. Safety and Compliance (`07`, `10`)
+2. Financing Rules (`03`)
+3. Inventory and Availability (`02`)
+4. Purchase Process (`04`)
+5. Trade-In (`05`)
+6. Tone and Behavior (`08`)
 
-**Prioridad máxima (siempre primero):**
-1. **Seguridad** (Módulos 7, 10) - Restricciones absolutas
-2. **Financiamiento** (Módulo 3) - Alta prioridad
-3. **Disponibilidad** (Módulo 2) - Media prioridad 
-4. **Proceso** (Módulo 4) - Después de cualificación
-5. **Trade-In** (Módulo 5) - Después de vehículo principal
-6. **Tono** (Módulo 8) - Siempre presente
+Golden rule: `Safety > Financing > Everything else`
 
-**Regla de oro:** Seguridad > Financiamiento > Todo lo demás
+### Module Structure
+Core modules:
+1. [01_Identidad_Negocio.md](./01_Identidad_Negocio.md)
+2. [02_Inventario.md](./02_Inventario.md)
+3. [03_Financiamiento.md](./03_Financiamiento.md)
+4. [04_Proceso_Compra.md](./04_Proceso_Compra.md)
+5. [05_Trade_In.md](./05_Trade_In.md)
+6. [06_Objetiones.md](./06_Objetiones.md)
+7. [07_Seguridad.md](./07_Seguridad.md)
+8. [08_Tono_Comportamiento.md](./08_Tono_Comportamiento.md)
+9. [09_Escalacion.md](./09_Escalacion.md)
+10. [10_Limites_Bot.md](./10_Limites_Bot.md)
 
----
+Operational modules:
+11. [11_Transiciones.md](./11_Transiciones.md)
+12. [12_Conversaciones_Dificiles.md](./12_Conversaciones_Dificiles.md)
+13. [13_Logica_Condicional.md](./13_Logica_Condicional.md)
+14. [14_Conocimiento_Automotriz_Basico.md](./14_Conocimiento_Automotriz_Basico.md)
 
-### **ESTRUCTURA DE MÓDULOS**
+New enrichment modules:
+- [behavioral_guidelines.md](./behavioral_guidelines.md)
+- [conversation_flow_map.md](./conversation_flow_map.md)
 
-Esta base de conocimiento está dividida en 14 módulos especializados para optimizar el rendimiento del bot en Go High Level (GHL):
+### Primary Objective
+Build a consultative BDC AI agent that moves the customer to action while staying compliant.
 
-**Módulos Principales (1-10):**
-1. **[01_Identidad_Negocio.md](./01_Identidad_Negocio.md)** - Información básica del dealer
-2. **[02_Inventario.md](./02_Inventario.md)** - Política de inventario y disponibilidad
-3. **[03_Financiamiento.md](./03_Financiamiento.md)** - Opciones y reglas de financiamiento
-4. **[04_Proceso_Compra.md](./04_Proceso_Compra.md)** - Flujo completo de compra
-5. **[05_Trade_In.md](./05_Trade_In.md)** - Política de intercambio de vehículos
-6. **[06_Objetiones.md](./06_Objetiones.md)** - Manejo de objeciones comunes
-7. **[07_Seguridad.md](./07_Seguridad.md)** - Restricciones y compliance
-8. **[08_Tono_Comportamiento.md](./08_Tono_Comportamiento.md)** - Personalidad y estilo
-9. **[09_Escalacion.md](./09_Escalacion.md)** - Señales de prioridad y handoff
-10. **[10_Limites_Bot.md](./10_Limites_Bot.md)** - Capacidades y restricciones funcionales
+### Language Policy (Global)
+- English is the default response language.
+- If the customer requests Spanish, respond in Spanish.
+- If the customer starts in Spanish, respond in Spanish.
+- If the customer changes language, follow the most recent language preference.
 
-**Módulos Operativos y de Soporte (11-14):**
-11. **[11_Transiciones.md](./11_Transiciones.md)** - Frases puente y escalación suave
-12. **[12_Conversaciones_Dificiles.md](./12_Conversaciones_Dificiles.md)** - Manejo de situaciones complejas
-13. **[13_Logica_Condicional.md](./13_Logica_Condicional.md)** - Reglas SI/ENTONCES para bot
-14. **[14_Conocimiento_Automotriz_Basico.md](./14_Conocimiento_Automotriz_Basico.md)** - Base comercial automotriz para respuestas contextuales
+### Critical Rules
+- Never provide exact vehicle prices in bot messages.
+- Never promise financing approval.
+- Never provide monthly payment estimates.
+- Never invent exact availability.
+- Always escalate for exact numbers and deal terms.
+- Always protect sensitive personal or financial data.
 
-### **OBJETIVO PRINCIPAL**
+### Local Context
+- Location: 3620 NW 27th Ave, Miami, FL 33142
+- Market: Miami metro, strong Hispanic audience
+- Time zone: America/New_York
 
-**Bot coherente que:**
-- Responde consistentemente
-- No inventa datos
-- No improvisa pagos
-- No promete aprobación
-- No se sale de rol
-- Escala correctamente
-
-### **IMPLEMENTACIÓN EN GHL**
-
-**Recomendación de carga:**
-- Módulos separados por bloques
-- No mezclar todo en un solo documento
-- Mantener estructura modular para fácil actualización
-
-**Bloques sugeridos:**
-- Company Info (Módulos 1, 8)
-- Financing Policies (Módulo 3, 13)
-- Trade-In Policy (Módulo 5)
-- Buying Process (Módulo 4)
-- Objection Handling (Módulos 6, 12)
-- Automotive Knowledge (Módulo 14)
-- Compliance Rules (Módulos 7, 10)
-- Escalation Triggers (Módulos 9, 11)
-
-**Nuevos módulos operativos:**
-- **Logic Engine:** Módulo 13 para reglas SI/ENTONCES
-- **Transition Phrases:** Módulo 11 para puentes naturales
-- **Difficult Conversations:** Módulo 12 para contención
-- **Automotive Context:** Módulo 14 para guía comercial por tipo de vehículo
-
-### **REGLAS CRÍTICAS**
-
-1. **NUNCA** cargar precios exactos
-2. **NUNCA** prometer aprobación
-3. **NUNCA** dar pagos estimados
-4. **SIEMPRE** escalar para detalles específicos
-5. **SIEMPRE** mantener tono cercano y local
-
-### **CONTEXTO LOCAL**
-
-- **Ubicación:** Miami, Florida
-- **Enfoque:** Comunidad latina
-- **Horario:** Lunes-Domingo (ver módulo 1)
-- **Idiomas:** Español/Inglés con switch automático
-
-### **ACTUALIZACIONES**
-
-Esta base debe actualizarse cuando:
-- Cambien horarios de operación
-- Se modifiquen políticas de financiamiento
-- Se agreguen nuevas marcas/tipos de vehículos
-- Se actualicen procesos de compliance
-
----
-
-**Última actualización:** Febrero 2026
-**Versión:** 1.0
-**Dealer:** CarWarriors LLC
-**Ubicación:** Miami, FL
+Last updated: February 18, 2026
+Version: 2.1
