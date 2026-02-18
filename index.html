@@ -1,40 +1,42 @@
 ﻿<!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Base Operativa CarWarriors: Conocimiento + Inventario</title>
-  <meta name="description" content="Base operativa scrapeable con contexto real de la base de conocimiento CarWarriors y el inventario de vehiculos ordenado por marca." />
+  <title>CarWarriors Knowledge + Live Inventory</title>
+  <meta name="description" content="Single-page public hub with CarWarriors knowledge modules and live vehicle inventory, optimized for humans and AI web scraping." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://gyoan-byte.github.io/carwarriors-kb/" />
   <style>
     :root {
-      --bg: #f4f6f8;
+      --bg: #f4f7fa;
       --surface: #ffffff;
-      --ink: #13212f;
-      --muted: #5b6b7c;
-      --line: #d8e0e7;
-      --brand: #0f6a9c;
-      --brand-soft: #d8effa;
+      --ink: #152432;
+      --muted: #5f7286;
+      --line: #d9e3ec;
+      --brand: #0f6b9b;
+      --brand-dark: #0b4f73;
+      --brand-soft: #e6f4fc;
+      --warn-soft: #fff5d6;
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: "Segoe UI", "Noto Sans", "Liberation Sans", sans-serif;
       color: var(--ink);
-      background: radial-gradient(circle at 0 0, #e8f6ff, var(--bg) 55%);
-      line-height: 1.4;
+      font-family: "Segoe UI", "Noto Sans", "Liberation Sans", sans-serif;
+      background: radial-gradient(circle at 0 0, #e8f5ff, var(--bg) 55%);
+      line-height: 1.42;
     }
-    .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 20px; }
     header {
-      background: linear-gradient(135deg, #0f6a9c, #0a3f5f);
+      background: linear-gradient(135deg, var(--brand), #0a3f5f);
       color: #fff;
-      border-radius: 12px;
+      border-radius: 14px;
       padding: 18px 20px;
       margin-bottom: 16px;
     }
-    h1 { margin: 0 0 6px; font-size: 1.6rem; }
-    h2 { margin: 0 0 8px; font-size: 1.15rem; }
+    h1 { margin: 0 0 6px; font-size: 1.7rem; }
+    h2 { margin: 0 0 10px; font-size: 1.1rem; color: var(--brand-dark); }
     p { margin: 0; }
     .meta { margin-top: 8px; color: #d9eef9; font-size: 0.92rem; }
     .card {
@@ -44,70 +46,142 @@
       padding: 16px;
       margin-bottom: 14px;
     }
-    .grid-two {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(140px, 1fr)); gap: 10px; }
+    .stat {
+      border: 1px solid #cbe7f7;
+      background: var(--brand-soft);
+      border-radius: 10px;
+      padding: 9px 10px;
     }
-    .list { margin: 8px 0 0 18px; padding: 0; }
-    .list li { margin: 4px 0; }
-    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .stat small { color: var(--muted); display: block; }
+    .stat strong { color: var(--brand-dark); font-size: 1.1rem; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; }
     .chip {
       border: 1px solid var(--line);
-      background: #fff;
       border-radius: 999px;
       padding: 6px 10px;
-      font-size: 0.9rem;
+      background: #fff;
       color: var(--muted);
       text-decoration: none;
+      font-size: 0.9rem;
     }
     .chip:hover { border-color: var(--brand); color: var(--brand); }
-    .stats { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
-    .stat {
-      background: var(--brand-soft);
-      border: 1px solid #c1e6fa;
-      border-radius: 10px;
-      padding: 8px 10px;
-      min-width: 160px;
-    }
-    .stat strong { display: block; font-size: 1.1rem; color: #0b4f75; }
+    .list { margin: 8px 0 0 18px; padding: 0; }
+    .list li { margin: 4px 0; }
     .muted { color: var(--muted); }
-    .scroll { overflow: auto; border: 1px solid var(--line); border-radius: 10px; }
-    table { width: 100%; border-collapse: collapse; min-width: 860px; }
-    th, td { padding: 10px; border-bottom: 1px solid var(--line); text-align: left; }
-    thead th {
-      background: #f3f9fd;
-      color: #0b4f75;
+    .warning {
+      background: var(--warn-soft);
+      border: 1px solid #f2dc8d;
+      color: #745f18;
+      border-radius: 10px;
+      padding: 10px;
+      margin-top: 10px;
+      display: none;
+    }
+    .controls {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 0.8fr;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .control {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
       font-size: 0.9rem;
-      letter-spacing: 0.01em;
+      color: var(--muted);
+    }
+    .control input, .control select {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 8px;
+      font-size: 0.95rem;
+      color: var(--ink);
+      background: #fff;
+    }
+    .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+    .button-link {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      background: var(--brand);
+      border: 1px solid var(--brand);
+      border-radius: 8px;
+      padding: 7px 10px;
+      font-size: 0.9rem;
+    }
+    .button-link.alt { background: #fff; color: var(--brand); }
+    .result-line { margin-top: 10px; color: var(--muted); font-size: 0.92rem; }
+    .scroll { overflow: auto; border: 1px solid var(--line); border-radius: 10px; margin-top: 8px; }
+    table { width: 100%; border-collapse: collapse; min-width: 900px; }
+    th, td { padding: 9px 10px; border-bottom: 1px solid var(--line); text-align: left; }
+    thead th {
+      background: #f2f9fd;
+      color: var(--brand-dark);
+      font-size: 0.9rem;
       position: sticky;
       top: 0;
       z-index: 1;
     }
     tbody tr:hover { background: #fbfdff; }
+    .pagination { display: flex; align-items: center; gap: 8px; margin-top: 10px; }
+    .pagination button {
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 8px;
+      padding: 6px 10px;
+      cursor: pointer;
+      color: var(--ink);
+    }
+    .pagination button:disabled { opacity: 0.5; cursor: not-allowed; }
+    .brand-groups {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    details {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fff;
+      overflow: hidden;
+    }
+    summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 10px 12px;
+      background: #f7fbfe;
+      color: var(--brand-dark);
+      font-weight: 600;
+      border-bottom: 1px solid var(--line);
+    }
+    summary::-webkit-details-marker { display: none; }
+    .brand-inner { padding: 10px 12px; font-size: 0.92rem; }
+    .brand-inner ul { margin: 6px 0 0 16px; padding: 0; }
+    .brand-inner li { margin: 4px 0; }
     code { background: #eef3f7; padding: 2px 5px; border-radius: 4px; }
     footer { text-align: center; color: var(--muted); font-size: 0.9rem; padding: 8px 0 20px; }
-    @media (max-width: 760px) {
-      h1 { font-size: 1.3rem; }
-      .stat { min-width: 130px; }
-      .grid-two { grid-template-columns: 1fr; }
+    @media (max-width: 900px) {
+      .grid-2, .controls, .brand-groups { grid-template-columns: 1fr; }
+      .grid-4 { grid-template-columns: repeat(2, minmax(120px, 1fr)); }
     }
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <h1>Base Operativa CarWarriors</h1>
-      <p>Contexto real de conocimiento + inventario estructurado para lectura humana y scraping por agentes AI.</p>
-      <div class="meta" id="source-meta">Fuente: cargando...</div>
+      <h1>CarWarriors Knowledge + Live Inventory</h1>
+      <p>Single public page for knowledge modules and real inventory data, readable by people and AI crawlers.</p>
+      <div class="meta" id="source-meta">Source: loading...</div>
     </header>
 
     <main>
-      <section class="card" aria-label="Contexto operativo real">
-        <h2>Contexto Operativo Real</h2>
-        <div class="grid-two">
+      <section class="card" aria-label="Operational context">
+        <h2>Operational Context</h2>
+        <div class="grid-2">
           <div>
-            <p class="muted">Autoridad y prioridad (README):</p>
+            <p class="muted">Authority hierarchy:</p>
             <ol class="list">
               <li>Safety and Compliance</li>
               <li>Financing Rules</li>
@@ -118,69 +192,95 @@
             <p class="muted"><strong>Golden rule:</strong> Safety &gt; Financing &gt; Inventory &gt; Everything else.</p>
           </div>
           <div>
-            <p class="muted">Identidad de negocio (01_Identidad_Negocio.md):</p>
+            <p class="muted">Business facts:</p>
             <ul class="list">
-              <li>CarWarriors LLC (used car dealership)</li>
+              <li>CarWarriors LLC</li>
               <li>3620 NW 27th Ave, Miami, FL 33142</li>
-              <li>Idiomas: English / Spanish</li>
-              <li>Zona horaria: America/New_York</li>
+              <li>Languages: English and Spanish</li>
+              <li>Time zone: America/New_York</li>
             </ul>
           </div>
         </div>
-        <p class="muted" style="margin-top:10px;">Cumplimiento: no precios exactos, no APR, no cuota mensual, no promesas de aprobacion o stock garantizado.</p>
       </section>
 
-      <section class="card" aria-label="Modulos fuente de conocimiento">
-        <p class="muted">Modulos fuente (.md) publicos para abrir directo con clic:</p>
+      <section class="card" aria-label="Knowledge modules">
+        <h2>Public Knowledge Modules (.md)</h2>
         <div class="chips">
           <a class="chip" href="README.md" target="_blank" rel="noopener">README</a>
-          <a class="chip" href="01_Identidad_Negocio.md" target="_blank" rel="noopener">01 Identidad</a>
-          <a class="chip" href="02_Inventario.md" target="_blank" rel="noopener">02 Inventario</a>
-          <a class="chip" href="03_Financiamiento.md" target="_blank" rel="noopener">03 Financiamiento</a>
-          <a class="chip" href="04_Proceso_Compra.md" target="_blank" rel="noopener">04 Proceso</a>
+          <a class="chip" href="01_Identidad_Negocio.md" target="_blank" rel="noopener">01 Identity</a>
+          <a class="chip" href="02_Inventario.md" target="_blank" rel="noopener">02 Inventory Policy</a>
+          <a class="chip" href="03_Financiamiento.md" target="_blank" rel="noopener">03 Financing</a>
+          <a class="chip" href="04_Proceso_Compra.md" target="_blank" rel="noopener">04 Purchase Process</a>
           <a class="chip" href="05_Trade_In.md" target="_blank" rel="noopener">05 Trade-In</a>
-          <a class="chip" href="06_Objetiones.md" target="_blank" rel="noopener">06 Objetiones</a>
-          <a class="chip" href="07_Seguridad.md" target="_blank" rel="noopener">07 Seguridad</a>
-          <a class="chip" href="08_Tono_Comportamiento.md" target="_blank" rel="noopener">08 Tono</a>
-          <a class="chip" href="09_Escalacion.md" target="_blank" rel="noopener">09 Escalacion</a>
-          <a class="chip" href="10_Limites_Bot.md" target="_blank" rel="noopener">10 Limites</a>
-          <a class="chip" href="11_Transiciones.md" target="_blank" rel="noopener">11 Transiciones</a>
-          <a class="chip" href="12_Conversaciones_Dificiles.md" target="_blank" rel="noopener">12 Conversaciones</a>
-          <a class="chip" href="13_Logica_Condicional.md" target="_blank" rel="noopener">13 Logica</a>
-          <a class="chip" href="14_Conocimiento_Automotriz_Basico.md" target="_blank" rel="noopener">14 Conocimiento Auto</a>
-          <a class="chip" href="15_Confianza_y_Autoridad.md" target="_blank" rel="noopener">15 Confianza</a>
-          <a class="chip" href="16_Psicologia_Comercial.md" target="_blank" rel="noopener">16 Psicologia</a>
+          <a class="chip" href="06_Objetiones.md" target="_blank" rel="noopener">06 Objections</a>
+          <a class="chip" href="07_Seguridad.md" target="_blank" rel="noopener">07 Safety</a>
+          <a class="chip" href="08_Tono_Comportamiento.md" target="_blank" rel="noopener">08 Tone</a>
+          <a class="chip" href="09_Escalacion.md" target="_blank" rel="noopener">09 Escalation</a>
+          <a class="chip" href="10_Limites_Bot.md" target="_blank" rel="noopener">10 Limits</a>
+          <a class="chip" href="11_Transiciones.md" target="_blank" rel="noopener">11 Transitions</a>
+          <a class="chip" href="12_Conversaciones_Dificiles.md" target="_blank" rel="noopener">12 Difficult Conversations</a>
+          <a class="chip" href="13_Logica_Condicional.md" target="_blank" rel="noopener">13 Logic</a>
+          <a class="chip" href="14_Conocimiento_Automotriz_Basico.md" target="_blank" rel="noopener">14 Automotive Basics</a>
+          <a class="chip" href="15_Confianza_y_Autoridad.md" target="_blank" rel="noopener">15 Trust</a>
+          <a class="chip" href="16_Psicologia_Comercial.md" target="_blank" rel="noopener">16 Commercial Psychology</a>
           <a class="chip" href="behavioral_guidelines.md" target="_blank" rel="noopener">Behavioral Guidelines</a>
           <a class="chip" href="conversation_flow_map.md" target="_blank" rel="noopener">Conversation Flow Map</a>
         </div>
       </section>
 
-      <section class="card" aria-label="Fuentes de inventario">
-        <p class="muted">Inventario actual (enlaces directos):</p>
+      <section class="card" aria-label="Live inventory links">
+        <h2>Live Inventory Links</h2>
         <div class="chips">
-          <a class="chip" href="https://dc-leads-processor.gyoan.workers.dev/latest" target="_blank" rel="noopener">Inventario actual JSON</a>
-          <a class="chip" href="https://dc-leads-processor.gyoan.workers.dev/latest?sort=Make:asc,Year:desc,Odometer:asc" target="_blank" rel="noopener">JSON ordenado por marca</a>
-          <a class="chip" href="https://dc-leads-processor.gyoan.workers.dev/latest/meta" target="_blank" rel="noopener">Metadata ultimo inventario</a>
-          <a class="chip" href="https://dc-leads-processor.gyoan.workers.dev/latest/raw" target="_blank" rel="noopener">CSV crudo</a>
-          <a class="chip" href="?make=HONDA">Filtro ejemplo make=HONDA</a>
-          <a class="chip" href="?make=FORD&year=2024">Filtro ejemplo make=FORD&amp;year=2024</a>
-          <a class="chip" href="?model=MODEL%203">Filtro ejemplo model=MODEL 3</a>
+          <a class="chip" href="https://dc-leads-processor.gyoan.workers.dev/latest" target="_blank" rel="noopener">Current inventory JSON</a>
+          <a class="chip" href="https://dc-leads-processor.gyoan.workers.dev/latest/meta" target="_blank" rel="noopener">Latest inventory metadata</a>
+          <a class="chip" href="https://dc-leads-processor.gyoan.workers.dev/latest/raw" target="_blank" rel="noopener">Raw CSV</a>
+          <a class="chip" href="https://dc-leads-processor.gyoan.workers.dev/stats" target="_blank" rel="noopener">Stats JSON</a>
         </div>
       </section>
 
-      <section class="card" aria-label="Resumen de inventario">
-        <div class="stats">
-          <div class="stat"><span class="muted">Vehiculos visibles</span><strong id="total-count">0</strong></div>
-          <div class="stat"><span class="muted">Marcas visibles</span><strong id="brand-count">0</strong></div>
-          <div class="stat"><span class="muted">Ultima actualizacion</span><strong id="updated-at">-</strong></div>
-        </div>
-        <p class="muted" id="active-filters">Filtros activos: ninguno</p>
-        <p class="muted" id="brand-summary">Marcas: -</p>
-      </section>
+      <section class="card" aria-label="Inventory dashboard">
+        <h2>Inventory Dashboard</h2>
 
-      <section class="card" aria-label="Tabla de inventario">
+        <div class="grid-4">
+          <div class="stat"><small>Total records</small><strong id="total-count">0</strong></div>
+          <div class="stat"><small>Visible records</small><strong id="visible-count">0</strong></div>
+          <div class="stat"><small>Unique makes</small><strong id="make-count">0</strong></div>
+          <div class="stat"><small>Last update</small><strong id="updated-at">-</strong></div>
+        </div>
+
+        <p class="result-line" id="meta-line">Source file: -</p>
+
+        <div class="controls" aria-label="Filters">
+          <label class="control">Search (stock, make, model, color, gps)
+            <input id="search-input" type="search" placeholder="Example: honda, model 3, N304247" />
+          </label>
+          <label class="control">Make
+            <select id="make-filter"><option value="">All makes</option></select>
+          </label>
+          <label class="control">Year
+            <select id="year-filter"><option value="">All years</option></select>
+          </label>
+          <label class="control">Rows per page
+            <select id="page-size">
+              <option value="10">10</option>
+              <option value="25" selected>25</option>
+              <option value="50">50</option>
+              <option value="100">100</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="toolbar">
+          <a id="export-json" class="button-link" href="https://dc-leads-processor.gyoan.workers.dev/latest" target="_blank" rel="noopener">Open JSON</a>
+          <a id="export-csv" class="button-link alt" href="https://dc-leads-processor.gyoan.workers.dev/latest/raw" target="_blank" rel="noopener">Download CSV</a>
+          <a id="export-meta" class="button-link alt" href="https://dc-leads-processor.gyoan.workers.dev/latest/meta" target="_blank" rel="noopener">Open metadata</a>
+        </div>
+
+        <div class="result-line" id="result-line">Loading inventory...</div>
+        <div class="warning" id="warning-box"></div>
+
         <div class="scroll">
-          <table id="inventory-table">
+          <table>
             <thead>
               <tr>
                 <th>Stock Number</th>
@@ -196,18 +296,31 @@
             <tbody id="inventory-body"></tbody>
           </table>
         </div>
+
+        <div class="pagination">
+          <button id="prev-page" type="button">Prev</button>
+          <span id="page-label">Page 1 of 1</span>
+          <button id="next-page" type="button">Next</button>
+        </div>
+      </section>
+
+      <section class="card" aria-label="Inventory by make">
+        <h2>Inventory By Make (Collapsible)</h2>
+        <p class="muted">Each block includes count and a short preview of units.</p>
+        <div id="brand-groups" class="brand-groups"></div>
       </section>
 
       <noscript>
         <section class="card">
-          <p>Activa JavaScript para ver la tabla renderizada. Mientras tanto usa:</p>
-          <p><code>https://dc-leads-processor.gyoan.workers.dev/latest?sort=Make:asc,Year:desc,Odometer:asc</code></p>
+          <p>JavaScript is required for the interactive dashboard. Direct links still work:</p>
+          <p><code>https://dc-leads-processor.gyoan.workers.dev/latest</code></p>
+          <p><code>https://dc-leads-processor.gyoan.workers.dev/latest/raw</code></p>
         </section>
       </noscript>
     </main>
 
     <footer>
-      Datos sin categorias inferidas. Solo campos reales del inventario y reglas reales de conocimiento.
+      Real fields only. No inferred categories. Public, crawlable, and structured for AI extraction.
     </footer>
   </div>
 
@@ -218,13 +331,6 @@
       "market": "Miami, Florida",
       "languages": ["English", "Spanish"],
       "timezone": "America/New_York",
-      "authority_hierarchy": [
-        "Safety and Compliance",
-        "Financing Rules",
-        "Inventory and Availability",
-        "Purchase Process",
-        "Trade-In"
-      ],
       "golden_rule": "Safety > Financing > Inventory > Everything else",
       "compliance_limits": [
         "No exact prices",
@@ -235,87 +341,275 @@
     }
   </script>
 
+  <script id="inventory-jsonld" type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      "name": "CarWarriors Live Inventory",
+      "description": "Live inventory feed from Cloudflare Worker endpoints.",
+      "url": "https://gyoan-byte.github.io/carwarriors-kb/",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "application/json",
+          "contentUrl": "https://dc-leads-processor.gyoan.workers.dev/latest"
+        },
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/csv",
+          "contentUrl": "https://dc-leads-processor.gyoan.workers.dev/latest/raw"
+        }
+      ]
+    }
+  </script>
+
   <script type="module">
-    const WORKER_JSON_URL = "https://dc-leads-processor.gyoan.workers.dev/latest?sort=Make:asc,Year:desc,Odometer:asc";
-    const LOCAL_CSV_URL = "carros_listos/CARROS%20LISTOS.csv";
-    const URL_PARAMS = new URLSearchParams(globalThis.location.search);
-    const FILTERS = {
-      make: (URL_PARAMS.get("make") || "").trim().toUpperCase(),
-      year: (URL_PARAMS.get("year") || "").trim(),
-      model: (URL_PARAMS.get("model") || "").trim().toUpperCase()
+    const ENDPOINTS = {
+      latest: "https://dc-leads-processor.gyoan.workers.dev/latest?sort=Make:asc,Year:desc,Odometer:asc",
+      meta: "https://dc-leads-processor.gyoan.workers.dev/latest/meta",
+      raw: "https://dc-leads-processor.gyoan.workers.dev/latest/raw"
     };
 
-    await start();
+    const state = {
+      allRows: [],
+      filteredRows: [],
+      page: 1,
+      pageSize: 25,
+      latestMeta: null,
+      sourceLabel: "Worker JSON"
+    };
 
-    async function start() {
-      try {
-        const result = await loadFromWorker();
-        render(result.rows, result.updatedAt, "Worker JSON");
-      } catch {
-        const rows = await loadFromLocalCsv();
-        render(rows, new Date().toISOString(), "CSV local de respaldo");
-      }
-    }
+    const ui = {
+      sourceMeta: document.getElementById("source-meta"),
+      totalCount: document.getElementById("total-count"),
+      visibleCount: document.getElementById("visible-count"),
+      makeCount: document.getElementById("make-count"),
+      updatedAt: document.getElementById("updated-at"),
+      metaLine: document.getElementById("meta-line"),
+      resultLine: document.getElementById("result-line"),
+      warningBox: document.getElementById("warning-box"),
+      tableBody: document.getElementById("inventory-body"),
+      makeFilter: document.getElementById("make-filter"),
+      yearFilter: document.getElementById("year-filter"),
+      searchInput: document.getElementById("search-input"),
+      pageSize: document.getElementById("page-size"),
+      prevPage: document.getElementById("prev-page"),
+      nextPage: document.getElementById("next-page"),
+      pageLabel: document.getElementById("page-label"),
+      brandGroups: document.getElementById("brand-groups")
+    };
 
-    async function loadFromWorker() {
-      const res = await fetch(WORKER_JSON_URL, { cache: "no-store" });
-      if (!res.ok) throw new Error("Worker not available");
-      const payload = await res.json();
-      const rows = Array.isArray(payload.rows) ? payload.rows : [];
-      const updatedAt = payload?.latest?.receivedAt || new Date().toISOString();
-      return { rows, updatedAt };
-    }
+    bindUi();
+    await bootstrap();
 
-    async function loadFromLocalCsv() {
-      const res = await fetch(LOCAL_CSV_URL, { cache: "no-store" });
-      if (!res.ok) throw new Error("CSV not available");
-      const text = await res.text();
-      const parsed = parseCsv(text);
-      return parsed.rows.map((r) => ({
-        "Stock Number": r["Stock Number"] || "",
-        Year: r.Year || "",
-        Make: r.Make || "",
-        Model: r.Model || "",
-        "Exterior Color": r["Exterior Color"] || "",
-        Odometer: r.Odometer || "",
-        "GPS Provider": r["GPS Provider"] || "",
-        "Created Date": r["Created Date"] || ""
-      }));
-    }
-
-    function render(inputRows, isoDate, sourceLabel) {
-      const filteredRows = applyFilters(inputRows);
-      const rows = [...filteredRows].sort(compareByMakeYearMileage);
-      const tbody = document.getElementById("inventory-body");
-      tbody.innerHTML = rows.map(rowToHtml).join("");
-
-      const byBrand = countBy(rows, (r) => (r.Make || "").trim());
-      const brandPairs = Object.entries(byBrand).sort((a, b) => a[0].localeCompare(b[0], "es", { sensitivity: "base" }));
-
-      document.getElementById("total-count").textContent = String(rows.length);
-      document.getElementById("brand-count").textContent = String(brandPairs.length);
-      document.getElementById("updated-at").textContent = formatIsoDate(isoDate);
-      document.getElementById("active-filters").textContent = "Filtros activos: " + describeFilters();
-      document.getElementById("source-meta").textContent = `Fuente: ${sourceLabel} | orden: Make asc, Year desc, Odometer asc`;
-      document.getElementById("brand-summary").textContent =
-        "Marcas: " + (brandPairs.length ? brandPairs.map(([make, n]) => `${make || "(vacio)"} (${n})`).join(" | ") : "sin datos");
-    }
-
-    function applyFilters(rows) {
-      return rows.filter((r) => {
-        if (FILTERS.make && String(r.Make || "").toUpperCase() !== FILTERS.make) return false;
-        if (FILTERS.year && String(r.Year || "").trim() !== FILTERS.year) return false;
-        if (FILTERS.model && !String(r.Model || "").toUpperCase().includes(FILTERS.model)) return false;
-        return true;
+    function bindUi() {
+      ui.searchInput.addEventListener("input", () => { state.page = 1; applyFiltersAndRender(); });
+      ui.makeFilter.addEventListener("change", () => { state.page = 1; applyFiltersAndRender(); });
+      ui.yearFilter.addEventListener("change", () => { state.page = 1; applyFiltersAndRender(); });
+      ui.pageSize.addEventListener("change", () => {
+        state.pageSize = Number(ui.pageSize.value) || 25;
+        state.page = 1;
+        renderPagedTable();
+      });
+      ui.prevPage.addEventListener("click", () => {
+        if (state.page > 1) {
+          state.page -= 1;
+          renderPagedTable();
+        }
+      });
+      ui.nextPage.addEventListener("click", () => {
+        const maxPage = getMaxPage();
+        if (state.page < maxPage) {
+          state.page += 1;
+          renderPagedTable();
+        }
       });
     }
 
-    function describeFilters() {
-      const parts = [];
-      if (FILTERS.make) parts.push(`make=${FILTERS.make}`);
-      if (FILTERS.year) parts.push(`year=${FILTERS.year}`);
-      if (FILTERS.model) parts.push(`model~${FILTERS.model}`);
-      return parts.length ? parts.join(" | ") : "ninguno";
+    async function bootstrap() {
+      try {
+        const [latestRes, metaRes] = await Promise.all([
+          fetch(ENDPOINTS.latest, { cache: "no-store" }),
+          fetch(ENDPOINTS.meta, { cache: "no-store" })
+        ]);
+
+        if (!latestRes.ok) throw new Error("Latest endpoint unavailable");
+
+        const latestPayload = await latestRes.json();
+        state.allRows = Array.isArray(latestPayload.rows) ? latestPayload.rows : [];
+
+        if (metaRes.ok) {
+          state.latestMeta = await metaRes.json();
+        } else {
+          state.latestMeta = latestPayload.latest || null;
+        }
+
+        ui.warningBox.style.display = "none";
+        applyInitialUrlFilters();
+        buildFilterOptions();
+        applyFiltersAndRender();
+        updateHeaderAndMeta();
+        updateJsonLd();
+      } catch (err) {
+        ui.warningBox.style.display = "block";
+        ui.warningBox.textContent = "Could not load live inventory from worker endpoints.";
+        ui.sourceMeta.textContent = "Source: unavailable";
+        ui.resultLine.textContent = "No data available.";
+      }
+    }
+
+    function applyInitialUrlFilters() {
+      const params = new URLSearchParams(globalThis.location.search);
+      const make = (params.get("make") || "").trim();
+      const year = (params.get("year") || "").trim();
+      const query = (params.get("q") || params.get("model") || "").trim();
+
+      if (query) ui.searchInput.value = query;
+      if (make) ui.makeFilter.setAttribute("data-init", make.toUpperCase());
+      if (year) ui.yearFilter.setAttribute("data-init", year);
+    }
+
+    function buildFilterOptions() {
+      const makes = uniq(state.allRows.map((r) => String(r.Make || "").trim()).filter(Boolean))
+        .sort((a, b) => a.localeCompare(b, "en", { sensitivity: "base" }));
+      const years = uniq(state.allRows.map((r) => String(r.Year || "").trim()).filter(Boolean))
+        .sort((a, b) => Number(b) - Number(a));
+
+      ui.makeFilter.innerHTML = `<option value="">All makes</option>${makes.map((m) => `<option value="${escapeAttr(m)}">${escapeHtml(m)}</option>`).join("")}`;
+      ui.yearFilter.innerHTML = `<option value="">All years</option>${years.map((y) => `<option value="${escapeAttr(y)}">${escapeHtml(y)}</option>`).join("")}`;
+
+      const initMake = ui.makeFilter.getAttribute("data-init");
+      const initYear = ui.yearFilter.getAttribute("data-init");
+      if (initMake && makes.some((m) => m.toUpperCase() === initMake)) {
+        ui.makeFilter.value = makes.find((m) => m.toUpperCase() === initMake);
+      }
+      if (initYear && years.includes(initYear)) {
+        ui.yearFilter.value = initYear;
+      }
+    }
+
+    function applyFiltersAndRender() {
+      const q = ui.searchInput.value.trim().toUpperCase();
+      const make = ui.makeFilter.value.trim().toUpperCase();
+      const year = ui.yearFilter.value.trim();
+
+      state.filteredRows = state.allRows.filter((r) => {
+        if (make && String(r.Make || "").toUpperCase() !== make) return false;
+        if (year && String(r.Year || "").trim() !== year) return false;
+        if (!q) return true;
+
+        const blob = [
+          r["Stock Number"],
+          r.Year,
+          r.Make,
+          r.Model,
+          r["Exterior Color"],
+          r["GPS Provider"]
+        ].map((x) => String(x || "").toUpperCase()).join(" ");
+
+        return blob.includes(q);
+      });
+
+      state.filteredRows.sort(compareByMakeYearMileage);
+      renderStats();
+      renderPagedTable();
+      renderBrandGroups();
+    }
+
+    function renderStats() {
+      const uniqueMakes = uniq(state.filteredRows.map((r) => String(r.Make || "").trim()).filter(Boolean));
+      ui.totalCount.textContent = String(state.allRows.length);
+      ui.visibleCount.textContent = String(state.filteredRows.length);
+      ui.makeCount.textContent = String(uniqueMakes.length);
+      ui.resultLine.textContent = `Showing ${state.filteredRows.length} of ${state.allRows.length} records.`;
+    }
+
+    function renderPagedTable() {
+      const maxPage = getMaxPage();
+      if (state.page > maxPage) state.page = maxPage;
+
+      const start = (state.page - 1) * state.pageSize;
+      const end = start + state.pageSize;
+      const pageRows = state.filteredRows.slice(start, end);
+
+      ui.tableBody.innerHTML = pageRows.length
+        ? pageRows.map(rowToHtml).join("")
+        : `<tr><td colspan="8">No records found for current filters.</td></tr>`;
+
+      ui.pageLabel.textContent = `Page ${state.page} of ${maxPage}`;
+      ui.prevPage.disabled = state.page <= 1;
+      ui.nextPage.disabled = state.page >= maxPage;
+    }
+
+    function renderBrandGroups() {
+      const grouped = groupBy(state.filteredRows, (r) => String(r.Make || "").trim() || "(empty)");
+      const makes = Object.keys(grouped).sort((a, b) => a.localeCompare(b, "en", { sensitivity: "base" }));
+
+      if (!makes.length) {
+        ui.brandGroups.innerHTML = `<p class="muted">No make groups to display.</p>`;
+        return;
+      }
+
+      ui.brandGroups.innerHTML = makes
+        .map((make) => {
+          const items = grouped[make];
+          const preview = items
+            .slice(0, 8)
+            .map((r) => `<li>${escapeHtml(r.Year)} ${escapeHtml(r.Model)} - ${escapeHtml(r["Stock Number"])} - ${escapeHtml(r.Odometer)} mi</li>`)
+            .join("");
+          const extra = items.length > 8 ? `<p class="muted">+${items.length - 8} more units...</p>` : "";
+
+          return `<details>
+            <summary>${escapeHtml(make)} (${items.length})</summary>
+            <div class="brand-inner">
+              <p class="muted">Sorted by make asc, year desc, odometer asc.</p>
+              <ul>${preview || "<li>No units</li>"}</ul>
+              ${extra}
+            </div>
+          </details>`;
+        })
+        .join("");
+    }
+
+    function updateHeaderAndMeta() {
+      const updated = state.latestMeta?.receivedAt || "";
+      const filename = state.latestMeta?.filename || "-";
+      const sender = state.latestMeta?.from || "-";
+
+      ui.updatedAt.textContent = formatIsoDate(updated);
+      ui.metaLine.textContent = `Source file: ${filename} | Sender: ${sender}`;
+      ui.sourceMeta.textContent = "Source: Worker JSON endpoints | sorting: make asc, year desc, odometer asc";
+    }
+
+    function updateJsonLd() {
+      const script = document.getElementById("inventory-jsonld");
+      const payload = {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        name: "CarWarriors Live Inventory",
+        description: "Live inventory and knowledge hub for CarWarriors.",
+        url: "https://gyoan-byte.github.io/carwarriors-kb/",
+        dateModified: state.latestMeta?.receivedAt || new Date().toISOString(),
+        variableMeasured: ["Stock Number", "Year", "Make", "Model", "Exterior Color", "Odometer", "GPS Provider", "Created Date"],
+        keywords: ["used cars", "inventory", "miami", "carwarriors"],
+        distribution: [
+          { "@type": "DataDownload", encodingFormat: "application/json", contentUrl: ENDPOINTS.latest },
+          { "@type": "DataDownload", encodingFormat: "text/csv", contentUrl: ENDPOINTS.raw }
+        ]
+      };
+      script.textContent = JSON.stringify(payload, null, 2);
+    }
+
+    function getMaxPage() {
+      return Math.max(1, Math.ceil(state.filteredRows.length / state.pageSize));
+    }
+
+    function compareByMakeYearMileage(a, b) {
+      const makeCmp = String(a.Make || "").localeCompare(String(b.Make || ""), "en", { sensitivity: "base" });
+      if (makeCmp !== 0) return makeCmp;
+      const yearCmp = toNum(b.Year) - toNum(a.Year);
+      if (yearCmp !== 0) return yearCmp;
+      return toNum(a.Odometer) - toNum(b.Odometer);
     }
 
     function rowToHtml(r) {
@@ -331,37 +625,29 @@
       </tr>`;
     }
 
-    function compareByMakeYearMileage(a, b) {
-      const makeCmp = String(a.Make || "").localeCompare(String(b.Make || ""), "es", { sensitivity: "base" });
-      if (makeCmp !== 0) return makeCmp;
-
-      const yearA = toNum(a.Year);
-      const yearB = toNum(b.Year);
-      if (yearA !== yearB) return yearB - yearA;
-
-      const odoA = toNum(a.Odometer);
-      const odoB = toNum(b.Odometer);
-      return odoA - odoB;
-    }
-
     function toNum(v) {
       const n = Number(String(v || "").replaceAll(",", "").trim());
       return Number.isFinite(n) ? n : 0;
     }
 
-    function countBy(arr, keyFn) {
+    function groupBy(arr, keyFn) {
       const out = {};
       for (const item of arr) {
-        const k = keyFn(item);
-        out[k] = (out[k] || 0) + 1;
+        const key = keyFn(item);
+        if (!out[key]) out[key] = [];
+        out[key].push(item);
       }
       return out;
     }
 
-    function formatIsoDate(v) {
-      const d = new Date(v);
-      if (Number.isNaN(d.getTime())) return "-";
-      return d.toISOString();
+    function uniq(arr) {
+      return [...new Set(arr)];
+    }
+
+    function formatIsoDate(value) {
+      const dt = new Date(value);
+      if (Number.isNaN(dt.getTime())) return "-";
+      return dt.toISOString();
     }
 
     function escapeHtml(v) {
@@ -373,51 +659,8 @@
         .replaceAll("'", "&#39;");
     }
 
-    function parseCsv(text) {
-      const lines = text.replaceAll("\r", "").split("\n").filter((line) => line.trim() !== "");
-      if (!lines.length) return { headers: [], rows: [] };
-
-      const headers = parseCsvLine(lines[0]).map((h) => h.trim());
-      const rows = [];
-      for (let i = 1; i < lines.length; i++) {
-        const cols = parseCsvLine(lines[i]);
-        const row = {};
-        for (let j = 0; j < headers.length; j++) {
-          row[headers[j]] = (cols[j] || "").trim();
-        }
-        rows.push(row);
-      }
-      return { headers, rows };
-    }
-
-    function parseCsvLine(line) {
-      const out = [];
-      let cur = "";
-      let inQuotes = false;
-      let i = 0;
-      while (i < line.length) {
-        const c = line[i];
-        if (c === '"') {
-          if (inQuotes && line[i + 1] === '"') {
-            cur += '"';
-            i += 2;
-            continue;
-          }
-          inQuotes = !inQuotes;
-          i++;
-          continue;
-        }
-        if (c === "," && !inQuotes) {
-          out.push(cur);
-          cur = "";
-          i++;
-          continue;
-        }
-        cur += c;
-        i++;
-      }
-      out.push(cur);
-      return out;
+    function escapeAttr(v) {
+      return String(v).replaceAll('"', "&quot;");
     }
   </script>
 </body>
