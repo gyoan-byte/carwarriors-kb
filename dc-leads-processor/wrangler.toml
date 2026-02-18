@@ -1,0 +1,17 @@
+﻿name = "dc-leads-processor"
+main = "worker.js"
+compatibility_date = "2026-02-18"
+workers_dev = true
+
+# Bind your production resources here.
+# Replace with your real bucket and KV IDs if needed.
+[[r2_buckets]]
+binding = "inventario"
+bucket_name = "inventario"
+
+[[kv_namespaces]]
+binding = "K2"
+id = "a4f6789629f144e89699135601276486"
+
+[triggers]
+crons = ["0 5 * * *"]
