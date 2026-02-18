@@ -247,9 +247,9 @@
 
       <!-- NEW: top nav for "pages" -->
       <div class="chips" style="margin-top:10px">
-        <a class="chip primary" href="#home" rel="nofollow">Home (README)</a>
-        <a class="chip primary" href="#inventory" rel="nofollow">Inventory</a>
-        <a class="chip primary" href="#modules" rel="nofollow">Modules</a>
+        <a class="chip primary" href="?page=home" rel="nofollow">Home (README)</a>
+        <a class="chip primary" href="?page=inventory" rel="nofollow">Inventory</a>
+        <a class="chip primary" href="?page=modules" rel="nofollow">Modules</a>
       </div>
 
       <div class="meta">Source: Worker JSON endpoints | sorting: make asc, year desc, odometer asc</div>
@@ -460,8 +460,11 @@
     };
 
     function route() {
-      const hash = (globalThis.location.hash || "#home").replaceAll("#", "").trim().toLowerCase();
-      const page = (hash === "inventory" || hash === "modules" || hash === "home") ? hash : "home";
+      const url = new URL(globalThis.location.href);
+      const pageQuery = String(url.searchParams.get("page") || "").trim().toLowerCase();
+      const hash = (globalThis.location.hash || "").replaceAll("#", "").trim().toLowerCase();
+      const candidate = pageQuery || hash || "home";
+      const page = (candidate === "inventory" || candidate === "modules" || candidate === "home") ? candidate : "home";
       for (const el of ui.pages) {
         el.classList.toggle("active", el.dataset.page === page);
       }
@@ -484,8 +487,11 @@
 
     route();
     globalThis.addEventListener("hashchange", route);
-    loadReadmeIntoHome();
-    loadInventoryIntoPage();
+    globalThis.addEventListener("popstate", route);
+    await Promise.all([
+      loadReadmeIntoHome(),
+      loadInventoryIntoPage()
+    ]);
 
     async function loadInventoryIntoPage() {
       try {
@@ -558,13 +564,7 @@
       const sortedMakes = Array.from(groups.keys()).sort((a, b) => a.localeCompare(b, "en", { sensitivity: "base" }));
       for (const make of sortedMakes) {
         const vehicles = [...groups.get(make)].sort(compareVehicles);
-        out.push(`<section class="brand-block" data-make="${escapeAttr(make)}">`);
-        out.push('<div class="brand-head">');
-        out.push(`<h3 class="brand-title">${escapeHtml(make)}</h3>`);
-        out.push(`<span class="brand-count">${vehicles.length} units</span>`);
-        out.push("</div>");
-        out.push('<div class="brand-table-wrap"><table class="brand-table"><thead><tr><th>Year</th><th>Model</th><th>Stock</th><th>Odometer</th><th>Color</th><th>GPS</th><th>Created</th></tr></thead><tbody>');
-        for (const row of vehicles) {
+        const rowsHtml = vehicles.map((row) => {
           const year = fieldOrNA(row, "Year");
           const model = fieldOrNA(row, "Model");
           const stock = fieldOrNA(row, "Stock Number");
@@ -573,13 +573,19 @@
           const color = fieldOrNA(row, "Exterior Color");
           const gps = fieldOrNA(row, "GPS Provider");
           const created = fieldOrNA(row, "Created Date");
-          out.push(
+          return (
             `<tr data-make="${escapeAttr(make)}" data-year="${escapeAttr(year)}" data-model="${escapeAttr(model)}" data-stock="${escapeAttr(stock)}" data-odometer="${escapeAttr(odoRaw)}">` +
               `<td>${escapeHtml(year)}</td><td>${escapeHtml(model)}</td><td>${escapeHtml(stock)}</td><td>${escapeHtml(odo)}</td><td>${escapeHtml(color)}</td><td>${escapeHtml(gps)}</td><td>${escapeHtml(created)}</td>` +
             "</tr>"
           );
-        }
-        out.push("</tbody></table></div></section>");
+        }).join("");
+        out.push(
+          `<section class="brand-block" data-make="${escapeAttr(make)}">` +
+            `<div class="brand-head"><h3 class="brand-title">${escapeHtml(make)}</h3><span class="brand-count">${vehicles.length} units</span></div>` +
+            '<div class="brand-table-wrap"><table class="brand-table"><thead><tr><th>Year</th><th>Model</th><th>Stock</th><th>Odometer</th><th>Color</th><th>GPS</th><th>Created</th></tr></thead><tbody>' +
+            rowsHtml +
+            "</tbody></table></div></section>"
+        );
       }
       return out.join("");
     }
