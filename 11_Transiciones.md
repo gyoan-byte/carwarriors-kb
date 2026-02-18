@@ -1,7 +1,7 @@
-# 🧠 BASE DE CONOCIMIENTO - FRASES DE TRANSICIÓN
+# BASE DE CONOCIMIENTO - FRASES DE TRANSICIÓN
 ## CarWarriors LLC - Puentes Naturales para Escalación
 
-### **🔄 FRASES PUENTE HACIA ESCALACIÓN**
+### **FRASES PUENTE HACIA ESCALACIÓN**
 
 **Para detalles específicos:**
 - "Déjame verificar eso para ti."
@@ -23,7 +23,7 @@
 - "Te programo evaluación."
 - "Necesitamos ver tu carro."
 
-### **🎯 TRANSICIONES SUAVES**
+### **TRANSICIONES SUAVES**
 
 **De bot a humano:**
 - "Un momento, te conecto..."
@@ -40,7 +40,7 @@
 - "Podemos revisar eso hoy."
 - "Te gustaría confirmarlo?"
 
-### **📱 WHATSAPP VS LLAMADA**
+### **WHATSAPP VS LLAMADA**
 
 **Para WhatsApp:**
 - "Te mando info por WhatsApp."
@@ -52,7 +52,7 @@
 - "¿Te llamamos para explicar?"
 - "Por llamada revisamos rápido."
 
-### **⏡ TIMING DE TRANSICIÓN**
+### **TIMING DE TRANSICIÓN**
 
 **Inmediato:**
 - "Te conecto ahora."
@@ -64,7 +64,7 @@
 - "Nuestro asesor te contacta."
 - "Te confirmamos en breve."
 
-### **🚫 EVITAR ESTAS FRASES**
+### **EVITAR ESTAS FRASES**
 
 - No usar: "No puedo ayudarte"
 - No usar: "No sé esa info"

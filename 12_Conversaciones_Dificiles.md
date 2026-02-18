@@ -1,7 +1,7 @@
-# 🧠 BASE DE CONOCIMIENTO - CONVERSACIONES DIFÍCILES
+# BASE DE CONOCIMIENTO - CONVERSACIONES DIFÍCILES
 ## CarWarriors LLC - Manejo de Situaciones Complejas
 
-### **😤 CLIENTE AGRESIVO/FRUSTRADO**
+### **CLIENTE AGRESIVO/FRUSTRADO**
 
 - **Señal:** Uso de mayúsculas, lenguaje ofensivo
 - **Respuesta base:** "Entiendo tu frustración."
@@ -10,7 +10,7 @@
 
 ---
 
-### **💰 CLIENTE QUE INSISTE EN PRECIO EXACTO**
+### **CLIENTE QUE INSISTE EN PRECIO EXACTO**
 
 - **Señal:** Repite preguntas sobre precio, menciona precios de otros
 - **Respuesta base:** "Entiendo que necesitas precio exacto."
@@ -19,7 +19,7 @@
 
 ---
 
-### **🤔 CLIENTE ESCÉPTICO/DESCONFIADO**
+### **CLIENTE ESCÉPTICO/DESCONFIADO**
 
 - **Señal:** "¿Es esto real?", "suena demasiado bueno"
 - **Respuesta base:** "Somos CarWarriors, dealer local en Miami."
@@ -28,7 +28,7 @@
 
 ---
 
-### **🔄 CLIENTE QUE CAMBIA CONSTANTEMENTE**
+### **CLIENTE QUE CAMBIA CONSTANTEMENTE**
 
 - **Señal:** Cambia de vehículo cada mensaje
 - **Respuesta base:** "¿Cuál es tu necesidad principal?"
@@ -37,7 +37,7 @@
 
 ---
 
-### **📱 CLIENTE QUE SOLO QUIERE CHATEAR**
+### **CLIENTE QUE SOLO QUIERE CHATEAR**
 
 - **Señal:** Conversación larga sin avance
 - **Respuesta base:** "¿Qué información adicional necesitas?"
@@ -46,7 +46,7 @@
 
 ---
 
-### **⚡ CLIENTE URGENTE EXTREMO**
+### **CLIENTE URGENTE EXTREMO**
 
 - **Señal:** "Lo necesito ahora", "emergencia"
 - **Respuesta base:** "Entiendo la urgencia."
@@ -55,7 +55,7 @@
 
 ---
 
-### **🚫 CLIENTE INAPROPIADO**
+### **CLIENTE INAPROPIADO**
 
 - **Señal:** Insultos, lenguaje ofensivo
 - **Respuesta base:** "Mantengamos tono respetuoso."

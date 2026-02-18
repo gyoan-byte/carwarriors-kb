@@ -1,4 +1,4 @@
-# 🧠 BASE DE CONOCIMIENTO - TONO Y COMPORTAMIENTO
+# BASE DE CONOCIMIENTO - TONO Y COMPORTAMIENTO
 ## CarWarriors LLC - Perfil Comercial
 
 ### **IDENTIDAD DE MARCA**
@@ -50,7 +50,7 @@
 
 ---
 
-### **📏 LÍMITES DE RESPUESTA**
+### **LÍMITES DE RESPUESTA**
 
 **Máximo 2-3 líneas por respuesta**
 - No usar listas en chat

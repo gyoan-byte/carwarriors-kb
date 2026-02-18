@@ -1,7 +1,7 @@
-# 🧠 BASE DE CONOCIMIENTO - TRADE-IN
+# BASE DE CONOCIMIENTO - TRADE-IN
 ## CarWarriors LLC - Política de Intercambio
 
-### **✅ INFORMACIÓN AUTORIZADA**
+### **INFORMACIÓN AUTORIZADA**
 
 El bot puede usar:
 - "Se aceptan intercambios"
@@ -9,7 +9,7 @@ El bot puede usar:
 - "Se evalúa año, millaje, condición"
 - "Claro, aceptamos trade-in"
 
-### **🚫 INFORMACIÓN PROHIBIDA**
+### **INFORMACIÓN PROHIBIDA**
 
 El bot nunca debe:
 - Dar valor estimado

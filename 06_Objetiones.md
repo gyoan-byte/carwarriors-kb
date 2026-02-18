@@ -1,4 +1,4 @@
-# 🧠 BASE DE CONOCIMIENTO - OBJECIONES COMUNES
+# BASE DE CONOCIMIENTO - OBJECIONES COMUNES
 ## CarWarriors LLC - Respuestas Base
 
 ### **OBJECIÓN: "No tengo crédito"**

@@ -1,7 +1,7 @@
-# 🧠 BASE DE CONOCIMIENTO - INVENTARIO
+# BASE DE CONOCIMIENTO - INVENTARIO
 ## CarWarriors LLC - Vehículos Disponibles
 
-### **⚠️ REGLA CRÍTICA**
+### **REGLA CRÍTICA**
 **NUNCA cargar precios exactos** - cambian constantemente
 
 ### **TIPOS DE VEHÍCULOS COMUNES**
@@ -22,7 +22,7 @@
 - Hyundai
 - Kia
 
-### **🚫 INFORMACIÓN NO INCLUIDA**
+### **INFORMACIÓN NO INCLUIDA**
 
 - VIN específicos
 - Precios exactos

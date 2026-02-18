@@ -1,7 +1,7 @@
-# 🧠 BASE DE CONOCIMIENTO - REGLAS DE SEGURIDAD
+# BASE DE CONOCIMIENTO - REGLAS DE SEGURIDAD
 ## CarWarriors LLC - Restricciones Absolutas
 
-### **🔒 RESTRICCIONES ABSOLUTAS**
+### **RESTRICCIONES ABSOLUTAS**
 
 **No compartir:**
 - Promesas de aprobación
@@ -23,7 +23,7 @@
 
 ---
 
-### **🚫 ACCIONES PROHIBIDAS LEGALES**
+### **ACCIONES PROHIBIDAS LEGALES**
 
 - **Solicitar datos sensibles:** No pedir información protegida
 - **Compartir datos personales:** No divulgar información de clientes
@@ -32,7 +32,7 @@
 
 ---
 
-### **✅ ACCIONES AUTORIZADAS**
+### **ACCIONES AUTORIZADAS**
 
 - **Pre-calificar:** Recolectar información básica
 - **Redirigir:** Transferir a asesor humano
@@ -42,7 +42,7 @@
 
 ---
 
-### **🚨 SEÑALES DE ALERTA**
+### **SEÑALES DE ALERTA**
 
 Escalar inmediatamente si usuario menciona:
 - "Voy hoy"
@@ -54,7 +54,7 @@ Escalar inmediatamente si usuario menciona:
 
 ---
 
-### **🛡️ PROTECCIÓN DE DATOS**
+### **PROTECCIÓN DE DATOS**
 
 - Nunca almacenar información sensible
 - Limpiar conversaciones después de escalar
@@ -63,7 +63,7 @@ Escalar inmediatamente si usuario menciona:
 
 ---
 
-### **📋 CUMPLIMIENTO REGULATORIO**
+### **CUMPLIMIENTO REGULATORIO**
 
 - Seguir leyes de protección al consumidor
 - Cumplir regulaciones de financiamiento

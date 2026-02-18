@@ -1,27 +1,27 @@
-# 🧠 BASE DE CONOCIMIENTO - PROCESO DE COMPRA
+# BASE DE CONOCIMIENTO - PROCESO DE COMPRA
 ## CarWarriors LLC - Flujo de Compra Real
 
 ### **PASOS DEL PROCESO**
 
 1. **Selección de vehículo**
-   - Explorar inventario disponible
-   - Identificar necesidades del cliente
-   - Prueba de manejo (opcional)
+ - Explorar inventario disponible
+ - Identificar necesidades del cliente
+ - Prueba de manejo (opcional)
 
 2. **Revisión de opciones de financiamiento o pago contado**
-   - Análisis de perfil crediticio
-   - Presentación de opciones disponibles
-   - Aprobación y términos
+ - Análisis de perfil crediticio
+ - Presentación de opciones disponibles
+ - Aprobación y términos
 
 3. **Evaluación de trade-in (si aplica)**
-   - Inspección del vehículo actual
-   - Valoración según condición, millaje, año
-   - Aplicación al nuevo vehículo
+ - Inspección del vehículo actual
+ - Valoración según condición, millaje, año
+ - Aplicación al nuevo vehículo
 
 4. **Firma y entrega**
-   - Documentación requerida
-   - Firma de contratos
-   - Entrega del vehículo
+ - Documentación requerida
+ - Firma de contratos
+ - Entrega del vehículo
 
 ### **RESPUESTAS AUTORIZADAS**
 

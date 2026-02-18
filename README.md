@@ -1,12 +1,12 @@
-# 🧠 BASE DE CONOCIMIENTO - CARWARRIORS LLC
+# BASE DE CONOCIMIENTO - CARWARRIORS LLC
 ## Dealer Autos Usados - Miami, Florida
 
-### **🏆 JERARQUÍA DE AUTORIDAD**
+### **JERARQUÍA DE AUTORIDAD**
 
 **Prioridad máxima (siempre primero):**
 1. **Seguridad** (Módulos 7, 10) - Restricciones absolutas
 2. **Financiamiento** (Módulo 3) - Alta prioridad
-3. **Disponibilidad** (Módulo 2) - Media prioridad  
+3. **Disponibilidad** (Módulo 2) - Media prioridad 
 4. **Proceso** (Módulo 4) - Después de cualificación
 5. **Trade-In** (Módulo 5) - Después de vehículo principal
 6. **Tono** (Módulo 8) - Siempre presente
@@ -15,9 +15,9 @@
 
 ---
 
-### **📚 ESTRUCTURA DE MÓDULOS**
+### **ESTRUCTURA DE MÓDULOS**
 
-Esta base de conocimiento está dividida en 13 módulos especializados para optimizar el rendimiento del bot en Go High Level (GHL):
+Esta base de conocimiento está dividida en 14 módulos especializados para optimizar el rendimiento del bot en Go High Level (GHL):
 
 **Módulos Principales (1-10):**
 1. **[01_Identidad_Negocio.md](./01_Identidad_Negocio.md)** - Información básica del dealer
@@ -25,18 +25,19 @@ Esta base de conocimiento está dividida en 13 módulos especializados para opti
 3. **[03_Financiamiento.md](./03_Financiamiento.md)** - Opciones y reglas de financiamiento
 4. **[04_Proceso_Compra.md](./04_Proceso_Compra.md)** - Flujo completo de compra
 5. **[05_Trade_In.md](./05_Trade_In.md)** - Política de intercambio de vehículos
-6. **[06_Objetiones.md](./06_Objetiones.md)** - Manejo de objections comunes
+6. **[06_Objetiones.md](./06_Objetiones.md)** - Manejo de objeciones comunes
 7. **[07_Seguridad.md](./07_Seguridad.md)** - Restricciones y compliance
 8. **[08_Tono_Comportamiento.md](./08_Tono_Comportamiento.md)** - Personalidad y estilo
 9. **[09_Escalacion.md](./09_Escalacion.md)** - Señales de prioridad y handoff
 10. **[10_Limites_Bot.md](./10_Limites_Bot.md)** - Capacidades y restricciones funcionales
 
-**Módulos Operativos (11-13):**
+**Módulos Operativos y de Soporte (11-14):**
 11. **[11_Transiciones.md](./11_Transiciones.md)** - Frases puente y escalación suave
 12. **[12_Conversaciones_Dificiles.md](./12_Conversaciones_Dificiles.md)** - Manejo de situaciones complejas
 13. **[13_Logica_Condicional.md](./13_Logica_Condicional.md)** - Reglas SI/ENTONCES para bot
+14. **[14_Conocimiento_Automotriz_Basico.md](./14_Conocimiento_Automotriz_Basico.md)** - Base comercial automotriz para respuestas contextuales
 
-### **🎯 OBJETIVO PRINCIPAL**
+### **OBJETIVO PRINCIPAL**
 
 **Bot coherente que:**
 - Responde consistentemente
@@ -46,7 +47,7 @@ Esta base de conocimiento está dividida en 13 módulos especializados para opti
 - No se sale de rol
 - Escala correctamente
 
-### **🔥 IMPLEMENTACIÓN EN GHL**
+### **IMPLEMENTACIÓN EN GHL**
 
 **Recomendación de carga:**
 - Módulos separados por bloques
@@ -59,6 +60,7 @@ Esta base de conocimiento está dividida en 13 módulos especializados para opti
 - Trade-In Policy (Módulo 5)
 - Buying Process (Módulo 4)
 - Objection Handling (Módulos 6, 12)
+- Automotive Knowledge (Módulo 14)
 - Compliance Rules (Módulos 7, 10)
 - Escalation Triggers (Módulos 9, 11)
 
@@ -66,8 +68,9 @@ Esta base de conocimiento está dividida en 13 módulos especializados para opti
 - **Logic Engine:** Módulo 13 para reglas SI/ENTONCES
 - **Transition Phrases:** Módulo 11 para puentes naturales
 - **Difficult Conversations:** Módulo 12 para contención
+- **Automotive Context:** Módulo 14 para guía comercial por tipo de vehículo
 
-### **⚠️ REGLAS CRÍTICAS**
+### **REGLAS CRÍTICAS**
 
 1. **NUNCA** cargar precios exactos
 2. **NUNCA** prometer aprobación
@@ -75,14 +78,14 @@ Esta base de conocimiento está dividida en 13 módulos especializados para opti
 4. **SIEMPRE** escalar para detalles específicos
 5. **SIEMPRE** mantener tono cercano y local
 
-### **📍 CONTEXTO LOCAL**
+### **CONTEXTO LOCAL**
 
 - **Ubicación:** Miami, Florida
 - **Enfoque:** Comunidad latina
 - **Horario:** Lunes-Domingo (ver módulo 1)
 - **Idiomas:** Español/Inglés con switch automático
 
-### **🔄 ACTUALIZACIONES**
+### **ACTUALIZACIONES**
 
 Esta base debe actualizarse cuando:
 - Cambien horarios de operación
@@ -92,7 +95,7 @@ Esta base debe actualizarse cuando:
 
 ---
 
-**Última actualización:** Febrero 2026  
-**Versión:** 1.0  
-**Dealer:** CarWarriors LLC  
+**Última actualización:** Febrero 2026
+**Versión:** 1.0
+**Dealer:** CarWarriors LLC
 **Ubicación:** Miami, FL

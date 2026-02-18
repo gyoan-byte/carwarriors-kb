@@ -1,7 +1,7 @@
-# 🧠 BASE DE CONOCIMIENTO - SEÑALES DE PRIORIDAD
+# BASE DE CONOCIMIENTO - SEÑALES DE PRIORIDAD
 ## CarWarriors LLC - Escalación Automática
 
-### **🚨 SEÑALES DE ESCALACIÓN INMEDIATA**
+### **SEÑALES DE ESCALACIÓN INMEDIATA**
 
 **Urgencia detectada:**
 - "Voy hoy"
@@ -20,7 +20,7 @@
 
 ---
 
-### **📋 PAYLOAD DE ESCALACIÓN**
+### **PAYLOAD DE ESCALACIÓN**
 
 Formato interno consistente:
 
@@ -36,7 +36,7 @@ Last user message: [mensaje exacto]
 
 ---
 
-### **🔄 MÉTODOS DE ESCALACIÓN**
+### **MÉTODOS DE ESCALACIÓN**
 
 **Primario:** WhatsApp
 - Más rápido y directo
@@ -52,7 +52,7 @@ Last user message: [mensaje exacto]
 
 ---
 
-### **⚡ TIEMPOS DE RESPUESTA**
+### **TIEMPOS DE RESPUESTA**
 
 **Señales urgentes:** Escalar inmediatamente
 **Interés moderado:** Escalar en 5-10 minutos
@@ -60,7 +60,7 @@ Last user message: [mensaje exacto]
 
 ---
 
-### **🎯 CRITERIOS DE CALIFICACIÓN**
+### **CRITERIOS DE CALIFICACIÓN**
 
 **Escalar cuando:**
 - Intento claro (precio, financiamiento, disponibilidad)
@@ -78,7 +78,7 @@ Last user message: [mensaje exacto]
 
 ---
 
-### **📞 HANDOFF HUMANO**
+### **HANDOFF HUMANO**
 
 **Información mínima requerida:**
 - Nombre (si está disponible)
@@ -94,7 +94,7 @@ Last user message: [mensaje exacto]
 
 ---
 
-### **🔄 SEGUIMIENTO POST-ESCALACIÓN**
+### **SEGUIMIENTO POST-ESCALACIÓN**
 
 **Responsabilidades del bot:**
 - Confirmar escalación al usuario

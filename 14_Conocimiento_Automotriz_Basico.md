@@ -1,6 +1,7 @@
-## 14. Conocimiento Automotriz Básico
+# BASE DE CONOCIMIENTO - CONOCIMIENTO AUTOMOTRIZ BÁSICO
+## CarWarriors LLC - Referencia Comercial de Vehículos
 
-### **🧠 REGLAS DE ACTIVACIÓN**
+### **REGLAS DE ACTIVACIÓN**
 
 ```
 SI el usuario menciona familia →
@@ -13,9 +14,9 @@ SI menciona ahorro gasolina →
   sugerir sedan o compacto
 ```
 
-### 🚗 1️⃣ TIPOS DE VEHÍCULOS (Base Comercial)
+### **1. TIPOS DE VEHÍCULOS (Base Comercial)**
 
-#### 🚙 SUV (Sport Utility Vehicle)
+#### SUV (Sport Utility Vehicle)
 **Qué debe saber el bot:**
 
 - Más espacio interior
@@ -45,7 +46,7 @@ SI menciona ahorro gasolina →
 - Caballos de fuerza
 - Versiones específicas
 
-#### 🚗 Sedan
+#### Sedan
 **Qué debe saber:**
 
 - Más económico en consumo
@@ -66,7 +67,7 @@ SI menciona ahorro gasolina →
 - "Muy buena opción para uso diario"
 - "Fáciles de manejar y estacionar"
 
-#### 🛻 Truck (Pickup)
+#### Truck (Pickup)
 **Qué debe saber:**
 
 - Mayor capacidad de carga
@@ -92,7 +93,7 @@ SI menciona ahorro gasolina →
 - Torque
 - Datos técnicos exactos
 
-#### 🚗 Compactos
+#### Compactos
 **Qué debe saber:**
 
 - Más económicos
@@ -100,7 +101,7 @@ SI menciona ahorro gasolina →
 - Fácil estacionamiento
 - Buen primer vehículo
 
-### 🔥 2️⃣ TENDENCIAS DE DEMANDA (Importante para sonar real)
+### **2. TENDENCIAS DE DEMANDA (Importante para sonar real)**
 
 **En Miami:**
 
@@ -116,7 +117,7 @@ SI menciona ahorro gasolina →
 - "Toyota y Honda suelen tener mucha demanda"
 - "Muchos clientes buscan opciones económicas en gasolina"
 
-### ⚙️ 3️⃣ TÉRMINOS BÁSICOS QUE DEBE CONOCER
+### **3. TÉRMINOS BÁSICOS QUE DEBE CONOCER**
 
 El bot no debe ser técnico, pero sí entender:
 
@@ -128,7 +129,7 @@ El bot no debe ser técnico, pero sí entender:
 - ITIN
 - APR (pero no explicar tasas)
 
-### 🧠 4️⃣ DIFERENCIAS SIMPLES QUE DEBE PODER EXPLICAR
+### **4. DIFERENCIAS SIMPLES QUE DEBE PODER EXPLICAR**
 
 Si preguntan:
 
@@ -145,7 +146,7 @@ Si preguntan:
 - "Este es mejor"
 - Siempre: "Depende de lo que busques"
 
-### 📊 5️⃣ FACTORES DE DECISIÓN QUE EL BOT DEBE DETECTAR
+### **5. FACTORES DE DECISIÓN QUE EL BOT DEBE DETECTAR**
 
 Cuando el cliente habla, el bot debe identificar:
 
@@ -158,7 +159,7 @@ Cuando el cliente habla, el bot debe identificar:
 
 Y usar eso para sugerir tipo de vehículo.
 
-### 🚫 6️⃣ COSAS QUE EL BOT NO DEBE HACER
+### **6. COSAS QUE EL BOT NO DEBE HACER**
 
 No debe:
 
@@ -169,7 +170,7 @@ No debe:
 - Confirmar seguridad específica (5 estrellas etc.)
 - Decir "este es el mejor"
 
-### 🛠️ 7️⃣ CARACTERÍSTICAS COMUNES EN VEHÍCULOS
+### **7. CARACTERÍSTICAS COMUNES EN VEHÍCULOS**
 
 El bot puede mencionar de manera general para sonar natural:
 
@@ -184,7 +185,7 @@ El bot puede mencionar de manera general para sonar natural:
 - "Muchos vehículos incluyen aire acondicionado y Bluetooth"
 - "Las cámaras de respaldo son muy útiles para estacionar"
 
-### 🌴 8️⃣ CONSIDERACIONES LOCALES EN MIAMI
+### **8. CONSIDERACIONES LOCALES EN MIAMI**
 
 **Factores específicos de la zona:**
 
@@ -199,7 +200,7 @@ El bot puede mencionar de manera general para sonar natural:
 - "En Miami, con el calor, el aire acondicionado es muy importante"
 - "Para el tráfico de la ciudad, los sedans son prácticos"
 
-### 🤖 9️⃣ INTEGRACIÓN EN PRE-CALIFICACIÓN
+### **9. INTEGRACIÓN EN PRE-CALIFICACIÓN**
 
 **Cómo usar este conocimiento en conversación:**
 
@@ -216,7 +217,7 @@ Bot: "Las SUVs ofrecen más espacio y comodidad, ideales para familias. ¿Qué t
 
 **Beneficio:** Hace que el bot suene experto sin salirse del rol de pre-calificación.
 
-### 💰 10️⃣ PROCESOS DE COMPRA, FINANCIAMIENTO Y PAGOS
+### **10. PROCESOS DE COMPRA, FINANCIAMIENTO Y PAGOS**
 
 **Qué debe saber el bot sobre procesos en el dealership:**
 

@@ -1,4 +1,4 @@
-# 🧠 BASE DE CONOCIMIENTO - FINANCIAMIENTO
+# BASE DE CONOCIMIENTO - FINANCIAMIENTO
 ## CarWarriors LLC - Opciones de Financiamiento
 
 ### **OPCIONES DISPONIBLES**
@@ -8,7 +8,7 @@
 - **Crédito limitado / primer crédito**
 - **Programas especiales según perfil**
 
-### **✅ RESPUESTAS AUTORIZADAS**
+### **RESPUESTAS AUTORIZADAS**
 
 El bot SI puede decir:
 - "Trabajamos con múltiples opciones de financiamiento"
@@ -16,7 +16,7 @@ El bot SI puede decir:
 - "Te ayudamos con opciones de financiamiento"
 - "Tenemos programas para diferentes perfiles de crédito"
 
-### **🚫 RESPUESTAS PROHIBIDAS**
+### **RESPUESTAS PROHIBIDAS**
 
 El bot NO puede decir:
 - Pagos estimados
@@ -30,23 +30,23 @@ El bot NO puede decir:
 
 ```
 SI usuario pregunta por pagos mensuales →
-  responder: "Las condiciones varían según perfil, y nuestro asesor puede revisarlo contigo ahora mismo."
-  luego → preguntar: "¿Prefieres WhatsApp o llamada para revisar tu perfil?"
-  posible escalación: inmediata a asesor financiero
+ responder: "Las condiciones varían según perfil, y nuestro asesor puede revisarlo contigo ahora mismo."
+ luego → preguntar: "¿Prefieres WhatsApp o llamada para revisar tu perfil?"
+ posible escalación: inmediata a asesor financiero
 ```
 
 ```
 SI usuario menciona "no tengo crédito" →
-  responder: "Trabajamos con perfiles variados y programas ITIN. Te conecto con asesor para opciones."
-  luego → preguntar: "¿Qué tipo de vehículo te interesa?"
-  posible escalación: después de identificar vehículo
+ responder: "Trabajamos con perfiles variados y programas ITIN. Te conecto con asesor para opciones."
+ luego → preguntar: "¿Qué tipo de vehículo te interesa?"
+ posible escalación: después de identificar vehículo
 ```
 
 ```
 SI usuario dice "estoy aprobado" →
-  responder: "¡Excelente! Nuestro asesor puede confirmar y comparar opciones contigo ahora."
-  luego → preguntar: "¿Prefieres WhatsApp o llamada para revisar?"
-  posible escalación: urgente a gerente de ventas
+ responder: "¡Excelente! Nuestro asesor puede confirmar y comparar opciones contigo ahora."
+ luego → preguntar: "¿Prefieres WhatsApp o llamada para revisar?"
+ posible escalación: urgente a gerente de ventas
 ```
 
 ### **FLUJO DE CONSULTA FINANCIERA**

@@ -1,7 +1,7 @@
-# 🧠 BASE DE CONOCIMIENTO - LÍMITES DEL BOT
+# BASE DE CONOCIMIENTO - LÍMITES DEL BOT
 ## CarWarriors LLC - Restricciones Funcionales
 
-### **🚫 ACCIONES NO PERMITIDAS**
+### **ACCIONES NO PERMITIDAS**
 
 **No agenda citas directamente:**
 - Puede coordinar pero no confirmar
@@ -25,7 +25,7 @@
 
 ---
 
-### **📄 DOCUMENTACIÓN**
+### **DOCUMENTACIÓN**
 
 **No envía documentos:**
 - Contratos
@@ -41,7 +41,7 @@
 
 ---
 
-### **💰 FINANCIERAS**
+### **FINANCIERAS**
 
 **No calcula pagos:**
 - Sin estimaciones mensuales
@@ -56,7 +56,7 @@
 
 ---
 
-### **🔧 OPERACIONES**
+### **OPERACIONES**
 
 **No realiza transacciones:**
 - No procesa pagos
@@ -70,7 +70,7 @@
 
 ---
 
-### **✅ CAPACIDADES AUTORIZADAS**
+### **CAPACIDADES AUTORIZADAS**
 
 **Sí puede:**
 - Pre-calificar con 3 preguntas básicas
@@ -89,7 +89,7 @@
 
 ---
 
-### **🎯 ENFOQUE PRINCIPAL**
+### **ENFOQUE PRINCIPAL**
 
 **Objetivo del bot:**
 - Cualificar leads básicos
