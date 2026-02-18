@@ -18,9 +18,13 @@ Allow: /12_Conversaciones_Dificiles.md
 Allow: /13_Logica_Condicional.md
 Allow: /14_Conocimiento_Automotriz_Basico.md
 Allow: /README.md
+Allow: /llms.txt
 
 # Sitemap location
 Sitemap: https://gyoan-byte.github.io/carwarriors-kb/sitemap.xml
+
+# LLMs discovery file
+# https://gyoan-byte.github.io/carwarriors-kb/llms.txt
 
 # Crawl delay para ser amigable con servidores
 Crawl-delay: 1

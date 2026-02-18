@@ -7,6 +7,10 @@
   <meta name="description" content="Single-page public hub with CarWarriors knowledge modules and live vehicle inventory, optimized for humans and AI web scraping." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://gyoan-byte.github.io/carwarriors-kb/" />
+  <link rel="alternate" type="application/json" href="https://dc-leads-processor.gyoan.workers.dev/latest" title="Live Inventory JSON" />
+  <link rel="alternate" type="application/json" href="https://dc-leads-processor.gyoan.workers.dev/stats" title="Live Inventory Stats JSON" />
+  <link rel="alternate" type="text/csv" href="https://dc-leads-processor.gyoan.workers.dev/latest/raw" title="Live Inventory CSV" />
+  <link rel="alternate" type="text/plain" href="https://gyoan-byte.github.io/carwarriors-kb/llms.txt" title="LLMs Access File" />
   <style>
     :root {
       --bg: #f4f7fa;
@@ -253,7 +257,38 @@
             <a class="chip" href="https://dc-leads-processor.gyoan.workers.dev/latest/meta" target="_blank" rel="noopener">Latest inventory metadata</a>
             <a class="chip" href="https://dc-leads-processor.gyoan.workers.dev/latest/raw" target="_blank" rel="noopener">Raw CSV</a>
             <a class="chip" href="https://dc-leads-processor.gyoan.workers.dev/stats" target="_blank" rel="noopener">Stats JSON</a>
+            <a class="chip" href="llms.txt" target="_blank" rel="noopener">LLMs file</a>
           </div>
+        </section>
+
+        <section class="card" aria-label="Agent access contract">
+          <h2>Agent Access</h2>
+          <p class="muted">Machine-readable contract for crawlers and AI agents. Use JSON endpoints as primary source.</p>
+          <pre><code id="agent-contract-json">{
+  "version": "2026-02-18",
+  "base_url": "https://dc-leads-processor.gyoan.workers.dev",
+  "endpoints": {
+    "inventory_latest": "/latest",
+    "inventory_stats": "/stats",
+    "inventory_meta": "/latest/meta",
+    "inventory_raw_csv": "/latest/raw",
+    "mail_latest_meta": "/mail/latest",
+    "mail_latest_text": "/mail/latest/raw"
+  },
+  "inventory_schema": {
+    "columns": [
+      "Created Date",
+      "Stock Number",
+      "Year",
+      "Make",
+      "Model",
+      "Exterior Color",
+      "Odometer",
+      "GPS Provider"
+    ],
+    "default_sort": "Make asc, Year desc, Odometer asc"
+  }
+}</code></pre>
         </section>
       </section>
 

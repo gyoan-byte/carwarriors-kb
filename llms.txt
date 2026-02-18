@@ -1,0 +1,44 @@
+CarWarriors Knowledge + Live Inventory
+
+Canonical site:
+- https://gyoan-byte.github.io/carwarriors-kb/
+
+Machine-readable inventory endpoints:
+- JSON latest: https://dc-leads-processor.gyoan.workers.dev/latest
+- JSON stats: https://dc-leads-processor.gyoan.workers.dev/stats
+- JSON meta: https://dc-leads-processor.gyoan.workers.dev/latest/meta
+- CSV raw: https://dc-leads-processor.gyoan.workers.dev/latest/raw
+
+Inventory schema columns:
+- Created Date
+- Stock Number
+- Year
+- Make
+- Model
+- Exterior Color
+- Odometer
+- GPS Provider
+
+Default inventory sort:
+- Make asc, Year desc, Odometer asc
+
+Knowledge modules:
+- https://gyoan-byte.github.io/carwarriors-kb/README.md
+- https://gyoan-byte.github.io/carwarriors-kb/01_Identidad_Negocio.md
+- https://gyoan-byte.github.io/carwarriors-kb/02_Inventario.md
+- https://gyoan-byte.github.io/carwarriors-kb/03_Financiamiento.md
+- https://gyoan-byte.github.io/carwarriors-kb/04_Proceso_Compra.md
+- https://gyoan-byte.github.io/carwarriors-kb/05_Trade_In.md
+- https://gyoan-byte.github.io/carwarriors-kb/06_Objetiones.md
+- https://gyoan-byte.github.io/carwarriors-kb/07_Seguridad.md
+- https://gyoan-byte.github.io/carwarriors-kb/08_Tono_Comportamiento.md
+- https://gyoan-byte.github.io/carwarriors-kb/09_Escalacion.md
+- https://gyoan-byte.github.io/carwarriors-kb/10_Limites_Bot.md
+- https://gyoan-byte.github.io/carwarriors-kb/11_Transiciones.md
+- https://gyoan-byte.github.io/carwarriors-kb/12_Conversaciones_Dificiles.md
+- https://gyoan-byte.github.io/carwarriors-kb/13_Logica_Condicional.md
+- https://gyoan-byte.github.io/carwarriors-kb/14_Conocimiento_Automotriz_Basico.md
+- https://gyoan-byte.github.io/carwarriors-kb/15_Confianza_y_Autoridad.md
+- https://gyoan-byte.github.io/carwarriors-kb/16_Psicologia_Comercial.md
+- https://gyoan-byte.github.io/carwarriors-kb/behavioral_guidelines.md
+- https://gyoan-byte.github.io/carwarriors-kb/conversation_flow_map.md
