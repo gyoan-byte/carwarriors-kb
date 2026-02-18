@@ -61,6 +61,7 @@
         <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
             <li><button onclick="loadMD('01_Identidad_Negocio.md')">Identidad Negocio</button></li>
             <li><button onclick="loadMD('02_Inventario.md')">Inventario</button></li>
+            <li><button onclick="loadInventory()">Inventario Disponible</button></li>
             <li><button onclick="loadMD('03_Financiamiento.md')">Financiamiento</button></li>
             <li><button onclick="loadMD('04_Proceso_Compra.md')">Proceso Compra</button></li>
             <li><button onclick="loadMD('05_Trade_In.md')">Trade-In</button></li>
@@ -100,6 +101,39 @@
                     document.getElementById('content').innerHTML = 'Error al cargar el archivo.';
                 });
         }
+        
+        function loadInventory() {
+            fetch('carros_listos/inventario.csv')
+                .then(res => res.text())
+                .then(csv => {
+                    const lines = csv.trim().split('\n').slice(1); // Skip header
+                    const categories = {SUV: [], Sedan: [], Truck: [], Hybrid: [], Other: []};
+                    lines.forEach(line => {
+                        const cols = line.split(',');
+                        if (cols.length < 5) return;
+                        const year = cols[2], make = cols[3], model = cols[4];
+                        const fullModel = `${make} ${model}`.toLowerCase();
+                        let cat = 'Other';
+                        if (fullModel.includes('equinox') || fullModel.includes('atlas') || fullModel.includes('x6') || fullModel.includes('gle') || fullModel.includes('qx60') || fullModel.includes('range rover') || fullModel.includes('tonale') || fullModel.includes('qx80')) cat = 'SUV';
+                        else if (fullModel.includes('accord') || fullModel.includes('civic') || fullModel.includes('charger') || fullModel.includes('camaro') || fullModel.includes('giulia') || fullModel.includes('dart') || fullModel.includes('q70') || fullModel.includes('q50') || fullModel.includes('e-class') || fullModel.includes('c-class') || fullModel.includes('falcon') || fullModel.includes('mustang')) cat = 'Sedan';
+                        else if (fullModel.includes('2500') || fullModel.includes('tacoma') || fullModel.includes('ridgeline') || fullModel.includes('silverado') || fullModel.includes('f350') || fullModel.includes('canyon') || fullModel.includes('transit') || fullModel.includes('3500 hd')) cat = 'Truck';
+                        else if (fullModel.includes('model 3') || fullModel.includes('equinox ev')) cat = 'Hybrid';
+                        categories[cat].push(`${year} ${make} ${model}`);
+                    });
+                    let html = '<h2>Inventario Disponible</h2><p>Lista general por categorías (sin precios ni detalles exactos por políticas de cumplimiento).</p>';
+                    for (const [cat, cars] of Object.entries(categories)) {
+                        if (cars.length > 0) {
+                            const listItems = cars.map(car => `<li>${car}</li>`).join('');
+                            html += `<h3>${cat} (${cars.length} disponibles)</h3><ul>${listItems}</ul>`;
+                        }
+                    }
+                    document.getElementById('content').innerHTML = html;
+                })
+                .catch(err => {
+                    document.getElementById('content').innerHTML = 'Error al cargar inventario.';
+                });
+        }
+        
         // Load default
         loadMD('README.md');
     </script>
