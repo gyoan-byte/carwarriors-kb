@@ -148,25 +148,67 @@
       grid-template-columns: 1fr 1fr;
       gap: 20px;
     }
-    details {
+    .brand-block {
       border: 1px solid var(--line);
       border-radius: 10px;
       background: #fff;
       overflow: hidden;
     }
-    summary {
-      cursor: pointer;
-      list-style: none;
+    .brand-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
       padding: 10px 12px;
       background: #f7fbfe;
-      color: var(--brand-dark);
-      font-weight: 600;
       border-bottom: 1px solid var(--line);
     }
-    summary::-webkit-details-marker { display: none; }
-    .brand-inner { padding: 10px 12px; font-size: 0.92rem; }
-    .brand-inner ul { margin: 6px 0 0 16px; padding: 0; }
-    .brand-inner li { margin: 4px 0; }
+    .brand-title {
+      margin: 0;
+      font-size: 1.03rem;
+      color: var(--brand-dark);
+    }
+    .brand-count {
+      font-size: 0.86rem;
+      color: var(--muted);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 3px 8px;
+      background: #fff;
+    }
+    .brand-table-wrap { overflow: auto; }
+    .brand-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 640px;
+      font-size: 0.9rem;
+    }
+    .brand-table th,
+    .brand-table td {
+      padding: 8px 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+      white-space: nowrap;
+    }
+    .brand-table th {
+      background: #fbfdff;
+      color: var(--muted);
+      font-size: 0.78rem;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+    .field-defs {
+      margin-top: 10px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 10px 12px;
+      background: #fafcff;
+      font-size: 0.9rem;
+    }
+    .field-defs p { margin: 0 0 6px; color: var(--muted); }
+    .field-defs ul { margin: 0; padding-left: 18px; }
+    .field-defs li { margin: 3px 0; }
 
     code { background: #eef3f7; padding: 2px 5px; border-radius: 4px; }
     pre { background: #0b1a24; color: #eaf3fb; padding: 12px; border-radius: 10px; overflow: auto; }
@@ -333,6 +375,18 @@
           </div>
           <div class="warning" id="inventory-warning"></div>
           <p class="result-line" id="inventory-meta">Loading inventory from API...</p>
+          <div class="field-defs" aria-label="Inventory field definitions">
+            <p>Field definitions (scraping contract):</p>
+            <ul>
+              <li><code>Year</code>: vehicle model year</li>
+              <li><code>Model</code>: model name from source CSV</li>
+              <li><code>Stock</code>: dealer stock number</li>
+              <li><code>Odometer</code>: mileage in miles</li>
+              <li><code>Color</code>: exterior color</li>
+              <li><code>GPS</code>: GPS provider value if available</li>
+              <li><code>Created</code>: created date from source inventory</li>
+            </ul>
+          </div>
           <div class="brand-groups" id="inventory-brands"></div>
         </section>
       </section>
@@ -368,6 +422,8 @@
     }
   </script>
 
+  <script id="inventory-agent-json" type="application/json">{}</script>
+
   <script id="inventory-jsonld" type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -399,7 +455,8 @@
       inventoryStats: document.getElementById("inventory-stats"),
       inventoryWarning: document.getElementById("inventory-warning"),
       inventoryMeta: document.getElementById("inventory-meta"),
-      inventoryBrands: document.getElementById("inventory-brands")
+      inventoryBrands: document.getElementById("inventory-brands"),
+      inventoryAgentJson: document.getElementById("inventory-agent-json")
     };
 
     function route() {
@@ -447,6 +504,7 @@
         ui.inventoryMeta.textContent = buildInventoryMetaText(latest, rows.length);
         ui.inventoryStats.innerHTML = buildInventoryStatsHtml(rows, stats);
         ui.inventoryBrands.innerHTML = renderInventoryByMake(rows);
+        ui.inventoryAgentJson.textContent = JSON.stringify(buildAgentInventoryPayload(latest, rows), null, 2);
       } catch (error) {
         console.error("loadInventoryIntoPage error:", error);
         ui.inventoryWarning.style.display = "block";
@@ -454,6 +512,7 @@
         ui.inventoryMeta.textContent = "Inventory unavailable right now.";
         ui.inventoryStats.innerHTML = "";
         ui.inventoryBrands.innerHTML = "";
+        ui.inventoryAgentJson.textContent = "{}";
       }
     }
 
@@ -496,19 +555,88 @@
       }
 
       const out = [];
-      for (const [make, vehicles] of groups.entries()) {
-        out.push(`<h3>${escapeHtml(make)} (${vehicles.length})</h3>`);
-        out.push('<div class="brand-inner"><ul>');
+      const sortedMakes = Array.from(groups.keys()).sort((a, b) => a.localeCompare(b, "en", { sensitivity: "base" }));
+      for (const make of sortedMakes) {
+        const vehicles = [...groups.get(make)].sort(compareVehicles);
+        out.push(`<section class="brand-block" data-make="${escapeAttr(make)}">`);
+        out.push('<div class="brand-head">');
+        out.push(`<h3 class="brand-title">${escapeHtml(make)}</h3>`);
+        out.push(`<span class="brand-count">${vehicles.length} units</span>`);
+        out.push("</div>");
+        out.push('<div class="brand-table-wrap"><table class="brand-table"><thead><tr><th>Year</th><th>Model</th><th>Stock</th><th>Odometer</th><th>Color</th><th>GPS</th><th>Created</th></tr></thead><tbody>');
         for (const row of vehicles) {
-          const year = String(row["Year"] || "").trim() || "N/A";
-          const model = String(row["Model"] || "").trim() || "N/A";
-          const stock = String(row["Stock Number"] || "").trim() || "N/A";
-          const odo = formatMiles(row["Odometer"]);
-          out.push(`<li>${escapeHtml(year)} ${escapeHtml(model)} - ${escapeHtml(stock)} - ${escapeHtml(odo)}</li>`);
+          const year = fieldOrNA(row, "Year");
+          const model = fieldOrNA(row, "Model");
+          const stock = fieldOrNA(row, "Stock Number");
+          const odoRaw = fieldOrNA(row, "Odometer");
+          const odo = formatMiles(odoRaw);
+          const color = fieldOrNA(row, "Exterior Color");
+          const gps = fieldOrNA(row, "GPS Provider");
+          const created = fieldOrNA(row, "Created Date");
+          out.push(
+            `<tr data-make="${escapeAttr(make)}" data-year="${escapeAttr(year)}" data-model="${escapeAttr(model)}" data-stock="${escapeAttr(stock)}" data-odometer="${escapeAttr(odoRaw)}">` +
+              `<td>${escapeHtml(year)}</td><td>${escapeHtml(model)}</td><td>${escapeHtml(stock)}</td><td>${escapeHtml(odo)}</td><td>${escapeHtml(color)}</td><td>${escapeHtml(gps)}</td><td>${escapeHtml(created)}</td>` +
+            "</tr>"
+          );
         }
-        out.push("</ul></div>");
+        out.push("</tbody></table></div></section>");
       }
       return out.join("");
+    }
+
+    function buildAgentInventoryPayload(latest, rows) {
+      const grouped = {};
+      for (const row of rows) {
+        const make = fieldOrNA(row, "Make");
+        if (!grouped[make]) grouped[make] = [];
+        grouped[make].push({
+          year: fieldOrNA(row, "Year"),
+          model: fieldOrNA(row, "Model"),
+          stock_number: fieldOrNA(row, "Stock Number"),
+          odometer: fieldOrNA(row, "Odometer"),
+          exterior_color: fieldOrNA(row, "Exterior Color"),
+          gps_provider: fieldOrNA(row, "GPS Provider"),
+          created_date: fieldOrNA(row, "Created Date")
+        });
+      }
+      for (const make of Object.keys(grouped)) {
+        grouped[make].sort(compareVehiclesPlain);
+      }
+
+      return {
+        generated_at: new Date().toISOString(),
+        source_received_at: latest?.latest?.receivedAt || null,
+        source_file: latest?.latest?.filename || null,
+        total_vehicles: rows.length,
+        fields: ["year", "model", "stock_number", "odometer", "exterior_color", "gps_provider", "created_date"],
+        by_make: grouped
+      };
+    }
+
+    function compareVehicles(a, b) {
+      const yearDiff = parseIntOrZero(b["Year"]) - parseIntOrZero(a["Year"]);
+      if (yearDiff !== 0) return yearDiff;
+      const odoDiff = parseIntOrZero(a["Odometer"]) - parseIntOrZero(b["Odometer"]);
+      if (odoDiff !== 0) return odoDiff;
+      return fieldOrNA(a, "Stock Number").localeCompare(fieldOrNA(b, "Stock Number"), "en", { sensitivity: "base" });
+    }
+
+    function compareVehiclesPlain(a, b) {
+      const yearDiff = parseIntOrZero(b.year) - parseIntOrZero(a.year);
+      if (yearDiff !== 0) return yearDiff;
+      const odoDiff = parseIntOrZero(a.odometer) - parseIntOrZero(b.odometer);
+      if (odoDiff !== 0) return odoDiff;
+      return String(a.stock_number).localeCompare(String(b.stock_number), "en", { sensitivity: "base" });
+    }
+
+    function fieldOrNA(row, key) {
+      const value = String(row?.[key] ?? "").trim();
+      return value || "N/A";
+    }
+
+    function parseIntOrZero(value) {
+      const parsed = Number.parseInt(String(value ?? "").replaceAll(",", ""), 10);
+      return Number.isFinite(parsed) ? parsed : 0;
     }
 
     function formatMiles(value) {
