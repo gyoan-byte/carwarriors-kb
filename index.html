@@ -131,7 +131,7 @@
       </section>
 
       <section class="card" aria-label="Modulos fuente de conocimiento">
-        <p class="muted">Modulos fuente (.md) para scraping:</p>
+        <p class="muted">Modulos fuente (.md) publicos para abrir directo con clic:</p>
         <div class="chips">
           <a class="chip" href="README.md" target="_blank" rel="noopener">README</a>
           <a class="chip" href="01_Identidad_Negocio.md" target="_blank" rel="noopener">01 Identidad</a>
@@ -139,16 +139,28 @@
           <a class="chip" href="03_Financiamiento.md" target="_blank" rel="noopener">03 Financiamiento</a>
           <a class="chip" href="04_Proceso_Compra.md" target="_blank" rel="noopener">04 Proceso</a>
           <a class="chip" href="05_Trade_In.md" target="_blank" rel="noopener">05 Trade-In</a>
+          <a class="chip" href="06_Objetiones.md" target="_blank" rel="noopener">06 Objetiones</a>
           <a class="chip" href="07_Seguridad.md" target="_blank" rel="noopener">07 Seguridad</a>
+          <a class="chip" href="08_Tono_Comportamiento.md" target="_blank" rel="noopener">08 Tono</a>
+          <a class="chip" href="09_Escalacion.md" target="_blank" rel="noopener">09 Escalacion</a>
           <a class="chip" href="10_Limites_Bot.md" target="_blank" rel="noopener">10 Limites</a>
+          <a class="chip" href="11_Transiciones.md" target="_blank" rel="noopener">11 Transiciones</a>
+          <a class="chip" href="12_Conversaciones_Dificiles.md" target="_blank" rel="noopener">12 Conversaciones</a>
           <a class="chip" href="13_Logica_Condicional.md" target="_blank" rel="noopener">13 Logica</a>
+          <a class="chip" href="14_Conocimiento_Automotriz_Basico.md" target="_blank" rel="noopener">14 Conocimiento Auto</a>
+          <a class="chip" href="15_Confianza_y_Autoridad.md" target="_blank" rel="noopener">15 Confianza</a>
+          <a class="chip" href="16_Psicologia_Comercial.md" target="_blank" rel="noopener">16 Psicologia</a>
+          <a class="chip" href="behavioral_guidelines.md" target="_blank" rel="noopener">Behavioral Guidelines</a>
+          <a class="chip" href="conversation_flow_map.md" target="_blank" rel="noopener">Conversation Flow Map</a>
         </div>
       </section>
 
       <section class="card" aria-label="Fuentes de inventario">
-        <p class="muted">Fuentes publicas de inventario:</p>
+        <p class="muted">Inventario actual (enlaces directos):</p>
         <div class="chips">
+          <a class="chip" href="https://dc-leads-processor.gyoan.workers.dev/latest" target="_blank" rel="noopener">Inventario actual JSON</a>
           <a class="chip" href="https://dc-leads-processor.gyoan.workers.dev/latest?sort=Make:asc,Year:desc,Odometer:asc" target="_blank" rel="noopener">JSON ordenado por marca</a>
+          <a class="chip" href="https://dc-leads-processor.gyoan.workers.dev/latest/meta" target="_blank" rel="noopener">Metadata ultimo inventario</a>
           <a class="chip" href="https://dc-leads-processor.gyoan.workers.dev/latest/raw" target="_blank" rel="noopener">CSV crudo</a>
           <a class="chip" href="?make=HONDA">Filtro ejemplo make=HONDA</a>
           <a class="chip" href="?make=FORD&year=2024">Filtro ejemplo make=FORD&amp;year=2024</a>
@@ -223,17 +235,17 @@
     }
   </script>
 
-  <script>
+  <script type="module">
     const WORKER_JSON_URL = "https://dc-leads-processor.gyoan.workers.dev/latest?sort=Make:asc,Year:desc,Odometer:asc";
     const LOCAL_CSV_URL = "carros_listos/CARROS%20LISTOS.csv";
-    const URL_PARAMS = new URLSearchParams(window.location.search);
+    const URL_PARAMS = new URLSearchParams(globalThis.location.search);
     const FILTERS = {
       make: (URL_PARAMS.get("make") || "").trim().toUpperCase(),
       year: (URL_PARAMS.get("year") || "").trim(),
       model: (URL_PARAMS.get("model") || "").trim().toUpperCase()
     };
 
-    start();
+    await start();
 
     async function start() {
       try {
