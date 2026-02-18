@@ -1,144 +1,412 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Base de Conocimiento CarWarriors - Guía Completa de Automóviles</title>
-    <meta name="description" content="Base de conocimiento completa de CarWarriors LLC Miami: identidad, inventario, financiamiento, proceso de compra, trade-in y más. Guía especializada para la comunidad latina.">
-    <meta name="keywords" content="CarWarriors, Miami, autos usados, financiamiento, trade-in, compra de autos, dealer, concesionario, comunidad latina">
-    <meta name="robots" content="index, follow, all">
-    <meta name="author" content="CarWarriors LLC">
-    <meta property="og:title" content="Base de Conocimiento CarWarriors">
-    <meta property="og:description" content="Guía completa de automóviles y servicios de CarWarriors Miami">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary">
-    <meta name="googlebot" content="index, follow, all">
-    <meta name="bingbot" content="index, follow, all">
-    <link rel="canonical" href="https://gyoan-byte.github.io/carwarriors-kb/">
-    <link rel="sitemap" type="application/xml" href="https://gyoan-byte.github.io/carwarriors-kb/sitemap.xml">
-    <meta name="language" content="Spanish">
-    <meta name="distribution" content="global">
-    <meta name="rating" content="general">
-    <meta name="revisit-after" content="1 days">
-    <meta name="category" content="automotive, business, knowledge base">
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; color: #333; }
-        #content { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        nav { text-align: center; margin-bottom: 20px; }
-        nav ul { justify-content: center; flex-wrap: wrap; }
-        nav button { 
-            margin: 5px; 
-            background: none; 
-            border: 1px solid #007bff; 
-            color: #007bff; 
-            cursor: pointer; 
-            font-family: inherit; 
-            font-size: inherit; 
-            padding: 8px 12px; 
-            border-radius: 4px; 
-            transition: all 0.3s ease;
-        }
-        nav button:hover { 
-            background-color: #0056b3; 
-            color: white; 
-            text-decoration: none;
-        }
-        h1 { text-align: center; color: #007bff; margin-bottom: 10px; }
-        @media (max-width: 768px) {
-            nav ul { flex-direction: column; align-items: center; }
-            nav button { width: 200px; }
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Base Operativa CarWarriors: Conocimiento + Inventario</title>
+  <meta name="description" content="Base operativa scrapeable con contexto real de la base de conocimiento CarWarriors y el inventario de vehiculos ordenado por marca." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://gyoan-byte.github.io/carwarriors-kb/" />
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --surface: #ffffff;
+      --ink: #13212f;
+      --muted: #5b6b7c;
+      --line: #d8e0e7;
+      --brand: #0f6a9c;
+      --brand-soft: #d8effa;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Noto Sans", "Liberation Sans", sans-serif;
+      color: var(--ink);
+      background: radial-gradient(circle at 0 0, #e8f6ff, var(--bg) 55%);
+      line-height: 1.4;
+    }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+    header {
+      background: linear-gradient(135deg, #0f6a9c, #0a3f5f);
+      color: #fff;
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin-bottom: 16px;
+    }
+    h1 { margin: 0 0 6px; font-size: 1.6rem; }
+    h2 { margin: 0 0 8px; font-size: 1.15rem; }
+    p { margin: 0; }
+    .meta { margin-top: 8px; color: #d9eef9; font-size: 0.92rem; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 14px;
+    }
+    .grid-two {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .list { margin: 8px 0 0 18px; padding: 0; }
+    .list li { margin: 4px 0; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .chip {
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 0.9rem;
+      color: var(--muted);
+      text-decoration: none;
+    }
+    .chip:hover { border-color: var(--brand); color: var(--brand); }
+    .stats { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
+    .stat {
+      background: var(--brand-soft);
+      border: 1px solid #c1e6fa;
+      border-radius: 10px;
+      padding: 8px 10px;
+      min-width: 160px;
+    }
+    .stat strong { display: block; font-size: 1.1rem; color: #0b4f75; }
+    .muted { color: var(--muted); }
+    .scroll { overflow: auto; border: 1px solid var(--line); border-radius: 10px; }
+    table { width: 100%; border-collapse: collapse; min-width: 860px; }
+    th, td { padding: 10px; border-bottom: 1px solid var(--line); text-align: left; }
+    thead th {
+      background: #f3f9fd;
+      color: #0b4f75;
+      font-size: 0.9rem;
+      letter-spacing: 0.01em;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+    tbody tr:hover { background: #fbfdff; }
+    code { background: #eef3f7; padding: 2px 5px; border-radius: 4px; }
+    footer { text-align: center; color: var(--muted); font-size: 0.9rem; padding: 8px 0 20px; }
+    @media (max-width: 760px) {
+      h1 { font-size: 1.3rem; }
+      .stat { min-width: 130px; }
+      .grid-two { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
+  <div class="wrap">
     <header>
-        <h1>Base de Conocimiento CarWarriors</h1>
-        <p style="text-align: center; color: #666; margin-bottom: 20px;">Guía completa de servicios automotrices en Miami</p>
+      <h1>Base Operativa CarWarriors</h1>
+      <p>Contexto real de conocimiento + inventario estructurado para lectura humana y scraping por agentes AI.</p>
+      <div class="meta" id="source-meta">Fuente: cargando...</div>
     </header>
-    
-    <nav role="navigation" aria-label="Navegación principal">
-        <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
-            <li><button onclick="loadMD('01_Identidad_Negocio.md')">Identidad Negocio</button></li>
-            <li><button onclick="loadMD('02_Inventario.md')">Inventario</button></li>
-            <li><button onclick="loadInventory()">Inventario Disponible</button></li>
-            <li><button onclick="loadMD('03_Financiamiento.md')">Financiamiento</button></li>
-            <li><button onclick="loadMD('04_Proceso_Compra.md')">Proceso Compra</button></li>
-            <li><button onclick="loadMD('05_Trade_In.md')">Trade-In</button></li>
-            <li><button onclick="loadMD('06_Objetiones.md')">Objetiones</button></li>
-            <li><button onclick="loadMD('07_Seguridad.md')">Seguridad</button></li>
-            <li><button onclick="loadMD('08_Tono_Comportamiento.md')">Tono Comportamiento</button></li>
-            <li><button onclick="loadMD('09_Escalacion.md')">Escalación</button></li>
-            <li><button onclick="loadMD('10_Limites_Bot.md')">Límites Bot</button></li>
-            <li><button onclick="loadMD('11_Transiciones.md')">Transiciones</button></li>
-            <li><button onclick="loadMD('12_Conversaciones_Dificiles.md')">Conversaciones Difíciles</button></li>
-            <li><button onclick="loadMD('13_Logica_Condicional.md')">Lógica Condicional</button></li>
-            <li><button onclick="loadMD('15_Confianza_y_Autoridad.md')">Confianza y Autoridad</button></li>
-            <li><button onclick="loadMD('16_Psicologia_Comercial.md')">Psicología Comercial</button></li>
-            <li><button onclick="loadMD('behavioral_guidelines.md')">Behavioral Guidelines</button></li>
-            <li><button onclick="loadMD('conversation_flow_map.md')">Conversation Flow Map</button></li>
-            <li><button onclick="loadMD('README.md')">README</button></li>
-        </ul>
-    </nav>
-    
-    <main role="main">
-        <section id="content" aria-live="polite" aria-label="Contenido principal">
-            <p>Cargando...</p>
+
+    <main>
+      <section class="card" aria-label="Contexto operativo real">
+        <h2>Contexto Operativo Real</h2>
+        <div class="grid-two">
+          <div>
+            <p class="muted">Autoridad y prioridad (README):</p>
+            <ol class="list">
+              <li>Safety and Compliance</li>
+              <li>Financing Rules</li>
+              <li>Inventory and Availability</li>
+              <li>Purchase Process</li>
+              <li>Trade-In</li>
+            </ol>
+            <p class="muted"><strong>Golden rule:</strong> Safety &gt; Financing &gt; Inventory &gt; Everything else.</p>
+          </div>
+          <div>
+            <p class="muted">Identidad de negocio (01_Identidad_Negocio.md):</p>
+            <ul class="list">
+              <li>CarWarriors LLC (used car dealership)</li>
+              <li>3620 NW 27th Ave, Miami, FL 33142</li>
+              <li>Idiomas: English / Spanish</li>
+              <li>Zona horaria: America/New_York</li>
+            </ul>
+          </div>
+        </div>
+        <p class="muted" style="margin-top:10px;">Cumplimiento: no precios exactos, no APR, no cuota mensual, no promesas de aprobacion o stock garantizado.</p>
+      </section>
+
+      <section class="card" aria-label="Modulos fuente de conocimiento">
+        <p class="muted">Modulos fuente (.md) para scraping:</p>
+        <div class="chips">
+          <a class="chip" href="README.md" target="_blank" rel="noopener">README</a>
+          <a class="chip" href="01_Identidad_Negocio.md" target="_blank" rel="noopener">01 Identidad</a>
+          <a class="chip" href="02_Inventario.md" target="_blank" rel="noopener">02 Inventario</a>
+          <a class="chip" href="03_Financiamiento.md" target="_blank" rel="noopener">03 Financiamiento</a>
+          <a class="chip" href="04_Proceso_Compra.md" target="_blank" rel="noopener">04 Proceso</a>
+          <a class="chip" href="05_Trade_In.md" target="_blank" rel="noopener">05 Trade-In</a>
+          <a class="chip" href="07_Seguridad.md" target="_blank" rel="noopener">07 Seguridad</a>
+          <a class="chip" href="10_Limites_Bot.md" target="_blank" rel="noopener">10 Limites</a>
+          <a class="chip" href="13_Logica_Condicional.md" target="_blank" rel="noopener">13 Logica</a>
+        </div>
+      </section>
+
+      <section class="card" aria-label="Fuentes de inventario">
+        <p class="muted">Fuentes publicas de inventario:</p>
+        <div class="chips">
+          <a class="chip" href="https://dc-leads-processor.gyoan.workers.dev/latest?sort=Make:asc,Year:desc,Odometer:asc" target="_blank" rel="noopener">JSON ordenado por marca</a>
+          <a class="chip" href="https://dc-leads-processor.gyoan.workers.dev/latest/raw" target="_blank" rel="noopener">CSV crudo</a>
+          <a class="chip" href="?make=HONDA">Filtro ejemplo make=HONDA</a>
+          <a class="chip" href="?make=FORD&year=2024">Filtro ejemplo make=FORD&amp;year=2024</a>
+          <a class="chip" href="?model=MODEL%203">Filtro ejemplo model=MODEL 3</a>
+        </div>
+      </section>
+
+      <section class="card" aria-label="Resumen de inventario">
+        <div class="stats">
+          <div class="stat"><span class="muted">Vehiculos visibles</span><strong id="total-count">0</strong></div>
+          <div class="stat"><span class="muted">Marcas visibles</span><strong id="brand-count">0</strong></div>
+          <div class="stat"><span class="muted">Ultima actualizacion</span><strong id="updated-at">-</strong></div>
+        </div>
+        <p class="muted" id="active-filters">Filtros activos: ninguno</p>
+        <p class="muted" id="brand-summary">Marcas: -</p>
+      </section>
+
+      <section class="card" aria-label="Tabla de inventario">
+        <div class="scroll">
+          <table id="inventory-table">
+            <thead>
+              <tr>
+                <th>Stock Number</th>
+                <th>Year</th>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Exterior Color</th>
+                <th>Odometer</th>
+                <th>GPS Provider</th>
+                <th>Created Date</th>
+              </tr>
+            </thead>
+            <tbody id="inventory-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <noscript>
+        <section class="card">
+          <p>Activa JavaScript para ver la tabla renderizada. Mientras tanto usa:</p>
+          <p><code>https://dc-leads-processor.gyoan.workers.dev/latest?sort=Make:asc,Year:desc,Odometer:asc</code></p>
         </section>
+      </noscript>
     </main>
-    
-    <footer role="contentinfo" style="text-align: center; margin-top: 40px; padding: 20px; color: #666; border-top: 1px solid #ddd;">
-        <p>&copy; 2024 CarWarriors LLC Miami - Todos los derechos reservados</p>
-        <p><strong>Dirección:</strong> 3620 NW 27th Ave, Miami, FL 33142</p>
-        <p><strong>Teléfono:</strong> <a href="tel:+13059220417" style="color: #007bff;">+1 305-922-0417</a></p>
-        <p><strong>WhatsApp:</strong> <a href="https://wa.me/13059220417" style="color: #007bff;" target="_blank" rel="noopener">Enviar mensaje</a></p>
+
+    <footer>
+      Datos sin categorias inferidas. Solo campos reales del inventario y reglas reales de conocimiento.
     </footer>
-    <script>
-        function loadMD(file) {
-            fetch(file)
-                .then(res => res.text())
-                .then(md => {
-                    document.getElementById('content').innerHTML = marked.parse(md);
-                })
-                .catch(err => {
-                    document.getElementById('content').innerHTML = 'Error al cargar el archivo.';
-                });
+  </div>
+
+  <script id="knowledge-context" type="application/json">
+    {
+      "business_name": "CarWarriors LLC",
+      "address": "3620 NW 27th Ave, Miami, FL 33142",
+      "market": "Miami, Florida",
+      "languages": ["English", "Spanish"],
+      "timezone": "America/New_York",
+      "authority_hierarchy": [
+        "Safety and Compliance",
+        "Financing Rules",
+        "Inventory and Availability",
+        "Purchase Process",
+        "Trade-In"
+      ],
+      "golden_rule": "Safety > Financing > Inventory > Everything else",
+      "compliance_limits": [
+        "No exact prices",
+        "No monthly payment estimates",
+        "No APR numbers or rate quotes",
+        "No guaranteed approvals or inventory promises"
+      ]
+    }
+  </script>
+
+  <script>
+    const WORKER_JSON_URL = "https://dc-leads-processor.gyoan.workers.dev/latest?sort=Make:asc,Year:desc,Odometer:asc";
+    const LOCAL_CSV_URL = "carros_listos/CARROS%20LISTOS.csv";
+    const URL_PARAMS = new URLSearchParams(window.location.search);
+    const FILTERS = {
+      make: (URL_PARAMS.get("make") || "").trim().toUpperCase(),
+      year: (URL_PARAMS.get("year") || "").trim(),
+      model: (URL_PARAMS.get("model") || "").trim().toUpperCase()
+    };
+
+    start();
+
+    async function start() {
+      try {
+        const result = await loadFromWorker();
+        render(result.rows, result.updatedAt, "Worker JSON");
+      } catch {
+        const rows = await loadFromLocalCsv();
+        render(rows, new Date().toISOString(), "CSV local de respaldo");
+      }
+    }
+
+    async function loadFromWorker() {
+      const res = await fetch(WORKER_JSON_URL, { cache: "no-store" });
+      if (!res.ok) throw new Error("Worker not available");
+      const payload = await res.json();
+      const rows = Array.isArray(payload.rows) ? payload.rows : [];
+      const updatedAt = payload?.latest?.receivedAt || new Date().toISOString();
+      return { rows, updatedAt };
+    }
+
+    async function loadFromLocalCsv() {
+      const res = await fetch(LOCAL_CSV_URL, { cache: "no-store" });
+      if (!res.ok) throw new Error("CSV not available");
+      const text = await res.text();
+      const parsed = parseCsv(text);
+      return parsed.rows.map((r) => ({
+        "Stock Number": r["Stock Number"] || "",
+        Year: r.Year || "",
+        Make: r.Make || "",
+        Model: r.Model || "",
+        "Exterior Color": r["Exterior Color"] || "",
+        Odometer: r.Odometer || "",
+        "GPS Provider": r["GPS Provider"] || "",
+        "Created Date": r["Created Date"] || ""
+      }));
+    }
+
+    function render(inputRows, isoDate, sourceLabel) {
+      const filteredRows = applyFilters(inputRows);
+      const rows = [...filteredRows].sort(compareByMakeYearMileage);
+      const tbody = document.getElementById("inventory-body");
+      tbody.innerHTML = rows.map(rowToHtml).join("");
+
+      const byBrand = countBy(rows, (r) => (r.Make || "").trim());
+      const brandPairs = Object.entries(byBrand).sort((a, b) => a[0].localeCompare(b[0], "es", { sensitivity: "base" }));
+
+      document.getElementById("total-count").textContent = String(rows.length);
+      document.getElementById("brand-count").textContent = String(brandPairs.length);
+      document.getElementById("updated-at").textContent = formatIsoDate(isoDate);
+      document.getElementById("active-filters").textContent = "Filtros activos: " + describeFilters();
+      document.getElementById("source-meta").textContent = `Fuente: ${sourceLabel} | orden: Make asc, Year desc, Odometer asc`;
+      document.getElementById("brand-summary").textContent =
+        "Marcas: " + (brandPairs.length ? brandPairs.map(([make, n]) => `${make || "(vacio)"} (${n})`).join(" | ") : "sin datos");
+    }
+
+    function applyFilters(rows) {
+      return rows.filter((r) => {
+        if (FILTERS.make && String(r.Make || "").toUpperCase() !== FILTERS.make) return false;
+        if (FILTERS.year && String(r.Year || "").trim() !== FILTERS.year) return false;
+        if (FILTERS.model && !String(r.Model || "").toUpperCase().includes(FILTERS.model)) return false;
+        return true;
+      });
+    }
+
+    function describeFilters() {
+      const parts = [];
+      if (FILTERS.make) parts.push(`make=${FILTERS.make}`);
+      if (FILTERS.year) parts.push(`year=${FILTERS.year}`);
+      if (FILTERS.model) parts.push(`model~${FILTERS.model}`);
+      return parts.length ? parts.join(" | ") : "ninguno";
+    }
+
+    function rowToHtml(r) {
+      return `<tr>
+        <td>${escapeHtml(r["Stock Number"] || "")}</td>
+        <td>${escapeHtml(r.Year || "")}</td>
+        <td>${escapeHtml(r.Make || "")}</td>
+        <td>${escapeHtml(r.Model || "")}</td>
+        <td>${escapeHtml(r["Exterior Color"] || "")}</td>
+        <td>${escapeHtml(r.Odometer || "")}</td>
+        <td>${escapeHtml(r["GPS Provider"] || "")}</td>
+        <td>${escapeHtml(r["Created Date"] || "")}</td>
+      </tr>`;
+    }
+
+    function compareByMakeYearMileage(a, b) {
+      const makeCmp = String(a.Make || "").localeCompare(String(b.Make || ""), "es", { sensitivity: "base" });
+      if (makeCmp !== 0) return makeCmp;
+
+      const yearA = toNum(a.Year);
+      const yearB = toNum(b.Year);
+      if (yearA !== yearB) return yearB - yearA;
+
+      const odoA = toNum(a.Odometer);
+      const odoB = toNum(b.Odometer);
+      return odoA - odoB;
+    }
+
+    function toNum(v) {
+      const n = Number(String(v || "").replaceAll(",", "").trim());
+      return Number.isFinite(n) ? n : 0;
+    }
+
+    function countBy(arr, keyFn) {
+      const out = {};
+      for (const item of arr) {
+        const k = keyFn(item);
+        out[k] = (out[k] || 0) + 1;
+      }
+      return out;
+    }
+
+    function formatIsoDate(v) {
+      const d = new Date(v);
+      if (Number.isNaN(d.getTime())) return "-";
+      return d.toISOString();
+    }
+
+    function escapeHtml(v) {
+      return String(v)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#39;");
+    }
+
+    function parseCsv(text) {
+      const lines = text.replaceAll("\r", "").split("\n").filter((line) => line.trim() !== "");
+      if (!lines.length) return { headers: [], rows: [] };
+
+      const headers = parseCsvLine(lines[0]).map((h) => h.trim());
+      const rows = [];
+      for (let i = 1; i < lines.length; i++) {
+        const cols = parseCsvLine(lines[i]);
+        const row = {};
+        for (let j = 0; j < headers.length; j++) {
+          row[headers[j]] = (cols[j] || "").trim();
         }
-        
-        function loadInventory() {
-            fetch('carros_listos/inventario.csv')
-                .then(res => res.text())
-                .then(csv => {
-                    const lines = csv.trim().split('\n').slice(1); // Skip header
-                    const categories = {SUV: [], Sedan: [], Truck: [], Hybrid: [], Other: []};
-                    lines.forEach(line => {
-                        const cols = line.split(',');
-                        if (cols.length < 5) return;
-                        const year = cols[2], make = cols[3], model = cols[4];
-                        const fullModel = `${make} ${model}`.toLowerCase();
-                        let cat = 'Other';
-                        if (fullModel.includes('equinox') || fullModel.includes('atlas') || fullModel.includes('x6') || fullModel.includes('gle') || fullModel.includes('qx60') || fullModel.includes('range rover') || fullModel.includes('tonale') || fullModel.includes('qx80')) cat = 'SUV';
-                        else if (fullModel.includes('accord') || fullModel.includes('civic') || fullModel.includes('charger') || fullModel.includes('camaro') || fullModel.includes('giulia') || fullModel.includes('dart') || fullModel.includes('q70') || fullModel.includes('q50') || fullModel.includes('e-class') || fullModel.includes('c-class') || fullModel.includes('falcon') || fullModel.includes('mustang')) cat = 'Sedan';
-                        else if (fullModel.includes('2500') || fullModel.includes('tacoma') || fullModel.includes('ridgeline') || fullModel.includes('silverado') || fullModel.includes('f350') || fullModel.includes('canyon') || fullModel.includes('transit') || fullModel.includes('3500 hd')) cat = 'Truck';
-                        else if (fullModel.includes('model 3') || fullModel.includes('equinox ev')) cat = 'Hybrid';
-                        categories[cat].push(`${year} ${make} ${model}`);
-                    });
-                    let html = '<h2>Inventario Disponible</h2><p>Lista general por categorías (sin precios ni detalles exactos por políticas de cumplimiento).</p>';
-                    for (const [cat, cars] of Object.entries(categories)) {
-                        if (cars.length > 0) {
-                            const listItems = cars.map(car => `<li>${car}</li>`).join('');
-                            html += `<h3>${cat} (${cars.length} disponibles)</h3><ul>${listItems}</ul>`;
-                        }
-                    }
-                    document.getElementById('content').innerHTML = html;
-                })
-                .catch(err => {
-                    document.getElementById('content').innerHTML = 'Error al cargar inventario.';
-                });
+        rows.push(row);
+      }
+      return { headers, rows };
+    }
+
+    function parseCsvLine(line) {
+      const out = [];
+      let cur = "";
+      let inQuotes = false;
+      let i = 0;
+      while (i < line.length) {
+        const c = line[i];
+        if (c === '"') {
+          if (inQuotes && line[i + 1] === '"') {
+            cur += '"';
+            i += 2;
+            continue;
+          }
+          inQuotes = !inQuotes;
+          i++;
+          continue;
         }
-        
-        // Load default
-        loadMD('README.md');
-    </script>
+        if (c === "," && !inQuotes) {
+          out.push(cur);
+          cur = "";
+          i++;
+          continue;
+        }
+        cur += c;
+        i++;
+      }
+      out.push(cur);
+      return out;
+    }
+  </script>
 </body>
 </html>
