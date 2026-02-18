@@ -42,6 +42,10 @@ If user is comparing or just browsing:
 If user repeats same demand 3 times:
 - escalate to human advisor immediately
 
+### Indecisive Customer Rule
+If customer changes category 3 times:
+- Ask: “To simplify, what would be the main use of the vehicle?”
+
 ### Urgency Rule
 If user says buying today/now:
 - skip non-essential questions

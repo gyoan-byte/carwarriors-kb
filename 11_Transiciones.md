@@ -33,7 +33,7 @@ Provide natural bridge phrases for moving from bot support to human assistance.
 - "Let me pass this to the specialist immediately."
 - "I can connect you with a live advisor now."
 - "Let us move to the right team so this stays accurate."
-- "I can route this to the correct desk now."
+- "Let me connect you with the right person."
 - "I can hand this off now so you get precise details."
 - "Let us connect you with the advisor who can confirm this."
 - "I can move you to the next step right away."

@@ -51,6 +51,12 @@ Alternative openers:
 - "All right"
 - "Perfect, let us move forward"
 
+### Positive Emotion Phrases
+- "I love that model."
+- "Good choice."
+- "That's a very popular category here."
+- "That usually works very well for families."
+
 Momentum closers:
 - "What works best for you?"
 - "Does that work for you?"
