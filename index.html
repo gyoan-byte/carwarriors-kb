@@ -142,8 +142,7 @@
     .brand-groups {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin-top: 10px;
+      gap: 20px;
     }
     details {
       border: 1px solid var(--line);
@@ -207,7 +206,7 @@
         <a class="chip primary" href="#modules" rel="nofollow">Modules</a>
       </div>
 
-      <div class="meta" id="source-meta">Source: loading...</div>
+      <div class="meta">Source: Worker JSON endpoints | sorting: make asc, year desc, odometer asc</div>
     </header>
 
     <main>
@@ -288,118 +287,28 @@
 
       <!-- PAGE: INVENTORY -->
       <section class="page" data-page="inventory">
-        <!-- NEW: organized inventory snapshot -->
-        <section class="card" aria-label="Inventory snapshot organized">
-          <h2>Inventory Snapshot (Organized)</h2>
-          <p class="muted">Auto-generated from the live JSON feed (counts by Make / Year / GPS Provider).</p>
-
-          <div class="grid-3">
-            <div class="scroll" style="min-width:auto">
-              <table style="min-width:520px">
-                <thead><tr><th>Make</th><th>Count</th></tr></thead>
-                <tbody id="summary-make"></tbody>
-              </table>
-            </div>
-
-            <div class="scroll" style="min-width:auto">
-              <table style="min-width:520px">
-                <thead><tr><th>Year</th><th>Count</th></tr></thead>
-                <tbody id="summary-year"></tbody>
-              </table>
-            </div>
-
-            <div class="scroll" style="min-width:auto">
-              <table style="min-width:520px">
-                <thead><tr><th>GPS Provider</th><th>Count</th></tr></thead>
-                <tbody id="summary-gps"></tbody>
-              </table>
-            </div>
+        <section class="card" aria-label="Live inventory">
+          <h2>Inventory</h2>
+          <p class="muted">Vehicles organized by make, sorted by make asc, year desc, odometer asc.</p>
+          <div id="inventory-stats" class="grid-4">
+            <div class="stat"><small>Total vehicles</small><strong>...</strong></div>
+            <div class="stat"><small>Brands</small><strong>...</strong></div>
+            <div class="stat"><small>Min odometer</small><strong>...</strong></div>
+            <div class="stat"><small>Max odometer</small><strong>...</strong></div>
           </div>
-
-          <p class="result-line" id="snapshot-line">Loading snapshot...</p>
+          <div class="warning" id="inventory-warning"></div>
+          <p class="result-line" id="inventory-meta">Loading inventory from API...</p>
+          <div class="brand-groups" id="inventory-brands"></div>
         </section>
-
-        <!-- EXISTING: inventory dashboard -->
-        <section class="card" aria-label="Inventory dashboard">
-          <h2>Inventory Dashboard</h2>
-
-          <div class="grid-4">
-            <div class="stat"><small>Total records</small><strong id="total-count">0</strong></div>
-            <div class="stat"><small>Visible records</small><strong id="visible-count">0</strong></div>
-            <div class="stat"><small>Unique makes</small><strong id="make-count">0</strong></div>
-            <div class="stat"><small>Last update</small><strong id="updated-at">-</strong></div>
-          </div>
-
-          <p class="result-line" id="meta-line">Source file: -</p>
-
-          <div class="controls" aria-label="Filters">
-            <label class="control">Search (stock, make, model, color, gps)
-              <input id="search-input" type="search" placeholder="Example: honda, model 3, N304247" />
-            </label>
-            <label class="control">Make
-              <select id="make-filter"><option value="">All makes</option></select>
-            </label>
-            <label class="control">Year
-              <select id="year-filter"><option value="">All years</option></select>
-            </label>
-            <label class="control">Rows per page
-              <select id="page-size">
-                <option value="10">10</option>
-                <option value="25" selected>25</option>
-                <option value="50">50</option>
-                <option value="100">100</option>
-              </select>
-            </label>
-          </div>
-
-          <div class="toolbar">
-            <a id="export-json" class="button-link" href="https://dc-leads-processor.gyoan.workers.dev/latest" target="_blank" rel="noopener">Open JSON</a>
-            <a id="export-csv" class="button-link alt" href="https://dc-leads-processor.gyoan.workers.dev/latest/raw" target="_blank" rel="noopener">Download CSV</a>
-            <a id="export-meta" class="button-link alt" href="https://dc-leads-processor.gyoan.workers.dev/latest/meta" target="_blank" rel="noopener">Open metadata</a>
-          </div>
-
-          <div class="result-line" id="result-line">Loading inventory...</div>
-          <div class="warning" id="warning-box"></div>
-
-          <div class="scroll">
-            <table>
-              <thead>
-                <tr>
-                  <th>Stock Number</th>
-                  <th>Year</th>
-                  <th>Make</th>
-                  <th>Model</th>
-                  <th>Exterior Color</th>
-                  <th>Odometer</th>
-                  <th>GPS Provider</th>
-                  <th>Created Date</th>
-                </tr>
-              </thead>
-              <tbody id="inventory-body"></tbody>
-            </table>
-          </div>
-
-          <div class="pagination">
-            <button id="prev-page" type="button">Prev</button>
-            <span id="page-label">Page 1 of 1</span>
-            <button id="next-page" type="button">Next</button>
-          </div>
-        </section>
-
-        <section class="card" aria-label="Inventory by make">
-          <h2>Inventory By Make (Collapsible)</h2>
-          <p class="muted">Each block includes count and a short preview of units.</p>
-          <div id="brand-groups" class="brand-groups"></div>
-        </section>
-
-        <noscript>
-          <section class="card">
-            <p>JavaScript is required for the interactive dashboard. Direct links still work:</p>
-            <p><code>https://dc-leads-processor.gyoan.workers.dev/latest</code></p>
-            <p><code>https://dc-leads-processor.gyoan.workers.dev/latest/raw</code></p>
-          </section>
-        </noscript>
       </section>
+
+      <noscript>
+        <section class="card">
+          <p>JavaScript is required for the interactive dashboard. Direct links still work:</p>
+          <p><code>https://dc-leads-processor.gyoan.workers.dev/latest</code></p>
+          <p><code>https://dc-leads-processor.gyoan.workers.dev/latest/raw</code></p>
+        </section>
+      </noscript>
     </main>
 
     <footer>
@@ -447,67 +356,16 @@
   </script>
 
   <script type="module">
-    const ENDPOINTS = {
-      latest: "https://dc-leads-processor.gyoan.workers.dev/latest?sort=Make:asc,Year:desc,Odometer:asc",
-      meta: "https://dc-leads-processor.gyoan.workers.dev/latest/meta",
-      raw: "https://dc-leads-processor.gyoan.workers.dev/latest/raw"
-    };
-
-    const state = {
-      allRows: [],
-      filteredRows: [],
-      page: 1,
-      pageSize: 25,
-      latestMeta: null,
-      sourceLabel: "Worker JSON"
-    };
-
+    const API_BASE = "https://dc-leads-processor.gyoan.workers.dev";
     const ui = {
-      sourceMeta: document.getElementById("source-meta"),
-
-      // pages
       pages: Array.from(document.querySelectorAll("[data-page]")),
-
-      // readme
       readmeRender: document.getElementById("readme-render"),
       readmeWarning: document.getElementById("readme-warning"),
-
-      // snapshot
-      summaryMake: document.getElementById("summary-make"),
-      summaryYear: document.getElementById("summary-year"),
-      summaryGps: document.getElementById("summary-gps"),
-      snapshotLine: document.getElementById("snapshot-line"),
-
-      // stats
-      totalCount: document.getElementById("total-count"),
-      visibleCount: document.getElementById("visible-count"),
-      makeCount: document.getElementById("make-count"),
-      updatedAt: document.getElementById("updated-at"),
-      metaLine: document.getElementById("meta-line"),
-      resultLine: document.getElementById("result-line"),
-      warningBox: document.getElementById("warning-box"),
-
-      // table + filters
-      tableBody: document.getElementById("inventory-body"),
-      makeFilter: document.getElementById("make-filter"),
-      yearFilter: document.getElementById("year-filter"),
-      searchInput: document.getElementById("search-input"),
-      pageSize: document.getElementById("page-size"),
-      prevPage: document.getElementById("prev-page"),
-      nextPage: document.getElementById("next-page"),
-      pageLabel: document.getElementById("page-label"),
-      brandGroups: document.getElementById("brand-groups")
+      inventoryStats: document.getElementById("inventory-stats"),
+      inventoryWarning: document.getElementById("inventory-warning"),
+      inventoryMeta: document.getElementById("inventory-meta"),
+      inventoryBrands: document.getElementById("inventory-brands")
     };
-
-    // init
-    bindUi();
-    route();
-    globalThis.addEventListener("hashchange", route);
-
-    await Promise.all([
-      loadReadmeIntoHome(),
-      bootstrapInventory()
-    ]);
 
     function route() {
       const hash = (globalThis.location.hash || "#home").replaceAll("#", "").trim().toLowerCase();
@@ -515,30 +373,6 @@
       for (const el of ui.pages) {
         el.classList.toggle("active", el.dataset.page === page);
       }
-    }
-
-    function bindUi() {
-      ui.searchInput?.addEventListener("input", () => { state.page = 1; applyFiltersAndRender(); });
-      ui.makeFilter?.addEventListener("change", () => { state.page = 1; applyFiltersAndRender(); });
-      ui.yearFilter?.addEventListener("change", () => { state.page = 1; applyFiltersAndRender(); });
-      ui.pageSize?.addEventListener("change", () => {
-        state.pageSize = Number(ui.pageSize.value) || 25;
-        state.page = 1;
-        renderPagedTable();
-      });
-      ui.prevPage?.addEventListener("click", () => {
-        if (state.page > 1) {
-          state.page -= 1;
-          renderPagedTable();
-        }
-      });
-      ui.nextPage?.addEventListener("click", () => {
-        const maxPage = getMaxPage();
-        if (state.page < maxPage) {
-          state.page += 1;
-          renderPagedTable();
-        }
-      });
     }
 
     async function loadReadmeIntoHome() {
@@ -556,299 +390,96 @@
       }
     }
 
-    async function bootstrapInventory() {
+    route();
+    globalThis.addEventListener("hashchange", route);
+    loadReadmeIntoHome();
+    loadInventoryIntoPage();
+
+    async function loadInventoryIntoPage() {
       try {
-        const [latestRes, metaRes] = await Promise.all([
-          fetch(ENDPOINTS.latest, { cache: "no-store" }),
-          fetch(ENDPOINTS.meta, { cache: "no-store" })
+        const [latestRes, statsRes] = await Promise.all([
+          fetch(`${API_BASE}/latest`, { cache: "no-store" }),
+          fetch(`${API_BASE}/stats`, { cache: "no-store" })
         ]);
+        if (!latestRes.ok) throw new Error(`latest returned ${latestRes.status}`);
 
-        if (!latestRes.ok) throw new Error("Latest endpoint unavailable");
+        const latest = await latestRes.json();
+        const stats = statsRes.ok ? await statsRes.json() : null;
+        const rows = Array.isArray(latest?.rows) ? latest.rows : [];
+        if (!rows.length) throw new Error("No rows in latest payload.");
 
-        const latestPayload = await latestRes.json();
-        state.allRows = Array.isArray(latestPayload.rows) ? latestPayload.rows : [];
+        ui.inventoryWarning.style.display = "none";
+        ui.inventoryMeta.textContent = buildInventoryMetaText(latest, rows.length);
+        ui.inventoryStats.innerHTML = buildInventoryStatsHtml(rows, stats);
+        ui.inventoryBrands.innerHTML = renderInventoryByMake(rows);
+      } catch (error) {
+        console.error("loadInventoryIntoPage error:", error);
+        ui.inventoryWarning.style.display = "block";
+        ui.inventoryWarning.textContent = "Could not load live inventory data from API.";
+        ui.inventoryMeta.textContent = "Inventory unavailable right now.";
+        ui.inventoryStats.innerHTML = "";
+        ui.inventoryBrands.innerHTML = "";
+      }
+    }
 
-        if (metaRes.ok) {
-          state.latestMeta = await metaRes.json();
-        } else {
-          state.latestMeta = latestPayload.latest || null;
+    function buildInventoryMetaText(latest, rowCount) {
+      const receivedAt = latest?.latest?.receivedAt ? new Date(latest.latest.receivedAt) : null;
+      const receivedText = receivedAt && !Number.isNaN(receivedAt.getTime())
+        ? receivedAt.toLocaleString("en-US")
+        : "unknown";
+      const fileName = String(latest?.latest?.filename || "unknown");
+      return `Last update: ${receivedText} | File: ${fileName} | Vehicles: ${rowCount}`;
+    }
+
+    function buildInventoryStatsHtml(rows, stats) {
+      const brands = new Set(rows.map((row) => String(row["Make"] || "").trim()).filter(Boolean));
+      const odometers = rows
+        .map((row) => Number.parseInt(String(row["Odometer"] || "").replaceAll(",", ""), 10))
+        .filter((value) => Number.isFinite(value));
+
+      const minOdometer = stats?.odometer?.min ?? (odometers.length ? Math.min(...odometers) : null);
+      const maxOdometer = stats?.odometer?.max ?? (odometers.length ? Math.max(...odometers) : null);
+
+      return [
+        statCard("Total vehicles", String(rows.length)),
+        statCard("Brands", String(brands.size)),
+        statCard("Min odometer", formatMiles(minOdometer)),
+        statCard("Max odometer", formatMiles(maxOdometer))
+      ].join("");
+    }
+
+    function statCard(label, value) {
+      return `<div class="stat"><small>${escapeHtml(label)}</small><strong>${escapeHtml(value)}</strong></div>`;
+    }
+
+    function renderInventoryByMake(rows) {
+      const groups = new Map();
+      for (const row of rows) {
+        const make = String(row["Make"] || "").trim() || "UNKNOWN";
+        if (!groups.has(make)) groups.set(make, []);
+        groups.get(make).push(row);
+      }
+
+      const out = [];
+      for (const [make, vehicles] of groups.entries()) {
+        out.push(`<h3>${escapeHtml(make)} (${vehicles.length})</h3>`);
+        out.push('<div class="brand-inner"><ul>');
+        for (const row of vehicles) {
+          const year = String(row["Year"] || "").trim() || "N/A";
+          const model = String(row["Model"] || "").trim() || "N/A";
+          const stock = String(row["Stock Number"] || "").trim() || "N/A";
+          const odo = formatMiles(row["Odometer"]);
+          out.push(`<li>${escapeHtml(year)} ${escapeHtml(model)} - ${escapeHtml(stock)} - ${escapeHtml(odo)}</li>`);
         }
-
-        ui.warningBox.style.display = "none";
-        applyInitialUrlFilters();
-        buildFilterOptions();
-        applyFiltersAndRender();
-        updateHeaderAndMeta();
-        updateJsonLd();
-
-        renderInventorySnapshot(); // NEW
-      } catch (err) {
-        console.error("bootstrapInventory error:", err);
-        ui.warningBox.style.display = "block";
-        ui.warningBox.textContent = "Could not load live inventory from worker endpoints.";
-        ui.sourceMeta.textContent = "Source: unavailable";
-        ui.resultLine.textContent = "No data available.";
-        ui.snapshotLine.textContent = "Snapshot unavailable.";
+        out.push("</ul></div>");
       }
+      return out.join("");
     }
 
-    function applyInitialUrlFilters() {
-      const params = new URLSearchParams(globalThis.location.search);
-      const make = (params.get("make") || "").trim();
-      const year = (params.get("year") || "").trim();
-      const query = (params.get("q") || params.get("model") || "").trim();
-
-      if (query) ui.searchInput.value = query;
-      if (make) ui.makeFilter.dataset.init = make.toUpperCase();
-      if (year) ui.yearFilter.dataset.init = year;
-    }
-
-    function buildFilterOptions() {
-      const makes = uniq(state.allRows.map((r) => String(r.Make || "").trim()).filter(Boolean))
-        .sort((a, b) => a.localeCompare(b, "en", { sensitivity: "base" }));
-      const years = uniq(state.allRows.map((r) => String(r.Year || "").trim()).filter(Boolean))
-        .sort((a, b) => Number(b) - Number(a));
-
-      ui.makeFilter.innerHTML = `<option value="">All makes</option>${buildOptions(makes)}`;
-      ui.yearFilter.innerHTML = `<option value="">All years</option>${buildOptions(years)}`;
-
-      const initMake = ui.makeFilter.dataset.init;
-      const initYear = ui.yearFilter.dataset.init;
-      if (initMake && makes.some((m) => m.toUpperCase() === initMake)) {
-        ui.makeFilter.value = makes.find((m) => m.toUpperCase() === initMake);
-      }
-      if (initYear && years.includes(initYear)) {
-        ui.yearFilter.value = initYear;
-      }
-    }
-
-    function buildOptions(values) {
-      return values.map((value) => {
-        const safeValue = escapeAttr(value);
-        const safeLabel = escapeHtml(value);
-        return `<option value="${safeValue}">${safeLabel}</option>`;
-      }).join("");
-    }
-
-    function applyFiltersAndRender() {
-      const q = ui.searchInput.value.trim().toUpperCase();
-      const make = ui.makeFilter.value.trim().toUpperCase();
-      const year = ui.yearFilter.value.trim();
-
-      state.filteredRows = state.allRows.filter((r) => {
-        if (make && String(r.Make || "").toUpperCase() !== make) return false;
-        if (year && String(r.Year || "").trim() !== year) return false;
-        if (!q) return true;
-
-        const blob = [
-          r["Stock Number"],
-          r.Year,
-          r.Make,
-          r.Model,
-          r["Exterior Color"],
-          r["GPS Provider"]
-        ].map((x) => String(x || "").toUpperCase()).join(" ");
-
-        return blob.includes(q);
-      });
-
-      state.filteredRows.sort(compareByMakeYearMileage);
-      renderStats();
-      renderPagedTable();
-      renderBrandGroups();
-    }
-
-    function renderStats() {
-      const uniqueMakes = uniq(state.filteredRows.map((r) => String(r.Make || "").trim()).filter(Boolean));
-      ui.totalCount.textContent = String(state.allRows.length);
-      ui.visibleCount.textContent = String(state.filteredRows.length);
-      ui.makeCount.textContent = String(uniqueMakes.length);
-      ui.resultLine.textContent = `Showing ${state.filteredRows.length} of ${state.allRows.length} records.`;
-    }
-
-    // NEW: Organized snapshot tables (based on FULL inventory, not filtered)
-    function renderInventorySnapshot() {
-      const total = state.allRows.length;
-
-      const makeCounts = countBy(state.allRows, (r) => String(r.Make || "").trim() || "(empty)");
-      const yearCounts = countBy(state.allRows, (r) => String(r.Year || "").trim() || "(empty)");
-      const gpsCounts  = countBy(state.allRows, (r) => String(r["GPS Provider"] || "").trim() || "(empty)");
-
-      const topMakes = sortCounts(makeCounts, "desc").slice(0, 25);
-      const years = sortCounts(yearCounts, "descNum").slice(0, 25);
-      const gps = sortCounts(gpsCounts, "desc").slice(0, 25);
-
-      ui.summaryMake.innerHTML = topMakes.length
-        ? topMakes.map(([k, c]) => `<tr><td>${escapeHtml(k)}</td><td>${escapeHtml(c)}</td></tr>`).join("")
-        : `<tr><td colspan="2">No data</td></tr>`;
-
-      ui.summaryYear.innerHTML = years.length
-        ? years.map(([k, c]) => `<tr><td>${escapeHtml(k)}</td><td>${escapeHtml(c)}</td></tr>`).join("")
-        : `<tr><td colspan="2">No data</td></tr>`;
-
-      ui.summaryGps.innerHTML = gps.length
-        ? gps.map(([k, c]) => `<tr><td>${escapeHtml(k)}</td><td>${escapeHtml(c)}</td></tr>`).join("")
-        : `<tr><td colspan="2">No data</td></tr>`;
-
-      const updated = state.latestMeta?.receivedAt || "";
-      ui.snapshotLine.textContent = `Snapshot: ${total} records | updated: ${formatIsoDate(updated)}`;
-    }
-
-    function renderPagedTable() {
-      const maxPage = getMaxPage();
-      if (state.page > maxPage) state.page = maxPage;
-
-      const start = (state.page - 1) * state.pageSize;
-      const end = start + state.pageSize;
-      const pageRows = state.filteredRows.slice(start, end);
-
-      ui.tableBody.innerHTML = pageRows.length
-        ? pageRows.map(rowToHtml).join("")
-        : `<tr><td colspan="8">No records found for current filters.</td></tr>`;
-
-      ui.pageLabel.textContent = `Page ${state.page} of ${maxPage}`;
-      ui.prevPage.disabled = state.page <= 1;
-      ui.nextPage.disabled = state.page >= maxPage;
-    }
-
-    function renderBrandGroups() {
-      const grouped = groupBy(state.filteredRows, (r) => String(r.Make || "").trim() || "(empty)");
-      const makes = Object.keys(grouped).sort((a, b) => a.localeCompare(b, "en", { sensitivity: "base" }));
-
-      if (!makes.length) {
-        ui.brandGroups.innerHTML = `<p class="muted">No make groups to display.</p>`;
-        return;
-      }
-
-      ui.brandGroups.innerHTML = makes
-        .map((make) => {
-          const items = grouped[make];
-          const preview = items
-            .slice(0, 8)
-            .map((r) => `<li>${escapeHtml(r.Year)} ${escapeHtml(r.Model)} - ${escapeHtml(r["Stock Number"])} - ${escapeHtml(r.Odometer)} mi</li>`)
-            .join("");
-          const extra = items.length > 8 ? `<p class="muted">+${items.length - 8} more units...</p>` : "";
-
-          return `<details>
-            <summary>${escapeHtml(make)} (${items.length})</summary>
-            <div class="brand-inner">
-              <p class="muted">Sorted by make asc, year desc, odometer asc.</p>
-              <ul>${preview || "<li>No units</li>"}</ul>
-              ${extra}
-            </div>
-          </details>`;
-        })
-        .join("");
-    }
-
-    function updateHeaderAndMeta() {
-      const updated = state.latestMeta?.receivedAt || "";
-      const filename = state.latestMeta?.filename || "-";
-      const sender = state.latestMeta?.from || "-";
-
-      ui.updatedAt.textContent = formatIsoDate(updated);
-      ui.metaLine.textContent = `Source file: ${filename} | Sender: ${sender}`;
-      ui.sourceMeta.textContent = "Source: Worker JSON endpoints | sorting: make asc, year desc, odometer asc";
-    }
-
-    function updateJsonLd() {
-      const script = document.getElementById("inventory-jsonld");
-      const payload = {
-        "@context": "https://schema.org",
-        "@type": "Dataset",
-        name: "CarWarriors Live Inventory",
-        description: "Live inventory and knowledge hub for CarWarriors.",
-        url: "https://gyoan-byte.github.io/carwarriors-kb/",
-        dateModified: state.latestMeta?.receivedAt || new Date().toISOString(),
-        variableMeasured: ["Stock Number", "Year", "Make", "Model", "Exterior Color", "Odometer", "GPS Provider", "Created Date"],
-        keywords: ["used cars", "inventory", "miami", "carwarriors"],
-        distribution: [
-          { "@type": "DataDownload", encodingFormat: "application/json", contentUrl: ENDPOINTS.latest },
-          { "@type": "DataDownload", encodingFormat: "text/csv", contentUrl: ENDPOINTS.raw }
-        ]
-      };
-      script.textContent = JSON.stringify(payload, null, 2);
-    }
-
-    function getMaxPage() {
-      return Math.max(1, Math.ceil(state.filteredRows.length / state.pageSize));
-    }
-
-    function compareByMakeYearMileage(a, b) {
-      const makeCmp = String(a.Make || "").localeCompare(String(b.Make || ""), "en", { sensitivity: "base" });
-      if (makeCmp !== 0) return makeCmp;
-      const yearCmp = toNum(b.Year) - toNum(a.Year);
-      if (yearCmp !== 0) return yearCmp;
-      return toNum(a.Odometer) - toNum(b.Odometer);
-    }
-
-    function rowToHtml(r) {
-      return `<tr>
-        <td>${escapeHtml(r["Stock Number"] || "")}</td>
-        <td>${escapeHtml(r.Year || "")}</td>
-        <td>${escapeHtml(r.Make || "")}</td>
-        <td>${escapeHtml(r.Model || "")}</td>
-        <td>${escapeHtml(r["Exterior Color"] || "")}</td>
-        <td>${escapeHtml(r.Odometer || "")}</td>
-        <td>${escapeHtml(r["GPS Provider"] || "")}</td>
-        <td>${escapeHtml(r["Created Date"] || "")}</td>
-      </tr>`;
-    }
-
-    function toNum(v) {
-      const n = Number(String(v || "").replaceAll(",", "").trim());
-      return Number.isFinite(n) ? n : 0;
-    }
-
-    function groupBy(arr, keyFn) {
-      const out = {};
-      for (const item of arr) {
-        const key = keyFn(item);
-        if (!out[key]) out[key] = [];
-        out[key].push(item);
-      }
-      return out;
-    }
-
-    function uniq(arr) {
-      return [...new Set(arr)];
-    }
-
-    function formatIsoDate(value) {
-      const dt = new Date(value);
-      if (Number.isNaN(dt.getTime())) return "-";
-      return dt.toISOString();
-    }
-
-    function escapeHtml(v) {
-      return String(v)
-        .replaceAll("&", "&amp;")
-        .replaceAll("<", "&lt;")
-        .replaceAll(">", "&gt;")
-        .replaceAll('"', "&quot;")
-        .replaceAll("'", "&#39;");
-    }
-
-    function escapeAttr(v) {
-      return String(v).replaceAll('"', "&quot;");
-    }
-
-    // NEW: simple counting helpers
-    function countBy(arr, keyFn) {
-      const map = new Map();
-      for (const item of arr) {
-        const k = keyFn(item);
-        map.set(k, (map.get(k) || 0) + 1);
-      }
-      return map;
-    }
-
-    function sortCounts(map, mode) {
-      const pairs = Array.from(map.entries());
-      if (mode === "descNum") {
-        return pairs.sort((a, b) => (toNum(b[0]) - toNum(a[0])) || (b[1] - a[1]));
-      }
-      return pairs.sort((a, b) => (b[1] - a[1]) || String(a[0]).localeCompare(String(b[0]), "en", { sensitivity: "base" }));
+    function formatMiles(value) {
+      const parsed = Number.parseInt(String(value ?? "").replaceAll(",", ""), 10);
+      if (!Number.isFinite(parsed)) return "N/A";
+      return `${new Intl.NumberFormat("en-US").format(parsed)} mi`;
     }
 
     // Lightweight markdown renderer (escaped output)
@@ -924,6 +555,19 @@
       s = s.replaceAll(/\*([^*]+)\*/g, "<em>$1</em>");
 
       return s;
+    }
+
+    function escapeHtml(v) {
+      return String(v)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#39;");
+    }
+
+    function escapeAttr(v) {
+      return String(v).replaceAll('"', "&quot;");
     }
   </script>
 </body>
