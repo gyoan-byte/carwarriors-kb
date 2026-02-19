@@ -367,6 +367,7 @@ async function handleReady(url, env) {
   const modelFilter = normalizeSearchText(url.searchParams.get("model") || "");
   const bodyTypeFilter = normalizeSearchText(url.searchParams.get("bodyType") || "");
   const yearFilter = String(url.searchParams.get("year") || "").trim();
+  const includeKb = /^(1|true|yes)$/i.test(String(url.searchParams.get("includeKb") || "").trim());
   const rawLimit = url.searchParams.get("limit");
   const limit = rawLimit === null || String(rawLimit).trim() === "" ? normalized.length : clampInt(rawLimit, 1, 200, 100);
 
@@ -382,23 +383,10 @@ async function handleReady(url, env) {
 
   const totalMatched = filtered.length;
   filtered = filtered.slice(0, limit);
+  const kb = includeKb ? await getKnowledgeIndex(env) : null;
 
-  return json({
-    ok: true,
-    generatedAt: new Date().toISOString(),
-    source: "CARROS LISTOS",
-    disclaimer: "Preliminary availability only. Final unit confirmation with a human advisor.",
-    filters: {
-      q: q || null,
-      make: makeFilter || null,
-      model: modelFilter || null,
-      year: yearFilter || null,
-      bodyType: bodyTypeFilter || null,
-      limit,
-      totalMatched,
-    },
-    byMake: countBy(filtered, (v) => v.make),
-    vehicles: filtered.map((v) => ({
+  const vehicles = filtered.map((v) => {
+    const out = {
       stockNumber: v.stockNumber,
       year: v.year,
       make: v.make,
@@ -420,7 +408,51 @@ async function handleReady(url, env) {
         text: v.queryText,
         tokens: v.queryTokens,
       },
-    })),
+    };
+
+    if (includeKb) {
+      const entry = kb?.ok ? kb.index[v.kb.lookupKeyNorm] || null : null;
+      out.kbReference = entry
+        ? {
+            found: true,
+            classification: entry.classification,
+            technicalBaseline: entry.technicalBaseline,
+            ownershipBaseline: entry.ownershipBaseline,
+            performanceBaseline: entry.performanceBaseline,
+            lastVerified: entry.lastVerified,
+          }
+        : { found: false };
+    }
+
+    return out;
+  });
+
+  return json({
+    ok: true,
+    generatedAt: new Date().toISOString(),
+    source: "CARROS LISTOS",
+    disclaimer: "Preliminary availability only. Final unit confirmation with a human advisor.",
+    filters: {
+      q: q || null,
+      make: makeFilter || null,
+      model: modelFilter || null,
+      year: yearFilter || null,
+      bodyType: bodyTypeFilter || null,
+      includeKb,
+      limit,
+      totalMatched,
+    },
+    knowledge: includeKb
+      ? {
+          enabled: true,
+          available: Boolean(kb?.ok),
+          sourceUrl: kb?.ok ? kb.sourceUrl : getKbSourceUrl(env),
+          fetchedAt: kb?.ok ? kb.fetchedAt : null,
+          error: kb?.ok ? null : kb?.error || "Knowledge source unavailable",
+        }
+      : { enabled: false },
+    byMake: countBy(filtered, (v) => v.make),
+    vehicles,
   });
 }
 
@@ -490,6 +522,7 @@ function normalizeReadyRow(row, cols) {
       makeKey: make,
       modelKey: model,
       lookupKey: make && model ? `${make}::${model}` : "",
+      lookupKeyNorm: make && model ? buildKbLookupKey(make, model) : "",
     },
     queryText,
     queryTokens,
@@ -686,6 +719,7 @@ function notFoundResponse() {
         "/latest?group=Make&sort=Year:desc,Odometer:asc",
         "/ready?q=toyota+corolla&limit=20",
         "/ready?make=toyota&model=corolla&year=2022",
+        "/ready?make=toyota&model=tacoma+double+cab&includeKb=1",
         "/kb/lookup?make=toyota&model=tacoma%20double%20cab",
         // mail
         "/mail/latest",
