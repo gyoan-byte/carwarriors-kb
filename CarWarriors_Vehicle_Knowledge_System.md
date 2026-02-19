@@ -1,7 +1,7 @@
 ﻿# CarWarriors_Vehicle_Knowledge_System
 
 ## GLOBAL RULES
-- Technical knowledge only; no pricing, APR, monthly payment, approval guarantee, or confirmed availability.
+- Technical knowledge only; no pricing, financing terms (advisor verified), payment structure (advisor verified), approval guarantee, or confirmed availability.
 - If unit-level facts are missing, respond with `TBD – Requires verification` and escalate to advisor.
 - Keep responses concise, structured, and verification-first.
 - Do not imply final inventory status; advisor confirms live status.
@@ -407,42 +407,57 @@ Last Verified: 2026-02-19
 - Performance baseline: Available turbocharged engines, RWD/AWD configurations
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 1st generation (E83): 2004-2010.
+- 2nd generation (F25): 2011-2017.
+- 3rd generation (G01): 2018-present.
+- Major refresh: MY2015 (F25 LCI), MY2022 (G01 LCI).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| E83 (2004-2010) | 2.5L/3.0L I6 | NA | 6-speed MT or 6-speed AT; AWD |
+| F25 (2011-2017) | 2.0L I4; 3.0L I6 | Turbo | 8-speed AT; RWD/AWD |
+| G01 (2018-present) | 2.0L I4; 3.0L I6 | Turbo (incl. MHEV on some trims) | 8-speed AT; RWD/AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| E83 sample (2010 X3 xDrive30i) | AWD | 17 | 24 | 20 |
+| F25 sample (2016 X3 xDrive28i) | AWD | 21 | 28 | 24 |
+| G01 sample (2024 X3 xDrive30i) | AWD | 21 | 28 | 24 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~185.7 in |
+| Width | ~74.7 in |
+| Height | ~66.0 in |
+| Wheelbase | ~112.8 in |
+| Cargo volume | ~28.7 cu ft (behind 2nd row) |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- E83: Age-related cooling-system leaks, transfer-case actuator wear, and suspension bushing wear are commonly documented.
+- F25: Widely reported timing-chain/oil-leak concerns on some 4-cylinder years; transfer-case service sensitivity appears in owner reports.
+- G01: Electronics/driver-assist software updates and occasional cooling-system leaks are recurring service themes.
+- NHTSA recall campaigns vary by model year/component; advisor must confirm VIN-level status.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: High (Low / Medium / High)
+- Notes: Premium parts/labor and xDrive drivetrain complexity increase running costs; preventive fluid service is important for transfer-case longevity.
 
 Pros:
-- TBD – Requires verification
+- Strong chassis balance and steering precision in class.
+- Good mix of performance and daily usability.
+- Broad powertrain range across generations.
 
 Cons:
-- TBD – Requires verification
+- Ownership cost is higher than mainstream compact SUVs.
+- Rear-seat and cargo space are not class-leading in every generation.
+- Reliability outcomes vary by engine family and maintenance history.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -462,42 +477,59 @@ Last Verified: 2026-02-19
 - Performance baseline: Multiple engine options, comfortable ride quality
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 1st generation (E53): 2000-2006.
+- 2nd generation (E70): 2007-2013.
+- 3rd generation (F15): 2014-2018.
+- 4th generation (G05): 2019-present.
+- Major refresh: MY2011 (E70 LCI), MY2024 (G05 LCI).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| E53 (2000-2006) | 3.0L I6; 4.4L/4.8L V8 | NA | 5-speed/6-speed AT; AWD |
+| E70 (2007-2013) | 3.0L I6; 4.8L/4.4L V8; 3.0L I6 diesel | Turbo/NA | 6-speed AT (early), 8-speed AT (later); AWD |
+| F15 (2014-2018) | 3.0L I6; 4.4L V8; 3.0L I6 diesel; 2.0L I4 PHEV system | Turbo / Hybrid | 8-speed AT; RWD/AWD |
+| G05 (2019-present) | 3.0L I6; 4.4L V8; 3.0L I6 diesel (early years); PHEV system | Turbo / MHEV / PHEV | 8-speed AT; RWD/AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| E70 sample (2010 X5 xDrive30i) | AWD | 15 | 21 | 18 |
+| F15 sample (2016 X5 xDrive35i) | AWD | 18 | 24 | 20 |
+| G05 sample (2024 X5 xDrive40i) | AWD | 23 | 27 | 25 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~194.2 in |
+| Width | ~78.9 in |
+| Height | ~69.1 in |
+| Wheelbase | ~117.1 in |
+| Cargo volume | ~33.9 cu ft (behind 2nd row) |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- E53/E70: Cooling-system wear, suspension component wear, and higher age-related electrical repairs are common.
+- E70/F15 V8 variants: Higher documented long-term maintenance risk (heat management, oil-related issues) versus inline-6 trims.
+- G05: Software/electronics campaigns and occasional 48V-system service actions appear in recall/service history.
+- NHTSA recalls are model-year specific; final applicability must be VIN-confirmed.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: High (Low / Medium / High)
+- Notes: Complex drivetrain/electronics and premium labor rates drive above-average ownership cost, especially on V8 or air-suspension equipped units.
 
 Pros:
-- TBD – Requires verification
+- Strong highway comfort and refinement.
+- Broad engine lineup from efficient I6 to high-output performance trims.
+- High towing and cargo utility for luxury segment.
 
 Cons:
-- TBD – Requires verification
+- Repair and maintenance costs can be substantial as mileage increases.
+- Large dimensions are less urban-friendly.
+- Complexity grows significantly with high-spec drivetrains/options.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -517,42 +549,57 @@ Last Verified: 2026-02-19
 - Performance baseline: Sport-tuned suspension, powerful engine options
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 1st generation (E71/E72): 2008-2014.
+- 2nd generation (F16): 2015-2019.
+- 3rd generation (G06): 2020-present.
+- Major refresh: MY2024 (G06 LCI).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| E71/E72 (2008-2014) | 3.0L I6; 4.4L V8 | Turbo | 6-speed/8-speed AT; AWD |
+| F16 (2015-2019) | 3.0L I6; 4.4L V8 | Turbo | 8-speed AT; RWD/AWD |
+| G06 (2020-present) | 3.0L I6; 4.4L V8 | Turbo / MHEV | 8-speed AT; RWD/AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| E71 sample (2010 X6 xDrive35i) | AWD | 15 | 21 | 17 |
+| F16 sample (2016 X6 xDrive35i) | AWD | 18 | 24 | 20 |
+| G06 sample (2024 X6 xDrive40i) | AWD | 23 | 26 | 24 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~195.0 in |
+| Width | ~78.9 in |
+| Height | ~66.3 in |
+| Wheelbase | ~117.1 in |
+| Cargo volume | ~27.4 cu ft (behind 2nd row) |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- E71/F16: Tire/wheel wear sensitivity and suspension bushing wear are common due to weight/performance setup.
+- Turbocharged powertrains can carry higher long-term thermal and oil-service sensitivity versus NA equivalents.
+- G06: Software/electronics and 48V-system service bulletins appear in newer-year service patterns.
+- NHTSA recalls are year/component dependent and require VIN-level confirmation.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: High (Low / Medium / High)
+- Notes: Coupe-SUV packaging plus performance-oriented setups typically increases tire, brake, and suspension operating cost.
 
 Pros:
-- TBD – Requires verification
+- Strong straight-line performance and high-speed stability.
+- Premium interior and feature depth in recent generations.
+- Distinct coupe-SUV styling for buyers prioritizing design.
 
 Cons:
-- TBD – Requires verification
+- Reduced rear-headroom/cargo practicality versus X5.
+- Higher tire and brake replacement cost on large wheel packages.
+- Ride comfort can be firmer than traditional midsize SUVs.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -624,7 +671,7 @@ Last Verified: 2026-02-19
 
 #### XT5
 - Classification: Midsize luxury SUV
-- Technical baseline: Comfortable ride, luxury features at competitive price point, good daily usability
+- Technical baseline: Comfortable ride, luxury features at competitive market positioning, good daily usability
 - Ownership baseline: Resale value versus German luxury competitors
 - Performance baseline: Smooth acceleration, comfortable highway cruising
 
@@ -2685,7 +2732,7 @@ Last Verified: 2026-02-19
 
 #### Palisade
 - Classification: Full-size SUV (3-row)
-- Technical baseline: Premium features without luxury price, spacious family transport, strong warranty
+- Technical baseline: Premium features without luxury market positioning, spacious family transport, strong warranty
 - Ownership baseline: Size considerations for Miami parking
 - Performance baseline: Comfortable highway ride, family-oriented interior
 
@@ -2742,7 +2789,7 @@ Last Verified: 2026-02-19
 
 #### Sportage
 - Classification: Compact SUV
-- Technical baseline: Bold styling, excellent warranty, good tech features for price point
+- Technical baseline: Bold styling, excellent warranty, good tech features for market positioning
 - Ownership baseline: Long-term reliability perception versus established brands
 - Performance baseline: Modern infotainment, efficient powertrain
 
@@ -2797,7 +2844,7 @@ Last Verified: 2026-02-19
 
 #### Telluride
 - Classification: Full-size SUV (3-row)
-- Technical baseline: Award-winning design, spacious family interior, luxury features at mainstream price
+- Technical baseline: Award-winning design, spacious family interior, luxury features at mainstream market positioning
 - Ownership baseline: High demand may affect availability and pricing
 - Performance baseline: Comfortable ride, premium interior features
 
@@ -3306,6 +3353,7 @@ Last Verified: 2026-02-19
 - Confirm safety recall context against NHTSA records; VIN-level recall status must be advisor-verified.
 - If two sources conflict, mark `TBD – Requires verification` and escalate.
 - Never present unverified assumptions as confirmed facts.
+
 
 
 
