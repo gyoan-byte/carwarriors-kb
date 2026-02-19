@@ -37,7 +37,10 @@ export default {
       await kv.put(mailKey, JSON.stringify(mailObj));
 
       // puntero al último correo
-      await kv.put("mail/latest.json", JSON.stringify({ id: mailKey, receivedAt, subject, from, to }, null, 2));
+      await kv.put(
+        "mail/latest.json",
+        JSON.stringify({ id: mailKey, receivedAt, processedAt: new Date().toISOString(), subject, from, to }, null, 2)
+      );
 
       console.log(JSON.stringify({ event: "MAIL_SAVED_KV", mailKey, textType: mailObj.textType, textLen: mailObj.text.length }));
 
@@ -80,10 +83,10 @@ export default {
         }
 
         const bytes = base64ToUint8(base64Body);
-        const now = new Date();
-        const yyyy = now.getFullYear();
-        const mm = String(now.getMonth() + 1).padStart(2, "0");
-        const dd = String(now.getDate()).padStart(2, "0");
+        const now = new Date(receivedAt);
+        const yyyy = now.getUTCFullYear();
+        const mm = String(now.getUTCMonth() + 1).padStart(2, "0");
+        const dd = String(now.getUTCDate()).padStart(2, "0");
 
         const safeFilename = sanitizeFilename(filename);
         const key = `inventario/${yyyy}/${mm}/${dd}/${safeFilename}`;
@@ -106,6 +109,8 @@ export default {
           contentType,
           size: bytes.byteLength,
           receivedAt,
+          processedAt: new Date().toISOString(),
+          source: "email",
           subject,
           from,
         };
@@ -113,6 +118,7 @@ export default {
         await bucket.put("inventario/latest.json", JSON.stringify(latest, null, 2), {
           httpMetadata: { contentType: "application/json" },
         });
+        console.log(JSON.stringify({ event: "INVENTORY_LATEST_UPDATED", key, receivedAt, filename: safeFilename, size: bytes.byteLength }));
 
         savedCount++;
         console.log(JSON.stringify({ event: "ATTACHMENT_SAVED", key, filename: safeFilename, size: bytes.byteLength }));
@@ -139,6 +145,7 @@ export default {
       "/latest/raw": () => handleLatestRaw(env),
       "/stats": () => handleStats(env),
       "/latest": () => handleLatest(url, env),
+      "/status": () => handleStatus(env),
 
       // MAIL (KV)
       "/mail/latest": () => handleMailLatest(env),
@@ -329,6 +336,7 @@ function notFoundResponse() {
         "/health",
         // inventario
         "/latest",
+        "/status",
         "/latest/raw",
         "/latest/meta",
         "/stats",
@@ -355,6 +363,41 @@ async function getLatest(env) {
   } catch {
     return null;
   }
+}
+
+async function handleStatus(env) {
+  const bucket = getInventoryBucket(env);
+  const kv = getMailKV(env);
+  const nowMs = Date.now();
+
+  const inventoryObj = await bucket.get("inventario/latest.json");
+  let inventoryLatest = null;
+  if (inventoryObj) {
+    try {
+      inventoryLatest = JSON.parse(await inventoryObj.text());
+    } catch {
+      inventoryLatest = null;
+    }
+  }
+
+  const mailLatest = await kv.get("mail/latest.json", { type: "json" });
+  const inventoryReceivedAt = inventoryLatest?.receivedAt || null;
+  const mailReceivedAt = mailLatest?.receivedAt || null;
+
+  return json({
+    ok: true,
+    inventory_receivedAt: inventoryReceivedAt,
+    mail_receivedAt: mailReceivedAt,
+    inventory_age_minutes: ageMinutes(nowMs, inventoryReceivedAt),
+    mail_age_minutes: ageMinutes(nowMs, mailReceivedAt),
+  });
+}
+
+function ageMinutes(nowMs, iso) {
+  if (!iso) return null;
+  const ts = new Date(iso).getTime();
+  if (!Number.isFinite(ts)) return null;
+  return Math.max(0, Math.floor((nowMs - ts) / 60000));
 }
 
 async function cleanupOldInventory(env) {
@@ -642,7 +685,7 @@ function decodeQuotedPrintable(input) {
 function extractBodyKeepLines(part) {
   const idx = part.indexOf("\r\n\r\n");
   if (idx === -1) return null;
-  return part.slice(idx + 4).trim().replace(/--$/, "");
+  return part.slice(idx + 4).trim();
 }
 
 /* ---------- Multipart helpers (ya estaban) ---------- */
@@ -650,8 +693,10 @@ function extractBodyKeepLines(part) {
 function findBoundary(raw) {
   const m1 = raw.match(/boundary="([^"]+)"/i);
   if (m1) return m1[1];
-  const m2 = raw.match(/boundary=([^\s;]+)/i);
-  return m2 ? m2[1] : null;
+  const m2 = raw.match(/boundary='([^']+)'/i);
+  if (m2) return m2[1];
+  const m3 = raw.match(/boundary=([^\s;]+)/i);
+  return m3 ? m3[1] : null;
 }
 
 function findHeader(part, headerName) {
@@ -674,7 +719,7 @@ function extractBody(part) {
 function base64ToUint8(b64) {
   const bin = atob(b64);
   const out = new Uint8Array(bin.length);
-  for (let i = 0; i < bin.length; i++) out[i] = bin.codePointAt(i);
+  for (let i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
   return out;
 }
 

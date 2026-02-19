@@ -12,6 +12,3 @@ bucket_name = "inventario"
 [[kv_namespaces]]
 binding = "K2"
 id = "a4f6789629f144e89699135601276486"
-
-[triggers]
-crons = ["0 5 * * *"]
