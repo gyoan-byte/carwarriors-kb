@@ -3,13 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CarWarriors Knowledge + Live Inventory</title>
-  <meta name="description" content="Single-page public hub with CarWarriors knowledge modules and live vehicle inventory, optimized for humans and AI web scraping." />
+  <title>CarWarriors Knowledge Base</title>
+  <meta name="description" content="Comprehensive knowledge base for CarWarriors AI agents with 19 specialized modules optimized for web scraping." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://gyoan-byte.github.io/carwarriors-kb/" />
-  <link rel="alternate" type="application/json" href="https://dc-leads-processor.gyoan.workers.dev/latest" title="Live Inventory JSON" />
-  <link rel="alternate" type="application/json" href="https://dc-leads-processor.gyoan.workers.dev/stats" title="Live Inventory Stats JSON" />
-  <link rel="alternate" type="text/csv" href="https://dc-leads-processor.gyoan.workers.dev/latest/raw" title="Live Inventory CSV" />
   <link rel="alternate" type="text/plain" href="https://gyoan-byte.github.io/carwarriors-kb/llms.txt" title="LLMs Access File" />
   <style>
     :root {
@@ -242,43 +239,51 @@
 <body>
   <div class="wrap">
     <header>
-      <h1>CarWarriors Knowledge + Live Inventory</h1>
-      <p>Single public page for knowledge modules and real inventory data, readable by people and AI crawlers.</p>
+      <h1>CarWarriors Knowledge Base</h1>
+      <p>19 specialized knowledge modules optimized for AI agent web scraping and human access.</p>
 
       <!-- NEW: top nav for "pages" -->
       <div class="chips" style="margin-top:10px">
         <a class="chip primary" href="?page=home" rel="nofollow">Home (README)</a>
-        <a class="chip primary" href="?page=inventory" rel="nofollow">Inventory</a>
-        <a class="chip primary" href="?page=modules" rel="nofollow">Modules</a>
+        <a class="chip primary" href="?page=modules" rel="nofollow">Knowledge Modules</a>
       </div>
 
-      <div class="meta">Source: Worker JSON endpoints | sorting: make asc, year desc, odometer asc</div>
+      <div class="meta">Knowledge Base: 19 specialized modules | Updated: 2026-02-19</div>
     </header>
 
     <main>
       <!-- PAGE: HOME -->
       <section class="page" data-page="home">
-        <section class="card" aria-label="Operational context">
-          <h2>Operational Context</h2>
+        <section class="card" aria-label="Knowledge modules overview">
+          <h2>Knowledge Base Overview</h2>
           <div class="grid-2">
             <div>
-              <p class="muted">Authority hierarchy:</p>
-              <ol class="list">
-                <li>Safety and Compliance</li>
-                <li>Financing Rules</li>
-                <li>Inventory and Availability</li>
-                <li>Purchase Process</li>
-                <li>Trade-In</li>
-              </ol>
-              <p class="muted"><strong>Golden rule:</strong> Safety &gt; Financing &gt; Inventory &gt; Everything else.</p>
+              <p class="muted">Available modules (19):</p>
+              <ul class="list">
+                <li>01 - Business Identity & Context</li>
+                <li>02 - Inventory Management</li>
+                <li>03 - Financing Rules</li>
+                <li>04 - Purchase Process</li>
+                <li>05 - Trade-In Procedures</li>
+                <li>06 - Objection Handling</li>
+                <li>07 - Safety & Compliance</li>
+                <li>08 - Tone & Behavior</li>
+                <li>09 - Escalation Protocols</li>
+                <li>10 - Bot Limits & Boundaries</li>
+              </ul>
             </div>
             <div>
-              <p class="muted">Business facts:</p>
+              <p class="muted">Advanced modules:</p>
               <ul class="list">
-                <li>CarWarriors LLC</li>
-                <li>3620 NW 27th Ave, Miami, FL 33142</li>
-                <li>Languages: English and Spanish</li>
-                <li>Time zone: America/New_York</li>
+                <li>11 - Conversation Transitions</li>
+                <li>12 - Difficult Conversations</li>
+                <li>13 - Conditional Logic</li>
+                <li>14 - Automotive Knowledge</li>
+                <li>15 - Trust & Authority</li>
+                <li>16 - Commercial Psychology</li>
+                <li>17 - Behavioral Guidelines</li>
+                <li>18 - Vehicle Knowledge System</li>
+                <li>19 - Conversation Flow Map</li>
               </ul>
             </div>
           </div>
@@ -292,45 +297,24 @@
           <div id="readme-render" class="readme">Loading README...</div>
         </section>
 
-        <section class="card" aria-label="Live inventory links">
-          <h2>Live Inventory Links</h2>
+        <section class="card" aria-label="Knowledge modules access">
+          <h2>Knowledge Base Access</h2>
+          <p class="muted">Direct access points for AI agents to scrape all 19 knowledge modules.</p>
           <div class="chips">
-            <a class="chip" href="https://dc-leads-processor.gyoan.workers.dev/latest" target="_blank" rel="noopener">Current inventory JSON</a>
-            <a class="chip" href="https://dc-leads-processor.gyoan.workers.dev/latest/meta" target="_blank" rel="noopener">Latest inventory metadata</a>
-            <a class="chip" href="https://dc-leads-processor.gyoan.workers.dev/latest/raw" target="_blank" rel="noopener">Raw CSV</a>
-            <a class="chip" href="https://dc-leads-processor.gyoan.workers.dev/stats" target="_blank" rel="noopener">Stats JSON</a>
-            <a class="chip" href="llms.txt" target="_blank" rel="noopener">LLMs file</a>
+            <a class="chip primary" href="README.md" target="_blank" rel="noopener">README (Start Here)</a>
+            <a class="chip" href="llms.txt" target="_blank" rel="noopener">LLMs.txt (Agent Contract)</a>
+            <a class="chip" href="sitemap.xml" target="_blank" rel="noopener">XML Sitemap</a>
           </div>
-        </section>
-
-        <section class="card" aria-label="Agent access contract">
-          <h2>Agent Access</h2>
-          <p class="muted">Machine-readable contract for crawlers and AI agents. Use JSON endpoints as primary source.</p>
-          <pre><code id="agent-contract-json">{
-  "version": "2026-02-18",
-  "base_url": "https://dc-leads-processor.gyoan.workers.dev",
-  "endpoints": {
-    "inventory_latest": "/latest",
-    "inventory_stats": "/stats",
-    "inventory_meta": "/latest/meta",
-    "inventory_raw_csv": "/latest/raw",
-    "mail_latest_meta": "/mail/latest",
-    "mail_latest_text": "/mail/latest/raw"
-  },
-  "inventory_schema": {
-    "columns": [
-      "Created Date",
-      "Stock Number",
-      "Year",
-      "Make",
-      "Model",
-      "Exterior Color",
-      "Odometer",
-      "GPS Provider"
-    ],
-    "default_sort": "Make asc, Year desc, Odometer asc"
-  }
-}</code></pre>
+          <div class="field-defs" aria-label="Web scraping guidelines">
+            <p>Web scraping contract for AI agents:</p>
+            <ul>
+              <li><strong>Knowledge modules:</strong> All .md files are publicly accessible via direct URLs</li>
+              <li><strong>Content structure:</strong> Markdown format with standardized headers and sections</li>
+              <li><strong>Update frequency:</strong> Knowledge modules updated manually</li>
+              <li><strong>Language support:</strong> All content available in English and Spanish contexts</li>
+              <li><strong>Total modules:</strong> 19 specialized knowledge modules</li>
+            </ul>
+          </div>
         </section>
       </section>
 
@@ -340,68 +324,34 @@
           <h2>Public Knowledge Modules (.md)</h2>
           <div class="chips">
             <a class="chip" href="README.md" target="_blank" rel="noopener">README</a>
-            <a class="chip" href="01_Identidad_Negocio.md" target="_blank" rel="noopener">01 Identity</a>
-            <a class="chip" href="02_Inventario.md" target="_blank" rel="noopener">02 Inventory Policy</a>
-            <a class="chip" href="03_Financiamiento.md" target="_blank" rel="noopener">03 Financing</a>
-            <a class="chip" href="04_Proceso_Compra.md" target="_blank" rel="noopener">04 Purchase Process</a>
+            <a class="chip" href="01_Business_Identity.md" target="_blank" rel="noopener">01 Business Identity</a>
+            <a class="chip" href="02_Inventory_Management.md" target="_blank" rel="noopener">02 Inventory Management</a>
+            <a class="chip" href="03_Financing_Rules.md" target="_blank" rel="noopener">03 Financing Rules</a>
+            <a class="chip" href="04_Purchase_Process.md" target="_blank" rel="noopener">04 Purchase Process</a>
             <a class="chip" href="05_Trade_In.md" target="_blank" rel="noopener">05 Trade-In</a>
-            <a class="chip" href="06_Objetiones.md" target="_blank" rel="noopener">06 Objections</a>
-            <a class="chip" href="07_Seguridad.md" target="_blank" rel="noopener">07 Safety</a>
-            <a class="chip" href="08_Tono_Comportamiento.md" target="_blank" rel="noopener">08 Tone</a>
-            <a class="chip" href="09_Escalacion.md" target="_blank" rel="noopener">09 Escalation</a>
-            <a class="chip" href="10_Limites_Bot.md" target="_blank" rel="noopener">10 Limits</a>
-            <a class="chip" href="11_Transiciones.md" target="_blank" rel="noopener">11 Transitions</a>
-            <a class="chip" href="12_Conversaciones_Dificiles.md" target="_blank" rel="noopener">12 Difficult Conversations</a>
-            <a class="chip" href="13_Logica_Condicional.md" target="_blank" rel="noopener">13 Logic</a>
-            <a class="chip" href="14_Conocimiento_Automotriz_Basico.md" target="_blank" rel="noopener">14 Automotive Basics</a>
-            <a class="chip" href="15_Confianza_y_Autoridad.md" target="_blank" rel="noopener">15 Trust</a>
-            <a class="chip" href="16_Psicologia_Comercial.md" target="_blank" rel="noopener">16 Commercial Psychology</a>
-            <a class="chip" href="behavioral_guidelines.md" target="_blank" rel="noopener">Behavioral Guidelines</a>
-            <a class="chip" href="conversation_flow_map.md" target="_blank" rel="noopener">Conversation Flow Map</a>
+            <a class="chip" href="06_Objection_Handling.md" target="_blank" rel="noopener">06 Objection Handling</a>
+            <a class="chip" href="07_Safety_Compliance.md" target="_blank" rel="noopener">07 Safety & Compliance</a>
+            <a class="chip" href="08_Tone_Behavior.md" target="_blank" rel="noopener">08 Tone & Behavior</a>
+            <a class="chip" href="09_Escalation_Protocols.md" target="_blank" rel="noopener">09 Escalation Protocols</a>
+            <a class="chip" href="10_Bot_Limits.md" target="_blank" rel="noopener">10 Bot Limits</a>
+            <a class="chip" href="11_Conversation_Transitions.md" target="_blank" rel="noopener">11 Conversation Transitions</a>
+            <a class="chip" href="12_Difficult_Conversations.md" target="_blank" rel="noopener">12 Difficult Conversations</a>
+            <a class="chip" href="13_Conditional_Logic.md" target="_blank" rel="noopener">13 Conditional Logic</a>
+            <a class="chip" href="14_Automotive_Basics.md" target="_blank" rel="noopener">14 Automotive Basics</a>
+            <a class="chip" href="15_Trust_Authority.md" target="_blank" rel="noopener">15 Trust & Authority</a>
+            <a class="chip" href="16_Commercial_Psychology.md" target="_blank" rel="noopener">16 Commercial Psychology</a>
+            <a class="chip" href="17_Behavioral_Guidelines.md" target="_blank" rel="noopener">Behavioral Guidelines</a>
+            <a class="chip" href="18_Vehicle_Knowledge_System.md" target="_blank" rel="noopener">Vehicle Knowledge System</a>
+            <a class="chip" href="19_Conversation_Flow_Map.md" target="_blank" rel="noopener">Conversation Flow Map</a>
           </div>
         </section>
       </section>
 
-      <!-- PAGE: INVENTORY -->
-      <section class="page" data-page="inventory">
-        <section class="card" aria-label="Live inventory">
-          <h2>Inventory</h2>
-          <p class="muted">Vehicles organized by make, sorted by make asc, year desc, odometer asc.</p>
-          <div id="inventory-stats" class="grid-4">
-            <div class="stat"><small>Total vehicles</small><strong>...</strong></div>
-            <div class="stat"><small>Brands</small><strong>...</strong></div>
-            <div class="stat"><small>Min odometer</small><strong>...</strong></div>
-            <div class="stat"><small>Max odometer</small><strong>...</strong></div>
-          </div>
-          <div class="warning" id="inventory-warning"></div>
-          <p class="result-line" id="inventory-meta">Loading inventory from API...</p>
-          <div class="field-defs" aria-label="Inventory field definitions">
-            <p>Field definitions (scraping contract):</p>
-            <ul>
-              <li><code>Year</code>: vehicle model year</li>
-              <li><code>Model</code>: model name from source CSV</li>
-              <li><code>Stock</code>: dealer stock number</li>
-              <li><code>Odometer</code>: mileage in miles</li>
-              <li><code>Color</code>: exterior color</li>
-              <li><code>GPS</code>: GPS provider value if available</li>
-              <li><code>Created</code>: created date from source inventory</li>
-            </ul>
-          </div>
-          <div class="brand-groups" id="inventory-brands"></div>
-        </section>
-      </section>
-
-      <noscript>
-        <section class="card">
-          <p>JavaScript is required for the interactive dashboard. Direct links still work:</p>
-          <p><code>https://dc-leads-processor.gyoan.workers.dev/latest</code></p>
-          <p><code>https://dc-leads-processor.gyoan.workers.dev/latest/raw</code></p>
-        </section>
-      </noscript>
     </main>
 
     <footer>
-      Real fields only. No inferred categories. Public, crawlable, and structured for AI extraction.
+      CarWarriors Knowledge Base - 19 modules optimized for AI agent web scraping.
+      <br>Public, crawlable, and structured for automated extraction.
     </footer>
   </div>
 
@@ -412,51 +362,55 @@
       "market": "Miami, Florida",
       "languages": ["English", "Spanish"],
       "timezone": "America/New_York",
+      "knowledge_base": {
+        "total_modules": 19,
+        "format": "markdown",
+        "base_url": "https://gyoan-byte.github.io/carwarriors-kb/",
+        "modules": [
+          "README.md",
+          "01_Business_Identity.md",
+          "02_Inventory_Management.md",
+          "03_Financing_Rules.md",
+          "04_Purchase_Process.md",
+          "05_Trade_In.md",
+          "06_Objection_Handling.md",
+          "07_Safety_Compliance.md",
+          "08_Tone_Behavior.md",
+          "09_Escalation_Protocols.md",
+          "10_Bot_Limits.md",
+          "11_Conversation_Transitions.md",
+          "12_Difficult_Conversations.md",
+          "13_Conditional_Logic.md",
+          "14_Automotive_Basics.md",
+          "15_Trust_Authority.md",
+          "16_Commercial_Psychology.md",
+          "17_Behavioral_Guidelines.md",
+          "18_Vehicle_Knowledge_System.md",
+          "19_Conversation_Flow_Map.md"
+        ]
+      },
       "golden_rule": "Safety > Financing > Inventory > Everything else",
       "compliance_limits": [
         "No exact prices",
         "No monthly payment estimates",
         "No APR numbers or rate quotes",
         "No guaranteed approvals or inventory promises"
-      ]
-    }
-  </script>
-
-  <script id="inventory-agent-json" type="application/json">{}</script>
-
-  <script id="inventory-jsonld" type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Dataset",
-      "name": "CarWarriors Live Inventory",
-      "description": "Live inventory feed from Cloudflare Worker endpoints.",
-      "url": "https://gyoan-byte.github.io/carwarriors-kb/",
-      "distribution": [
-        {
-          "@type": "DataDownload",
-          "encodingFormat": "application/json",
-          "contentUrl": "https://dc-leads-processor.gyoan.workers.dev/latest"
-        },
-        {
-          "@type": "DataDownload",
-          "encodingFormat": "text/csv",
-          "contentUrl": "https://dc-leads-processor.gyoan.workers.dev/latest/raw"
-        }
-      ]
+      ],
+      "web_scraping_contract": {
+        "version": "2026-02-19",
+        "access_method": "direct_urls",
+        "content_type": "markdown",
+        "update_frequency": "manual_knowledge",
+        "language_support": ["en", "es"]
+      }
     }
   </script>
 
   <script type="module">
-    const API_BASE = "https://dc-leads-processor.gyoan.workers.dev";
     const ui = {
       pages: Array.from(document.querySelectorAll("[data-page]")),
       readmeRender: document.getElementById("readme-render"),
-      readmeWarning: document.getElementById("readme-warning"),
-      inventoryStats: document.getElementById("inventory-stats"),
-      inventoryWarning: document.getElementById("inventory-warning"),
-      inventoryMeta: document.getElementById("inventory-meta"),
-      inventoryBrands: document.getElementById("inventory-brands"),
-      inventoryAgentJson: document.getElementById("inventory-agent-json")
+      readmeWarning: document.getElementById("readme-warning")
     };
 
     function route() {
@@ -464,7 +418,7 @@
       const pageQuery = String(url.searchParams.get("page") || "").trim().toLowerCase();
       const hash = (globalThis.location.hash || "").replaceAll("#", "").trim().toLowerCase();
       const candidate = pageQuery || hash || "home";
-      const page = (candidate === "inventory" || candidate === "modules" || candidate === "home") ? candidate : "home";
+      const page = (candidate === "modules" || candidate === "home") ? candidate : "home";
       for (const el of ui.pages) {
         el.classList.toggle("active", el.dataset.page === page);
       }
@@ -488,168 +442,8 @@
     route();
     globalThis.addEventListener("hashchange", route);
     globalThis.addEventListener("popstate", route);
-    await Promise.all([
-      loadReadmeIntoHome(),
-      loadInventoryIntoPage()
-    ]);
+    await loadReadmeIntoHome();
 
-    async function loadInventoryIntoPage() {
-      try {
-        const [latestRes, statsRes] = await Promise.all([
-          fetch(`${API_BASE}/latest`, { cache: "no-store" }),
-          fetch(`${API_BASE}/stats`, { cache: "no-store" })
-        ]);
-        if (!latestRes.ok) throw new Error(`latest returned ${latestRes.status}`);
-
-        const latest = await latestRes.json();
-        const stats = statsRes.ok ? await statsRes.json() : null;
-        const rows = Array.isArray(latest?.rows) ? latest.rows : [];
-        if (!rows.length) throw new Error("No rows in latest payload.");
-
-        ui.inventoryWarning.style.display = "none";
-        ui.inventoryMeta.textContent = buildInventoryMetaText(latest, rows.length);
-        ui.inventoryStats.innerHTML = buildInventoryStatsHtml(rows, stats);
-        ui.inventoryBrands.innerHTML = renderInventoryByMake(rows);
-        ui.inventoryAgentJson.textContent = JSON.stringify(buildAgentInventoryPayload(latest, rows), null, 2);
-      } catch (error) {
-        console.error("loadInventoryIntoPage error:", error);
-        ui.inventoryWarning.style.display = "block";
-        ui.inventoryWarning.textContent = "Could not load live inventory data from API.";
-        ui.inventoryMeta.textContent = "Inventory unavailable right now.";
-        ui.inventoryStats.innerHTML = "";
-        ui.inventoryBrands.innerHTML = "";
-        ui.inventoryAgentJson.textContent = "{}";
-      }
-    }
-
-    function buildInventoryMetaText(latest, rowCount) {
-      const receivedAt = latest?.latest?.receivedAt ? new Date(latest.latest.receivedAt) : null;
-      const receivedText = receivedAt && !Number.isNaN(receivedAt.getTime())
-        ? receivedAt.toLocaleString("en-US")
-        : "unknown";
-      const fileName = String(latest?.latest?.filename || "unknown");
-      return `Last update: ${receivedText} | File: ${fileName} | Vehicles: ${rowCount}`;
-    }
-
-    function buildInventoryStatsHtml(rows, stats) {
-      const brands = new Set(rows.map((row) => String(row["Make"] || "").trim()).filter(Boolean));
-      const odometers = rows
-        .map((row) => Number.parseInt(String(row["Odometer"] || "").replaceAll(",", ""), 10))
-        .filter((value) => Number.isFinite(value));
-
-      const minOdometer = stats?.odometer?.min ?? (odometers.length ? Math.min(...odometers) : null);
-      const maxOdometer = stats?.odometer?.max ?? (odometers.length ? Math.max(...odometers) : null);
-
-      return [
-        statCard("Total vehicles", String(rows.length)),
-        statCard("Brands", String(brands.size)),
-        statCard("Min odometer", formatMiles(minOdometer)),
-        statCard("Max odometer", formatMiles(maxOdometer))
-      ].join("");
-    }
-
-    function statCard(label, value) {
-      return `<div class="stat"><small>${escapeHtml(label)}</small><strong>${escapeHtml(value)}</strong></div>`;
-    }
-
-    function renderInventoryByMake(rows) {
-      const groups = new Map();
-      for (const row of rows) {
-        const make = String(row["Make"] || "").trim() || "UNKNOWN";
-        if (!groups.has(make)) groups.set(make, []);
-        groups.get(make).push(row);
-      }
-
-      const out = [];
-      const sortedMakes = Array.from(groups.keys()).sort((a, b) => a.localeCompare(b, "en", { sensitivity: "base" }));
-      for (const make of sortedMakes) {
-        const vehicles = [...groups.get(make)].sort(compareVehicles);
-        const rowsHtml = vehicles.map((row) => {
-          const year = fieldOrNA(row, "Year");
-          const model = fieldOrNA(row, "Model");
-          const stock = fieldOrNA(row, "Stock Number");
-          const odoRaw = fieldOrNA(row, "Odometer");
-          const odo = formatMiles(odoRaw);
-          const color = fieldOrNA(row, "Exterior Color");
-          const gps = fieldOrNA(row, "GPS Provider");
-          const created = fieldOrNA(row, "Created Date");
-          return (
-            `<tr data-make="${escapeAttr(make)}" data-year="${escapeAttr(year)}" data-model="${escapeAttr(model)}" data-stock="${escapeAttr(stock)}" data-odometer="${escapeAttr(odoRaw)}">` +
-              `<td>${escapeHtml(year)}</td><td>${escapeHtml(model)}</td><td>${escapeHtml(stock)}</td><td>${escapeHtml(odo)}</td><td>${escapeHtml(color)}</td><td>${escapeHtml(gps)}</td><td>${escapeHtml(created)}</td>` +
-            "</tr>"
-          );
-        }).join("");
-        out.push(
-          `<section class="brand-block" data-make="${escapeAttr(make)}">` +
-            `<div class="brand-head"><h3 class="brand-title">${escapeHtml(make)}</h3><span class="brand-count">${vehicles.length} units</span></div>` +
-            '<div class="brand-table-wrap"><table class="brand-table"><thead><tr><th>Year</th><th>Model</th><th>Stock</th><th>Odometer</th><th>Color</th><th>GPS</th><th>Created</th></tr></thead><tbody>' +
-            rowsHtml +
-            "</tbody></table></div></section>"
-        );
-      }
-      return out.join("");
-    }
-
-    function buildAgentInventoryPayload(latest, rows) {
-      const grouped = {};
-      for (const row of rows) {
-        const make = fieldOrNA(row, "Make");
-        if (!grouped[make]) grouped[make] = [];
-        grouped[make].push({
-          year: fieldOrNA(row, "Year"),
-          model: fieldOrNA(row, "Model"),
-          stock_number: fieldOrNA(row, "Stock Number"),
-          odometer: fieldOrNA(row, "Odometer"),
-          exterior_color: fieldOrNA(row, "Exterior Color"),
-          gps_provider: fieldOrNA(row, "GPS Provider"),
-          created_date: fieldOrNA(row, "Created Date")
-        });
-      }
-      for (const make of Object.keys(grouped)) {
-        grouped[make].sort(compareVehiclesPlain);
-      }
-
-      return {
-        generated_at: new Date().toISOString(),
-        source_received_at: latest?.latest?.receivedAt || null,
-        source_file: latest?.latest?.filename || null,
-        total_vehicles: rows.length,
-        fields: ["year", "model", "stock_number", "odometer", "exterior_color", "gps_provider", "created_date"],
-        by_make: grouped
-      };
-    }
-
-    function compareVehicles(a, b) {
-      const yearDiff = parseIntOrZero(b["Year"]) - parseIntOrZero(a["Year"]);
-      if (yearDiff !== 0) return yearDiff;
-      const odoDiff = parseIntOrZero(a["Odometer"]) - parseIntOrZero(b["Odometer"]);
-      if (odoDiff !== 0) return odoDiff;
-      return fieldOrNA(a, "Stock Number").localeCompare(fieldOrNA(b, "Stock Number"), "en", { sensitivity: "base" });
-    }
-
-    function compareVehiclesPlain(a, b) {
-      const yearDiff = parseIntOrZero(b.year) - parseIntOrZero(a.year);
-      if (yearDiff !== 0) return yearDiff;
-      const odoDiff = parseIntOrZero(a.odometer) - parseIntOrZero(b.odometer);
-      if (odoDiff !== 0) return odoDiff;
-      return String(a.stock_number).localeCompare(String(b.stock_number), "en", { sensitivity: "base" });
-    }
-
-    function fieldOrNA(row, key) {
-      const value = String(row?.[key] ?? "").trim();
-      return value || "N/A";
-    }
-
-    function parseIntOrZero(value) {
-      const parsed = Number.parseInt(String(value ?? "").replaceAll(",", ""), 10);
-      return Number.isFinite(parsed) ? parsed : 0;
-    }
-
-    function formatMiles(value) {
-      const parsed = Number.parseInt(String(value ?? "").replaceAll(",", ""), 10);
-      if (!Number.isFinite(parsed)) return "N/A";
-      return `${new Intl.NumberFormat("en-US").format(parsed)} mi`;
-    }
 
     // Lightweight markdown renderer (escaped output)
     function renderMarkdownLite(md) {

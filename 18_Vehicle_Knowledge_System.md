@@ -5,6 +5,20 @@
 # Final TBD Count: 0
 # Last Full Audit Date: 2026-02-19
 
+## Worker Parsing Contract
+- This file is machine-readable by the inventory Worker.
+- Database section starts at `## VEHICLE KNOWLEDGE DATABASE`.
+- Brand header format: `### BRAND NAME` (uppercase preferred).
+- Model header format: `#### Model Name`.
+- Parsed technical fields under each model:
+- `- Classification:`
+- `- Technical baseline:`
+- `- Ownership baseline:`
+- `- Performance baseline:`
+- `Sources:`
+- `Last Verified:`
+- Keep these labels and header levels stable to avoid parser breaks.
+
 ## Certification Status
 System Integrity: VERIFIED
 Compliance Status: CLEAN

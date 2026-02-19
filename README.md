@@ -32,6 +32,7 @@ Operational modules:
 14. [14_Conocimiento_Automotriz_Basico.md](./14_Conocimiento_Automotriz_Basico.md)
 15. [15_Confianza_y_Autoridad.md](./15_Confianza_y_Autoridad.md)
 16. [16_Psicologia_Comercial.md](./16_Psicologia_Comercial.md)
+17. [17_Guia_Marcas_Modelos_Inventario.md](./17_Guia_Marcas_Modelos_Inventario.md)
 
 Enrichment modules:
 - [behavioral_guidelines.md](./behavioral_guidelines.md)

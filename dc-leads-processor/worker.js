@@ -146,6 +146,7 @@ export default {
       "/stats": () => handleStats(env),
       "/latest": () => handleLatest(url, env),
       "/ready": () => handleReady(url, env),
+      "/kb/lookup": () => handleKbLookup(url, env),
       "/status": () => handleStatus(env),
 
       // MAIL (KV)
@@ -423,6 +424,32 @@ async function handleReady(url, env) {
   });
 }
 
+async function handleKbLookup(url, env) {
+  const make = String(url.searchParams.get("make") || "").trim();
+  const model = String(url.searchParams.get("model") || "").trim();
+  if (!make || !model) {
+    return json({ ok: false, error: "Missing required query params: make, model" }, 400);
+  }
+
+  const kb = await getKnowledgeIndex(env);
+  if (!kb.ok) {
+    return json({ ok: false, error: "Knowledge source unavailable", detail: kb.error }, 503);
+  }
+
+  const key = buildKbLookupKey(make, model);
+  const entry = kb.index[key] || null;
+
+  return json({
+    ok: true,
+    sourceUrl: kb.sourceUrl,
+    fetchedAt: kb.fetchedAt,
+    make: toCanonicalUpper(make),
+    model: toCanonicalUpper(model),
+    found: Boolean(entry),
+    data: entry,
+  });
+}
+
 function normalizeReadyRow(row, cols) {
   const createdDateRaw = cols.createdDateCol ? String(row[cols.createdDateCol] || "").trim() : "";
   const createdTs = parseDateLoose(createdDateRaw);
@@ -509,6 +536,138 @@ function inferBodyType(model) {
   return "unknown";
 }
 
+const KB_CACHE_TTL_MS = 6 * 60 * 60 * 1000;
+let kbCache = {
+  fetchedAtMs: 0,
+  sourceUrl: "",
+  index: null,
+  error: null,
+};
+
+function getKbSourceUrl(env) {
+  return (
+    env?.KB_SOURCE_URL ||
+    "https://gyoan-byte.github.io/carwarriors-kb/18_Vehicle_Knowledge_System.md"
+  );
+}
+
+function buildKbLookupKey(make, model) {
+  return `${normalizeSearchText(make)}::${normalizeSearchText(model)}`;
+}
+
+async function getKnowledgeIndex(env) {
+  const sourceUrl = getKbSourceUrl(env);
+  const now = Date.now();
+  const isFresh = kbCache.index && kbCache.sourceUrl === sourceUrl && now - kbCache.fetchedAtMs < KB_CACHE_TTL_MS;
+  if (isFresh) {
+    return {
+      ok: true,
+      sourceUrl,
+      fetchedAt: new Date(kbCache.fetchedAtMs).toISOString(),
+      index: kbCache.index,
+    };
+  }
+
+  try {
+    const res = await fetch(sourceUrl, {
+      method: "GET",
+      headers: { "user-agent": "dc-leads-processor/knowledge-fetcher" },
+    });
+    if (!res.ok) throw new Error(`KB fetch failed with status ${res.status}`);
+
+    const markdown = await res.text();
+    const index = parseKnowledgeMarkdown(markdown);
+    kbCache = {
+      fetchedAtMs: now,
+      sourceUrl,
+      index,
+      error: null,
+    };
+
+    return {
+      ok: true,
+      sourceUrl,
+      fetchedAt: new Date(now).toISOString(),
+      index,
+    };
+  } catch (err) {
+    kbCache = {
+      fetchedAtMs: now,
+      sourceUrl,
+      index: null,
+      error: err?.message || String(err),
+    };
+    return { ok: false, error: kbCache.error };
+  }
+}
+
+function parseKnowledgeMarkdown(markdown) {
+  const lines = String(markdown || "").replaceAll("\r", "").split("\n");
+  const index = {};
+
+  let inDatabase = false;
+  let currentMake = "";
+  let currentModel = "";
+  let current = null;
+
+  for (const line of lines) {
+    const t = line.trim();
+    if (!inDatabase) {
+      if (t === "## VEHICLE KNOWLEDGE DATABASE") inDatabase = true;
+      continue;
+    }
+    if (t.startsWith("## SOURCE & VERIFICATION RULE")) break;
+
+    const makeMatch = /^###\s+(.+)$/.exec(t);
+    if (makeMatch) {
+      flushCurrentKbEntry(index, currentMake, currentModel, current);
+      currentMake = toCanonicalUpper(makeMatch[1]);
+      currentModel = "";
+      current = null;
+      continue;
+    }
+
+    const modelMatch = /^####\s+(.+)$/.exec(t);
+    if (modelMatch) {
+      flushCurrentKbEntry(index, currentMake, currentModel, current);
+      currentModel = toCanonicalUpper(modelMatch[1]);
+      current = {
+        make: currentMake,
+        model: currentModel,
+        classification: null,
+        technicalBaseline: null,
+        ownershipBaseline: null,
+        performanceBaseline: null,
+        sources: null,
+        lastVerified: null,
+      };
+      continue;
+    }
+
+    if (!current) continue;
+
+    if (t.startsWith("- Classification:")) current.classification = stripLabel(t, "- Classification:");
+    else if (t.startsWith("- Technical baseline:")) current.technicalBaseline = stripLabel(t, "- Technical baseline:");
+    else if (t.startsWith("- Ownership baseline:")) current.ownershipBaseline = stripLabel(t, "- Ownership baseline:");
+    else if (t.startsWith("- Performance baseline:")) current.performanceBaseline = stripLabel(t, "- Performance baseline:");
+    else if (t.startsWith("Sources:")) current.sources = stripLabel(t, "Sources:");
+    else if (t.startsWith("Last Verified:")) current.lastVerified = stripLabel(t, "Last Verified:");
+  }
+
+  flushCurrentKbEntry(index, currentMake, currentModel, current);
+  return index;
+}
+
+function stripLabel(line, label) {
+  return String(line || "").slice(label.length).trim() || null;
+}
+
+function flushCurrentKbEntry(index, make, model, entry) {
+  if (!entry || !make || !model) return;
+  const key = buildKbLookupKey(make, model);
+  index[key] = entry;
+}
+
 function notFoundResponse() {
   return json(
     {
@@ -527,6 +686,7 @@ function notFoundResponse() {
         "/latest?group=Make&sort=Year:desc,Odometer:asc",
         "/ready?q=toyota+corolla&limit=20",
         "/ready?make=toyota&model=corolla&year=2022",
+        "/kb/lookup?make=toyota&model=tacoma%20double%20cab",
         // mail
         "/mail/latest",
         "/mail/latest/raw",
