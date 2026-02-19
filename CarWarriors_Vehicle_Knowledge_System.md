@@ -1109,42 +1109,55 @@ Last Verified: 2026-02-19
 - Performance baseline: Strong engine options, sport-tuned suspension
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 1st modern generation (LX): 2006-2010.
+- 2nd modern generation (LD): 2011-2023.
+- Major refresh: MY2015 (LD interior/exterior/powertrain update).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| 2006-2010 | 2.7L/3.5L V6; 5.7L/6.1L V8 | NA | 4-speed/5-speed AT; RWD/AWD |
+| 2011-2023 | 3.6L V6; 5.7L/6.4L V8; 6.2L V8 | NA / Supercharged (Hellcat trims) | 5-speed AT (early), 8-speed AT (later); RWD/AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| LX sample (2010 Charger 3.5L) | RWD | 17 | 25 | 20 |
+| LD sample (2018 Charger 3.6L) | RWD | 19 | 30 | 23 |
+| LD late sample (2023 Charger 3.6L) | RWD | 19 | 30 | 23 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~198.4 in |
+| Width | ~75.0 in |
+| Height | ~58.2 in |
+| Wheelbase | ~120.0 in |
+| Cargo volume | ~16.5 cu ft |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- LX/early LD: Suspension wear items and electrical accessory faults are common age-related findings.
+- LD V8/performance trims: Higher brake/tire/driveline wear and elevated operating cost under aggressive use.
+- Some owner reports cite lifter/cam and cooling-system service concerns on specific high-mileage V8 units.
+- NHTSA recall applicability is model-year specific and must be VIN-verified.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Medium-High (Low / Medium / High)
+- Notes: V6 trims are moderate-cost to run; V8/high-performance trims materially raise fuel, tire, brake, and driveline service costs.
 
 Pros:
-- TBD – Requires verification
+- Strong straight-line performance heritage and road presence.
+- Spacious cabin/trunk for a performance-oriented sedan.
+- Broad powertrain spread in LD generation.
 
 Cons:
-- TBD – Requires verification
+- Fuel use and running costs can be high, especially V8 trims.
+- Large dimensions reduce urban maneuverability.
+- Older-platform architecture by final production years.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -1164,42 +1177,52 @@ Last Verified: 2026-02-19
 - Performance baseline: Efficient engine options, basic transportation focus
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- Single generation (PF platform): 2013-2016.
+- Mid-cycle updates were limited; no full redesign before discontinuation.
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| 2013-2016 | 2.0L I4; 2.4L I4; 1.4L I4 | NA / Turbo | 6-speed MT, 6-speed AT, 6-speed DCT (1.4T); FWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| PF sample (2013 Dart 2.0L AT) | FWD | 24 | 33 | 27 |
+| PF late sample (2016 Dart 2.0L AT) | FWD | 24 | 33 | 27 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~183.9 in |
+| Width | ~72.0 in |
+| Height | ~57.7 in |
+| Wheelbase | ~106.4 in |
+| Cargo volume | ~13.1 cu ft |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- Reported issues include electrical faults, infotainment glitches, and transmission behavior complaints on some configurations.
+- Dual-clutch turbo variants are often cited for drivability/smoothness concerns in owner feedback.
+- Parts/support availability can vary due shorter production run compared with high-volume compacts.
+- NHTSA recalls are year/component dependent and require VIN-level confirmation.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Medium (Low / Medium / High)
+- Notes: Basic service is affordable, but transmission-specific diagnostics and discontinued-model parts sourcing can increase downtime.
 
 Pros:
-- TBD – Requires verification
+- Efficient compact-sedan footprint with good highway fuel economy.
+- Multiple engine/transmission configurations.
+- Competitive feature content for its production period.
 
 Cons:
-- TBD – Requires verification
+- Reliability perception is weaker than segment leaders.
+- Powertrain refinement varies significantly by trim/transmission.
+- Discontinued status can affect parts and resale confidence.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
