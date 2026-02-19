@@ -7,7 +7,7 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://gyoan-byte.github.io/carwarriors-kb/modules/</loc>
+        <loc>https://gyoan-byte.github.io/carwarriors-kb/index.html</loc>
         <lastmod>2026-02-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
@@ -128,6 +128,12 @@
     </url>
     <url>
         <loc>https://gyoan-byte.github.io/carwarriors-kb/19_Conversation_Flow_Map.md</loc>
+        <lastmod>2026-02-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://gyoan-byte.github.io/carwarriors-kb/20_Conflict_Resolution_System.md</loc>
         <lastmod>2026-02-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>

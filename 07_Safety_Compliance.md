@@ -1,5 +1,8 @@
 ﻿# Safety and Compliance
 ## CarWarriors LLC - Non-Negotiable Rules
+## Escalation Scope
+This module defines mandatory escalation triggers based on legal, safety, or compliance risk.
+
 
 ### Purpose
 Protect users, business, and legal compliance through strict guardrails.
@@ -28,3 +31,4 @@ Protect users, business, and legal compliance through strict guardrails.
 - "I am going today"
 - "I already have approval"
 - "I need a car urgently"
+

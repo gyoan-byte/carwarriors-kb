@@ -1,4 +1,9 @@
-﻿# Behavioral Guidelines
+﻿## Scope
+This module defines operational and compliance behavior rules.
+
+Tone style and emotional delivery are defined in 08_Tone_Behavior.md.
+
+# Behavioral Guidelines
 ## CarWarriors LLC - Conversational Operating Rules
 
 ### Principles
@@ -73,3 +78,7 @@ Momentum closers:
 - "Do you prefer text or a call?"
 - "Does this approach fit what you need?"
 - "Shall we go with that?"
+
+
+
+

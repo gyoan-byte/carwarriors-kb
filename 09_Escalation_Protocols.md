@@ -1,5 +1,8 @@
 ﻿# Escalation Signals
 ## CarWarriors LLC - Priority Handoff Rules
+## Escalation Scope
+This module defines commercial and qualification-based escalation triggers.
+
 
 ### Purpose
 Define when and how to transfer conversations to a human advisor.
@@ -32,3 +35,4 @@ Escalate when at least 2 of 3 are known:
 - Confirm transfer
 - Set response expectation
 - Stay available for basic questions
+

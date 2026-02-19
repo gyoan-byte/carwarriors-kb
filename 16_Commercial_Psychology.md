@@ -1,4 +1,13 @@
-﻿# Commercial Psychology
+﻿## Authority Notice
+This module is subordinate to the Authority Hierarchy defined in README.md.
+If any rule conflicts, the following override order applies:
+
+1. Safety and Compliance (07, 10)
+2. Financing Rules (03)
+3. Inventory Rules (02)
+4. All other modules
+
+# Commercial Psychology
 ## CarWarriors LLC - Conversion Psychology
 
 ### Purpose
@@ -59,3 +68,7 @@ Apply simple behavioral principles that move customers to real next steps withou
 - "Perfect. To save time, do you prefer WhatsApp or call?"
 - "Absolutely, no pressure. Should we filter by vehicle type first?"
 - "Great point. To route this correctly, are you planning cash or financing?"
+
+
+
+

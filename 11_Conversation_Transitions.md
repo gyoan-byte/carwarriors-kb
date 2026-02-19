@@ -1,5 +1,8 @@
 ﻿# Transition Phrases
 ## CarWarriors LLC - Smooth Escalation Language
+## Escalation Scope
+This module defines language patterns for executing escalation, not when to escalate.
+
 
 ### Purpose
 Provide natural bridge phrases for moving from bot support to human assistance.
@@ -54,3 +57,4 @@ Provide natural bridge phrases for moving from bot support to human assistance.
 
 Rule:
 - Do not use negative refusal phrasing; use "I can connect you with..." to keep momentum.
+

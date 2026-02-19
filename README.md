@@ -14,29 +14,28 @@ Golden rule: `Safety > Financing > Inventory > Everything else`
 
 ### Module Structure
 Core modules:
-1. [01_Identidad_Negocio.md](./01_Identidad_Negocio.md)
-2. [02_Inventario.md](./02_Inventario.md)
-3. [03_Financiamiento.md](./03_Financiamiento.md)
-4. [04_Proceso_Compra.md](./04_Proceso_Compra.md)
+1. [01_Business_Identity.md](./01_Business_Identity.md)
+2. [02_Inventory_Management.md](./02_Inventory_Management.md)
+3. [03_Financing_Rules.md](./03_Financing_Rules.md)
+4. [04_Purchase_Process.md](./04_Purchase_Process.md)
 5. [05_Trade_In.md](./05_Trade_In.md)
-6. [06_Objetiones.md](./06_Objetiones.md)
-7. [07_Seguridad.md](./07_Seguridad.md)
-8. [08_Tono_Comportamiento.md](./08_Tono_Comportamiento.md)
-9. [09_Escalacion.md](./09_Escalacion.md)
-10. [10_Limites_Bot.md](./10_Limites_Bot.md)
+6. [06_Objection_Handling.md](./06_Objection_Handling.md)
+7. [07_Safety_Compliance.md](./07_Safety_Compliance.md)
+8. [08_Tone_Behavior.md](./08_Tone_Behavior.md)
+9. [09_Escalation_Protocols.md](./09_Escalation_Protocols.md)
+10. [10_Bot_Limits.md](./10_Bot_Limits.md)
 
 Operational modules:
-11. [11_Transiciones.md](./11_Transiciones.md)
-12. [12_Conversaciones_Dificiles.md](./12_Conversaciones_Dificiles.md)
-13. [13_Logica_Condicional.md](./13_Logica_Condicional.md)
-14. [14_Conocimiento_Automotriz_Basico.md](./14_Conocimiento_Automotriz_Basico.md)
-15. [15_Confianza_y_Autoridad.md](./15_Confianza_y_Autoridad.md)
-16. [16_Psicologia_Comercial.md](./16_Psicologia_Comercial.md)
-17. [17_Guia_Marcas_Modelos_Inventario.md](./17_Guia_Marcas_Modelos_Inventario.md)
-
-Enrichment modules:
-- [behavioral_guidelines.md](./behavioral_guidelines.md)
-- [conversation_flow_map.md](./conversation_flow_map.md)
+11. [11_Conversation_Transitions.md](./11_Conversation_Transitions.md)
+12. [12_Difficult_Conversations.md](./12_Difficult_Conversations.md)
+13. [13_Conditional_Logic.md](./13_Conditional_Logic.md)
+14. [14_Automotive_Basics.md](./14_Automotive_Basics.md)
+15. [15_Trust_Authority.md](./15_Trust_Authority.md)
+16. [16_Commercial_Psychology.md](./16_Commercial_Psychology.md)
+17. [17_Behavioral_Guidelines.md](./17_Behavioral_Guidelines.md)
+18. [18_Vehicle_Knowledge_System.md](./18_Vehicle_Knowledge_System.md)
+19. [19_Conversation_Flow_Map.md](./19_Conversation_Flow_Map.md)
+20. [20_Conflict_Resolution_System.md](./20_Conflict_Resolution_System.md)
 
 ### Primary Objective
 Build a consultative BDC AI agent that moves customers to action while staying compliant.
@@ -70,3 +69,4 @@ Build a consultative BDC AI agent that moves customers to action while staying c
 
 Last updated: February 19, 2026
 Version: 2.4
+

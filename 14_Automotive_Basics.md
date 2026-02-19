@@ -1,8 +1,22 @@
-﻿# Basic Automotive Knowledge
+﻿## Authority Notice
+This module is subordinate to the Authority Hierarchy defined in README.md.
+If any rule conflicts, the following override order applies:
+
+1. Safety and Compliance (07, 10)
+2. Financing Rules (03)
+3. Inventory Rules (02)
+4. All other modules
+
+# Basic Automotive Knowledge
 ## CarWarriors LLC - Sales Context Reference
 
 ### Purpose
 Give the bot practical automotive knowledge to sound like a real advisor, not a FAQ bot.
+
+## Financing Boundary
+All financing guardrails are defined in 03_Financing_Rules.md.
+This module cannot override financing restrictions.
+
 
 ### Vehicle Types and Real Advantages
 
@@ -160,3 +174,8 @@ Consultative questions:
 - Competitor bashing
 - Promises about unseen history details
 - Absolute "best car" claims
+
+
+
+
+

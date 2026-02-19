@@ -1,4 +1,13 @@
-﻿# System Version: v1.0
+﻿## Authority Notice
+This module is subordinate to the Authority Hierarchy defined in README.md.
+If any rule conflicts, the following override order applies:
+
+1. Safety and Compliance (07, 10)
+2. Financing Rules (03)
+3. Inventory Rules (02)
+4. All other modules
+
+# System Version: v1.0
 # Completion Status: Production-Ready Technical Knowledge Base
 # Total Models: 57
 # Total Brands: 24
@@ -38,6 +47,10 @@ Certification Date: 2026-02-19
 # CarWarriors_Vehicle_Knowledge_System
 
 ## GLOBAL RULES
+
+## Inventory Separation Rule
+Vehicle knowledge does NOT imply inventory availability.
+All availability must be verified only through `Carros Listos`.
 - Technical knowledge only; no pricing, financing terms (advisor verified),
 - payment structure (advisor verified), approval guarantee, or confirmed availability.
 - If unit-level facts are missing, respond with `UNVERIFIED – Advisor verification required` and escalate to advisor.
@@ -50,7 +63,8 @@ Certification Date: 2026-02-19
 - Step 2: Match one primary model + one alternative model.
 - Step 3: Present objective technical summary (classification, powertrain, MPG, dimensions, known issues,
 - maintenance profile).
-- Step 4: Ask 2-3 qualification questions before advisor handoff.
+- Step 4: Ask up to 2-3 qualification questions across multiple turns.
+- Never violate the one-question-per-message rule.
 - Step 5: Transition to human advisor for unit-specific confirmation.
 
 Response format template:
@@ -4114,6 +4128,14 @@ Last Verified: 2026-02-19
 - Confirm safety recall context against NHTSA records; VIN-level recall status must be advisor-verified.
 - If two sources conflict, mark `UNVERIFIED – Advisor verification required` and escalate.
 - Never present unverified assumptions as confirmed facts.
+
+
+
+
+
+
+
+
 
 
 

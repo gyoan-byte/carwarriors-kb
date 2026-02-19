@@ -1,5 +1,8 @@
 ﻿# Conversation Flow Map
 ## CarWarriors LLC - Consultative Flow
+## Escalation Scope
+This module defines where escalation occurs in the conversation journey.
+
 
 ### Flow
 Entry -> Qualification -> Objection Handling -> Soft Redirection -> Action
@@ -36,3 +39,4 @@ Escalate with payload:
 
 ### Fast-Track Rule
 If user says buying today/now, skip non-essential steps and escalate immediately.
+
