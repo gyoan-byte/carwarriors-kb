@@ -1,75 +1,95 @@
-﻿# Inventory Policy
-## CarWarriors LLC - Availability Guidance
+# Inventory Policy
+## CarWarriors LLC - "Carros Listos" Availability Rules
 
 ### Purpose
-Drive consultative discovery while protecting inventory accuracy.
+Protect inventory accuracy and keep sales conversations moving with verified information only.
+The bot provides availability guidance only, not final unit confirmation or pricing.
 
-### Live Inventory Source (Worker API)
-Primary source for live inventory context:
-- Base URL: `https://dc-leads-processor.gyoan.workers.dev`
-- `GET /latest?fields=Make,Year,Model,Odometer&sort=Make:asc,Year:desc,Odometer:asc`
-- `GET /stats`
-- `GET /latest/meta`
+### Single Inventory Source
+The bot can only use the inventory list called `Carros Listos`.
 
-Use this source before answering inventory-detail questions.
+`Carros Listos` includes:
+- Vehicles available for immediate sale
+- Units physically ready for delivery
+- Vehicles inspected and prepared
 
-### Allowed
-- Confirm general availability by category.
-- Share real-time, non-sensitive inventory summaries from Worker data:
-  - total units
-  - available makes
-  - model year spread
-  - odometer range
-  - latest inventory update time
-- Explain practical category fit (SUV, sedan, truck, compact, hybrid).
-- Ask one consultative question to move qualification.
+`Carros Listos` does not include:
+- Full dealership inventory
+- In-transit units
+- Reserved units
+- Vehicles pending inspection
 
-### Not Allowed
-- Exact prices
-- VIN-level details
-- Exact live stock by unit unless confirmed by human advisor
-- Internal storage keys, raw file paths, or technical metadata not useful to customers
-- Temporary promotions or APR specifics
+The bot must never assume availability outside `Carros Listos`.
 
-### Consultative Pattern
-Use this structure:
-1. Micro-validation
-2. Useful context (prefer Worker-based summary when available)
-3. One focused question
+### Primary Verification Rule
+Before sharing availability information, the bot must:
+1. Check `Carros Listos`.
+2. Confirm match by:
+- Make
+- Model
+- Year
+- Trim/version (when applicable)
+3. Validate current status:
+- Available
+- Reserved
+- Sold
 
-Example:
-"Great question. We have options in that category. Is this for daily commuting or family use?"
+If the match is partial (for example trim missing or year ambiguity), treat it as low confidence internally and ask a clarification question before confirming.
+Any availability response is preliminary. Exact availability and final pricing must be confirmed by a human advisor.
 
-### Vehicle Category Guidance
-- Compact SUV: balanced fuel economy, city-friendly size, high Miami demand.
-- Sedan: efficient commuting, easier parking, practical ownership cost.
-- Truck: cargo/work capability, stronger utility, higher fuel use.
-- Hybrid: lower fuel spend for heavy city driving.
+If the requested vehicle does not appear in `Carros Listos`, the bot must answer as unconfirmed and offer nearby alternatives.
 
-### How to Respond Without Promising Stock
-1. "Great question. We have options in that category right now. Is this for city use or family use?"
-2. "Absolutely, we carry that vehicle type. Do you prefer SUV, sedan, or truck?"
-3. "Makes sense. We can narrow options based on your use case. Is this for daily use or work use?"
-4. "Good point. That category moves often in Miami. Do you care more about space or fuel efficiency?"
-5. "No problem, we can guide this quickly. Are you looking for compact or family-sized?"
-6. "Totally. We can review current options by category. Do you need it soon or are you still comparing?"
-7. "Sounds good. We have multiple alternatives available. Should we start with use case or body style?"
-8. "I can help narrow it down fast. Is comfort or efficiency your top priority?"
-9. "Thanks for asking. We can review realistic options together. Do you prefer call or WhatsApp for the next step?"
-10. "Absolutely. We can guide you with active category options. What matters most today: space or efficiency?"
+### Specific Vehicle Question Flow
+When a customer asks for a specific unit (example: "Do you have a 2022 Toyota Corolla?"):
+1. Check `Carros Listos`.
+2. If found:
+- Share preliminary availability status (not final confirmation)
+- Mention 1-2 key details (for example mileage, trim, condition)
+- Clarify that a human advisor confirms exact availability and final pricing
+- Ask one forward-moving question
+3. If not found:
+- Do not reply with a dry "we don't have it"
+- Offer alternatives with this order:
+1. Same model, different year
+2. Same brand, similar model
+3. Same body type best-fit alternative
+- Keep momentum with one choice question
 
-### Worker-Based Response Pattern
-When Worker data is available:
-1. Mention concrete but safe facts from `/stats` or `/latest` (no pricing, no promises).
-2. Clarify inventory changes quickly in real time.
-3. Ask one qualification question.
+Example when available:
+"We currently show a 2022 Corolla in our ready-to-sell inventory with 38k miles and excellent condition. For exact live availability and final pricing, an advisor confirms in real time. Would you like me to connect you now?"
 
-Example:
-"Great question. Based on our current inventory feed, we have units in that category and several model-year options available today. Do you want to prioritize lower mileage or newer year?"
+Example when not available:
+"That exact model is not currently in our ready-to-sell inventory, but we do have similar options. Would you prefer another Corolla or a Civic from the same year?"
 
-### Freshness Rule
-- If latest update is recent: present data as "current inventory feed."
-- If latest update appears stale or endpoint fails: do not invent numbers; switch to consultative category guidance and escalate for exact unit confirmation.
+### General Inventory Question Flow
+When a customer asks broadly (example: "What SUVs do you have?"):
+1. Filter only SUVs from `Carros Listos`.
+2. Share no more than 3 options.
+3. Do not list full inventory.
+4. End with one focused question.
+
+### Smart Guidance Rule
+The bot may use `Carros Listos` to:
+- Recommend similar alternatives
+- Suggest near-price upgrades
+- Guide by budget
+- Filter by vehicle type (SUV, Sedan, Truck)
+
+All guidance must remain based only on `Carros Listos`.
+
+### Changing Inventory State Rule
+If a customer returns after days, the bot must re-check availability.
+The bot must never assume a previously discussed unit is still available.
+Every availability confirmation is valid only at the time of checking.
+
+Recommended line:
+"Let me confirm it's still available in our ready-to-sell inventory."
 
 ### Escalation
-Escalate to inventory advisor for exact unit, trim, VIN, hold, or delivery-time requests.
+Escalate to a human advisor for:
+- Final unit confirmation when data is unclear
+- Exact live availability confirmation
+- Any final pricing request
+- Requests for VIN-level certainty
+- Hold/reservation requests
+- Delivery-time commitments
