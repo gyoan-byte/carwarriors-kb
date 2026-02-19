@@ -4,11 +4,20 @@
 # Total Brands: 24
 # Final TBD Count: 38
 # Last Full Audit Date: 2026-02-19
+## Release Notes (v1.0)
+- Includes: U.S.-market generation mapping, engine/transmission tables, EPA MPG tables, dimensions,
+- known issues, maintenance profiles, pros/cons, qualification questions, and advisor transitions for all listed models.
+- Does not include: pricing, financing decisions, payment commitments, legal approval language,
+- or confirmed live inventory.
+- N/A/TBD scope: heavy-duty and classic models may show N/A for EPA light-duty MPG fields where publication is
+- not consistent or not applicable.
+- Update method: verify changes using OEM technical specs first, then EPA fuel economy data, then NHTSA recall records.
 # CarWarriors_Vehicle_Knowledge_System
 
 ## GLOBAL RULES
-- Technical knowledge only; no pricing, financing terms (advisor verified), payment structure (advisor verified), approval guarantee, or confirmed availability.
-- If unit-level facts are missing, respond with `TBD – Requires verification` and escalate to advisor.
+- Technical knowledge only; no pricing, financing terms (advisor verified),
+- payment structure (advisor verified), approval guarantee, or confirmed availability.
+- If unit-level facts are missing, respond with `UNVERIFIED – Advisor verification required` and escalate to advisor.
 - Keep responses concise, structured, and verification-first.
 - Do not imply final inventory status; advisor confirms live status.
 - Prefer U.S.-market specifications unless explicitly stated otherwise.
@@ -16,7 +25,8 @@
 ## RESPONSE ENGINE
 - Step 1: Identify customer intent (body type, use case, fuel type, budget sensitivity, family/commercial need).
 - Step 2: Match one primary model + one alternative model.
-- Step 3: Present objective technical summary (classification, powertrain, MPG, dimensions, known issues, maintenance profile).
+- Step 3: Present objective technical summary (classification, powertrain, MPG, dimensions, known issues,
+- maintenance profile).
 - Step 4: Ask 2-3 qualification questions before advisor handoff.
 - Step 5: Transition to human advisor for unit-specific confirmation.
 
@@ -93,7 +103,8 @@ Approximate dimensions:
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
-- 952: Commonly reported electrical/infotainment glitches, battery-related warning cascades, and occasional coolant/thermostat leak reports.
+- 952: Commonly reported electrical/infotainment glitches, battery-related warning cascades,
+- and occasional coolant/thermostat leak reports.
 - NHTSA recalls include safety-system and component campaigns by model year; verify exact applicability by VIN.
 
 Maintenance profile:
@@ -169,7 +180,8 @@ Typical known issues by generation:
 
 Maintenance profile:
 - Level: Medium (Low / Medium / High)
-- Notes: Generally lower upkeep than many European luxury SUVs; turbo engines and complex electronics still require consistent service.
+- Notes: Generally lower upkeep than many European luxury SUVs; turbo engines and
+- complex electronics still require consistent service.
 
 Pros:
 - Strong blend of comfort and handling.
@@ -233,14 +245,17 @@ Approximate dimensions:
 | Passenger capacity | 7 |
 
 Typical known issues by generation:
-- 2nd/3rd gen: Common owner reports include transmission behavior complaints on specific year/gearbox calibrations and infotainment aging issues.
+- 2nd/3rd gen: Common owner reports include transmission behavior complaints on specific year/gearbox
+- calibrations and infotainment aging issues.
 - 3rd gen hybrid variants: Higher system complexity can increase diagnosis/repair cost.
 - 4th gen early years: Isolated electronics/software update campaigns.
-- NHTSA recalls vary by year; key categories include fuel system, electronics, and safety equipment depending on model year.
+- NHTSA recalls vary by year; key categories include fuel system, electronics,
+- and safety equipment depending on model year.
 
 Maintenance profile:
 - Level: Medium (Low / Medium / High)
-- Notes: More complex than mainstream 3-row SUVs, but typically below German luxury cost levels; transmission type and SH-AWD servicing matter.
+- Notes: More complex than mainstream 3-row SUVs, but typically below German luxury cost levels;
+- transmission type and SH-AWD servicing matter.
 
 Pros:
 - Strong all-around family usability with refined road manners.
@@ -303,7 +318,8 @@ Approximate dimensions:
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
-- 1st gen: Widely documented 2.0T oil-consumption/timing-chain concerns on some years; cooling system wear items also common.
+- 1st gen: Widely documented 2.0T oil-consumption/timing-chain concerns on some years;
+- cooling system wear items also common.
 - 2nd gen: Typical luxury-SUV electronics/sensor issues and occasional drivetrain software updates.
 - NHTSA recalls by year include varied component campaigns; confirm VIN-level applicability before final statements.
 
@@ -369,7 +385,8 @@ Approximate dimensions:
 | Passenger capacity | 7 |
 
 Typical known issues by generation:
-- 1st gen: Higher age-related maintenance load, including cooling, suspension, and carbon-buildup concerns on some engines.
+- 1st gen: Higher age-related maintenance load, including cooling, suspension,
+- and carbon-buildup concerns on some engines.
 - 2nd gen: Electronics/software and 48V electrical-system service campaigns reported on specific years.
 - NHTSA recalls vary by year and component; use VIN-level advisor confirmation for exact unit status.
 
@@ -439,14 +456,17 @@ Approximate dimensions:
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
-- E83: Age-related cooling-system leaks, transfer-case actuator wear, and suspension bushing wear are commonly documented.
-- F25: Widely reported timing-chain/oil-leak concerns on some 4-cylinder years; transfer-case service sensitivity appears in owner reports.
+- E83: Age-related cooling-system leaks, transfer-case actuator wear, and suspension bushing wear are commonly
+- documented.
+- F25: Widely reported timing-chain/oil-leak concerns on some 4-cylinder years;
+- transfer-case service sensitivity appears in owner reports.
 - G01: Electronics/driver-assist software updates and occasional cooling-system leaks are recurring service themes.
 - NHTSA recall campaigns vary by model year/component; advisor must confirm VIN-level status.
 
 Maintenance profile:
 - Level: High (Low / Medium / High)
-- Notes: Premium parts/labor and xDrive drivetrain complexity increase running costs; preventive fluid service is important for transfer-case longevity.
+- Notes: Premium parts/labor and xDrive drivetrain complexity increase running costs;
+- preventive fluid service is important for transfer-case longevity.
 
 Pros:
 - Strong chassis balance and steering precision in class.
@@ -511,13 +531,15 @@ Approximate dimensions:
 
 Typical known issues by generation:
 - E53/E70: Cooling-system wear, suspension component wear, and higher age-related electrical repairs are common.
-- E70/F15 V8 variants: Higher documented long-term maintenance risk (heat management, oil-related issues) versus inline-6 trims.
+- E70/F15 V8 variants: Higher documented long-term maintenance risk (heat management,
+- oil-related issues) versus inline-6 trims.
 - G05: Software/electronics campaigns and occasional 48V-system service actions appear in recall/service history.
 - NHTSA recalls are model-year specific; final applicability must be VIN-confirmed.
 
 Maintenance profile:
 - Level: High (Low / Medium / High)
-- Notes: Complex drivetrain/electronics and premium labor rates drive above-average ownership cost, especially on V8 or air-suspension equipped units.
+- Notes: Complex drivetrain/electronics and premium labor rates drive above-average ownership cost,
+- especially on V8 or air-suspension equipped units.
 
 Pros:
 - Strong highway comfort and refinement.
@@ -586,7 +608,8 @@ Typical known issues by generation:
 
 Maintenance profile:
 - Level: High (Low / Medium / High)
-- Notes: Coupe-SUV packaging plus performance-oriented setups typically increases tire, brake, and suspension operating cost.
+- Notes: Coupe-SUV packaging plus performance-oriented setups typically increases tire, brake,
+- and suspension operating cost.
 
 Pros:
 - Strong straight-line performance and high-speed stability.
@@ -654,14 +677,16 @@ Approximate dimensions:
 | Passenger capacity | 7-8 |
 
 Typical known issues by generation:
-- 3rd/4th gen: Commonly documented high-cost wear items include magnetic/air suspension components, electronics, and drivetrain service at higher mileage.
+- 3rd/4th gen: Commonly documented high-cost wear items include magnetic/air suspension components, electronics,
+- and drivetrain service at higher mileage.
 - 4th gen: Some owner-reported 8-speed transmission shift/shudder concerns on certain years.
 - 5th gen: Electronics/infotainment and diesel-related emissions-system service patterns appear in field reports.
 - NHTSA recalls vary by model year and system; advisor must verify VIN-specific applicability.
 
 Maintenance profile:
 - Level: High (Low / Medium / High)
-- Notes: Large-body luxury SUV with high parts, tire, brake, and fuel cost; 4WD and air-ride configurations raise service complexity.
+- Notes: Large-body luxury SUV with high parts, tire, brake, and fuel cost;
+- 4WD and air-ride configurations raise service complexity.
 
 Pros:
 - Strong towing/capability profile with luxury feature depth.
@@ -722,12 +747,14 @@ Approximate dimensions:
 Typical known issues by generation:
 - Early years: Infotainment/electronics complaints are recurrent in owner reports.
 - Powertrain pattern: Some model years show transmission calibration/shift-behavior complaints.
-- Later refresh years: Improved efficiency/powertrain integration, but software/electrical updates remain common service events.
+- Later refresh years: Improved efficiency/powertrain integration, but software/electrical updates remain common
+- service events.
 - NHTSA recalls are model-year specific and must be VIN-confirmed.
 
 Maintenance profile:
 - Level: Medium (Low / Medium / High)
-- Notes: Usually lower upkeep than full-size luxury SUVs, but premium-brand electronics and AWD hardware still increase service cost versus mainstream crossovers.
+- Notes: Usually lower upkeep than full-size luxury SUVs, but premium-brand electronics and
+- AWD hardware still increase service cost versus mainstream crossovers.
 
 Pros:
 - Comfortable ride and quiet cabin tuning.
@@ -790,13 +817,15 @@ Approximate dimensions:
 
 Typical known issues by generation:
 - 5th gen: Age-related suspension wear, interior trim wear, and electrical accessory faults are commonly reported.
-- 6th gen: 8-speed automatic shudder complaints on some years and occasional infotainment/electrical issues are documented in owner reports.
+- 6th gen: 8-speed automatic shudder complaints on some years and occasional infotainment/electrical issues are
+- documented in owner reports.
 - High-performance trims can show higher brake/tire wear and higher thermal stress service needs.
 - NHTSA recalls are year/trim specific and require VIN-level confirmation.
 
 Maintenance profile:
 - Level: Medium (Low / Medium / High)
-- Notes: Routine costs are moderate for V6 trims and higher for V8/performance variants due to tire, brake, and drivetrain wear rates.
+- Notes: Routine costs are moderate for V6 trims and higher for V8/performance variants due to tire, brake,
+- and drivetrain wear rates.
 
 Pros:
 - Strong performance-per-dollar perception in U.S. sports coupe class.
@@ -867,7 +896,8 @@ Typical known issues by generation:
 
 Maintenance profile:
 - Level: Medium (Low / Medium / High)
-- Notes: Mainstream maintenance profile overall, but turbo and transmission servicing quality strongly affects long-term reliability.
+- Notes: Mainstream maintenance profile overall, but turbo and transmission servicing quality strongly affects
+- long-term reliability.
 
 Pros:
 - Practical compact-SUV packaging for daily family use.
@@ -924,12 +954,14 @@ Approximate dimensions:
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
-- Early production years primarily show software, charging, and infotainment update campaigns typical of new EV launches.
+- Early production years primarily show software, charging, and infotainment update campaigns typical of new EV
+- launches.
 - NHTSA recall actions are still maturing by model year; advisor must validate latest VIN-level status.
 
 Maintenance profile:
 - Level: Low (Low / Medium / High)
-- Notes: No engine oil/transmission fluid service in normal use, but tire wear and software/service-campaign compliance remain important.
+- Notes: No engine oil/transmission fluid service in normal use, but tire wear and
+- software/service-campaign compliance remain important.
 
 Pros:
 - Quiet operation and strong low-speed torque.
@@ -993,13 +1025,15 @@ Approximate dimensions:
 | Passenger capacity | 5-6 |
 
 Typical known issues by generation:
-- Commonly discussed issues include AFM/DFM valvetrain concerns on some V8 years, transmission calibration complaints on specific gearboxes, and electrical module faults.
+- Commonly discussed issues include AFM/DFM valvetrain concerns on some V8 years,
+- transmission calibration complaints on specific gearboxes, and electrical module faults.
 - High-load commercial use increases brake, suspension, and drivetrain wear rates.
 - NHTSA recalls vary by model year/body/powertrain; advisor must verify VIN-specific campaigns.
 
 Maintenance profile:
 - Level: Medium-High (Low / Medium / High)
-- Notes: Parts access is broad, but heavy-duty use cycles, 4WD components, and V8 drivetrain servicing raise long-term cost.
+- Notes: Parts access is broad, but heavy-duty use cycles, 4WD components,
+- and V8 drivetrain servicing raise long-term cost.
 
 Pros:
 - Strong capability and broad engine selection.
@@ -1046,8 +1080,9 @@ EPA MPG table (city/highway):
 
 | Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
 |---|---|---:|---:|---:|
-| Most 3500 HD configurations | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
-| Note | EPA light-duty MPG coverage is limited for many 3500 HD GVWR configurations | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Most 3500 HD configurations | N/A | N/A – EPA light-duty data not applicable | N/A – EPA light-duty data not applicable | N/A – EPA light-duty data not applicable |
+
+- Heavy-duty/classic: EPA light-duty MPG may not be published consistently; advisor verifies unit specifics.
 
 Approximate dimensions:
 
@@ -1067,7 +1102,8 @@ Typical known issues by generation:
 
 Maintenance profile:
 - Level: High (Low / Medium / High)
-- Notes: Commercial-duty parts loads, tire/brake wear, and diesel emissions-system complexity typically produce high operating cost.
+- Notes: Commercial-duty parts loads, tire/brake wear, and diesel emissions-system complexity typically produce
+- high operating cost.
 
 Pros:
 - High towing/payload capability for commercial workloads.
@@ -1136,7 +1172,8 @@ Typical known issues by generation:
 
 Maintenance profile:
 - Level: Medium-High (Low / Medium / High)
-- Notes: V6 trims are moderate-cost to run; V8/high-performance trims materially raise fuel, tire, brake, and driveline service costs.
+- Notes: V6 trims are moderate-cost to run; V8/high-performance trims materially raise fuel, tire, brake,
+- and driveline service costs.
 
 Pros:
 - Strong straight-line performance heritage and road presence.
@@ -1193,14 +1230,16 @@ Approximate dimensions:
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
-- Reported issues include electrical faults, infotainment glitches, and transmission behavior complaints on some configurations.
+- Reported issues include electrical faults, infotainment glitches, and transmission behavior complaints on some
+- configurations.
 - Dual-clutch turbo variants are often cited for drivability/smoothness concerns in owner feedback.
 - Parts/support availability can vary due shorter production run compared with high-volume compacts.
 - NHTSA recalls are year/component dependent and require VIN-level confirmation.
 
 Maintenance profile:
 - Level: Medium (Low / Medium / High)
-- Notes: Basic service is affordable, but transmission-specific diagnostics and discontinued-model parts sourcing can increase downtime.
+- Notes: Basic service is affordable, but transmission-specific diagnostics and
+- discontinued-model parts sourcing can increase downtime.
 
 Pros:
 - Efficient compact-sedan footprint with good highway fuel economy.
@@ -1251,8 +1290,9 @@ EPA MPG table (city/highway):
 
 | Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
 |---|---|---:|---:|---:|
-| Most F-350 Super Duty configurations | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
-| Note | EPA light-duty MPG coverage is limited for many F-350 GVWR configurations | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Most F-350 Super Duty configurations | N/A | N/A – EPA light-duty data not applicable | N/A – EPA light-duty data not applicable | N/A – EPA light-duty data not applicable |
+
+- Heavy-duty/classic: EPA light-duty MPG may not be published consistently; advisor verifies unit specifics.
 
 Approximate dimensions:
 
@@ -1266,14 +1306,16 @@ Approximate dimensions:
 | Passenger capacity | 5-6 |
 
 Typical known issues by generation:
-- Older diesel generations are widely documented for higher maintenance complexity and cooling/emissions-system service events.
+- Older diesel generations are widely documented for higher maintenance complexity and
+- cooling/emissions-system service events.
 - Modern diesel generations can show higher-cost aftertreatment and fuel-system service events as mileage accumulates.
 - Steering, suspension, and brake wear accelerates under heavy commercial duty cycles.
 - NHTSA recalls are model-year/configuration specific and require VIN-level confirmation.
 
 Maintenance profile:
 - Level: High (Low / Medium / High)
-- Notes: Heavy-duty usage profile, large consumables, and diesel emissions-system complexity generally produce high operating cost.
+- Notes: Heavy-duty usage profile, large consumables, and diesel emissions-system complexity generally produce
+- high operating cost.
 
 Pros:
 - Very high towing/payload capability for commercial workloads.
@@ -1316,8 +1358,9 @@ EPA MPG table (city/highway):
 
 | Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
 |---|---|---:|---:|---:|
-| 1964 Falcon Wagon | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
-| Note | EPA modern MPG methodology does not provide direct equivalent ratings for this classic model-year | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| 1964 Falcon Wagon | N/A | N/A – EPA light-duty data not applicable | N/A – EPA light-duty data not applicable | N/A – EPA light-duty data not applicable |
+
+- Heavy-duty/classic: EPA light-duty MPG may not be published consistently; advisor verifies unit specifics.
 
 Approximate dimensions:
 
@@ -1331,13 +1374,15 @@ Approximate dimensions:
 | Passenger capacity | 5-6 (bench-seat dependent) |
 
 Typical known issues by generation:
-- Typical classic-car concerns include corrosion, aged wiring, fuel-system varnish/carburetion issues, and brake system service needs.
+- Typical classic-car concerns include corrosion, aged wiring, fuel-system varnish/carburetion issues,
+- and brake system service needs.
 - Parts availability depends on restoration market and originality goals.
 - No modern NHTSA recall framework equivalent for this vintage platform under current standards.
 
 Maintenance profile:
 - Level: High (Low / Medium / High)
-- Notes: Classic-vehicle ownership requires frequent preventive work, specialty parts sourcing, and restoration-oriented maintenance skills.
+- Notes: Classic-vehicle ownership requires frequent preventive work, specialty parts sourcing,
+- and restoration-oriented maintenance skills.
 
 Pros:
 - Distinctive vintage character with collector appeal.
@@ -1403,14 +1448,17 @@ Approximate dimensions:
 | Passenger capacity | 4 |
 
 Typical known issues by generation:
-- S197/S550 owner reports include occasional drivetrain vibration, cooling-system leaks, and infotainment/electrical faults.
-- Some S550/S650 owner feedback references 10-speed shift calibration behavior and MT82 manual feel concerns on certain use cases.
+- S197/S550 owner reports include occasional drivetrain vibration, cooling-system leaks,
+- and infotainment/electrical faults.
+- Some S550/S650 owner feedback references 10-speed shift calibration behavior and
+- MT82 manual feel concerns on certain use cases.
 - High-performance trims show increased tire/brake wear and heat-management service demands.
 - NHTSA recalls are year/trim dependent and should be VIN-verified.
 
 Maintenance profile:
 - Level: Medium (Low / Medium / High)
-- Notes: Routine service is moderate on EcoBoost/V8 GT trims; track-oriented variants increase consumable and drivetrain maintenance cost.
+- Notes: Routine service is moderate on EcoBoost/V8 GT trims; track-oriented variants increase consumable and
+- drivetrain maintenance cost.
 
 Pros:
 - Strong enthusiast support and broad powertrain range.
@@ -1453,8 +1501,9 @@ EPA MPG table (city/highway):
 
 | Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
 |---|---|---:|---:|---:|
-| Transit 250 Cargo Van (most configurations) | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
-| Note | EPA coverage can vary for commercial-van body/GVWR configurations and is not consistently listed as a single Transit 250 cargo profile | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Transit 250 Cargo Van (most configurations) | N/A | N/A – EPA light-duty data not applicable | N/A – EPA light-duty data not applicable | N/A – EPA light-duty data not applicable |
+
+- Heavy-duty/classic: EPA light-duty MPG may not be published consistently; advisor verifies unit specifics.
 
 Approximate dimensions:
 
@@ -1468,13 +1517,15 @@ Approximate dimensions:
 | Passenger capacity | 2-3 (cargo configuration dependent) |
 
 Typical known issues by generation:
-- Fleet usage reports commonly cite sliding-door hardware wear, electrical accessory faults, and high-mileage transmission service needs.
+- Fleet usage reports commonly cite sliding-door hardware wear, electrical accessory faults,
+- and high-mileage transmission service needs.
 - Turbocharged EcoBoost variants can show higher thermal and turbo-system maintenance sensitivity in severe duty use.
 - NHTSA recalls vary by year and configuration; advisor must verify VIN-level applicability.
 
 Maintenance profile:
 - Level: Medium-High (Low / Medium / High)
-- Notes: Commercial duty cycles drive higher maintenance frequency; payload, idle time, and delivery-route severity strongly affect operating cost.
+- Notes: Commercial duty cycles drive higher maintenance frequency; payload, idle time,
+- and delivery-route severity strongly affect operating cost.
 
 Pros:
 - High cargo-volume flexibility across roof/wheelbase setups.
@@ -1540,7 +1591,8 @@ Approximate dimensions:
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
-- XA30: Common reports include steering/suspension wear and occasional oil-consumption concerns on specific engine years.
+- XA30: Common reports include steering/suspension wear and occasional oil-consumption concerns on specific
+- engine years.
 - XA40/XA50: Water pump and electronic accessory issues appear in owner-report patterns by year.
 - NHTSA recalls vary by model year and powertrain; advisor should confirm VIN-specific campaigns.
 
@@ -1612,7 +1664,8 @@ Approximate dimensions:
 
 Typical known issues by generation:
 - XV40: Some year-specific oil-consumption reports and age-related suspension wear patterns are documented.
-- XV50/XV70: Water pump, infotainment, and occasional transmission calibration complaints appear in owner-report patterns.
+- XV50/XV70: Water pump, infotainment, and occasional transmission calibration complaints appear in owner-report
+- patterns.
 - NHTSA recalls are model-year specific; advisor should verify VIN-level applicability.
 
 Maintenance profile:
@@ -1753,7 +1806,8 @@ Approximate dimensions:
 
 Typical known issues by generation:
 - XU40/XU50: Water pump, oil cooler line (certain years), and suspension wear are commonly discussed service items.
-- XU70: Early production years show mixed owner reports on infotainment/software behavior and turbo calibration refinement.
+- XU70: Early production years show mixed owner reports on infotainment/software behavior and
+- turbo calibration refinement.
 - NHTSA recalls vary by year/powertrain; advisor should confirm VIN-specific campaigns.
 
 Maintenance profile:
@@ -1822,8 +1876,10 @@ Approximate dimensions:
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
-- V37 early/mid: Owner-reported patterns include infotainment lag/freezing and occasional accessory-electrical concerns on some year ranges.
-- 3.0t years: Community reports include turbo/cooling-system sensitivity on some units; maintenance history is important.
+- V37 early/mid: Owner-reported patterns include infotainment lag/freezing and
+- occasional accessory-electrical concerns on some year ranges.
+- 3.0t years: Community reports include turbo/cooling-system sensitivity on some units;
+- maintenance history is important.
 - NHTSA recalls vary by model year/trim; VIN-specific recall status must be advisor-verified.
 
 Maintenance profile:
@@ -1896,7 +1952,8 @@ Typical known issues by generation:
 
 Maintenance profile:
 - Level: Medium (Low / Medium / High)
-- Notes: Moderate service profile for luxury coupe segment; turbocharged drivetrain complexity can increase repair exposure over time.
+- Notes: Moderate service profile for luxury coupe segment; turbocharged drivetrain complexity can increase
+- repair exposure over time.
 
 Pros:
 - Distinctive coupe styling with strong brand identity.
@@ -1964,7 +2021,8 @@ Typical known issues by generation:
 
 Maintenance profile:
 - Level: High (Low / Medium / High)
-- Notes: Full-size luxury sedan platform with larger-displacement engines and discontinued U.S. model support can raise long-term parts/service cost.
+- Notes: Full-size luxury sedan platform with larger-displacement engines and
+- discontinued U.S. model support can raise long-term parts/service cost.
 
 Pros:
 - Smooth highway ride and strong V6 refinement.
@@ -2025,13 +2083,16 @@ Approximate dimensions:
 | Passenger capacity | 7 |
 
 Typical known issues by generation:
-- L50: Commonly discussed ownership patterns include CVT durability concerns on some year ranges plus normal aging suspension/HVAC repairs.
-- L51: Early owner reports include occasional electronics/infotainment calibration complaints; 9-speed behavior varies by software update level.
+- L50: Commonly discussed ownership patterns include CVT durability concerns on some year ranges plus normal
+- aging suspension/HVAC repairs.
+- L51: Early owner reports include occasional electronics/infotainment calibration complaints;
+- 9-speed behavior varies by software update level.
 - NHTSA recalls are year/trim specific and should be checked at VIN level.
 
 Maintenance profile:
 - Level: Medium (Low / Medium / High)
-- Notes: Moderate maintenance profile for 3-row luxury SUV class; L50 CVT history and L51 9-speed service history are key evaluation points.
+- Notes: Moderate maintenance profile for 3-row luxury SUV class; L50 CVT history and
+- L51 9-speed service history are key evaluation points.
 
 Pros:
 - Comfortable 3-row cabin with family-oriented layout.
@@ -2098,7 +2159,8 @@ Approximate dimensions:
 
 Typical known issues by generation:
 - 8th/9th gen: Some long-term reports include paint/clearcoat aging and suspension bushing wear.
-- 10th/11th gen turbo variants: Owner reports occasionally cite oil dilution discussions and HVAC/electronics concerns on certain year/trim combinations.
+- 10th/11th gen turbo variants: Owner reports occasionally cite oil dilution discussions and
+- HVAC/electronics concerns on certain year/trim combinations.
 - NHTSA recalls are model-year specific; advisor should verify VIN-level status.
 
 Maintenance profile:
@@ -2172,7 +2234,8 @@ Typical known issues by generation:
 
 Maintenance profile:
 - Level: Medium (Low / Medium / High)
-- Notes: Generally predictable ownership cost, but AWD hardware and truck-duty use cycles raise service burden versus compact crossovers.
+- Notes: Generally predictable ownership cost, but AWD hardware and truck-duty use cycles raise service burden
+- versus compact crossovers.
 
 Pros:
 - Car-like ride quality compared with body-on-frame midsize trucks.
@@ -2234,13 +2297,16 @@ Approximate dimensions:
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
-- W204/W205: Common owner reports include electronics faults, sensor/module failures, and cooling-system service items at higher mileage.
-- Turbocharged variants: Oil/coolant leak and intake/boost-component wear patterns appear by maintenance history and mileage.
+- W204/W205: Common owner reports include electronics faults, sensor/module failures,
+- and cooling-system service items at higher mileage.
+- Turbocharged variants: Oil/coolant leak and intake/boost-component wear patterns appear by maintenance history
+- and mileage.
 - NHTSA recalls are model-year specific and should be VIN-confirmed before final statements.
 
 Maintenance profile:
 - Level: High (Low / Medium / High)
-- Notes: Premium-brand parts, diagnostics, and labor rates usually result in above-average ownership cost versus mainstream sedans.
+- Notes: Premium-brand parts, diagnostics, and labor rates usually result in above-average ownership cost versus
+- mainstream sedans.
 
 Pros:
 - Strong refinement and premium interior execution.
@@ -2302,13 +2368,15 @@ Approximate dimensions:
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
-- W212/W213: Frequently reported themes include electronics/module failures, air-suspension service on equipped trims, and coolant/oil leak repairs.
+- W212/W213: Frequently reported themes include electronics/module failures,
+- air-suspension service on equipped trims, and coolant/oil leak repairs.
 - High-output AMG and complex hybrid systems increase long-term maintenance complexity.
 - NHTSA recall applicability is year and trim specific; advisor should verify VIN-level status.
 
 Maintenance profile:
 - Level: High (Low / Medium / High)
-- Notes: Executive-class luxury systems and premium labor rates generally produce high ownership cost over long-term use.
+- Notes: Executive-class luxury systems and premium labor rates generally produce high ownership cost over
+- long-term use.
 
 Pros:
 - Excellent long-distance comfort and cabin refinement.
@@ -2435,7 +2503,8 @@ Approximate dimensions:
 | Passenger capacity | 5-7 (configuration dependent) |
 
 Typical known issues by generation:
-- W166/V167: Recurring service themes include electronics/sensor modules, air-suspension wear (equipped units), and cooling-system maintenance.
+- W166/V167: Recurring service themes include electronics/sensor modules, air-suspension wear (equipped units),
+- and cooling-system maintenance.
 - Mild-hybrid and high-feature configurations increase diagnostic complexity.
 - NHTSA recalls vary by year and trim; advisor should verify VIN-level recall status.
 
@@ -2487,8 +2556,9 @@ EPA MPG table (city/highway):
 
 | Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
 |---|---|---:|---:|---:|
-| Most 2500 HD configurations | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
-| Note | EPA light-duty MPG coverage is limited for many 2500 HD GVWR configurations and not consistently published as a single profile | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Most 2500 HD configurations | N/A | N/A – EPA light-duty data not applicable | N/A – EPA light-duty data not applicable | N/A – EPA light-duty data not applicable |
+
+- Heavy-duty/classic: EPA light-duty MPG may not be published consistently; advisor verifies unit specifics.
 
 Approximate dimensions:
 
@@ -2502,13 +2572,16 @@ Approximate dimensions:
 | Passenger capacity | 5-6 (configuration dependent) |
 
 Typical known issues by generation:
-- DJ/DT: Typical heavy-duty ownership patterns include front-end suspension/steering wear under high load cycles and emissions-system service events on diesel units.
-- Diesel variants can show EGR/DPF/aftertreatment maintenance complexity depending on duty cycle and fuel/DEF management.
+- DJ/DT: Typical heavy-duty ownership patterns include front-end suspension/steering wear under high load cycles
+- and emissions-system service events on diesel units.
+- Diesel variants can show EGR/DPF/aftertreatment maintenance complexity depending on duty cycle and
+- fuel/DEF management.
 - NHTSA recalls vary by year, drivetrain, and equipment package; VIN-level verification is required.
 
 Maintenance profile:
 - Level: High (Low / Medium / High)
-- Notes: Heavy-duty consumables, larger fluid capacities, diesel aftertreatment systems, and commercial-use wear patterns increase service cost and complexity.
+- Notes: Heavy-duty consumables, larger fluid capacities, diesel aftertreatment systems,
+- and commercial-use wear patterns increase service cost and complexity.
 
 Pros:
 - Strong towing and payload capability for commercial and heavy-duty use.
@@ -2540,7 +2613,8 @@ Last Verified: 2026-02-19
 
 Generation overview (U.S.):
 - 1st generation: 2017-present.
-- Major refresh/update points: MY2021 efficiency/thermal-system updates; MY2024 exterior/interior refresh (\"Highland\") for U.S. market rollout.
+- Major refresh/update points: MY2021 efficiency/thermal-system updates; MY2024 exterior/interior refresh
+- (\"Highland\") for U.S. market rollout.
 
 Engine and transmission table:
 
@@ -2570,12 +2644,14 @@ Approximate dimensions:
 
 Typical known issues by generation:
 - Early production years show recurring owner reports on build consistency, paint quality, and trim fit.
-- Common service themes include suspension/noise complaints, 12V battery service events, and infotainment/software updates.
+- Common service themes include suspension/noise complaints, 12V battery service events,
+- and infotainment/software updates.
 - NHTSA recalls and software campaigns vary by production period and should be confirmed at VIN level.
 
 Maintenance profile:
 - Level: Low (Low / Medium / High)
-- Notes: Low routine mechanical maintenance profile; tire wear, brake fluid, cabin filtration, and software campaign compliance remain key service items.
+- Notes: Low routine mechanical maintenance profile; tire wear, brake fluid, cabin filtration,
+- and software campaign compliance remain key service items.
 
 Pros:
 - Very strong EV efficiency and acceleration response.
@@ -2641,7 +2717,8 @@ Approximate dimensions:
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
-- XA30: Common reports include steering/suspension wear and occasional oil-consumption concerns on specific engine years.
+- XA30: Common reports include steering/suspension wear and occasional oil-consumption concerns on specific
+- engine years.
 - XA40/XA50: Water pump and electronic accessory issues appear in owner-report patterns by year.
 - NHTSA recalls vary by model year and powertrain; advisor should confirm VIN-specific campaigns.
 
@@ -2713,7 +2790,8 @@ Approximate dimensions:
 
 Typical known issues by generation:
 - XV40: Some year-specific oil-consumption reports and age-related suspension wear patterns are documented.
-- XV50/XV70: Water pump, infotainment, and occasional transmission calibration complaints appear in owner-report patterns.
+- XV50/XV70: Water pump, infotainment, and occasional transmission calibration complaints appear in owner-report
+- patterns.
 - NHTSA recalls are model-year specific; advisor should verify VIN-level applicability.
 
 Maintenance profile:
@@ -2852,7 +2930,8 @@ Approximate dimensions:
 
 Typical known issues by generation:
 - XU40/XU50: Water pump, oil cooler line (certain years), and suspension wear are commonly discussed service items.
-- XU70: Early production years show mixed owner reports on infotainment/software behavior and turbo calibration refinement.
+- XU70: Early production years show mixed owner reports on infotainment/software behavior and
+- turbo calibration refinement.
 - NHTSA recalls vary by year/powertrain; advisor should confirm VIN-specific campaigns.
 
 Maintenance profile:
@@ -2922,13 +3001,15 @@ Approximate dimensions:
 | Passenger capacity | 5-7 |
 
 Typical known issues by generation:
-- 5th gen: Documented patterns include occasional brake/suspension wear and aging electronic accessory issues at higher mileage.
+- 5th gen: Documented patterns include occasional brake/suspension wear and aging electronic accessory issues at
+- higher mileage.
 - Body-on-frame setup prioritizes durability but can increase ride harshness and component wear in urban use.
 - NHTSA recall campaigns vary by year; advisor should confirm VIN-specific status.
 
 Maintenance profile:
 - Level: Medium (Low / Medium / High)
-- Notes: Durable platform with predictable service intervals, but truck-based components and 4WD hardware raise consumable costs versus crossovers.
+- Notes: Durable platform with predictable service intervals, but truck-based components and
+- 4WD hardware raise consumable costs versus crossovers.
 
 Pros:
 - Proven durability and off-road capability.
@@ -2992,12 +3073,14 @@ Approximate dimensions:
 
 Typical known issues by generation:
 - 2nd gen: Age-related suspension and steering wear are common at higher mileage.
-- 3rd gen: Owner-reported transmission shift-calibration and occasional rear differential noise complaints appear on some units.
+- 3rd gen: Owner-reported transmission shift-calibration and occasional rear differential noise complaints
+- appear on some units.
 - NHTSA recalls and service campaigns are year-specific; advisor must verify VIN-level applicability.
 
 Maintenance profile:
 - Level: Medium (Low / Medium / High)
-- Notes: Reliable long-term profile overall, but 4WD drivetrain service and truck-duty consumables increase maintenance versus compact crossovers.
+- Notes: Reliable long-term profile overall, but 4WD drivetrain service and truck-duty consumables increase
+- maintenance versus compact crossovers.
 
 Pros:
 - Strong durability and resale retention.
@@ -3065,7 +3148,8 @@ Typical known issues by generation:
 
 Maintenance profile:
 - Level: Medium (Low / Medium / High)
-- Notes: Durable full-size truck profile with generally predictable service needs; consumable and fuel costs remain significant in heavy-duty use.
+- Notes: Durable full-size truck profile with generally predictable service needs;
+- consumable and fuel costs remain significant in heavy-duty use.
 
 Pros:
 - Strong towing and payload capability.
@@ -3130,13 +3214,15 @@ Approximate dimensions:
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
-- LM/TL: Commonly reported themes include transmission calibration complaints (specific trims) and electronic accessory issues.
+- LM/TL: Commonly reported themes include transmission calibration complaints (specific trims) and
+- electronic accessory issues.
 - Some turbo-equipped years show owner-reported higher sensitivity to maintenance intervals and oil quality.
 - NHTSA recall applicability is model-year specific and should be VIN-verified.
 
 Maintenance profile:
 - Level: Medium (Low / Medium / High)
-- Notes: Mainstream compact-SUV service cost is generally manageable; turbo/DCT variants can require stricter maintenance discipline.
+- Notes: Mainstream compact-SUV service cost is generally manageable; turbo/DCT variants can require stricter
+- maintenance discipline.
 
 Pros:
 - Strong feature content per trim level.
@@ -3263,13 +3349,15 @@ Approximate dimensions:
 | Passenger capacity | 7-8 |
 
 Typical known issues by generation:
-- Early production years show owner-reported infotainment/electrical software issues and occasional driveline vibration complaints.
+- Early production years show owner-reported infotainment/electrical software issues and
+- occasional driveline vibration complaints.
 - High-feature trims can experience more electronics-related service events.
 - NHTSA recall campaigns vary by year and equipment level; advisor should confirm VIN status.
 
 Maintenance profile:
 - Level: Medium (Low / Medium / High)
-- Notes: Large family-SUV consumables (tires/brakes) add cost, but naturally aspirated V6/8AT layout is relatively straightforward to service.
+- Notes: Large family-SUV consumables (tires/brakes) add cost, but naturally aspirated V6/8AT layout is
+- relatively straightforward to service.
 
 Pros:
 - Spacious 3-row cabin with strong family usability.
@@ -3341,7 +3429,8 @@ Typical known issues by generation:
 
 Maintenance profile:
 - Level: Medium (Low / Medium / High)
-- Notes: Routine maintenance is moderate, with higher complexity for turbo/hybrid variants and AWD drivetrain service intervals.
+- Notes: Routine maintenance is moderate, with higher complexity for turbo/hybrid variants and
+- AWD drivetrain service intervals.
 
 Pros:
 - Practical compact-SUV packaging with strong feature value.
@@ -3398,13 +3487,15 @@ Approximate dimensions:
 | Passenger capacity | 7-8 |
 
 Typical known issues by generation:
-- Early years show owner-reported infotainment/electrical software issues and occasional drivability calibration complaints.
+- Early years show owner-reported infotainment/electrical software issues and
+- occasional drivability calibration complaints.
 - High-feature trims may involve greater electronic system service complexity.
 - NHTSA recalls vary by year and equipment package; advisor should confirm VIN-level applicability.
 
 Maintenance profile:
 - Level: Medium (Low / Medium / High)
-- Notes: Naturally aspirated V6/8AT architecture is straightforward, but large-SUV consumables increase ongoing operating cost.
+- Notes: Naturally aspirated V6/8AT architecture is straightforward, but large-SUV consumables increase ongoing
+- operating cost.
 
 Pros:
 - Spacious family-focused 3-row interior.
@@ -3476,7 +3567,8 @@ Typical known issues by generation:
 
 Maintenance profile:
 - Level: Medium (Low / Medium / High)
-- Notes: Generally predictable luxury-SUV maintenance profile, lower-risk than many German peers but still above mainstream crossover cost levels.
+- Notes: Generally predictable luxury-SUV maintenance profile, lower-risk than many German peers but still above
+- mainstream crossover cost levels.
 
 Pros:
 - Strong comfort, reliability perception, and resale in luxury crossover class.
@@ -3536,13 +3628,15 @@ Approximate dimensions:
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
-- AZ10: Common owner reports include infotainment/controller complaints and occasional fuel-system or sensor service items.
+- AZ10: Common owner reports include infotainment/controller complaints and occasional fuel-system or sensor
+- service items.
 - AZ20 early years: Software updates and connectivity/infotainment calibration are recurrent service themes.
 - NHTSA recall status is model-year specific and should be verified by VIN.
 
 Maintenance profile:
 - Level: Medium (Low / Medium / High)
-- Notes: Lower-risk luxury compact SUV maintenance profile overall, but turbo/hybrid variants add system complexity versus base naturally aspirated trims.
+- Notes: Lower-risk luxury compact SUV maintenance profile overall, but turbo/hybrid variants add system
+- complexity versus base naturally aspirated trims.
 
 Pros:
 - Premium brand feel with strong daily usability.
@@ -3604,13 +3698,15 @@ Approximate dimensions:
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
-- KE/KF: Common owner-reported items include infotainment glitches and occasional suspension bushing/noise complaints over time.
+- KE/KF: Common owner-reported items include infotainment glitches and occasional suspension bushing/noise
+- complaints over time.
 - Turbo variants can show higher long-term maintenance sensitivity (heat/oil-service discipline).
 - NHTSA recall applicability varies by year and should be VIN-confirmed.
 
 Maintenance profile:
 - Level: Medium (Low / Medium / High)
-- Notes: Moderate maintenance profile with generally reliable naturally aspirated powertrains; turbo trims increase service complexity.
+- Notes: Moderate maintenance profile with generally reliable naturally aspirated powertrains;
+- turbo trims increase service complexity.
 
 Pros:
 - Engaging handling relative to many compact-SUV competitors.
@@ -3672,12 +3768,14 @@ Approximate dimensions:
 
 Typical known issues by generation:
 - TB: Age-related suspension and cooling-system maintenance are common long-term service themes.
-- TC: Owner reports include occasional infotainment/software issues and higher maintenance sensitivity on turbocharged drivetrain components.
+- TC: Owner reports include occasional infotainment/software issues and higher maintenance sensitivity on
+- turbocharged drivetrain components.
 - NHTSA recalls vary by year/trim and should be verified by VIN.
 
 Maintenance profile:
 - Level: Medium (Low / Medium / High)
-- Notes: Moderate maintenance profile for segment; turbocharged TC generation requires disciplined fluid and cooling-system maintenance.
+- Notes: Moderate maintenance profile for segment; turbocharged TC generation requires disciplined fluid and
+- cooling-system maintenance.
 
 Pros:
 - Refined driving dynamics for a 3-row crossover.
@@ -3741,13 +3839,16 @@ Approximate dimensions:
 | Passenger capacity | 7 |
 
 Typical known issues by generation:
-- CW/GF: Common long-term service themes include suspension wear and infotainment/electrical accessory issues on older units.
-- CVT-equipped years require careful fluid-service history review; drivetrain behavior complaints are documented on some ranges.
+- CW/GF: Common long-term service themes include suspension wear and infotainment/electrical accessory issues on
+- older units.
+- CVT-equipped years require careful fluid-service history review; drivetrain behavior complaints are documented
+- on some ranges.
 - NHTSA recalls vary by model year and powertrain; VIN-level recall status should be advisor-verified.
 
 Maintenance profile:
 - Level: Medium (Low / Medium / High)
-- Notes: Generally moderate maintenance profile with broad parts access; CVT service discipline is a key reliability factor.
+- Notes: Generally moderate maintenance profile with broad parts access; CVT service discipline is a key
+- reliability factor.
 
 Pros:
 - Practical 3-row packaging in a compact footprint.
@@ -3811,13 +3912,17 @@ Approximate dimensions:
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
-- BR: Common age-related items include wheel-bearing wear, oil-consumption reports on some 2.5L units, and suspension bushing service at higher mileage.
-- BS: Broad owner feedback includes infotainment responsiveness concerns and some CVT drivability/valve-body related complaints on specific years.
-- BT: Early-year infotainment/software stability concerns are documented in owner reports; NHTSA recalls vary by model year and require VIN confirmation.
+- BR: Common age-related items include wheel-bearing wear, oil-consumption reports on some 2.5L units,
+- and suspension bushing service at higher mileage.
+- BS: Broad owner feedback includes infotainment responsiveness concerns and
+- some CVT drivability/valve-body related complaints on specific years.
+- BT: Early-year infotainment/software stability concerns are documented in owner reports;
+- NHTSA recalls vary by model year and require VIN confirmation.
 
 Maintenance profile:
 - Level: Medium (Low / Medium / High)
-- Notes: Generally predictable maintenance with strong AWD durability history, but CVT service discipline and AWD tire-matching requirements are important.
+- Notes: Generally predictable maintenance with strong AWD durability history,
+- but CVT service discipline and AWD tire-matching requirements are important.
 
 Pros:
 - Standard AWD and strong all-weather usability.
@@ -3879,13 +3984,17 @@ Approximate dimensions:
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
-- SH: Typical age-related repairs include head-gasket discussions on older EJ-based years and suspension/wheel-bearing wear at higher mileage.
-- SJ: Some owner-reported concerns include CVT behavior complaints and occasional A/C compressor or wheel-bearing service.
-- SK: Owner reports show occasional infotainment/electronics complaints; NHTSA recalls are model-year specific and should be VIN-verified.
+- SH: Typical age-related repairs include head-gasket discussions on older EJ-based years and
+- suspension/wheel-bearing wear at higher mileage.
+- SJ: Some owner-reported concerns include CVT behavior complaints and occasional A/C compressor or
+- wheel-bearing service.
+- SK: Owner reports show occasional infotainment/electronics complaints; NHTSA recalls are model-year specific
+- and should be VIN-verified.
 
 Maintenance profile:
 - Level: Medium (Low / Medium / High)
-- Notes: Moderate maintenance burden with generally durable AWD systems; CVT-related service history and fluid maintenance are important screening points.
+- Notes: Moderate maintenance burden with generally durable AWD systems; CVT-related service history and
+- fluid maintenance are important screening points.
 
 Pros:
 - Standard AWD and strong visibility.
@@ -3946,13 +4055,15 @@ Approximate dimensions:
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
-- CA1: Owner-reported trends include infotainment/software glitches and occasional electronic module issues in early production years.
+- CA1: Owner-reported trends include infotainment/software glitches and occasional electronic module issues in
+- early production years.
 - Brake and tire wear patterns can vary by wheel package and city-use duty cycle.
 - NHTSA recalls are year and equipment dependent; VIN-level confirmation is required.
 
 Maintenance profile:
 - Level: Medium (Low / Medium / High)
-- Notes: Mainstream service complexity with moderate routine costs; electronics/software updates are a notable maintenance touchpoint.
+- Notes: Mainstream service complexity with moderate routine costs; electronics/software updates are a notable
+- maintenance touchpoint.
 
 Pros:
 - Spacious cabin feel and strong rear-seat comfort for a 2-row midsize SUV.
@@ -3978,8 +4089,9 @@ Last Verified: 2026-02-19
 - Always verify year/trim/engine/transmission data against official OEM specifications first.
 - Confirm fuel economy against EPA published values for the exact year/powertrain.
 - Confirm safety recall context against NHTSA records; VIN-level recall status must be advisor-verified.
-- If two sources conflict, mark `TBD – Requires verification` and escalate.
+- If two sources conflict, mark `UNVERIFIED – Advisor verification required` and escalate.
 - Never present unverified assumptions as confirmed facts.
+
 
 
 
