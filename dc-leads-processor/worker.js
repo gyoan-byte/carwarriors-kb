@@ -368,6 +368,15 @@ async function handleReady(url, env) {
   const bodyTypeFilter = normalizeSearchText(url.searchParams.get("bodyType") || "");
   const yearFilter = String(url.searchParams.get("year") || "").trim();
   const includeKb = /^(1|true|yes)$/i.test(String(url.searchParams.get("includeKb") || "").trim());
+  if (bodyTypeFilter && !includeKb) {
+    return json(
+      {
+        ok: false,
+        error: "bodyType filter requires includeKb=1 to avoid heuristic classification",
+      },
+      400
+    );
+  }
   const rawLimit = url.searchParams.get("limit");
   const limit = rawLimit === null || String(rawLimit).trim() === "" ? normalized.length : clampInt(rawLimit, 1, 200, 100);
 
@@ -375,17 +384,18 @@ async function handleReady(url, env) {
   let filtered = normalized.filter((v) => {
     if (makeFilter && v.search.makeNorm !== makeFilter) return false;
     if (modelFilter && v.search.modelNorm !== modelFilter) return false;
-    if (bodyTypeFilter && normalizeSearchText(v.bodyType) !== bodyTypeFilter) return false;
     if (yearFilter && String(v.year || "") !== yearFilter) return false;
     if (qTokens.length && !qTokens.every((t) => v.search.text.includes(t))) return false;
     return true;
   });
 
   const totalMatched = filtered.length;
-  filtered = filtered.slice(0, limit);
   const kb = includeKb ? await getKnowledgeIndex(env) : null;
+  const baseRows = bodyTypeFilter ? filtered : filtered.slice(0, limit);
 
-  const vehicles = filtered.map((v) => {
+  const vehicles = baseRows.map((v) => {
+    const entry = includeKb && kb?.ok ? kb.index[v.kb.lookupKeyNorm] || null : null;
+    const detectedBodyType = entry ? detectBodyTypeFromClassification(entry.classification) : null;
     const out = {
       stockNumber: v.stockNumber,
       year: v.year,
@@ -396,7 +406,7 @@ async function handleReady(url, env) {
       gpsProvider: v.gpsProvider,
       createdDate: v.createdDate,
       daysInInventory: v.daysInInventory,
-      bodyType: v.bodyType,
+      bodyType: detectedBodyType,
       saleReady: true,
       status: "available_preliminary",
       kb: {
@@ -411,7 +421,6 @@ async function handleReady(url, env) {
     };
 
     if (includeKb) {
-      const entry = kb?.ok ? kb.index[v.kb.lookupKeyNorm] || null : null;
       out.kbReference = entry
         ? {
             found: true,
@@ -427,6 +436,12 @@ async function handleReady(url, env) {
     return out;
   });
 
+  if (bodyTypeFilter) {
+    filtered = vehicles.filter((v) => normalizeSearchText(v.bodyType || "") === bodyTypeFilter).slice(0, limit);
+  } else {
+    filtered = vehicles;
+  }
+
   return json({
     ok: true,
     generatedAt: new Date().toISOString(),
@@ -440,7 +455,7 @@ async function handleReady(url, env) {
       bodyType: bodyTypeFilter || null,
       includeKb,
       limit,
-      totalMatched,
+      totalMatched: bodyTypeFilter ? filtered.length : totalMatched,
     },
     knowledge: includeKb
       ? {
@@ -452,7 +467,7 @@ async function handleReady(url, env) {
         }
       : { enabled: false },
     byMake: countBy(filtered, (v) => v.make),
-    vehicles,
+    vehicles: filtered,
   });
 }
 
@@ -496,16 +511,13 @@ function normalizeReadyRow(row, cols) {
   const odometerNum = cols.odometerCol ? toNumber(row[cols.odometerCol]) : null;
   const odometer = odometerNum === null ? null : Math.trunc(odometerNum);
   const gpsProvider = toCanonicalUpper(cols.gpsCol ? row[cols.gpsCol] : "");
-  const bodyType = inferBodyType(model);
-
   const makeNorm = normalizeSearchText(make);
   const modelNorm = normalizeSearchText(model);
   const stockNorm = normalizeSearchText(stockNumber);
   const yearText = year ? String(year) : "";
-  const bodyNorm = normalizeSearchText(bodyType);
-  const queryText = [yearText, make, model, stockNumber, bodyType].filter(Boolean).join(" ").trim();
+  const queryText = [yearText, make, model, stockNumber].filter(Boolean).join(" ").trim();
   const queryTokens = Array.from(new Set(splitSearchTerms(queryText)));
-  const searchText = [yearText, makeNorm, modelNorm, stockNorm, bodyNorm].filter(Boolean).join(" ");
+  const searchText = [yearText, makeNorm, modelNorm, stockNorm].filter(Boolean).join(" ");
 
   return {
     stockNumber,
@@ -517,7 +529,6 @@ function normalizeReadyRow(row, cols) {
     gpsProvider,
     createdDate: createdDateRaw || null,
     daysInInventory,
-    bodyType,
     kb: {
       makeKey: make,
       modelKey: model,
@@ -557,16 +568,15 @@ function splitSearchTerms(v) {
   return norm.split(" ").filter(Boolean);
 }
 
-function inferBodyType(model) {
-  const m = toCanonicalUpper(model);
-  if (!m) return "unknown";
-
-  if (/\b(VAN|TRANSIT)\b/.test(m)) return "van";
-  if (/\b(CREW CAB|SUPER DUTY|SILVERADO|TACOMA|RIDGELINE|F350|2500|3500|HD)\b/.test(m)) return "truck";
-  if (/\b(SUV|RANGE ROVER|EQUINOX|QX60|QX80|X3|X5|X6|GLE|GLC|ATLAS|RAV4|ESCALADE|XT5|MDX|RDX|Q5|Q7|H1)\b/.test(m)) return "suv";
-  if (/\b(CAMARO|MUSTANG|370Z|Q60|COUPE|GIULIA)\b/.test(m)) return "sports";
-  if (/\b(ACCORD|CIVIC|CHARGER|DART|Q50|Q70|C-CLASS|E-CLASS|COROLLA)\b/.test(m)) return "sedan";
-  return "unknown";
+function detectBodyTypeFromClassification(classification) {
+  const c = normalizeSearchText(classification || "");
+  if (!c) return null;
+  if (c.includes("pickup") || c.includes("truck")) return "truck";
+  if (c.includes("suv") || c.includes("crossover")) return "suv";
+  if (c.includes("van")) return "van";
+  if (c.includes("sedan")) return "sedan";
+  if (c.includes("sports") || c.includes("sport") || c.includes("coupe")) return "sports";
+  return null;
 }
 
 const KB_CACHE_TTL_MS = 6 * 60 * 60 * 1000;
