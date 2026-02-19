@@ -432,14 +432,28 @@
         const res = await fetch("README.md", { cache: "no-store" });
         if (!res.ok) throw new Error("README.md not found");
         const md = await res.text();
+        const mdForHome = stripReadmeSectionsForHome(md);
         ui.readmeWarning.style.display = "none";
-        ui.readmeRender.innerHTML = renderMarkdownLite(md);
+        ui.readmeRender.innerHTML = renderMarkdownLite(mdForHome);
       } catch (e) {
         console.error("loadReadmeIntoHome error:", e);
         ui.readmeWarning.style.display = "block";
         ui.readmeWarning.textContent = "Could not load README.md for the home view.";
         ui.readmeRender.textContent = "README unavailable.";
       }
+    }
+
+    function stripReadmeSectionsForHome(md) {
+      let out = String(md || "");
+      out = out.replace(
+        /### Live Data Source \(Inventory\)[\s\S]*?(?=\n### |\nLast updated:|\nVersion:|$)/g,
+        ""
+      );
+      out = out.replace(
+        /### Local Context[\s\S]*?(?=\n### |\nLast updated:|\nVersion:|$)/g,
+        ""
+      );
+      return out.trim();
     }
 
     route();
