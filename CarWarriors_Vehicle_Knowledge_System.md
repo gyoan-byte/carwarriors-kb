@@ -3411,42 +3411,58 @@ Last Verified: 2026-02-19
 - Performance baseline: Smooth ride quality, premium interior experience
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- XU10 generation (RX 300 era): 1999-2003.
+- XU30 generation: 2004-2009.
+- AL10 generation: 2010-2015.
+- AL20 generation: 2016-2022.
+- AL30 generation: 2023-present.
+- Major refresh: MY2013 (AL10 facelift), MY2020 (AL20 facelift).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| AL10 (2010-2015) | 3.5L V6 | NA | 6-speed AT; FWD/AWD |
+| AL20 (2016-2022) | 3.5L V6; hybrid system variants | NA / Hybrid | 8-speed AT (gas), eCVT (hybrid); FWD/AWD |
+| AL30 (2023-present) | 2.4L I4 turbo; hybrid variants | Turbo / Hybrid | 8-speed AT (gas), eCVT (hybrid); FWD/AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| AL10 sample (2010 RX 350 AWD) | AWD | 18 | 24 | 20 |
+| AL20 sample (2018 RX 350 AWD) | AWD | 19 | 26 | 22 |
+| AL30 sample (2024 RX 350 AWD 2.4T) | AWD | 21 | 28 | 24 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~192.5 in |
+| Width | ~75.6 in |
+| Height | ~67.3 in |
+| Wheelbase | ~112.2 in |
+| Cargo volume | ~29.6 cu ft (behind 2nd row, approx) |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- AL10/AL20: Commonly reported items include water pump/cooling-system service and age-related suspension wear.
+- AL30 early years: Owner feedback includes occasional software and infotainment calibration concerns.
+- NHTSA recalls vary by model year and powertrain; advisor should confirm VIN-level applicability.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Medium (Low / Medium / High)
+- Notes: Generally predictable luxury-SUV maintenance profile, lower-risk than many German peers but still above mainstream crossover cost levels.
 
 Pros:
-- TBD – Requires verification
+- Strong comfort, reliability perception, and resale in luxury crossover class.
+- Quiet cabin and refined daily-driving behavior.
+- Broad powertrain evolution with improved efficiency in newer generations.
 
 Cons:
-- TBD – Requires verification
+- Driving engagement is less sporty than some rivals.
+- Option/tech differences across years can be substantial.
+- Premium parts/labor still cost more than mainstream brands.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -3466,42 +3482,54 @@ Last Verified: 2026-02-19
 - Performance baseline: Refined driving dynamics, premium features
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- AZ10 generation: 2015-2021.
+- AZ20 generation: 2022-present.
+- Major refresh: MY2025 feature/update cycle in AZ20 production.
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| AZ10 (2015-2021) | 2.0L I4 turbo; hybrid system variants | Turbo / Hybrid | 6-speed AT (turbo), eCVT (hybrid); FWD/AWD |
+| AZ20 (2022-present) | 2.5L I4; 2.4L I4 turbo; hybrid/PHEV variants | NA / Turbo / Hybrid / PHEV | 8-speed AT (gas/turbo), eCVT (hybrid/PHEV); FWD/AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| AZ10 sample (2018 NX 300 AWD) | AWD | 22 | 28 | 24 |
+| AZ20 turbo sample (2024 NX 350 AWD) | AWD | 21 | 28 | 24 |
+| AZ20 NA sample (2024 NX 250 AWD) | AWD | 25 | 32 | 28 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~183.5 in |
+| Width | ~73.4 in |
+| Height | ~65.4 in |
+| Wheelbase | ~105.9 in |
+| Cargo volume | ~22.7 cu ft (behind 2nd row, approx) |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- AZ10: Common owner reports include infotainment/controller complaints and occasional fuel-system or sensor service items.
+- AZ20 early years: Software updates and connectivity/infotainment calibration are recurrent service themes.
+- NHTSA recall status is model-year specific and should be verified by VIN.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Medium (Low / Medium / High)
+- Notes: Lower-risk luxury compact SUV maintenance profile overall, but turbo/hybrid variants add system complexity versus base naturally aspirated trims.
 
 Pros:
-- TBD – Requires verification
+- Premium brand feel with strong daily usability.
+- Solid efficiency and comfort balance.
+- Competitive reliability perception in luxury compact class.
 
 Cons:
-- TBD – Requires verification
+- Rear cargo and rear-seat space are moderate for class.
+- Tech interface experience varies by generation.
+- Higher service cost than mainstream compact SUVs.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
