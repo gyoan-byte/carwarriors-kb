@@ -3132,42 +3132,57 @@ Last Verified: 2026-02-19
 - Performance baseline: Comfortable ride, efficient engine options
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 1st generation (JM): 2005-2009.
+- 2nd generation (LM): 2010-2015.
+- 3rd generation (TL): 2016-2021.
+- 4th generation (NX4): 2022-present.
+- Major refresh: MY2014 (LM facelift), MY2025 (NX4 update cycle).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| LM (2010-2015) | 2.0L I4; 2.4L I4 | NA | 6-speed AT or 5/6-speed MT; FWD/AWD |
+| TL (2016-2021) | 2.0L I4; 1.6L I4; diesel variants by year | NA / Turbo / Turbo-diesel | 6-speed AT, 7-speed DCT, or 6-speed MT; FWD/AWD |
+| NX4 (2022-present) | 2.5L I4; hybrid/PHEV variants | NA / Hybrid / PHEV | 8-speed AT (gas), 6-speed AT or e-AT by hybrid config; FWD/AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| LM sample (2010 Tucson FWD 2.4L) | FWD | 23 | 31 | 26 |
+| TL sample (2018 Tucson FWD 1.6T) | FWD | 25 | 30 | 27 |
+| NX4 sample (2024 Tucson FWD 2.5L) | FWD | 25 | 32 | 28 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~182.7 in |
+| Width | ~73.4 in |
+| Height | ~65.6 in |
+| Wheelbase | ~108.5 in |
+| Cargo volume | ~38.7 cu ft (behind 2nd row, approx) |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- LM/TL: Commonly reported themes include transmission calibration complaints (specific trims) and electronic accessory issues.
+- Some turbo-equipped years show owner-reported higher sensitivity to maintenance intervals and oil quality.
+- NHTSA recall applicability is model-year specific and should be VIN-verified.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Medium (Low / Medium / High)
+- Notes: Mainstream compact-SUV service cost is generally manageable; turbo/DCT variants can require stricter maintenance discipline.
 
 Pros:
-- TBD – Requires verification
+- Strong feature content per trim level.
+- Good fuel economy in core FWD configurations.
+- Broad availability of AWD and electrified variants in newer generations.
 
 Cons:
-- TBD – Requires verification
+- Long-term reliability perception varies by powertrain/year.
+- Powertrain refinement differs noticeably across trim levels.
+- Resale strength may trail top Japanese rivals in some markets.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -3187,42 +3202,58 @@ Last Verified: 2026-02-19
 - Performance baseline: Family-focused features, available AWD
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 1st generation (SM): 2001-2006.
+- 2nd generation (CM): 2007-2012.
+- 3rd generation (DM): 2013-2018.
+- 4th generation (TM): 2019-2023.
+- 5th generation (MX5): 2024-present.
+- Major refresh: MY2017 (DM facelift), MY2021 (TM facelift).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| CM/DM period sample (2010-2018) | 2.4L I4; 3.3L/3.5L V6 | NA | 6-speed AT; FWD/AWD |
+| TM (2019-2023) | 2.5L I4; 2.5L I4 turbo; hybrid/PHEV variants | NA / Turbo / Hybrid / PHEV | 8-speed AT or 8-speed DCT by trim; FWD/AWD |
+| MX5 (2024-present) | 2.5L I4 turbo; hybrid variants | Turbo / Hybrid | 8-speed DCT (gas turbo), 6-speed AT (hybrid); FWD/AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| CM/DM sample (2010 Santa Fe FWD 2.4L) | FWD | 20 | 28 | 23 |
+| DM late sample (2018 Santa Fe FWD 3.3L) | FWD | 18 | 25 | 21 |
+| MX5 sample (2024 Santa Fe FWD 2.5T) | FWD | 20 | 29 | 24 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~190.2 in |
+| Width | ~74.8 in |
+| Height | ~67.7 in |
+| Wheelbase | ~110.8 in |
+| Cargo volume | ~40.5 cu ft (behind 2nd row, approx) |
+| Passenger capacity | 5-7 (configuration dependent) |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- Older generations show recurring reports of suspension wear and occasional electrical accessory faults.
+- Turbo/DCT trims in newer years may show drivability calibration complaints in owner feedback.
+- NHTSA recalls are year and configuration dependent; advisor should confirm VIN-level applicability.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Medium (Low / Medium / High)
+- Notes: Moderate maintenance profile overall; complexity increases with turbocharged and hybridized drivetrains.
 
 Pros:
-- TBD – Requires verification
+- Spacious interior and family-friendly packaging.
+- Competitive feature stack for midsize segment.
+- Strong value orientation versus many rivals.
 
 Cons:
-- TBD – Requires verification
+- Efficiency and performance vary significantly by powertrain.
+- Some generations have mixed long-term reliability perceptions.
+- Third-row usability depends heavily on configuration.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -3242,42 +3273,51 @@ Last Verified: 2026-02-19
 - Performance baseline: Comfortable highway ride, family-oriented interior
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 1st generation: 2020-present.
+- Major refresh: MY2023 facelift/update cycle.
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| 2020-present | 3.8L V6 | NA | 8-speed AT; FWD/AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| 1st gen sample (2020 Palisade FWD) | FWD | 19 | 26 | 22 |
+| 1st gen refresh sample (2024 Palisade FWD) | FWD | 19 | 26 | 22 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~196.7 in |
+| Width | ~77.8 in |
+| Height | ~68.9 in |
+| Wheelbase | ~114.2 in |
+| Cargo volume | ~18.0 cu ft (behind 3rd row, approx) |
+| Passenger capacity | 7-8 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- Early production years show owner-reported infotainment/electrical software issues and occasional driveline vibration complaints.
+- High-feature trims can experience more electronics-related service events.
+- NHTSA recall campaigns vary by year and equipment level; advisor should confirm VIN status.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Medium (Low / Medium / High)
+- Notes: Large family-SUV consumables (tires/brakes) add cost, but naturally aspirated V6/8AT layout is relatively straightforward to service.
 
 Pros:
-- TBD – Requires verification
+- Spacious 3-row cabin with strong family usability.
+- Competitive feature content and comfort.
+- Predictable naturally aspirated power delivery.
 
 Cons:
-- TBD – Requires verification
+- Large footprint in dense urban parking.
+- Fuel economy is moderate for class.
+- Long-term electronics complexity varies by trim.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
