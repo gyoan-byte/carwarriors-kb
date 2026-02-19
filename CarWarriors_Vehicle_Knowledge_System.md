@@ -3616,42 +3616,54 @@ Last Verified: 2026-02-19
 - Performance baseline: Sport-tuned suspension, responsive handling
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 1st generation (KE): 2013-2016.
+- 2nd generation (KF): 2017-present.
+- Major refresh: MY2022 (KF update cycle).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| KE (2013-2016) | 2.0L I4; 2.5L I4 | NA | 6-speed AT or 6-speed MT; FWD/AWD |
+| KF (2017-present) | 2.5L I4; 2.5L I4 turbo | NA / Turbo | 6-speed AT; FWD/AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| KE sample (2013 CX-5 FWD 2.0L) | FWD | 26 | 32 | 28 |
+| KF sample (2018 CX-5 FWD 2.5L) | FWD | 25 | 31 | 28 |
+| KF late sample (2024 CX-5 AWD 2.5L) | AWD | 26 | 31 | 28 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~180.1 in |
+| Width | ~72.6 in |
+| Height | ~66.3 in |
+| Wheelbase | ~106.2 in |
+| Cargo volume | ~30.9 cu ft (behind 2nd row, approx) |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- KE/KF: Common owner-reported items include infotainment glitches and occasional suspension bushing/noise complaints over time.
+- Turbo variants can show higher long-term maintenance sensitivity (heat/oil-service discipline).
+- NHTSA recall applicability varies by year and should be VIN-confirmed.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Medium (Low / Medium / High)
+- Notes: Moderate maintenance profile with generally reliable naturally aspirated powertrains; turbo trims increase service complexity.
 
 Pros:
-- TBD – Requires verification
+- Engaging handling relative to many compact-SUV competitors.
+- Upscale interior design and feature packaging.
+- Solid efficiency/performance balance in core trims.
 
 Cons:
-- TBD – Requires verification
+- Rear-seat and cargo space are moderate, not class-leading.
+- Ride firmness may be higher than comfort-tuned rivals.
+- Turbo trims can increase long-term operating cost.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -3671,42 +3683,55 @@ Last Verified: 2026-02-19
 - Performance baseline: Smooth power delivery, family-focused features
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 1st generation (TB): 2007-2015.
+- 2nd generation (TC): 2016-2023.
+- U.S. transition to CX-90 as successor began in MY2024.
+- Major refresh: MY2020 (TC update cycle).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| TB (2007-2015) | 3.7L V6 | NA | 6-speed AT; FWD/AWD |
+| TC (2016-2023) | 2.5L I4 | Turbo | 6-speed AT; FWD/AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| TB sample (2013 CX-9 FWD 3.7L) | FWD | 17 | 24 | 19 |
+| TC sample (2018 CX-9 FWD 2.5T) | FWD | 22 | 28 | 24 |
+| TC late sample (2023 CX-9 AWD 2.5T) | AWD | 20 | 26 | 23 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~199.4 in |
+| Width | ~77.5 in |
+| Height | ~69.0 in |
+| Wheelbase | ~115.3 in |
+| Cargo volume | ~14.4 cu ft (behind 3rd row, approx) |
+| Passenger capacity | 6-7 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- TB: Age-related suspension and cooling-system maintenance are common long-term service themes.
+- TC: Owner reports include occasional infotainment/software issues and higher maintenance sensitivity on turbocharged drivetrain components.
+- NHTSA recalls vary by year/trim and should be verified by VIN.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Medium (Low / Medium / High)
+- Notes: Moderate maintenance profile for segment; turbocharged TC generation requires disciplined fluid and cooling-system maintenance.
 
 Pros:
-- TBD – Requires verification
+- Refined driving dynamics for a 3-row crossover.
+- Upscale interior presentation in later model years.
+- Strong highway comfort and usable family packaging.
 
 Cons:
-- TBD – Requires verification
+- Third-row and cargo space trail some larger rivals.
+- Turbo-only powertrain in TC generation may concern conservative buyers.
+- Discontinued status (replaced by CX-90) affects long-term market comparables.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
