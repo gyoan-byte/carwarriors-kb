@@ -1244,42 +1244,59 @@ Last Verified: 2026-02-19
 - Performance baseline: Maximum towing and payload for commercial applications
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 1st Super Duty generation: 1999-2007.
+- 2nd generation: 2008-2010.
+- 3rd generation: 2011-2016.
+- 4th generation: 2017-2022.
+- 5th generation: 2023-present.
+- Major refresh: MY2020 (4th-gen update), MY2023 redesign.
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| 1999-2010 | 5.4L/6.8L gas; 6.0L/6.4L diesel | NA / Turbo-diesel | 4-speed/5-speed AT; 4WD/RWD |
+| 2011-2016 | 6.2L gas; 6.7L diesel | NA / Turbo-diesel | 6-speed AT; 4WD/RWD |
+| 2017-2022 | 6.2L/7.3L gas; 6.7L diesel | NA / Turbo-diesel | 6-speed or 10-speed AT (by year); 4WD/RWD |
+| 2023-present | 6.8L/7.3L gas; 6.7L diesel | NA / Turbo-diesel | 10-speed AT; 4WD/RWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| Most F-350 Super Duty configurations | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Note | EPA light-duty MPG coverage is limited for many F-350 GVWR configurations | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~250.0 in (Crew Cab long-bed approximation) |
+| Width | ~80.0 in (without mirrors, approx) |
+| Height | ~81.0 in (varies by trim/drivetrain) |
+| Wheelbase | ~160-176 in (varies by bed/cab) |
+| Cargo volume | ~65.4-78.5 cu ft (bed-dependent) |
+| Passenger capacity | 5-6 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- Older diesel generations are widely documented for higher maintenance complexity and cooling/emissions-system service events.
+- Modern diesel generations can show higher-cost aftertreatment and fuel-system service events as mileage accumulates.
+- Steering, suspension, and brake wear accelerates under heavy commercial duty cycles.
+- NHTSA recalls are model-year/configuration specific and require VIN-level confirmation.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: High (Low / Medium / High)
+- Notes: Heavy-duty usage profile, large consumables, and diesel emissions-system complexity generally produce high operating cost.
 
 Pros:
-- TBD – Requires verification
+- Very high towing/payload capability for commercial workloads.
+- Strong upfit/fleet ecosystem in U.S. market.
+- Robust frame and drivetrain architecture for heavy duty cycles.
 
 Cons:
-- TBD – Requires verification
+- Large footprint and ride harshness when unloaded.
+- Operating costs can rise quickly under sustained heavy use.
+- Urban maneuverability and parking are challenging.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -1299,42 +1316,52 @@ Last Verified: 2026-02-19
 - Performance baseline: Collector vehicle status, original parts availability
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- Falcon first generation (North America): 1960-1965.
+- 1964 Falcon Wagon is a late first-generation model-year variant.
+- Major styling revision for Falcon line occurred for MY1964.
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| 1964 Falcon Wagon | ~2.8L I6 (170 cid); ~3.3L I6 (200 cid) | NA | 3-speed MT or 2-speed AT; RWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| 1964 Falcon Wagon | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Note | EPA modern MPG methodology does not provide direct equivalent ratings for this classic model-year | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
+| Length | ~181.0 in (approx) |
+| Width | ~70.0 in (approx) |
+| Height | ~57.0 in (approx) |
+| Wheelbase | ~109.5 in |
 | Cargo volume | TBD – Requires verification |
+| Passenger capacity | 5-6 (bench-seat dependent) |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- Typical classic-car concerns include corrosion, aged wiring, fuel-system varnish/carburetion issues, and brake system service needs.
+- Parts availability depends on restoration market and originality goals.
+- No modern NHTSA recall framework equivalent for this vintage platform under current standards.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: High (Low / Medium / High)
+- Notes: Classic-vehicle ownership requires frequent preventive work, specialty parts sourcing, and restoration-oriented maintenance skills.
 
 Pros:
-- TBD – Requires verification
+- Distinctive vintage character with collector appeal.
+- Simpler mechanical architecture than modern vehicles.
+- Strong enthusiast aftermarket for restoration themes.
 
 Cons:
-- TBD – Requires verification
+- Safety, comfort, and NVH levels are far below modern standards.
+- Daily-use reliability depends heavily on restoration quality.
+- Limited modern parts support for some components.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -1354,42 +1381,61 @@ Last Verified: 2026-02-19
 - Performance baseline: Strong acceleration, sport-tuned suspension
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 1st generation: 1964.5-1973.
+- 2nd generation: 1974-1978.
+- 3rd generation (Fox): 1979-1993.
+- 4th generation (SN95): 1994-2004.
+- 5th generation (S197): 2005-2014.
+- 6th generation (S550): 2015-2023.
+- 7th generation (S650): 2024-present.
+- Major refresh: MY2010 (S197), MY2018 (S550 facelift).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| S197 (2005-2014) | 4.0L V6; 4.6L/5.0L V8 | NA | 5-speed MT or 5-speed AT; RWD |
+| S550 (2015-2023) | 2.3L I4; 5.0L V8; 5.2L V8 | Turbo / NA | 6-speed MT, 6-speed AT, 10-speed AT; RWD |
+| S650 (2024-present) | 2.3L I4; 5.0L V8 | Turbo / NA | 6-speed MT or 10-speed AT; RWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| S197 sample (2010 Mustang 4.0L AT) | RWD | 16 | 24 | 19 |
+| S550 sample (2018 Mustang 2.3T AT) | RWD | 21 | 32 | 25 |
+| S650 sample (2024 Mustang 2.3T AT) | RWD | 22 | 33 | 26 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~189.4 in |
+| Width | ~75.4 in |
+| Height | ~55.0 in |
+| Wheelbase | ~107.0 in |
+| Cargo volume | ~13.3 cu ft (fastback) |
+| Passenger capacity | 4 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- S197/S550 owner reports include occasional drivetrain vibration, cooling-system leaks, and infotainment/electrical faults.
+- Some S550/S650 owner feedback references 10-speed shift calibration behavior and MT82 manual feel concerns on certain use cases.
+- High-performance trims show increased tire/brake wear and heat-management service demands.
+- NHTSA recalls are year/trim dependent and should be VIN-verified.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Medium (Low / Medium / High)
+- Notes: Routine service is moderate on EcoBoost/V8 GT trims; track-oriented variants increase consumable and drivetrain maintenance cost.
 
 Pros:
-- TBD – Requires verification
+- Strong enthusiast support and broad powertrain range.
+- Rear-wheel-drive dynamics with competitive performance options.
+- Good blend of daily usability and performance in recent generations.
 
 Cons:
-- TBD – Requires verification
+- Rear-seat practicality is limited.
+- Insurance/consumable costs rise quickly on performance trims.
+- Ride and visibility trade-offs versus mainstream sedans.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -1409,42 +1455,52 @@ Last Verified: 2026-02-19
 - Performance baseline: Designed for commercial cargo capacity
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- Full-size Transit (U.S.): 2015-present.
+- Major refresh: MY2020 (powertrain/awd updates and feature revisions).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| 2015-2019 | 3.7L V6; 3.5L EcoBoost V6 | NA / Turbo | 6-speed AT; RWD |
+| 2020-present | 3.5L V6; 3.5L EcoBoost V6 | NA / Turbo | 10-speed AT; RWD/AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| Transit 250 Cargo Van (most configurations) | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Note | EPA coverage can vary for commercial-van body/GVWR configurations and is not consistently listed as a single Transit 250 cargo profile | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~219.9 in (example long-wheelbase configuration) |
+| Width | ~81.3 in |
+| Height | TBD – Requires verification (roof-height dependent) |
+| Wheelbase | ~130-148 in (configuration dependent) |
+| Cargo volume | ~246-487 cu ft (roof/wheelbase dependent) |
+| Passenger capacity | 2-3 (cargo configuration dependent) |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- Fleet usage reports commonly cite sliding-door hardware wear, electrical accessory faults, and high-mileage transmission service needs.
+- Turbocharged EcoBoost variants can show higher thermal and turbo-system maintenance sensitivity in severe duty use.
+- NHTSA recalls vary by year and configuration; advisor must verify VIN-level applicability.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Medium-High (Low / Medium / High)
+- Notes: Commercial duty cycles drive higher maintenance frequency; payload, idle time, and delivery-route severity strongly affect operating cost.
 
 Pros:
-- TBD – Requires verification
+- High cargo-volume flexibility across roof/wheelbase setups.
+- Strong upfit ecosystem for trades and fleet use.
+- Modern safety/driver-assist availability in recent years.
 
 Cons:
-- TBD – Requires verification
+- Fuel economy can be modest under loaded urban operation.
+- Large dimensions and roof heights complicate parking/access.
+- Heavy commercial use accelerates wear on drivetrain and brakes.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
