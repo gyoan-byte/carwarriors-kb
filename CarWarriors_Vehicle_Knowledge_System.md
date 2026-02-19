@@ -621,42 +621,61 @@ Last Verified: 2026-02-19
 - Performance baseline: Powerful engine options, premium ride quality
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 1st generation: 1999-2000.
+- 2nd generation: 2002-2006.
+- 3rd generation: 2007-2014.
+- 4th generation: 2015-2020.
+- 5th generation: 2021-present.
+- Major refresh: MY2009 (3rd-gen update), MY2015 redesign, MY2025 facelift.
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| 1999-2000 | 5.7L V8 | NA | 4-speed AT; RWD/4WD |
+| 2002-2006 | 6.0L V8 | NA | 4-speed AT; RWD/AWD |
+| 2007-2014 | 6.2L V8 | NA | 6-speed AT; RWD/AWD |
+| 2015-2020 | 6.2L V8 | NA | 8-speed AT (early), 10-speed AT (later); RWD/4WD |
+| 2021-present | 6.2L V8; 3.0L I6 diesel | NA / Turbo-diesel | 10-speed AT; RWD/4WD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| 3rd gen sample (2008 Escalade AWD) | AWD/4WD | 12 | 18 | 14 |
+| 4th gen sample (2018 Escalade 4WD) | 4WD | 14 | 21 | 17 |
+| 5th gen sample (2024 Escalade 4WD 6.2L) | 4WD | 14 | 18 | 16 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~211.9 in |
+| Width | ~81.1 in |
+| Height | ~76.7 in |
+| Wheelbase | ~120.9 in |
+| Cargo volume | ~25.5 cu ft (behind 3rd row) |
+| Passenger capacity | 7-8 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- 3rd/4th gen: Commonly documented high-cost wear items include magnetic/air suspension components, electronics, and drivetrain service at higher mileage.
+- 4th gen: Some owner-reported 8-speed transmission shift/shudder concerns on certain years.
+- 5th gen: Electronics/infotainment and diesel-related emissions-system service patterns appear in field reports.
+- NHTSA recalls vary by model year and system; advisor must verify VIN-specific applicability.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: High (Low / Medium / High)
+- Notes: Large-body luxury SUV with high parts, tire, brake, and fuel cost; 4WD and air-ride configurations raise service complexity.
 
 Pros:
-- TBD – Requires verification
+- Strong towing/capability profile with luxury feature depth.
+- Spacious 3-row interior and cargo capacity.
+- High brand recognition in full-size luxury SUV segment.
 
 Cons:
-- TBD – Requires verification
+- High operating and repair costs versus midsize SUVs.
+- Very large footprint for urban parking and maneuvering.
+- Complexity can increase downtime risk as vehicles age.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -676,42 +695,54 @@ Last Verified: 2026-02-19
 - Performance baseline: Smooth acceleration, comfortable highway cruising
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 1st generation: 2017-present (U.S. market).
+- Major refresh: MY2020 (facelift and feature updates).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| 2017-2019 | 2.0L I4; 3.6L V6 | Turbo / NA | 8-speed AT; FWD/AWD |
+| 2020-present | 2.0L I4; 3.6L V6 | Turbo / NA | 9-speed AT; FWD/AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| 1st gen sample (2018 XT5 AWD 3.6L) | AWD | 18 | 25 | 21 |
+| Refresh-era sample (2024 XT5 FWD 2.0T) | FWD | 22 | 29 | 24 |
+| Refresh-era sample (2024 XT5 AWD 2.0T) | AWD | 21 | 27 | 23 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~189.6 in |
+| Width | ~74.9 in |
+| Height | ~66.1 in |
+| Wheelbase | ~112.5 in |
+| Cargo volume | ~30.0 cu ft (behind 2nd row) |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- Early years: Infotainment/electronics complaints are recurrent in owner reports.
+- Powertrain pattern: Some model years show transmission calibration/shift-behavior complaints.
+- Later refresh years: Improved efficiency/powertrain integration, but software/electrical updates remain common service events.
+- NHTSA recalls are model-year specific and must be VIN-confirmed.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Medium (Low / Medium / High)
+- Notes: Usually lower upkeep than full-size luxury SUVs, but premium-brand electronics and AWD hardware still increase service cost versus mainstream crossovers.
 
 Pros:
-- TBD – Requires verification
+- Comfortable ride and quiet cabin tuning.
+- Practical midsize footprint versus full-size luxury SUVs.
+- Good feature content for daily luxury use.
 
 Cons:
-- TBD – Requires verification
+- Not as sporty as some German luxury competitors.
+- Long-term electronics complexity can affect reliability perception.
+- Feature differences by trim/year can be significant.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
