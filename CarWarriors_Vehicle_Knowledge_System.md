@@ -79,11 +79,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~182.6 in |
-| Width | ~73.7 in |
-| Height | ~56.5 in |
-| Wheelbase | ~111.0 in |
-| Cargo volume | ~13.4 cu ft |
+| Length (in) | ~182.6 in |
+| Width (in) | ~73.7 in |
+| Height (in) | ~56.5 in |
+| Wheelbase (in) | ~111.0 in |
+| Cargo (cu ft) | ~13.4 cu ft |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -105,12 +105,11 @@ Cons:
 - Rear-seat and trunk practicality trail some midsize sedans.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Do you prioritize stronger acceleration or a smoother comfort-focused ride?
+- Would you prefer rear-drive sport feel or all-weather traction capability?
+- Are you comfortable with firmer suspension tuning for better handling response?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can connect you with an advisor to verify exact unit specs, condition history, and current inventory status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -149,11 +148,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~187.4 in |
-| Width | ~74.8 in |
-| Height | ~65.7 in |
-| Wheelbase | ~108.3 in |
-| Cargo volume | ~29.5 cu ft (behind 2nd row) |
+| Length (in) | ~187.4 in |
+| Width (in) | ~74.8 in |
+| Height (in) | ~65.7 in |
+| Wheelbase (in) | ~108.3 in |
+| Cargo (cu ft) | ~29.5 cu ft (behind 2nd row) |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -177,12 +176,11 @@ Cons:
 - Road noise and ride firmness vary by wheel/trim.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- An advisor can now confirm the exact vehicle configuration, inspection details, and live inventory match.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -221,11 +219,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~198.4 in |
-| Width | ~78.7 in |
-| Height | ~67.1 in |
-| Wheelbase | ~113.8 in |
-| Cargo volume | ~18.1 cu ft (behind 3rd row) |
+| Length (in) | ~198.4 in |
+| Width (in) | ~78.7 in |
+| Height (in) | ~67.1 in |
+| Wheelbase (in) | ~113.8 in |
+| Cargo (cu ft) | ~18.1 cu ft (behind 3rd row) |
 | Passenger capacity | 7 |
 
 Typical known issues by generation:
@@ -249,12 +247,11 @@ Cons:
 - Some generations have debated transmission tuning behavior.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can hand this off to an advisor for final verification of unit-specific specs, records, and real-time status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -294,11 +291,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~184.3 in |
-| Width | ~74.5 in |
-| Height | ~65.5 in |
-| Wheelbase | ~111.0 in |
-| Cargo volume | ~25.8 cu ft (behind 2nd row) |
+| Length (in) | ~184.3 in |
+| Width (in) | ~74.5 in |
+| Height (in) | ~65.5 in |
+| Wheelbase (in) | ~111.0 in |
+| Cargo (cu ft) | ~25.8 cu ft (behind 2nd row) |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -321,12 +318,11 @@ Cons:
 - Cargo/3-row practicality lower than larger SUV classes.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- Next step: advisor verification for exact trim-equipment details, condition documentation, and inventory confirmation.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -361,11 +357,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~199.6 in |
-| Width | ~77.5 in |
-| Height | ~68.4 in |
-| Wheelbase | ~117.9 in |
-| Cargo volume | ~14.2 cu ft (behind 3rd row) |
+| Length (in) | ~199.6 in |
+| Width (in) | ~77.5 in |
+| Height (in) | ~68.4 in |
+| Wheelbase (in) | ~117.9 in |
+| Cargo (cu ft) | ~14.2 cu ft (behind 3rd row) |
 | Passenger capacity | 7 |
 
 Typical known issues by generation:
@@ -388,12 +384,11 @@ Cons:
 - Reliability and complexity vary notably by year/powertrain.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can route you to an advisor to validate the exact unit data, service/inspection context, and current lot status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -432,11 +427,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~185.7 in |
-| Width | ~74.7 in |
-| Height | ~66.0 in |
-| Wheelbase | ~112.8 in |
-| Cargo volume | ~28.7 cu ft (behind 2nd row) |
+| Length (in) | ~185.7 in |
+| Width (in) | ~74.7 in |
+| Height (in) | ~66.0 in |
+| Wheelbase (in) | ~112.8 in |
+| Cargo (cu ft) | ~28.7 cu ft (behind 2nd row) |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -460,12 +455,11 @@ Cons:
 - Reliability outcomes vary by engine family and maintenance history.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can connect you with an advisor to verify exact unit specs, condition history, and current inventory status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -504,11 +498,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~194.2 in |
-| Width | ~78.9 in |
-| Height | ~69.1 in |
-| Wheelbase | ~117.1 in |
-| Cargo volume | ~33.9 cu ft (behind 2nd row) |
+| Length (in) | ~194.2 in |
+| Width (in) | ~78.9 in |
+| Height (in) | ~69.1 in |
+| Wheelbase (in) | ~117.1 in |
+| Cargo (cu ft) | ~33.9 cu ft (behind 2nd row) |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -532,12 +526,11 @@ Cons:
 - Complexity grows significantly with high-spec drivetrains/options.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- An advisor can now confirm the exact vehicle configuration, inspection details, and live inventory match.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -574,11 +567,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~195.0 in |
-| Width | ~78.9 in |
-| Height | ~66.3 in |
-| Wheelbase | ~117.1 in |
-| Cargo volume | ~27.4 cu ft (behind 2nd row) |
+| Length (in) | ~195.0 in |
+| Width (in) | ~78.9 in |
+| Height (in) | ~66.3 in |
+| Wheelbase (in) | ~117.1 in |
+| Cargo (cu ft) | ~27.4 cu ft (behind 2nd row) |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -602,12 +595,11 @@ Cons:
 - Ride comfort can be firmer than traditional midsize SUVs.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Do you prioritize stronger acceleration or a smoother comfort-focused ride?
+- Would you prefer rear-drive sport feel or all-weather traction capability?
+- Are you comfortable with firmer suspension tuning for better handling response?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can hand this off to an advisor for final verification of unit-specific specs, records, and real-time status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -650,11 +642,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~211.9 in |
-| Width | ~81.1 in |
-| Height | ~76.7 in |
-| Wheelbase | ~120.9 in |
-| Cargo volume | ~25.5 cu ft (behind 3rd row) |
+| Length (in) | ~211.9 in |
+| Width (in) | ~81.1 in |
+| Height (in) | ~76.7 in |
+| Wheelbase (in) | ~120.9 in |
+| Cargo (cu ft) | ~25.5 cu ft (behind 3rd row) |
 | Passenger capacity | 7-8 |
 
 Typical known issues by generation:
@@ -678,12 +670,11 @@ Cons:
 - Complexity can increase downtime risk as vehicles age.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- Next step: advisor verification for exact trim-equipment details, condition documentation, and inventory confirmation.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -717,11 +708,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~189.6 in |
-| Width | ~74.9 in |
-| Height | ~66.1 in |
-| Wheelbase | ~112.5 in |
-| Cargo volume | ~30.0 cu ft (behind 2nd row) |
+| Length (in) | ~189.6 in |
+| Width (in) | ~74.9 in |
+| Height (in) | ~66.1 in |
+| Wheelbase (in) | ~112.5 in |
+| Cargo (cu ft) | ~30.0 cu ft (behind 2nd row) |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -745,12 +736,11 @@ Cons:
 - Feature differences by trim/year can be significant.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can route you to an advisor to validate the exact unit data, service/inspection context, and current lot status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -787,11 +777,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~188.3 in |
-| Width | ~74.7 in |
-| Height | ~53.1 in |
-| Wheelbase | ~110.7 in |
-| Cargo volume | ~9.1 cu ft (coupe trunk) |
+| Length (in) | ~188.3 in |
+| Width (in) | ~74.7 in |
+| Height (in) | ~53.1 in |
+| Wheelbase (in) | ~110.7 in |
+| Cargo (cu ft) | ~9.1 cu ft (coupe trunk) |
 | Passenger capacity | 4 |
 
 Typical known issues by generation:
@@ -815,12 +805,11 @@ Cons:
 - Ride comfort and noise can be less favorable for daily commuting.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Do you prioritize stronger acceleration or a smoother comfort-focused ride?
+- Would you prefer rear-drive sport feel or all-weather traction capability?
+- Are you comfortable with firmer suspension tuning for better handling response?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can connect you with an advisor to verify exact unit specs, condition history, and current inventory status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -859,11 +848,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~183.1 in |
-| Width | ~72.6 in |
-| Height | ~65.4 in |
-| Wheelbase | ~107.3 in |
-| Cargo volume | ~29.9 cu ft (behind 2nd row) |
+| Length (in) | ~183.1 in |
+| Width (in) | ~72.6 in |
+| Height (in) | ~65.4 in |
+| Wheelbase (in) | ~107.3 in |
+| Cargo (cu ft) | ~29.9 cu ft (behind 2nd row) |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -887,12 +876,11 @@ Cons:
 - Performance is modest in base powertrains.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- An advisor can now confirm the exact vehicle configuration, inspection details, and live inventory match.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -924,11 +912,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~190.6 in |
-| Width | ~76.9 in |
-| Height | ~64.8 in |
-| Wheelbase | ~116.3 in |
-| Cargo volume | ~26.4 cu ft (behind 2nd row) |
+| Length (in) | ~190.6 in |
+| Width (in) | ~76.9 in |
+| Height (in) | ~64.8 in |
+| Wheelbase (in) | ~116.3 in |
+| Cargo (cu ft) | ~26.4 cu ft (behind 2nd row) |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -950,12 +938,11 @@ Cons:
 - Road-trip charging speed consistency depends on infrastructure.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can hand this off to an advisor for final verification of unit-specific specs, records, and real-time status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -994,11 +981,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~231.9 in (Crew Cab, short bed, approx) |
-| Width | ~81.2 in |
-| Height | ~75.6 in |
-| Wheelbase | ~147.4 in |
-| Cargo volume | ~62.9 cu ft (short-bed approximation) |
+| Length (in) | ~231.9 in (Crew Cab, short bed, approx) |
+| Width (in) | ~81.2 in |
+| Height (in) | ~75.6 in |
+| Wheelbase (in) | ~147.4 in |
+| Cargo (cu ft) | ~62.9 cu ft (short-bed approximation) |
 | Passenger capacity | 5-6 |
 
 Typical known issues by generation:
@@ -1021,12 +1008,11 @@ Cons:
 - Reliability depends heavily on maintenance history and duty cycle.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- What payload, towing, or cargo-volume requirement must this vehicle handle?
+- Is bed length/upfit compatibility or enclosed cargo security more important for your operation?
+- Will this vehicle run mostly urban stop-and-go routes or sustained highway miles?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- Next step: advisor verification for exact trim-equipment details, condition documentation, and inventory confirmation.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -1063,11 +1049,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~250.0 in (Crew Cab long-bed approximation) |
-| Width | ~81.9 in |
-| Height | ~80.9 in |
-| Wheelbase | ~172.0 in (varies by bed/cab) |
-| Cargo volume | TBD – Requires verification |
+| Length (in) | ~250.0 in (Crew Cab long-bed approximation) |
+| Width (in) | ~81.9 in |
+| Height (in) | ~80.9 in |
+| Wheelbase (in) | ~172.0 in (varies by bed/cab) |
+| Cargo (cu ft) | TBD – Requires verification |
 | Passenger capacity | 5-6 |
 
 Typical known issues by generation:
@@ -1090,12 +1076,11 @@ Cons:
 - Maintenance cost rises quickly under sustained heavy-duty cycles.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- What payload, towing, or cargo-volume requirement must this vehicle handle?
+- Is bed length/upfit compatibility or enclosed cargo security more important for your operation?
+- Will this vehicle run mostly urban stop-and-go routes or sustained highway miles?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can route you to an advisor to validate the exact unit data, service/inspection context, and current lot status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -1132,11 +1117,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~198.4 in |
-| Width | ~75.0 in |
-| Height | ~58.2 in |
-| Wheelbase | ~120.0 in |
-| Cargo volume | ~16.5 cu ft |
+| Length (in) | ~198.4 in |
+| Width (in) | ~75.0 in |
+| Height (in) | ~58.2 in |
+| Wheelbase (in) | ~120.0 in |
+| Cargo (cu ft) | ~16.5 cu ft |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -1160,12 +1145,11 @@ Cons:
 - Older-platform architecture by final production years.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Do you prioritize stronger acceleration or a smoother comfort-focused ride?
+- Would you prefer rear-drive sport feel or all-weather traction capability?
+- Are you comfortable with firmer suspension tuning for better handling response?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can connect you with an advisor to verify exact unit specs, condition history, and current inventory status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -1197,11 +1181,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~183.9 in |
-| Width | ~72.0 in |
-| Height | ~57.7 in |
-| Wheelbase | ~106.4 in |
-| Cargo volume | ~13.1 cu ft |
+| Length (in) | ~183.9 in |
+| Width (in) | ~72.0 in |
+| Height (in) | ~57.7 in |
+| Wheelbase (in) | ~106.4 in |
+| Cargo (cu ft) | ~13.1 cu ft |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -1225,12 +1209,11 @@ Cons:
 - Discontinued status can affect parts and resale confidence.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- What is your typical commute profile: city-heavy, highway-heavy, or mixed?
+- Is your priority lowest fuel use, lowest maintenance complexity, or balanced ownership cost?
+- Would you consider hybrid or EV alternatives if efficiency is the main objective?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- An advisor can now confirm the exact vehicle configuration, inspection details, and live inventory match.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -1271,11 +1254,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~250.0 in (Crew Cab long-bed approximation) |
-| Width | ~80.0 in (without mirrors, approx) |
-| Height | ~81.0 in (varies by trim/drivetrain) |
-| Wheelbase | ~160-176 in (varies by bed/cab) |
-| Cargo volume | ~65.4-78.5 cu ft (bed-dependent) |
+| Length (in) | ~250.0 in (Crew Cab long-bed approximation) |
+| Width (in) | ~80.0 in (without mirrors, approx) |
+| Height (in) | ~81.0 in (varies by trim/drivetrain) |
+| Wheelbase (in) | ~160-176 in (varies by bed/cab) |
+| Cargo (cu ft) | ~65.4-78.5 cu ft (bed-dependent) |
 | Passenger capacity | 5-6 |
 
 Typical known issues by generation:
@@ -1299,12 +1282,11 @@ Cons:
 - Urban maneuverability and parking are challenging.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- What payload, towing, or cargo-volume requirement must this vehicle handle?
+- Is bed length/upfit compatibility or enclosed cargo security more important for your operation?
+- Will this vehicle run mostly urban stop-and-go routes or sustained highway miles?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can hand this off to an advisor for final verification of unit-specific specs, records, and real-time status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -1337,11 +1319,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~181.0 in (approx) |
-| Width | ~70.0 in (approx) |
-| Height | ~57.0 in (approx) |
-| Wheelbase | ~109.5 in |
-| Cargo volume | TBD – Requires verification |
+| Length (in) | ~181.0 in (approx) |
+| Width (in) | ~70.0 in (approx) |
+| Height (in) | ~57.0 in (approx) |
+| Wheelbase (in) | ~109.5 in |
+| Cargo (cu ft) | TBD – Requires verification |
 | Passenger capacity | 5-6 (bench-seat dependent) |
 
 Typical known issues by generation:
@@ -1364,12 +1346,11 @@ Cons:
 - Limited modern parts support for some components.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- Next step: advisor verification for exact trim-equipment details, condition documentation, and inventory confirmation.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -1410,11 +1391,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~189.4 in |
-| Width | ~75.4 in |
-| Height | ~55.0 in |
-| Wheelbase | ~107.0 in |
-| Cargo volume | ~13.3 cu ft (fastback) |
+| Length (in) | ~189.4 in |
+| Width (in) | ~75.4 in |
+| Height (in) | ~55.0 in |
+| Wheelbase (in) | ~107.0 in |
+| Cargo (cu ft) | ~13.3 cu ft (fastback) |
 | Passenger capacity | 4 |
 
 Typical known issues by generation:
@@ -1438,12 +1419,11 @@ Cons:
 - Ride and visibility trade-offs versus mainstream sedans.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Do you prioritize stronger acceleration or a smoother comfort-focused ride?
+- Would you prefer rear-drive sport feel or all-weather traction capability?
+- Are you comfortable with firmer suspension tuning for better handling response?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can route you to an advisor to validate the exact unit data, service/inspection context, and current lot status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -1476,11 +1456,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~219.9 in (example long-wheelbase configuration) |
-| Width | ~81.3 in |
-| Height | TBD – Requires verification (roof-height dependent) |
-| Wheelbase | ~130-148 in (configuration dependent) |
-| Cargo volume | ~246-487 cu ft (roof/wheelbase dependent) |
+| Length (in) | ~219.9 in (example long-wheelbase configuration) |
+| Width (in) | ~81.3 in |
+| Height (in) | TBD – Requires verification (roof-height dependent) |
+| Wheelbase (in) | ~130-148 in (configuration dependent) |
+| Cargo (cu ft) | ~246-487 cu ft (roof/wheelbase dependent) |
 | Passenger capacity | 2-3 (cargo configuration dependent) |
 
 Typical known issues by generation:
@@ -1503,12 +1483,11 @@ Cons:
 - Heavy commercial use accelerates wear on drivetrain and brakes.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- What payload, towing, or cargo-volume requirement must this vehicle handle?
+- Is bed length/upfit compatibility or enclosed cargo security more important for your operation?
+- Will this vehicle run mostly urban stop-and-go routes or sustained highway miles?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can connect you with an advisor to verify exact unit specs, condition history, and current inventory status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -1549,11 +1528,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~180.9 in |
-| Width | ~73.0 in |
-| Height | ~67.0 in |
-| Wheelbase | ~105.9 in |
-| Cargo volume | ~37.6 cu ft (behind 2nd row) |
+| Length (in) | ~180.9 in |
+| Width (in) | ~73.0 in |
+| Height (in) | ~67.0 in |
+| Wheelbase (in) | ~105.9 in |
+| Cargo (cu ft) | ~37.6 cu ft (behind 2nd row) |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -1576,12 +1555,11 @@ Cons:
 - Feature content varies significantly by year/trim.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- What is your typical commute profile: city-heavy, highway-heavy, or mixed?
+- Is your priority lowest fuel use, lowest maintenance complexity, or balanced ownership cost?
+- Would you consider hybrid or EV alternatives if efficiency is the main objective?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- An advisor can now confirm the exact vehicle configuration, inspection details, and live inventory match.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -1621,11 +1599,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~192.1 in |
-| Width | ~72.4 in |
-| Height | ~56.9 in |
-| Wheelbase | ~111.2 in |
-| Cargo volume | ~15.1 cu ft |
+| Length (in) | ~192.1 in |
+| Width (in) | ~72.4 in |
+| Height (in) | ~56.9 in |
+| Wheelbase (in) | ~111.2 in |
+| Cargo (cu ft) | ~15.1 cu ft |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -1648,12 +1626,11 @@ Cons:
 - Higher-demand trims may be less common in some inventories.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- What is your typical commute profile: city-heavy, highway-heavy, or mixed?
+- Is your priority lowest fuel use, lowest maintenance complexity, or balanced ownership cost?
+- Would you consider hybrid or EV alternatives if efficiency is the main objective?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can hand this off to an advisor for final verification of unit-specific specs, records, and real-time status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -1692,11 +1669,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~182.5 in |
-| Width | ~70.1 in |
-| Height | ~56.5 in |
-| Wheelbase | ~106.3 in |
-| Cargo volume | ~13.1 cu ft |
+| Length (in) | ~182.5 in |
+| Width (in) | ~70.1 in |
+| Height (in) | ~56.5 in |
+| Wheelbase (in) | ~106.3 in |
+| Cargo (cu ft) | ~13.1 cu ft |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -1719,12 +1696,11 @@ Cons:
 - Cabin materials vary significantly by trim/year.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- What payload, towing, or cargo-volume requirement must this vehicle handle?
+- Is bed length/upfit compatibility or enclosed cargo security more important for your operation?
+- Will this vehicle run mostly urban stop-and-go routes or sustained highway miles?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- Next step: advisor verification for exact trim-equipment details, condition documentation, and inventory confirmation.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -1764,11 +1740,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~194.9 in |
-| Width | ~76.0 in |
-| Height | ~68.1 in |
-| Wheelbase | ~112.2 in |
-| Cargo volume | ~16.0 cu ft (behind 3rd row) |
+| Length (in) | ~194.9 in |
+| Width (in) | ~76.0 in |
+| Height (in) | ~68.1 in |
+| Wheelbase (in) | ~112.2 in |
+| Cargo (cu ft) | ~16.0 cu ft (behind 3rd row) |
 | Passenger capacity | 7-8 |
 
 Typical known issues by generation:
@@ -1791,12 +1767,11 @@ Cons:
 - Higher trims can become feature-complex for long-term repairs.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- What is your typical commute profile: city-heavy, highway-heavy, or mixed?
+- Is your priority lowest fuel use, lowest maintenance complexity, or balanced ownership cost?
+- Would you consider hybrid or EV alternatives if efficiency is the main objective?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can route you to an advisor to validate the exact unit data, service/inspection context, and current lot status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -1835,11 +1810,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~189.6 in |
-| Width | ~71.8 in |
-| Height | ~57.2 in |
-| Wheelbase | ~112.2 in |
-| Cargo volume | ~13.5 cu ft |
+| Length (in) | ~189.6 in |
+| Width (in) | ~71.8 in |
+| Height (in) | ~57.2 in |
+| Wheelbase (in) | ~112.2 in |
+| Cargo (cu ft) | ~13.5 cu ft |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -1862,12 +1837,11 @@ Cons:
 - Rear-seat packaging is moderate for class.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Do you prioritize stronger acceleration or a smoother comfort-focused ride?
+- Would you prefer rear-drive sport feel or all-weather traction capability?
+- Are you comfortable with firmer suspension tuning for better handling response?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can connect you with an advisor to verify exact unit specs, condition history, and current inventory status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -1904,11 +1878,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~184.4 in |
-| Width | ~72.8 in |
-| Height | ~54.8 in |
-| Wheelbase | ~112.2 in |
-| Cargo volume | ~8.7 cu ft |
+| Length (in) | ~184.4 in |
+| Width (in) | ~72.8 in |
+| Height (in) | ~54.8 in |
+| Wheelbase (in) | ~112.2 in |
+| Cargo (cu ft) | ~8.7 cu ft |
 | Passenger capacity | 4 |
 
 Typical known issues by generation:
@@ -1931,12 +1905,11 @@ Cons:
 - Turbo trim long-term ownership cost can be higher than NA peers.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Do you prioritize stronger acceleration or a smoother comfort-focused ride?
+- Would you prefer rear-drive sport feel or all-weather traction capability?
+- Are you comfortable with firmer suspension tuning for better handling response?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- An advisor can now confirm the exact vehicle configuration, inspection details, and live inventory match.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -1973,11 +1946,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~196.1 in |
-| Width | ~72.6 in |
-| Height | ~59.0 in |
-| Wheelbase | ~114.2 in |
-| Cargo volume | ~14.9 cu ft |
+| Length (in) | ~196.1 in |
+| Width (in) | ~72.6 in |
+| Height (in) | ~59.0 in |
+| Wheelbase (in) | ~114.2 in |
+| Cargo (cu ft) | ~14.9 cu ft |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -2000,12 +1973,11 @@ Cons:
 - Discontinued model status can narrow future trim/parts selection.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- What is your typical commute profile: city-heavy, highway-heavy, or mixed?
+- Is your priority lowest fuel use, lowest maintenance complexity, or balanced ownership cost?
+- Would you consider hybrid or EV alternatives if efficiency is the main objective?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can hand this off to an advisor for final verification of unit-specific specs, records, and real-time status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -2041,11 +2013,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~198.2 in |
-| Width | ~78.0 in |
-| Height | ~69.7 in |
-| Wheelbase | ~114.2 in |
-| Cargo volume | ~14.5 cu ft (behind 3rd row, approx) |
+| Length (in) | ~198.2 in |
+| Width (in) | ~78.0 in |
+| Height (in) | ~69.7 in |
+| Wheelbase (in) | ~114.2 in |
+| Cargo (cu ft) | ~14.5 cu ft (behind 3rd row, approx) |
 | Passenger capacity | 7 |
 
 Typical known issues by generation:
@@ -2068,12 +2040,11 @@ Cons:
 - L50 generation CVT reputation requires careful service-history review.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- Next step: advisor verification for exact trim-equipment details, condition documentation, and inventory confirmation.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -2114,11 +2085,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~184.0 in |
-| Width | ~70.9 in |
-| Height | ~55.7 in |
-| Wheelbase | ~107.7 in |
-| Cargo volume | ~14.8 cu ft (sedan) |
+| Length (in) | ~184.0 in |
+| Width (in) | ~70.9 in |
+| Height (in) | ~55.7 in |
+| Wheelbase (in) | ~107.7 in |
+| Cargo (cu ft) | ~14.8 cu ft (sedan) |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -2141,12 +2112,11 @@ Cons:
 - Feature packages can differ substantially by year.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can route you to an advisor to validate the exact unit data, service/inspection context, and current lot status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -2184,11 +2154,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~210.2 in |
-| Width | ~78.6 in |
-| Height | ~70.8 in |
-| Wheelbase | ~125.2 in |
-| Cargo volume | ~33.9 cu ft (bed volume approximation) |
+| Length (in) | ~210.2 in |
+| Width (in) | ~78.6 in |
+| Height (in) | ~70.8 in |
+| Wheelbase (in) | ~125.2 in |
+| Cargo (cu ft) | ~33.9 cu ft (bed volume approximation) |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -2211,12 +2181,11 @@ Cons:
 - Fuel economy remains moderate for the segment.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- What is your typical commute profile: city-heavy, highway-heavy, or mixed?
+- Is your priority lowest fuel use, lowest maintenance complexity, or balanced ownership cost?
+- Would you consider hybrid or EV alternatives if efficiency is the main objective?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can connect you with an advisor to verify exact unit specs, condition history, and current inventory status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -2253,11 +2222,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~187.0 in |
-| Width | ~71.7 in |
-| Height | ~56.6 in |
-| Wheelbase | ~112.8 in |
-| Cargo volume | ~12.6 cu ft |
+| Length (in) | ~187.0 in |
+| Width (in) | ~71.7 in |
+| Height (in) | ~56.6 in |
+| Wheelbase (in) | ~112.8 in |
+| Cargo (cu ft) | ~12.6 cu ft |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -2280,12 +2249,11 @@ Cons:
 - Rear-seat/trunk space is moderate for class.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- What is your typical commute profile: city-heavy, highway-heavy, or mixed?
+- Is your priority lowest fuel use, lowest maintenance complexity, or balanced ownership cost?
+- Would you consider hybrid or EV alternatives if efficiency is the main objective?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- An advisor can now confirm the exact vehicle configuration, inspection details, and live inventory match.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -2322,11 +2290,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~194.9 in |
-| Width | ~74.6 in |
-| Height | ~57.8 in |
-| Wheelbase | ~116.6 in |
-| Cargo volume | ~12.7 cu ft |
+| Length (in) | ~194.9 in |
+| Width (in) | ~74.6 in |
+| Height (in) | ~57.8 in |
+| Wheelbase (in) | ~116.6 in |
+| Cargo (cu ft) | ~12.7 cu ft |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -2349,12 +2317,11 @@ Cons:
 - Operating cost is typically above mainstream midsize sedans.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Do you prioritize stronger acceleration or a smoother comfort-focused ride?
+- Would you prefer rear-drive sport feel or all-weather traction capability?
+- Are you comfortable with firmer suspension tuning for better handling response?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can hand this off to an advisor for final verification of unit-specific specs, records, and real-time status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -2388,11 +2355,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~188.6 in |
-| Width | ~74.4 in |
-| Height | ~63.5 in |
-| Wheelbase | ~113.1 in |
-| Cargo volume | ~19.2 cu ft (behind 2nd row, approx) |
+| Length (in) | ~188.6 in |
+| Width (in) | ~74.4 in |
+| Height (in) | ~63.5 in |
+| Wheelbase (in) | ~113.1 in |
+| Cargo (cu ft) | ~19.2 cu ft (behind 2nd row, approx) |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -2415,12 +2382,11 @@ Cons:
 - Ownership cost is above mainstream compact SUVs.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- Next step: advisor verification for exact trim-equipment details, condition documentation, and inventory confirmation.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -2457,11 +2423,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~194.3 in |
-| Width | ~76.7 in |
-| Height | ~70.7 in |
-| Wheelbase | ~117.9 in |
-| Cargo volume | ~33.3 cu ft (behind 2nd row, approx) |
+| Length (in) | ~194.3 in |
+| Width (in) | ~76.7 in |
+| Height (in) | ~70.7 in |
+| Wheelbase (in) | ~117.9 in |
+| Cargo (cu ft) | ~33.3 cu ft (behind 2nd row, approx) |
 | Passenger capacity | 5-7 (configuration dependent) |
 
 Typical known issues by generation:
@@ -2484,12 +2450,11 @@ Cons:
 - Feature complexity can increase downtime risk as mileage grows.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Do you prioritize stronger acceleration or a smoother comfort-focused ride?
+- Would you prefer rear-drive sport feel or all-weather traction capability?
+- Are you comfortable with firmer suspension tuning for better handling response?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can route you to an advisor to validate the exact unit data, service/inspection context, and current lot status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -2513,19 +2478,19 @@ Engine and transmission table:
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length (in) | TBD – Requires verification |
+| Width (in) | TBD – Requires verification |
+| Height (in) | TBD – Requires verification |
+| Wheelbase (in) | TBD – Requires verification |
+| Cargo (cu ft) | TBD – Requires verification |
 
 Typical known issues by generation:
 - TBD – Requires verification
@@ -2541,12 +2506,11 @@ Cons:
 - TBD – Requires verification
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- What payload, towing, or cargo-volume requirement must this vehicle handle?
+- Is bed length/upfit compatibility or enclosed cargo security more important for your operation?
+- Will this vehicle run mostly urban stop-and-go routes or sustained highway miles?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can connect you with an advisor to verify exact unit specs, condition history, and current inventory status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -2582,11 +2546,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~184.8 in |
-| Width | ~72.8 in |
-| Height | ~56.7 in |
-| Wheelbase | ~113.2 in |
-| Cargo volume | ~24.1 cu ft (trunk + front trunk, approx) |
+| Length (in) | ~184.8 in |
+| Width (in) | ~72.8 in |
+| Height (in) | ~56.7 in |
+| Wheelbase (in) | ~113.2 in |
+| Cargo (cu ft) | ~24.1 cu ft (trunk + front trunk, approx) |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -2609,12 +2573,11 @@ Cons:
 - Long-distance convenience remains charging-infrastructure dependent.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- What is your typical commute profile: city-heavy, highway-heavy, or mixed?
+- Is your priority lowest fuel use, lowest maintenance complexity, or balanced ownership cost?
+- Would you consider hybrid or EV alternatives if efficiency is the main objective?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- An advisor can now confirm the exact vehicle configuration, inspection details, and live inventory match.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -2655,11 +2618,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~180.9 in |
-| Width | ~73.0 in |
-| Height | ~67.0 in |
-| Wheelbase | ~105.9 in |
-| Cargo volume | ~37.6 cu ft (behind 2nd row) |
+| Length (in) | ~180.9 in |
+| Width (in) | ~73.0 in |
+| Height (in) | ~67.0 in |
+| Wheelbase (in) | ~105.9 in |
+| Cargo (cu ft) | ~37.6 cu ft (behind 2nd row) |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -2682,12 +2645,11 @@ Cons:
 - Feature content varies significantly by year/trim.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can hand this off to an advisor for final verification of unit-specific specs, records, and real-time status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -2727,11 +2689,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~192.1 in |
-| Width | ~72.4 in |
-| Height | ~56.9 in |
-| Wheelbase | ~111.2 in |
-| Cargo volume | ~15.1 cu ft |
+| Length (in) | ~192.1 in |
+| Width (in) | ~72.4 in |
+| Height (in) | ~56.9 in |
+| Wheelbase (in) | ~111.2 in |
+| Cargo (cu ft) | ~15.1 cu ft |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -2754,12 +2716,11 @@ Cons:
 - Higher-demand trims may be less common in some inventories.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- What is your typical commute profile: city-heavy, highway-heavy, or mixed?
+- Is your priority lowest fuel use, lowest maintenance complexity, or balanced ownership cost?
+- Would you consider hybrid or EV alternatives if efficiency is the main objective?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- Next step: advisor verification for exact trim-equipment details, condition documentation, and inventory confirmation.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -2798,11 +2759,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~182.5 in |
-| Width | ~70.1 in |
-| Height | ~56.5 in |
-| Wheelbase | ~106.3 in |
-| Cargo volume | ~13.1 cu ft |
+| Length (in) | ~182.5 in |
+| Width (in) | ~70.1 in |
+| Height (in) | ~56.5 in |
+| Wheelbase (in) | ~106.3 in |
+| Cargo (cu ft) | ~13.1 cu ft |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -2825,12 +2786,11 @@ Cons:
 - Cabin materials vary significantly by trim/year.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- What is your typical commute profile: city-heavy, highway-heavy, or mixed?
+- Is your priority lowest fuel use, lowest maintenance complexity, or balanced ownership cost?
+- Would you consider hybrid or EV alternatives if efficiency is the main objective?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can route you to an advisor to validate the exact unit data, service/inspection context, and current lot status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -2868,11 +2828,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~194.9 in |
-| Width | ~76.0 in |
-| Height | ~68.1 in |
-| Wheelbase | ~112.2 in |
-| Cargo volume | ~16.0 cu ft (behind 3rd row) |
+| Length (in) | ~194.9 in |
+| Width (in) | ~76.0 in |
+| Height (in) | ~68.1 in |
+| Wheelbase (in) | ~112.2 in |
+| Cargo (cu ft) | ~16.0 cu ft (behind 3rd row) |
 | Passenger capacity | 7-8 |
 
 Typical known issues by generation:
@@ -2895,12 +2855,11 @@ Cons:
 - Higher trims can become feature-complex for long-term repairs.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can connect you with an advisor to verify exact unit specs, condition history, and current inventory status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -2940,11 +2899,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~194.9 in |
-| Width | ~75.8 in |
-| Height | ~71.5 in |
-| Wheelbase | ~109.8 in |
-| Cargo volume | ~47.2 cu ft (behind 2nd row, two-row setup) |
+| Length (in) | ~194.9 in |
+| Width (in) | ~75.8 in |
+| Height (in) | ~71.5 in |
+| Wheelbase (in) | ~109.8 in |
+| Cargo (cu ft) | ~47.2 cu ft (behind 2nd row, two-row setup) |
 | Passenger capacity | 5-7 |
 
 Typical known issues by generation:
@@ -2967,12 +2926,11 @@ Cons:
 - Interior tech in older years can feel dated.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- An advisor can now confirm the exact vehicle configuration, inspection details, and live inventory match.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -3010,11 +2968,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~213.0 in (Double Cab short bed, approx) |
-| Width | ~77.9 in |
-| Height | ~74.6 in |
-| Wheelbase | ~131.9 in |
-| Cargo volume | ~49.9 cu ft (short bed approximation) |
+| Length (in) | ~213.0 in (Double Cab short bed, approx) |
+| Width (in) | ~77.9 in |
+| Height (in) | ~74.6 in |
+| Wheelbase (in) | ~131.9 in |
+| Cargo (cu ft) | ~49.9 cu ft (short bed approximation) |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -3037,12 +2995,11 @@ Cons:
 - Feature content in older years can lag newer competitors.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- What payload, towing, or cargo-volume requirement must this vehicle handle?
+- Is bed length/upfit compatibility or enclosed cargo security more important for your operation?
+- Will this vehicle run mostly urban stop-and-go routes or sustained highway miles?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can hand this off to an advisor for final verification of unit-specific specs, records, and real-time status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -3079,11 +3036,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~233.6 in (CrewMax short bed, approx) |
-| Width | ~80.2 in |
-| Height | ~78.0 in |
-| Wheelbase | ~145.7 in |
-| Cargo volume | ~52.8 cu ft (short-bed approximation) |
+| Length (in) | ~233.6 in (CrewMax short bed, approx) |
+| Width (in) | ~80.2 in |
+| Height (in) | ~78.0 in |
+| Wheelbase (in) | ~145.7 in |
+| Cargo (cu ft) | ~52.8 cu ft (short-bed approximation) |
 | Passenger capacity | 5-6 |
 
 Typical known issues by generation:
@@ -3106,12 +3063,11 @@ Cons:
 - Ride quality can be firm when unladen.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- What payload, towing, or cargo-volume requirement must this vehicle handle?
+- Is bed length/upfit compatibility or enclosed cargo security more important for your operation?
+- Will this vehicle run mostly urban stop-and-go routes or sustained highway miles?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- Next step: advisor verification for exact trim-equipment details, condition documentation, and inventory confirmation.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -3151,11 +3107,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~182.7 in |
-| Width | ~73.4 in |
-| Height | ~65.6 in |
-| Wheelbase | ~108.5 in |
-| Cargo volume | ~38.7 cu ft (behind 2nd row, approx) |
+| Length (in) | ~182.7 in |
+| Width (in) | ~73.4 in |
+| Height (in) | ~65.6 in |
+| Wheelbase (in) | ~108.5 in |
+| Cargo (cu ft) | ~38.7 cu ft (behind 2nd row, approx) |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -3178,12 +3134,11 @@ Cons:
 - Resale strength may trail top Japanese rivals in some markets.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can route you to an advisor to validate the exact unit data, service/inspection context, and current lot status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -3222,11 +3177,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~190.2 in |
-| Width | ~74.8 in |
-| Height | ~67.7 in |
-| Wheelbase | ~110.8 in |
-| Cargo volume | ~40.5 cu ft (behind 2nd row, approx) |
+| Length (in) | ~190.2 in |
+| Width (in) | ~74.8 in |
+| Height (in) | ~67.7 in |
+| Wheelbase (in) | ~110.8 in |
+| Cargo (cu ft) | ~40.5 cu ft (behind 2nd row, approx) |
 | Passenger capacity | 5-7 (configuration dependent) |
 
 Typical known issues by generation:
@@ -3249,12 +3204,11 @@ Cons:
 - Third-row usability depends heavily on configuration.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can connect you with an advisor to verify exact unit specs, condition history, and current inventory status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -3286,11 +3240,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~196.7 in |
-| Width | ~77.8 in |
-| Height | ~68.9 in |
-| Wheelbase | ~114.2 in |
-| Cargo volume | ~18.0 cu ft (behind 3rd row, approx) |
+| Length (in) | ~196.7 in |
+| Width (in) | ~77.8 in |
+| Height (in) | ~68.9 in |
+| Wheelbase (in) | ~114.2 in |
+| Cargo (cu ft) | ~18.0 cu ft (behind 3rd row, approx) |
 | Passenger capacity | 7-8 |
 
 Typical known issues by generation:
@@ -3313,12 +3267,11 @@ Cons:
 - Long-term electronics complexity varies by trim.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- An advisor can now confirm the exact vehicle configuration, inspection details, and live inventory match.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -3359,11 +3312,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~183.5 in |
-| Width | ~73.4 in |
-| Height | ~65.4 in |
-| Wheelbase | ~108.5 in |
-| Cargo volume | ~39.6 cu ft (behind 2nd row, approx) |
+| Length (in) | ~183.5 in |
+| Width (in) | ~73.4 in |
+| Height (in) | ~65.4 in |
+| Wheelbase (in) | ~108.5 in |
+| Cargo (cu ft) | ~39.6 cu ft (behind 2nd row, approx) |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -3386,12 +3339,11 @@ Cons:
 - Resale performance can vary versus top segment leaders.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can hand this off to an advisor for final verification of unit-specific specs, records, and real-time status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -3423,11 +3375,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~196.9 in |
-| Width | ~78.3 in |
-| Height | ~69.3 in |
-| Wheelbase | ~114.2 in |
-| Cargo volume | ~21.0 cu ft (behind 3rd row, approx) |
+| Length (in) | ~196.9 in |
+| Width (in) | ~78.3 in |
+| Height (in) | ~69.3 in |
+| Wheelbase (in) | ~114.2 in |
+| Cargo (cu ft) | ~21.0 cu ft (behind 3rd row, approx) |
 | Passenger capacity | 7-8 |
 
 Typical known issues by generation:
@@ -3450,12 +3402,11 @@ Cons:
 - Long-term electronics complexity depends on trim content.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- Next step: advisor verification for exact trim-equipment details, condition documentation, and inventory confirmation.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -3496,11 +3447,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~192.5 in |
-| Width | ~75.6 in |
-| Height | ~67.3 in |
-| Wheelbase | ~112.2 in |
-| Cargo volume | ~29.6 cu ft (behind 2nd row, approx) |
+| Length (in) | ~192.5 in |
+| Width (in) | ~75.6 in |
+| Height (in) | ~67.3 in |
+| Wheelbase (in) | ~112.2 in |
+| Cargo (cu ft) | ~29.6 cu ft (behind 2nd row, approx) |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -3523,12 +3474,11 @@ Cons:
 - Premium parts/labor still cost more than mainstream brands.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can route you to an advisor to validate the exact unit data, service/inspection context, and current lot status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -3563,11 +3513,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~183.5 in |
-| Width | ~73.4 in |
-| Height | ~65.4 in |
-| Wheelbase | ~105.9 in |
-| Cargo volume | ~22.7 cu ft (behind 2nd row, approx) |
+| Length (in) | ~183.5 in |
+| Width (in) | ~73.4 in |
+| Height (in) | ~65.4 in |
+| Wheelbase (in) | ~105.9 in |
+| Cargo (cu ft) | ~22.7 cu ft (behind 2nd row, approx) |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -3590,12 +3540,11 @@ Cons:
 - Higher service cost than mainstream compact SUVs.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can connect you with an advisor to verify exact unit specs, condition history, and current inventory status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -3632,11 +3581,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~180.1 in |
-| Width | ~72.6 in |
-| Height | ~66.3 in |
-| Wheelbase | ~106.2 in |
-| Cargo volume | ~30.9 cu ft (behind 2nd row, approx) |
+| Length (in) | ~180.1 in |
+| Width (in) | ~72.6 in |
+| Height (in) | ~66.3 in |
+| Wheelbase (in) | ~106.2 in |
+| Cargo (cu ft) | ~30.9 cu ft (behind 2nd row, approx) |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -3659,12 +3608,11 @@ Cons:
 - Turbo trims can increase long-term operating cost.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- An advisor can now confirm the exact vehicle configuration, inspection details, and live inventory match.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -3700,11 +3648,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~199.4 in |
-| Width | ~77.5 in |
-| Height | ~69.0 in |
-| Wheelbase | ~115.3 in |
-| Cargo volume | ~14.4 cu ft (behind 3rd row, approx) |
+| Length (in) | ~199.4 in |
+| Width (in) | ~77.5 in |
+| Height (in) | ~69.0 in |
+| Wheelbase (in) | ~115.3 in |
+| Cargo (cu ft) | ~14.4 cu ft (behind 3rd row, approx) |
 | Passenger capacity | 6-7 |
 
 Typical known issues by generation:
@@ -3727,12 +3675,11 @@ Cons:
 - Discontinued status (replaced by CX-90) affects long-term market comparables.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can hand this off to an advisor for final verification of unit-specific specs, records, and real-time status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -3756,19 +3703,19 @@ Engine and transmission table:
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length (in) | TBD – Requires verification |
+| Width (in) | TBD – Requires verification |
+| Height (in) | TBD – Requires verification |
+| Wheelbase (in) | TBD – Requires verification |
+| Cargo (cu ft) | TBD – Requires verification |
 
 Typical known issues by generation:
 - TBD – Requires verification
@@ -3784,12 +3731,11 @@ Cons:
 - TBD – Requires verification
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- Next step: advisor verification for exact trim-equipment details, condition documentation, and inventory confirmation.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -3828,11 +3774,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~191.9 in |
-| Width | ~74.6 in |
-| Height | ~66.4 in |
-| Wheelbase | ~108.1 in |
-| Cargo volume | ~32.6 cu ft (behind 2nd row, approx) |
+| Length (in) | ~191.9 in |
+| Width (in) | ~74.6 in |
+| Height (in) | ~66.4 in |
+| Wheelbase (in) | ~108.1 in |
+| Cargo (cu ft) | ~32.6 cu ft (behind 2nd row, approx) |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -3855,12 +3801,11 @@ Cons:
 - Infotainment experience varies by generation and update state.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can route you to an advisor to validate the exact unit data, service/inspection context, and current lot status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -3897,11 +3842,11 @@ Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~183.3 in |
-| Width | ~72.0 in |
-| Height | ~68.1 in |
-| Wheelbase | ~105.1 in |
-| Cargo volume | ~28.9 cu ft (behind 2nd row, approx) |
+| Length (in) | ~183.3 in |
+| Width (in) | ~72.0 in |
+| Height (in) | ~68.1 in |
+| Wheelbase (in) | ~105.1 in |
+| Cargo (cu ft) | ~28.9 cu ft (behind 2nd row, approx) |
 | Passenger capacity | 5 |
 
 Typical known issues by generation:
@@ -3924,12 +3869,11 @@ Cons:
 - CVT response may not suit all driving preferences.
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- I can connect you with an advisor to verify exact unit specs, condition history, and current inventory status.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -3953,19 +3897,19 @@ Engine and transmission table:
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length (in) | TBD – Requires verification |
+| Width (in) | TBD – Requires verification |
+| Height (in) | TBD – Requires verification |
+| Wheelbase (in) | TBD – Requires verification |
+| Cargo (cu ft) | TBD – Requires verification |
 
 Typical known issues by generation:
 - TBD – Requires verification
@@ -3981,12 +3925,11 @@ Cons:
 - TBD – Requires verification
 
 Qualification questions:
-- Is your daily driving mostly city traffic, highway, or mixed?
-- Do you prioritize fuel efficiency, performance, cargo space, or luxury features?
-- Are you open to different model years if equipment and condition are better?
-
+- Will you regularly use second- or third-row seating for family passengers?
+- Do you need maximum cargo flexibility for strollers, luggage, or sports gear?
+- Is easy child-seat loading and rear-door access important for your daily use?
 Advisor transition phrase:
-- I can connect you with an advisor now to confirm the exact unit specs, condition, and live availability.
+- An advisor can now confirm the exact vehicle configuration, inspection details, and live inventory match.
 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
@@ -3997,6 +3940,8 @@ Last Verified: 2026-02-19
 - Confirm safety recall context against NHTSA records; VIN-level recall status must be advisor-verified.
 - If two sources conflict, mark `TBD – Requires verification` and escalate.
 - Never present unverified assumptions as confirmed facts.
+
+
 
 
 
