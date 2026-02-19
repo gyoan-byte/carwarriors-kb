@@ -3339,42 +3339,58 @@ Last Verified: 2026-02-19
 - Performance baseline: Modern infotainment, efficient powertrain
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 1st generation: 1995-2002.
+- 2nd generation: 2005-2010.
+- 3rd generation (SL): 2011-2016.
+- 4th generation (QL): 2017-2022.
+- 5th generation (NQ5): 2023-present.
+- Major refresh: MY2026 update cycle (NQ5 platform evolution).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| 2nd gen sample period (2010) | 2.0L I4; 2.7L V6 | NA | 4-speed AT or 5-speed MT; FWD/AWD |
+| QL (2017-2022) | 2.4L I4; 2.0L I4 | NA / Turbo | 6-speed AT; FWD/AWD |
+| NQ5 (2023-present) | 2.5L I4; hybrid/PHEV variants | NA / Hybrid / PHEV | 8-speed AT (gas), 6-speed AT (hybrid), 6-speed AT (PHEV); FWD/AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| 2nd gen sample (2010 Sportage FWD 2.7L) | FWD | 18 | 23 | 20 |
+| 4th gen sample (2018 Sportage FWD 2.0L) | FWD | 21 | 26 | 23 |
+| 5th gen sample (2024 Sportage FWD 2.5L) | FWD | 25 | 33 | 28 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~183.5 in |
+| Width | ~73.4 in |
+| Height | ~65.4 in |
+| Wheelbase | ~108.5 in |
+| Cargo volume | ~39.6 cu ft (behind 2nd row, approx) |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- Older generations show recurring owner-reported electrical accessory and suspension wear issues.
+- Some turbo-equipped trims in prior generations have higher long-term maintenance sensitivity.
+- NHTSA recall applicability is year/trim specific and should be VIN-verified.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Medium (Low / Medium / High)
+- Notes: Routine maintenance is moderate, with higher complexity for turbo/hybrid variants and AWD drivetrain service intervals.
 
 Pros:
-- TBD – Requires verification
+- Practical compact-SUV packaging with strong feature value.
+- Broad powertrain mix including hybrid/PHEV options.
+- Competitive fuel efficiency in recent FWD trims.
 
 Cons:
-- TBD – Requires verification
+- Long-term reliability perception varies by generation/powertrain.
+- Ride and NVH quality depend on wheel/trim setup.
+- Resale performance can vary versus top segment leaders.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -3394,42 +3410,51 @@ Last Verified: 2026-02-19
 - Performance baseline: Comfortable ride, premium interior features
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 1st generation: 2020-present.
+- Major refresh: MY2023 facelift/update cycle.
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| 2020-present | 3.8L V6 | NA | 8-speed AT; FWD/AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| 1st gen sample (2020 Telluride FWD) | FWD | 20 | 26 | 23 |
+| 1st gen refresh sample (2024 Telluride FWD) | FWD | 20 | 26 | 22 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~196.9 in |
+| Width | ~78.3 in |
+| Height | ~69.3 in |
+| Wheelbase | ~114.2 in |
+| Cargo volume | ~21.0 cu ft (behind 3rd row, approx) |
+| Passenger capacity | 7-8 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- Early years show owner-reported infotainment/electrical software issues and occasional drivability calibration complaints.
+- High-feature trims may involve greater electronic system service complexity.
+- NHTSA recalls vary by year and equipment package; advisor should confirm VIN-level applicability.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Medium (Low / Medium / High)
+- Notes: Naturally aspirated V6/8AT architecture is straightforward, but large-SUV consumables increase ongoing operating cost.
 
 Pros:
-- TBD – Requires verification
+- Spacious family-focused 3-row interior.
+- Strong feature content and comfort for segment.
+- Solid highway comfort and long-trip usability.
 
 Cons:
-- TBD – Requires verification
+- Urban parking and maneuvering are challenging due size.
+- Fuel economy is moderate for a full-size 3-row SUV.
+- Long-term electronics complexity depends on trim content.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
