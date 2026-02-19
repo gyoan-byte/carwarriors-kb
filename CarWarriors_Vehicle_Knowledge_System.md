@@ -3810,42 +3810,56 @@ Last Verified: 2026-02-19
 - Performance baseline: All-weather capability, safety-focused design
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 4th generation (BR): 2010-2014.
+- 5th generation (BS): 2015-2019.
+- 6th generation (BT): 2020-present.
+- Major refresh years: MY2018 (BS facelift), MY2023 (BT facelift cycle).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| BR (2010-2014) | 2.5L H4; 3.6L H6 | NA | CVT / 6-speed MT (2.5); 5-speed AT (3.6); AWD |
+| BS (2015-2019) | 2.5L H4; 3.6L H6 | NA | CVT; AWD |
+| BT (2020-present) | 2.5L H4; 2.4L H4 | NA / Turbo | CVT; AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| BR sample (2010 Outback AWD 2.5L) | AWD | 22 | 29 | 24 |
+| BS sample (2018 Outback AWD 2.5L) | AWD | 25 | 32 | 28 |
+| BT sample (2024 Outback AWD 2.5L) | AWD | 26 | 32 | 28 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~191.9 in |
+| Width | ~74.6 in |
+| Height | ~66.4 in |
+| Wheelbase | ~108.1 in |
+| Cargo volume | ~32.6 cu ft (behind 2nd row, approx) |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- BR: Common age-related items include wheel-bearing wear, oil-consumption reports on some 2.5L units, and suspension bushing service at higher mileage.
+- BS: Broad owner feedback includes infotainment responsiveness concerns and some CVT drivability/valve-body related complaints on specific years.
+- BT: Early-year infotainment/software stability concerns are documented in owner reports; NHTSA recalls vary by model year and require VIN confirmation.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Medium (Low / Medium / High)
+- Notes: Generally predictable maintenance with strong AWD durability history, but CVT service discipline and AWD tire-matching requirements are important.
 
 Pros:
-- TBD – Requires verification
+- Standard AWD and strong all-weather usability.
+- High practicality with wagon-like cargo access.
+- Good long-distance comfort and safety-tech availability.
 
 Cons:
-- TBD – Requires verification
+- Not class-leading acceleration in non-turbo trims.
+- CVT feel may not match buyers preferring stepped automatics.
+- Infotainment experience varies by generation and update state.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -3865,42 +3879,56 @@ Last Verified: 2026-02-19
 - Performance baseline: Safety features, practical cargo space
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 3rd generation (SH): 2009-2013.
+- 4th generation (SJ): 2014-2018.
+- 5th generation (SK): 2019-present.
+- Major refresh years: MY2017 (SJ facelift), MY2022 (SK facelift).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| SH (2009-2013) | 2.5L H4 | NA | 4-speed AT / 5-speed MT; AWD |
+| SJ (2014-2018) | 2.5L H4; 2.0L H4 | NA / Turbo (XT) | CVT / 6-speed MT (NA); CVT (XT); AWD |
+| SK (2019-present) | 2.5L H4 | NA | CVT; AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| SH sample (2010 Forester AWD 2.5L) | AWD | 20 | 26 | 22 |
+| SJ sample (2018 Forester AWD 2.5L CVT) | AWD | 26 | 32 | 28 |
+| SK sample (2024 Forester AWD 2.5L) | AWD | 26 | 33 | 29 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~183.3 in |
+| Width | ~72.0 in |
+| Height | ~68.1 in |
+| Wheelbase | ~105.1 in |
+| Cargo volume | ~28.9 cu ft (behind 2nd row, approx) |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- SH: Typical age-related repairs include head-gasket discussions on older EJ-based years and suspension/wheel-bearing wear at higher mileage.
+- SJ: Some owner-reported concerns include CVT behavior complaints and occasional A/C compressor or wheel-bearing service.
+- SK: Owner reports show occasional infotainment/electronics complaints; NHTSA recalls are model-year specific and should be VIN-verified.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Medium (Low / Medium / High)
+- Notes: Moderate maintenance burden with generally durable AWD systems; CVT-related service history and fluid maintenance are important screening points.
 
 Pros:
-- TBD – Requires verification
+- Standard AWD and strong visibility.
+- Practical interior packaging and good safety-feature coverage.
+- Balanced efficiency for an AWD compact SUV.
 
 Cons:
-- TBD – Requires verification
+- Base acceleration is modest.
+- Cabin noise/finish refinement varies by year and trim.
+- CVT response may not suit all driving preferences.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
