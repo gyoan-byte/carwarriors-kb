@@ -145,6 +145,7 @@ export default {
       "/latest/raw": () => handleLatestRaw(env),
       "/stats": () => handleStats(env),
       "/latest": () => handleLatest(url, env),
+      "/ready": () => handleReady(url, env),
       "/status": () => handleStatus(env),
 
       // MAIL (KV)
@@ -328,6 +329,191 @@ async function handleLatest(url, env) {
   });
 }
 
+async function handleReady(url, env) {
+  const { latest, file, error } = await getLatestFile(env);
+  if (error) return error;
+
+  const csvText = await file.text();
+  const rows = parseCSV(csvText);
+  const headers = listHeaders(rows);
+  const nowMs = Date.now();
+
+  const createdDateCol = resolveColumn(headers, "Created Date");
+  const stockCol = resolveColumn(headers, "Stock Number");
+  const yearCol = resolveColumn(headers, "Year");
+  const makeCol = resolveColumn(headers, "Make");
+  const modelCol = resolveColumn(headers, "Model");
+  const colorCol = resolveColumn(headers, "Exterior Color");
+  const odometerCol = resolveColumn(headers, "Odometer");
+  const gpsCol = resolveColumn(headers, "GPS Provider");
+
+  const normalized = rows.map((row) =>
+    normalizeReadyRow(row, {
+      createdDateCol,
+      stockCol,
+      yearCol,
+      makeCol,
+      modelCol,
+      colorCol,
+      odometerCol,
+      gpsCol,
+      nowMs,
+    })
+  );
+
+  const q = (url.searchParams.get("q") || "").trim();
+  const makeFilter = normalizeSearchText(url.searchParams.get("make") || "");
+  const modelFilter = normalizeSearchText(url.searchParams.get("model") || "");
+  const bodyTypeFilter = normalizeSearchText(url.searchParams.get("bodyType") || "");
+  const yearFilter = String(url.searchParams.get("year") || "").trim();
+  const limit = clampInt(url.searchParams.get("limit"), 1, 200, 100);
+
+  const qTokens = splitSearchTerms(q);
+  let filtered = normalized.filter((v) => {
+    if (makeFilter && v.search.makeNorm !== makeFilter) return false;
+    if (modelFilter && v.search.modelNorm !== modelFilter) return false;
+    if (bodyTypeFilter && normalizeSearchText(v.bodyType) !== bodyTypeFilter) return false;
+    if (yearFilter && String(v.year || "") !== yearFilter) return false;
+    if (qTokens.length && !qTokens.every((t) => v.search.text.includes(t))) return false;
+    return true;
+  });
+
+  const totalMatched = filtered.length;
+  filtered = filtered.slice(0, limit);
+
+  return json({
+    ok: true,
+    generatedAt: new Date().toISOString(),
+    source: "CARROS LISTOS",
+    disclaimer: "Disponibilidad preliminar. Confirmacion final de unidad con asesor humano.",
+    latest: {
+      receivedAt: latest.receivedAt || null,
+      filename: latest.filename || null,
+      key: latest.key || null,
+      count: rows.length,
+    },
+    filters: {
+      q: q || null,
+      make: makeFilter || null,
+      model: modelFilter || null,
+      year: yearFilter || null,
+      bodyType: bodyTypeFilter || null,
+      limit,
+      totalMatched,
+    },
+    byMake: countBy(filtered, (v) => v.make),
+    vehicles: filtered.map((v) => ({
+      stockNumber: v.stockNumber,
+      year: v.year,
+      make: v.make,
+      model: v.model,
+      exteriorColor: v.exteriorColor,
+      odometer: v.odometer,
+      gpsProvider: v.gpsProvider,
+      createdDate: v.createdDate,
+      daysInInventory: v.daysInInventory,
+      bodyType: v.bodyType,
+      saleReady: true,
+      status: "available_preliminary",
+      kb: {
+        makeKey: v.kb.makeKey,
+        modelKey: v.kb.modelKey,
+        lookupKey: v.kb.lookupKey,
+      },
+      query: {
+        text: v.queryText,
+        tokens: v.queryTokens,
+      },
+    })),
+  });
+}
+
+function normalizeReadyRow(row, cols) {
+  const createdDateRaw = cols.createdDateCol ? String(row[cols.createdDateCol] || "").trim() : "";
+  const createdTs = parseDateLoose(createdDateRaw);
+  const daysInInventory = createdTs === null ? null : Math.max(0, Math.floor((cols.nowMs - createdTs) / 86_400_000));
+
+  const stockNumber = cols.stockCol ? String(row[cols.stockCol] || "").trim() : "";
+  const yearNum = cols.yearCol ? toNumber(row[cols.yearCol]) : null;
+  const year = yearNum === null ? null : Math.trunc(yearNum);
+  const make = toCanonicalUpper(cols.makeCol ? row[cols.makeCol] : "");
+  const model = toCanonicalUpper(cols.modelCol ? row[cols.modelCol] : "");
+  const exteriorColor = toCanonicalUpper(cols.colorCol ? row[cols.colorCol] : "");
+  const odometerNum = cols.odometerCol ? toNumber(row[cols.odometerCol]) : null;
+  const odometer = odometerNum === null ? null : Math.trunc(odometerNum);
+  const gpsProvider = toCanonicalUpper(cols.gpsCol ? row[cols.gpsCol] : "");
+  const bodyType = inferBodyType(model);
+
+  const makeNorm = normalizeSearchText(make);
+  const modelNorm = normalizeSearchText(model);
+  const stockNorm = normalizeSearchText(stockNumber);
+  const yearText = year ? String(year) : "";
+  const bodyNorm = normalizeSearchText(bodyType);
+  const queryText = [yearText, make, model, stockNumber, bodyType].filter(Boolean).join(" ").trim();
+  const queryTokens = Array.from(new Set(splitSearchTerms(queryText)));
+  const searchText = [yearText, makeNorm, modelNorm, stockNorm, bodyNorm].filter(Boolean).join(" ");
+
+  return {
+    stockNumber,
+    year,
+    make,
+    model,
+    exteriorColor,
+    odometer,
+    gpsProvider,
+    createdDate: createdDateRaw || null,
+    daysInInventory,
+    bodyType,
+    kb: {
+      makeKey: make,
+      modelKey: model,
+      lookupKey: make && model ? `${make}::${model}` : "",
+    },
+    queryText,
+    queryTokens,
+    search: {
+      text: searchText,
+      makeNorm,
+      modelNorm,
+    },
+  };
+}
+
+function toCanonicalUpper(v) {
+  return String(v || "")
+    .trim()
+    .replaceAll(/\s+/g, " ")
+    .toUpperCase();
+}
+
+function normalizeSearchText(v) {
+  return String(v || "")
+    .normalize("NFD")
+    .replaceAll(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replaceAll(/[^a-z0-9]+/g, " ")
+    .trim()
+    .replaceAll(/\s+/g, " ");
+}
+
+function splitSearchTerms(v) {
+  const norm = normalizeSearchText(v);
+  if (!norm) return [];
+  return norm.split(" ").filter(Boolean);
+}
+
+function inferBodyType(model) {
+  const m = toCanonicalUpper(model);
+  if (!m) return "unknown";
+
+  if (/\b(VAN|TRANSIT)\b/.test(m)) return "van";
+  if (/\b(CREW CAB|SUPER DUTY|SILVERADO|TACOMA|RIDGELINE|F350|2500|3500|HD)\b/.test(m)) return "truck";
+  if (/\b(SUV|RANGE ROVER|EQUINOX|QX60|QX80|X3|X5|X6|GLE|GLC|ATLAS|RAV4|ESCALADE|XT5|MDX|RDX|Q5|Q7|H1)\b/.test(m)) return "suv";
+  if (/\b(CAMARO|MUSTANG|370Z|Q60|COUPE|GIULIA)\b/.test(m)) return "sports";
+  if (/\b(ACCORD|CIVIC|CHARGER|DART|Q50|Q70|C-CLASS|E-CLASS|COROLLA)\b/.test(m)) return "sedan";
+  return "unknown";
+}
+
 function notFoundResponse() {
   return json(
     {
@@ -336,6 +522,7 @@ function notFoundResponse() {
         "/health",
         // inventario
         "/latest",
+        "/ready",
         "/status",
         "/latest/raw",
         "/latest/meta",
@@ -343,6 +530,8 @@ function notFoundResponse() {
         "/latest?fields=Make,Year,Model,Odometer",
         "/latest?sort=Make:asc,Year:desc,Odometer:asc",
         "/latest?group=Make&sort=Year:desc,Odometer:asc",
+        "/ready?q=toyota+corolla&limit=20",
+        "/ready?make=toyota&model=corolla&year=2022",
         // mail
         "/mail/latest",
         "/mail/latest/raw",
