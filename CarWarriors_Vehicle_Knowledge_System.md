@@ -2235,42 +2235,56 @@ Last Verified: 2026-02-19
 - Performance baseline: Smooth highway performance, advanced safety features
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- W204 generation: 2008-2014.
+- W205 generation: 2015-2021.
+- W206 generation: 2022-present.
+- Major refresh: MY2012 (W204 facelift), MY2019 (W205 facelift).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| W204 (2008-2014) | 3.0L V6; 3.5L V6; 6.2L V8 (AMG) | NA | 7-speed AT; RWD/AWD |
+| W205 (2015-2021) | 2.0L I4; 3.0L V6; 4.0L V8 (AMG) | Turbo / NA (early variants) | 7-speed/9-speed AT; RWD/AWD |
+| W206 (2022-present) | 2.0L I4 mild-hybrid; 2.0L I4 PHEV (market-dependent) | Turbo / MHEV / PHEV | 9-speed AT; RWD/AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| W204 sample (2010 C300) | RWD | 18 | 26 | 21 |
+| W205 sample (2018 C300) | RWD | 24 | 33 | 27 |
+| W206 sample (2024 C300 4MATIC) | AWD | 23 | 33 | 27 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~187.0 in |
+| Width | ~71.7 in |
+| Height | ~56.6 in |
+| Wheelbase | ~112.8 in |
+| Cargo volume | ~12.6 cu ft |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- W204/W205: Common owner reports include electronics faults, sensor/module failures, and cooling-system service items at higher mileage.
+- Turbocharged variants: Oil/coolant leak and intake/boost-component wear patterns appear by maintenance history and mileage.
+- NHTSA recalls are model-year specific and should be VIN-confirmed before final statements.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: High (Low / Medium / High)
+- Notes: Premium-brand parts, diagnostics, and labor rates usually result in above-average ownership cost versus mainstream sedans.
 
 Pros:
-- TBD – Requires verification
+- Strong refinement and premium interior execution.
+- Balanced comfort/handling profile in mainstream trims.
+- Broad powertrain spread including high-performance AMG variants.
 
 Cons:
-- TBD – Requires verification
+- Repair and maintenance costs can be high with age.
+- Complexity of electronics/driver-assist systems increases diagnostic burden.
+- Rear-seat/trunk space is moderate for class.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -2290,42 +2304,56 @@ Last Verified: 2026-02-19
 - Performance baseline: Sport-tuned suspension, coupe-like handling
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- W212 generation: 2010-2016.
+- W213 generation: 2017-2023.
+- W214 generation: 2024-present.
+- Major refresh: MY2014 (W212 facelift), MY2021 (W213 facelift).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| W212 (2010-2016) | 3.5L V6; 4.6L/5.5L V8; diesel variants | NA / Turbo (select trims) | 7-speed AT; RWD/AWD |
+| W213 (2017-2023) | 2.0L I4; 3.0L I6; 4.0L V8 (AMG); PHEV in later years | Turbo / MHEV / PHEV | 9-speed AT; RWD/AWD |
+| W214 (2024-present) | 2.0L I4; PHEV variants | Turbo / MHEV / PHEV | 9-speed AT; RWD/AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| W212 sample (2010 E350) | RWD | 18 | 26 | 21 |
+| W213 sample (2018 E300) | RWD | 22 | 30 | 25 |
+| W214 sample (2024 E350 4MATIC) | AWD | 24 | 33 | 27 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~194.9 in |
+| Width | ~74.6 in |
+| Height | ~57.8 in |
+| Wheelbase | ~116.6 in |
+| Cargo volume | ~12.7 cu ft |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- W212/W213: Frequently reported themes include electronics/module failures, air-suspension service on equipped trims, and coolant/oil leak repairs.
+- High-output AMG and complex hybrid systems increase long-term maintenance complexity.
+- NHTSA recall applicability is year and trim specific; advisor should verify VIN-level status.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: High (Low / Medium / High)
+- Notes: Executive-class luxury systems and premium labor rates generally produce high ownership cost over long-term use.
 
 Pros:
-- TBD – Requires verification
+- Excellent long-distance comfort and cabin refinement.
+- Strong technology and safety suite in later generations.
+- Wide powertrain spectrum from efficiency-focused to high performance.
 
 Cons:
-- TBD – Requires verification
+- Repair costs can be substantial with aging electronics/suspension systems.
+- Complexity rises with optioned trims and hybridized drivetrains.
+- Operating cost is typically above mainstream midsize sedans.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -2345,42 +2373,53 @@ Last Verified: 2026-02-19
 - Performance baseline: Comfortable ride, multiple engine options available
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- C253 generation: 2017-2022.
+- C254 generation: 2023-present.
+- Major refresh: MY2020 (C253 facelift), MY2024 updates in C254 cycle.
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| C253 (2017-2022) | 2.0L I4; 3.0L V6 (AMG 43); 4.0L V8 (AMG 63) | Turbo | 9-speed AT; AWD |
+| C254 (2023-present) | 2.0L I4 mild-hybrid; AMG variants | Turbo / MHEV | 9-speed AT; AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| C253 sample (2018 GLC300 4MATIC Coupe) | AWD | 22 | 27 | 24 |
+| C254 sample (2024 GLC300 4MATIC Coupe) | AWD | 24 | 30 | 26 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~188.6 in |
+| Width | ~74.4 in |
+| Height | ~63.5 in |
+| Wheelbase | ~113.1 in |
+| Cargo volume | ~19.2 cu ft (behind 2nd row, approx) |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- C253: Common owner-reported themes include electronics/sensor faults and suspension component wear with mileage.
+- C254 early years: Software and driver-assist calibration updates are typical in first-cycle production years.
+- NHTSA recalls are model-year specific and should be VIN-confirmed before final unit claims.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: High (Low / Medium / High)
+- Notes: Coupe-SUV luxury segment with premium component costs and higher tire/brake operating expense.
 
 Pros:
-- TBD – Requires verification
+- Premium interior feel with strong brand appeal.
+- Good balance of comfort and handling in standard trims.
+- More efficient newer mild-hybrid calibrations.
 
 Cons:
-- TBD – Requires verification
+- Cargo and rear-headroom are reduced versus standard GLC SUV.
+- High option complexity can increase repair cost.
+- Ownership cost is above mainstream compact SUVs.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -2402,42 +2441,54 @@ Last Verified: 2026-02-19
 - Performance baseline: Sport-tuned suspension, responsive handling
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- M-Class era predecessor: 1998-2015 (ML naming).
+- W166 GLE generation: 2016-2019 (name transition from ML to GLE).
+- V167 GLE generation: 2020-present.
+- Major refresh: MY2024 (V167 facelift).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| W166 (2016-2019) | 3.5L V6; 3.0L V6; AMG variants | NA / Turbo | 7-speed/9-speed AT; RWD/AWD |
+| V167 (2020-present) | 2.0L I4; 3.0L I6; 4.0L V8 (AMG); PHEV variants | Turbo / MHEV / PHEV | 9-speed AT; RWD/AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| W166 sample (2018 GLE350 4MATIC) | AWD | 18 | 22 | 19 |
+| V167 sample (2024 GLE350 4MATIC) | AWD | 20 | 27 | 23 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~194.3 in |
+| Width | ~76.7 in |
+| Height | ~70.7 in |
+| Wheelbase | ~117.9 in |
+| Cargo volume | ~33.3 cu ft (behind 2nd row, approx) |
+| Passenger capacity | 5-7 (configuration dependent) |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- W166/V167: Recurring service themes include electronics/sensor modules, air-suspension wear (equipped units), and cooling-system maintenance.
+- Mild-hybrid and high-feature configurations increase diagnostic complexity.
+- NHTSA recalls vary by year and trim; advisor should verify VIN-level recall status.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: High (Low / Medium / High)
+- Notes: Midsize luxury SUV complexity and premium components typically produce high long-term ownership cost.
 
 Pros:
-- TBD – Requires verification
+- Strong premium cabin and highway comfort.
+- Broad engine lineup and advanced safety features.
+- Good family utility with optional third-row in some configurations.
 
 Cons:
-- TBD – Requires verification
+- Repair/maintenance costs are high versus mainstream midsize SUVs.
+- Large dimensions reduce urban maneuverability.
+- Feature complexity can increase downtime risk as mileage grows.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
