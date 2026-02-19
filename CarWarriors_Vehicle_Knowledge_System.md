@@ -764,42 +764,55 @@ Last Verified: 2026-02-19
 - Performance baseline: Strong acceleration, sport-tuned suspension
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 5th generation: 2010-2015.
+- 6th generation: 2016-2024.
+- Major refresh: MY2019 (6th-gen facelift).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| 2010-2015 | 3.6L V6; 6.2L V8 | NA / Supercharged (ZL1) | 6-speed MT or 6-speed AT; RWD |
+| 2016-2024 | 2.0L I4; 3.6L V6; 6.2L V8 | Turbo / NA / Supercharged | 6-speed MT, 10-speed AT, 8-speed AT (some years); RWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| 5th gen sample (2010 Camaro 3.6 AT) | RWD | 18 | 29 | 22 |
+| 6th gen sample (2018 Camaro 3.6 AT) | RWD | 19 | 29 | 23 |
+| 6th gen late sample (2024 Camaro 3.6 AT) | RWD | 18 | 29 | 22 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~188.3 in |
+| Width | ~74.7 in |
+| Height | ~53.1 in |
+| Wheelbase | ~110.7 in |
+| Cargo volume | ~9.1 cu ft (coupe trunk) |
+| Passenger capacity | 4 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- 5th gen: Age-related suspension wear, interior trim wear, and electrical accessory faults are commonly reported.
+- 6th gen: 8-speed automatic shudder complaints on some years and occasional infotainment/electrical issues are documented in owner reports.
+- High-performance trims can show higher brake/tire wear and higher thermal stress service needs.
+- NHTSA recalls are year/trim specific and require VIN-level confirmation.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Medium (Low / Medium / High)
+- Notes: Routine costs are moderate for V6 trims and higher for V8/performance variants due to tire, brake, and drivetrain wear rates.
 
 Pros:
-- TBD – Requires verification
+- Strong performance-per-dollar perception in U.S. sports coupe class.
+- Engaging rear-wheel-drive dynamics.
+- Multiple powertrain choices from efficient turbo to high-output V8.
 
 Cons:
-- TBD – Requires verification
+- Rear-seat and visibility practicality are limited.
+- Performance trims can become expensive to maintain.
+- Ride comfort and noise can be less favorable for daily commuting.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -819,42 +832,59 @@ Last Verified: 2026-02-19
 - Performance baseline: Good fuel economy, comfortable ride
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 1st generation: 2005-2009.
+- 2nd generation: 2010-2017.
+- 3rd generation: 2018-2024.
+- 4th generation: 2025-present.
+- Major refresh: MY2016 (2nd-gen facelift), MY2022 (3rd-gen refresh).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| 2005-2009 | 3.4L V6 | NA | 5-speed AT; FWD/AWD |
+| 2010-2017 | 2.4L I4; 3.0L/3.6L V6 | NA | 6-speed AT; FWD/AWD |
+| 2018-2024 | 1.5L I4; 2.0L I4; 1.6L I4 diesel | Turbo / Turbo-diesel | 6-speed AT or 9-speed AT; FWD/AWD |
+| 2025-present | 1.5L I4 | Turbo | CVT (FWD) / 8-speed AT (AWD) |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| 2nd gen sample (2010 Equinox AWD 2.4L) | AWD | 20 | 29 | 23 |
+| 3rd gen sample (2018 Equinox AWD 1.5T) | AWD | 24 | 30 | 26 |
+| 3rd gen late sample (2024 Equinox AWD 1.5T) | AWD | 24 | 30 | 26 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~183.1 in |
+| Width | ~72.6 in |
+| Height | ~65.4 in |
+| Wheelbase | ~107.3 in |
+| Cargo volume | ~29.9 cu ft (behind 2nd row) |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- 2nd gen 2.4L: Widely documented oil-consumption concerns on some years.
+- 3rd gen: Mixed owner reports on turbo-related components and electronics/infotainment glitches.
+- Transmission behavior complaints appear in some year/powertrain combinations.
+- NHTSA recalls vary by model year and system; advisor confirms VIN-level applicability.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Medium (Low / Medium / High)
+- Notes: Mainstream maintenance profile overall, but turbo and transmission servicing quality strongly affects long-term reliability.
 
 Pros:
-- TBD – Requires verification
+- Practical compact-SUV packaging for daily family use.
+- Competitive fuel economy in core trims.
+- Broad service network and parts availability.
 
 Cons:
-- TBD – Requires verification
+- Reliability varies by generation/engine.
+- Interior material quality is trim-dependent.
+- Performance is modest in base powertrains.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -874,42 +904,50 @@ Last Verified: 2026-02-19
 - Performance baseline: Instant torque, quiet operation
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 1st generation: 2024-present (U.S. market launch).
+- Major updates are software/feature revisions by model year; full redesign TBD.
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| 2024-present | Dual-motor AWD or single-motor FWD EV drive unit | EV | Single-speed reduction gear (A1, AT-equivalent); FWD/AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| 1st gen sample (2024 Equinox EV FWD) | FWD | 117 MPGe | 99 MPGe | 108 MPGe |
+| 1st gen sample (2024 Equinox EV AWD) | AWD | 101 MPGe | 90 MPGe | 96 MPGe |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~190.6 in |
+| Width | ~76.9 in |
+| Height | ~64.8 in |
+| Wheelbase | ~116.3 in |
+| Cargo volume | ~26.4 cu ft (behind 2nd row) |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- Early production years primarily show software, charging, and infotainment update campaigns typical of new EV launches.
+- NHTSA recall actions are still maturing by model year; advisor must validate latest VIN-level status.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Low (Low / Medium / High)
+- Notes: No engine oil/transmission fluid service in normal use, but tire wear and software/service-campaign compliance remain important.
 
 Pros:
-- TBD – Requires verification
+- Quiet operation and strong low-speed torque.
+- Competitive EV efficiency for compact crossover use.
+- Lower routine maintenance versus ICE crossovers.
 
 Cons:
-- TBD – Requires verification
+- Charging access and planning still determine real-world convenience.
+- New-platform software maturity can vary by model year.
+- Road-trip charging speed consistency depends on infrastructure.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -929,42 +967,58 @@ Last Verified: 2026-02-19
 - Performance baseline: Multiple engine options, good towing capacity
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 1st generation (GMT800): 1999-2006.
+- 2nd generation (GMT900): 2007-2013.
+- 3rd generation (K2XX): 2014-2018.
+- 4th generation (T1XX): 2019-present.
+- Major refresh: MY2016 (K2XX update), MY2022 (T1XX refresh).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| 1999-2006 | 4.3L V6; 4.8L/5.3L/6.0L V8 | NA | 4-speed AT or 5-speed MT; RWD/4WD |
+| 2007-2013 | 4.3L V6; 4.8L/5.3L/6.2L V8 | NA / Hybrid on select trims | 4-speed/6-speed AT; RWD/4WD |
+| 2014-2018 | 4.3L V6; 5.3L/6.2L V8 | NA | 6-speed/8-speed AT; RWD/4WD |
+| 2019-present | 2.7L I4; 5.3L/6.2L V8; 3.0L I6 diesel | Turbo / NA / Turbo-diesel | 8-speed/10-speed AT; RWD/4WD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| 2nd gen sample (2010 Silverado K15 4WD 5.3L) | 4WD | 15 | 21 | 17 |
+| 3rd gen sample (2018 Silverado K15 4WD 5.3L) | 4WD | 16 | 22 | 18 |
+| 4th gen sample (2024 Silverado 4WD 5.3L) | 4WD | 15 | 19 | 17 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~231.9 in (Crew Cab, short bed, approx) |
+| Width | ~81.2 in |
+| Height | ~75.6 in |
+| Wheelbase | ~147.4 in |
+| Cargo volume | ~62.9 cu ft (short-bed approximation) |
+| Passenger capacity | 5-6 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- Commonly discussed issues include AFM/DFM valvetrain concerns on some V8 years, transmission calibration complaints on specific gearboxes, and electrical module faults.
+- High-load commercial use increases brake, suspension, and drivetrain wear rates.
+- NHTSA recalls vary by model year/body/powertrain; advisor must verify VIN-specific campaigns.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Medium-High (Low / Medium / High)
+- Notes: Parts access is broad, but heavy-duty use cycles, 4WD components, and V8 drivetrain servicing raise long-term cost.
 
 Pros:
-- TBD – Requires verification
+- Strong capability and broad engine selection.
+- Large service network and parts availability.
+- Versatile work/lifestyle utility in Crew Cab format.
 
 Cons:
-- TBD – Requires verification
+- Fuel economy is modest in V8/4WD setups.
+- Large turning radius and parking footprint.
+- Reliability depends heavily on maintenance history and duty cycle.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -984,42 +1038,56 @@ Last Verified: 2026-02-19
 - Performance baseline: Maximum towing and payload capability
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 1st generation (GMT400/800 HD era): 2001-2007.
+- 2nd generation (GMT900 HD): 2007-2010.
+- 3rd generation (2011-2019 HD): 2011-2019.
+- 4th generation (T1 HD): 2020-present.
+- Major refresh: MY2015 (HD update), MY2024 (T1 HD refresh).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| 2001-2010 | 6.0L V8; 6.6L V8 diesel | NA / Turbo-diesel | 4-speed/6-speed AT; 2WD/4WD |
+| 2011-2019 | 6.0L V8; 6.6L V8 diesel | NA / Turbo-diesel | 6-speed AT; 2WD/4WD |
+| 2020-present | 6.6L V8 gas; 6.6L V8 diesel | NA / Turbo-diesel | 6-speed AT (gas) / 10-speed AT (diesel); 2WD/4WD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| Most 3500 HD configurations | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Note | EPA light-duty MPG coverage is limited for many 3500 HD GVWR configurations | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
+| Length | ~250.0 in (Crew Cab long-bed approximation) |
+| Width | ~81.9 in |
+| Height | ~80.9 in |
+| Wheelbase | ~172.0 in (varies by bed/cab) |
 | Cargo volume | TBD – Requires verification |
+| Passenger capacity | 5-6 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- Heavy-load duty cycles commonly drive accelerated wear in suspension, steering, and braking components.
+- Diesel variants can show higher aftertreatment/DEF-system complexity-related service events.
+- NHTSA recalls are year and configuration dependent; VIN-level advisor verification is required.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: High (Low / Medium / High)
+- Notes: Commercial-duty parts loads, tire/brake wear, and diesel emissions-system complexity typically produce high operating cost.
 
 Pros:
-- TBD – Requires verification
+- High towing/payload capability for commercial workloads.
+- Durable frame and drivetrain architecture for heavy use.
+- Broad upfit/fleet compatibility in U.S. market.
 
 Cons:
-- TBD – Requires verification
+- Harsh unloaded ride compared with light-duty trucks.
+- Large dimensions reduce maneuverability in dense urban use.
+- Maintenance cost rises quickly under sustained heavy-duty cycles.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
