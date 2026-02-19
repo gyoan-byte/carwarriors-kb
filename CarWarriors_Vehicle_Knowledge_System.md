@@ -1522,42 +1522,58 @@ Last Verified: 2026-02-19
 - Performance baseline: Comfortable ride, efficient engine options
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 1st generation (XA10): 1996-2000.
+- 2nd generation (XA20): 2001-2005.
+- 3rd generation (XA30): 2006-2012.
+- 4th generation (XA40): 2013-2018.
+- 5th generation (XA50): 2019-present.
+- Major refresh: MY2016 (XA40 facelift), MY2022 (XA50 updates).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| XA30 (2006-2012) | 2.5L I4; 3.5L V6 | NA | 4-speed/5-speed AT; FWD/AWD |
+| XA40 (2013-2018) | 2.5L I4 | NA | 6-speed AT; FWD/AWD |
+| XA50 (2019-present) | 2.5L I4; 2.5L hybrid system; 2.5L PHEV system | NA / Hybrid / Plug-in Hybrid | 8-speed AT (gas), eCVT (hybrid/PHEV); FWD/AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| XA30 sample (2010 RAV4 4WD 2.5L) | AWD | 21 | 27 | 24 |
+| XA40 sample (2018 RAV4 AWD 2.5L) | AWD | 22 | 28 | 25 |
+| XA50 sample (2024 RAV4 AWD 2.5L) | AWD | 27 | 33 | 29 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~180.9 in |
+| Width | ~73.0 in |
+| Height | ~67.0 in |
+| Wheelbase | ~105.9 in |
+| Cargo volume | ~37.6 cu ft (behind 2nd row) |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- XA30: Common reports include steering/suspension wear and occasional oil-consumption concerns on specific engine years.
+- XA40/XA50: Water pump and electronic accessory issues appear in owner-report patterns by year.
+- NHTSA recalls vary by model year and powertrain; advisor should confirm VIN-specific campaigns.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Low (Low / Medium / High)
+- Notes: Mainstream maintenance profile with broad parts availability and generally predictable long-term servicing.
 
 Pros:
-- TBD – Requires verification
+- Strong reliability and resale patterns in U.S. compact SUV segment.
+- Efficient powertrains with available AWD/hybrid options.
+- Practical cargo and daily usability.
 
 Cons:
-- TBD – Requires verification
+- Road noise and performance are modest in base trims.
+- High demand can reduce trim choice flexibility.
+- Feature content varies significantly by year/trim.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -1577,42 +1593,59 @@ Last Verified: 2026-02-19
 - Performance baseline: Excellent fuel economy, reliable performance
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- XV30 generation: 2002-2006.
+- XV40 generation: 2007-2011.
+- XV50 generation: 2012-2017.
+- XV70 generation: 2018-2024.
+- XV80 generation: 2025-present.
+- Major refresh: MY2015 (XV50), MY2021 (XV70 facelift).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| XV40 (2007-2011) | 2.5L I4; 3.5L V6; hybrid system | NA / Hybrid | 6-speed AT (gas), eCVT (hybrid); FWD |
+| XV50 (2012-2017) | 2.5L I4; 3.5L V6; hybrid system | NA / Hybrid | 6-speed AT (gas), eCVT (hybrid); FWD |
+| XV70 (2018-2024) | 2.5L I4; 3.5L V6; hybrid system | NA / Hybrid | 8-speed AT (gas), eCVT (hybrid); FWD/AWD (I4) |
+| XV80 (2025-present) | 2.5L hybrid system | Hybrid | eCVT; FWD/AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| XV40 sample (2010 Camry 2.5L) | FWD | 22 | 32 | 26 |
+| XV70 sample (2018 Camry LE/SE 2.5L) | FWD | 28 | 39 | 32 |
+| XV70 late sample (2024 Camry LE/SE 2.5L) | FWD | 28 | 39 | 32 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~192.1 in |
+| Width | ~72.4 in |
+| Height | ~56.9 in |
+| Wheelbase | ~111.2 in |
+| Cargo volume | ~15.1 cu ft |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- XV40: Some year-specific oil-consumption reports and age-related suspension wear patterns are documented.
+- XV50/XV70: Water pump, infotainment, and occasional transmission calibration complaints appear in owner-report patterns.
+- NHTSA recalls are model-year specific; advisor should verify VIN-level applicability.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Low (Low / Medium / High)
+- Notes: Typically low-cost routine maintenance with strong long-term parts/service accessibility.
 
 Pros:
-- TBD – Requires verification
+- Strong efficiency/reliability balance across generations.
+- Comfortable ride and practical midsize packaging.
+- Hybrid availability with strong EPA outcomes.
 
 Cons:
-- TBD – Requires verification
+- Driving dynamics are conservative in non-sport trims.
+- Feature differences across trims/years can be substantial.
+- Higher-demand trims may be less common in some inventories.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -1632,42 +1665,58 @@ Last Verified: 2026-02-19
 - Performance baseline: Car-like ride, independent suspension
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- E110 generation: 1998-2002.
+- E120/E130 generation: 2003-2008.
+- E140/E150 generation: 2009-2013.
+- E170 generation: 2014-2019.
+- E210 generation: 2020-present.
+- Major refresh: MY2017 (late E170), MY2023 (E210 update).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| E140/E150 (2009-2013) | 1.8L I4; 2.4L I4 | NA | 4-speed AT or 5-speed MT |
+| E170 (2014-2019) | 1.8L I4 | NA | CVT or 6-speed MT |
+| E210 (2020-present) | 2.0L I4; 1.8L hybrid system; 2.0L hybrid system | NA / Hybrid | CVT or eCVT |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| E140 sample (2010 Corolla 2.4L AT) | FWD | 22 | 30 | 25 |
+| E170 sample (2018 Corolla 1.8L CVT) | FWD | 28 | 35 | 31 |
+| E210 sample (2024 Corolla 2.0L CVT) | FWD | 32 | 41 | 35 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~182.5 in |
+| Width | ~70.1 in |
+| Height | ~56.5 in |
+| Wheelbase | ~106.3 in |
+| Cargo volume | ~13.1 cu ft |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- E140/E170: Occasional water pump and suspension wear reports are common in long-term ownership data.
+- CVT-equipped years: Some owner-reported drivability complaints; regular fluid service history is important.
+- NHTSA recalls are model-year specific and should be VIN-verified before final unit claims.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Low (Low / Medium / High)
+- Notes: Typically low routine service cost with strong reliability outcomes when maintenance intervals are respected.
 
 Pros:
-- TBD – Requires verification
+- Excellent fuel economy in mainstream trims.
+- Proven long-term durability and low ownership friction.
+- Easy city maneuverability and broad parts support.
 
 Cons:
-- TBD – Requires verification
+- Acceleration and NVH are modest in base trims.
+- Rear-seat space is tighter than some compact rivals.
+- Cabin materials vary significantly by trim/year.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -1689,42 +1738,57 @@ Last Verified: 2026-02-19
 - Performance baseline: Extreme off-road capability, military-grade construction
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- XU20 generation: 2001-2007.
+- XU40 generation: 2008-2013.
+- XU50 generation: 2014-2019.
+- XU70 generation: 2020-present.
+- Major refresh: MY2017 (XU50 facelift), MY2023 (XU70 update).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| XU40 (2008-2013) | 2.7L I4; 3.5L V6; hybrid system | NA / Hybrid | 5-speed AT or eCVT; FWD/AWD |
+| XU50 (2014-2019) | 2.7L I4; 3.5L V6; hybrid system | NA / Hybrid | 6-speed/8-speed AT (gas), eCVT (hybrid); FWD/AWD |
+| XU70 (2020-present) | 2.4L I4 turbo; hybrid system | Turbo / Hybrid | 8-speed AT (turbo), eCVT (hybrid); FWD/AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| XU40 sample (2010 Highlander 4WD 3.5L) | AWD | 17 | 23 | 19 |
+| XU50 sample (2018 Highlander AWD 3.5L) | AWD | 19 | 26 | 22 |
+| XU70 sample (2024 Highlander AWD 2.4T) | AWD | 21 | 28 | 24 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~194.9 in |
+| Width | ~76.0 in |
+| Height | ~68.1 in |
+| Wheelbase | ~112.2 in |
+| Cargo volume | ~16.0 cu ft (behind 3rd row) |
+| Passenger capacity | 7-8 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- XU40/XU50: Water pump, oil cooler line (certain years), and suspension wear are commonly discussed service items.
+- XU70: Early production years show mixed owner reports on infotainment/software behavior and turbo calibration refinement.
+- NHTSA recalls vary by year/powertrain; advisor should confirm VIN-specific campaigns.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Low (Low / Medium / High)
+- Notes: Family-SUV maintenance profile is generally predictable; hybrid variants retain low routine service burden.
 
 Pros:
-- TBD – Requires verification
+- Strong reliability reputation in 3-row segment.
+- Comfortable ride and family-focused interior packaging.
+- Good efficiency options including hybrid variants.
 
 Cons:
-- TBD – Requires verification
+- Third-row cargo space is limited compared with larger SUVs.
+- Acceleration depends strongly on powertrain selection.
+- Higher trims can become feature-complex for long-term repairs.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -1746,42 +1810,59 @@ Last Verified: 2026-02-19
 - Performance baseline: Sport-tuned suspension, available turbocharged engines
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 1st generation: 1984-1989.
+- 2nd generation: 1990-1995.
+- 3rd generation: 1996-2002.
+- 4th generation: 2003-2009.
+- 5th generation: 2010-2024.
+- 6th generation: 2025-present.
+- Major refresh: MY2014 and MY2020 within 5th generation.
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| 4th gen (2003-2009) | 4.0L V6; 4.7L V8 | NA | 5-speed AT; RWD/4WD |
+| 5th gen (2010-2024) | 4.0L V6 | NA | 5-speed AT; RWD/4WD |
+| 6th gen (2025-present) | 2.4L I4 turbo; hybrid system | Turbo / Hybrid | 8-speed AT; RWD/4WD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| 5th gen sample (2010 4Runner 4WD) | 4WD | 17 | 22 | 19 |
+| 5th gen mid sample (2018 4Runner 4WD) | 4WD | 17 | 20 | 18 |
+| 5th gen late sample (2024 4Runner 4WD) | 4WD | 16 | 19 | 17 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~194.9 in |
+| Width | ~75.8 in |
+| Height | ~71.5 in |
+| Wheelbase | ~109.8 in |
+| Cargo volume | ~47.2 cu ft (behind 2nd row, two-row setup) |
+| Passenger capacity | 5-7 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- 5th gen: Documented patterns include occasional brake/suspension wear and aging electronic accessory issues at higher mileage.
+- Body-on-frame setup prioritizes durability but can increase ride harshness and component wear in urban use.
+- NHTSA recall campaigns vary by year; advisor should confirm VIN-specific status.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Medium (Low / Medium / High)
+- Notes: Durable platform with predictable service intervals, but truck-based components and 4WD hardware raise consumable costs versus crossovers.
 
 Pros:
-- TBD – Requires verification
+- Proven durability and off-road capability.
+- Strong resale retention in U.S. market.
+- Straightforward mechanical layout in 5th generation.
 
 Cons:
-- TBD – Requires verification
+- Lower fuel economy than crossover-based SUVs.
+- On-road ride comfort and handling are less refined.
+- Interior tech in older years can feel dated.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -1801,42 +1882,57 @@ Last Verified: 2026-02-19
 - Performance baseline: Strong acceleration, sport-oriented handling
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 1st generation: 1995-2004.
+- 2nd generation: 2005-2015.
+- 3rd generation: 2016-2023.
+- 4th generation: 2024-present.
+- Major refresh: MY2012 (2nd-gen), MY2020 (3rd-gen update).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| 2nd gen (2005-2015) | 2.7L I4; 4.0L V6 | NA | 5-speed MT or 5-speed AT; RWD/4WD |
+| 3rd gen (2016-2023) | 2.7L I4; 3.5L V6 | NA | 6-speed AT or 6-speed MT; RWD/4WD |
+| 4th gen (2024-present) | 2.4L I4 turbo; hybrid system | Turbo / Hybrid | 8-speed AT; RWD/4WD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| 2nd gen sample (2010 Tacoma 4WD 4.0L) | 4WD | 16 | 20 | 18 |
+| 3rd gen sample (2018 Tacoma 4WD 3.5L) | 4WD | 18 | 22 | 20 |
+| 4th gen sample (2024 Tacoma 4WD 2.4T) | 4WD | 19 | 24 | 21 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~213.0 in (Double Cab short bed, approx) |
+| Width | ~77.9 in |
+| Height | ~74.6 in |
+| Wheelbase | ~131.9 in |
+| Cargo volume | ~49.9 cu ft (short bed approximation) |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- 2nd gen: Age-related suspension and steering wear are common at higher mileage.
+- 3rd gen: Owner-reported transmission shift-calibration and occasional rear differential noise complaints appear on some units.
+- NHTSA recalls and service campaigns are year-specific; advisor must verify VIN-level applicability.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Medium (Low / Medium / High)
+- Notes: Reliable long-term profile overall, but 4WD drivetrain service and truck-duty consumables increase maintenance versus compact crossovers.
 
 Pros:
-- TBD – Requires verification
+- Strong durability and resale retention.
+- Useful midsize-truck capability with manageable dimensions.
+- Broad aftermarket/off-road support.
 
 Cons:
-- TBD – Requires verification
+- Ride quality can be firm in unladen daily use.
+- Cabin noise and rear-seat comfort vary by generation.
+- Feature content in older years can lag newer competitors.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -1856,42 +1952,56 @@ Last Verified: 2026-02-19
 - Performance baseline: Comfortable highway cruising, V6 engine options
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 1st generation: 2000-2006.
+- 2nd generation: 2007-2021.
+- 3rd generation: 2022-present.
+- Major refresh: MY2014 (2nd-gen facelift), MY2022 full redesign.
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| 1st gen (2000-2006) | 3.4L V6; 4.7L V8 | NA | 4-speed/5-speed AT; RWD/4WD |
+| 2nd gen (2007-2021) | 4.0L V6; 4.6L/5.7L V8 | NA | 5-speed/6-speed AT; RWD/4WD |
+| 3rd gen (2022-present) | 3.4L V6 turbo; hybrid system | Turbo / Hybrid | 10-speed AT; RWD/4WD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| 2nd gen sample (2010 Tundra 4WD 4.6L) | 4WD | 14 | 19 | 16 |
+| 2nd gen late sample (2018 Tundra 4WD 4.6L) | 4WD | 14 | 18 | 16 |
+| 3rd gen sample (2024 Tundra 4WD 3.4T) | 4WD | 17 | 23 | 19 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~233.6 in (CrewMax short bed, approx) |
+| Width | ~80.2 in |
+| Height | ~78.0 in |
+| Wheelbase | ~145.7 in |
+| Cargo volume | ~52.8 cu ft (short-bed approximation) |
+| Passenger capacity | 5-6 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- 2nd gen: Air-injection and secondary emissions-system service issues are commonly documented on specific year ranges.
+- 3rd gen: Early production years show owner-reported software and drivability calibration complaints on some trims.
+- NHTSA recalls are year/configuration dependent and require VIN-level verification.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Medium (Low / Medium / High)
+- Notes: Durable full-size truck profile with generally predictable service needs; consumable and fuel costs remain significant in heavy-duty use.
 
 Pros:
-- TBD – Requires verification
+- Strong towing and payload capability.
+- Good long-term durability reputation in U.S. market.
+- Modern powertrain efficiency improvement in current generation.
 
 Cons:
-- TBD – Requires verification
+- Large footprint and parking complexity in urban environments.
+- Fuel economy remains lower than midsize trucks.
+- Ride quality can be firm when unladen.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -2418,42 +2528,58 @@ Last Verified: 2026-02-19
 - Performance baseline: Good fuel economy, available AWD options
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 1st generation (XA10): 1996-2000.
+- 2nd generation (XA20): 2001-2005.
+- 3rd generation (XA30): 2006-2012.
+- 4th generation (XA40): 2013-2018.
+- 5th generation (XA50): 2019-present.
+- Major refresh: MY2016 (XA40 facelift), MY2022 (XA50 updates).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| XA30 (2006-2012) | 2.5L I4; 3.5L V6 | NA | 4-speed/5-speed AT; FWD/AWD |
+| XA40 (2013-2018) | 2.5L I4 | NA | 6-speed AT; FWD/AWD |
+| XA50 (2019-present) | 2.5L I4; 2.5L hybrid system; 2.5L PHEV system | NA / Hybrid / Plug-in Hybrid | 8-speed AT (gas), eCVT (hybrid/PHEV); FWD/AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| XA30 sample (2010 RAV4 4WD 2.5L) | AWD | 21 | 27 | 24 |
+| XA40 sample (2018 RAV4 AWD 2.5L) | AWD | 22 | 28 | 25 |
+| XA50 sample (2024 RAV4 AWD 2.5L) | AWD | 27 | 33 | 29 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~180.9 in |
+| Width | ~73.0 in |
+| Height | ~67.0 in |
+| Wheelbase | ~105.9 in |
+| Cargo volume | ~37.6 cu ft (behind 2nd row) |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- XA30: Common reports include steering/suspension wear and occasional oil-consumption concerns on specific engine years.
+- XA40/XA50: Water pump and electronic accessory issues appear in owner-report patterns by year.
+- NHTSA recalls vary by model year and powertrain; advisor should confirm VIN-specific campaigns.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Low (Low / Medium / High)
+- Notes: Mainstream maintenance profile with broad parts availability and generally predictable long-term servicing.
 
 Pros:
-- TBD – Requires verification
+- Strong reliability and resale patterns in U.S. compact SUV segment.
+- Efficient powertrains with available AWD/hybrid options.
+- Practical cargo and daily usability.
 
 Cons:
-- TBD – Requires verification
+- Road noise and performance are modest in base trims.
+- High demand can reduce trim choice flexibility.
+- Feature content varies significantly by year/trim.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -2473,42 +2599,59 @@ Last Verified: 2026-02-19
 - Performance baseline: Smooth acceleration, comfortable highway cruising
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- XV30 generation: 2002-2006.
+- XV40 generation: 2007-2011.
+- XV50 generation: 2012-2017.
+- XV70 generation: 2018-2024.
+- XV80 generation: 2025-present.
+- Major refresh: MY2015 (XV50), MY2021 (XV70 facelift).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| XV40 (2007-2011) | 2.5L I4; 3.5L V6; hybrid system | NA / Hybrid | 6-speed AT (gas), eCVT (hybrid); FWD |
+| XV50 (2012-2017) | 2.5L I4; 3.5L V6; hybrid system | NA / Hybrid | 6-speed AT (gas), eCVT (hybrid); FWD |
+| XV70 (2018-2024) | 2.5L I4; 3.5L V6; hybrid system | NA / Hybrid | 8-speed AT (gas), eCVT (hybrid); FWD/AWD (I4) |
+| XV80 (2025-present) | 2.5L hybrid system | Hybrid | eCVT; FWD/AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| XV40 sample (2010 Camry 2.5L) | FWD | 22 | 32 | 26 |
+| XV70 sample (2018 Camry LE/SE 2.5L) | FWD | 28 | 39 | 32 |
+| XV70 late sample (2024 Camry LE/SE 2.5L) | FWD | 28 | 39 | 32 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~192.1 in |
+| Width | ~72.4 in |
+| Height | ~56.9 in |
+| Wheelbase | ~111.2 in |
+| Cargo volume | ~15.1 cu ft |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- XV40: Some year-specific oil-consumption reports and age-related suspension wear patterns are documented.
+- XV50/XV70: Water pump, infotainment, and occasional transmission calibration complaints appear in owner-report patterns.
+- NHTSA recalls are model-year specific; advisor should verify VIN-level applicability.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Low (Low / Medium / High)
+- Notes: Typically low-cost routine maintenance with strong long-term parts/service accessibility.
 
 Pros:
-- TBD – Requires verification
+- Strong efficiency/reliability balance across generations.
+- Comfortable ride and practical midsize packaging.
+- Hybrid availability with strong EPA outcomes.
 
 Cons:
-- TBD – Requires verification
+- Driving dynamics are conservative in non-sport trims.
+- Feature differences across trims/years can be substantial.
+- Higher-demand trims may be less common in some inventories.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -2528,42 +2671,58 @@ Last Verified: 2026-02-19
 - Performance baseline: Efficient engine options, reliable daily transportation
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- E110 generation: 1998-2002.
+- E120/E130 generation: 2003-2008.
+- E140/E150 generation: 2009-2013.
+- E170 generation: 2014-2019.
+- E210 generation: 2020-present.
+- Major refresh: MY2017 (late E170), MY2023 (E210 update).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| E140/E150 (2009-2013) | 1.8L I4; 2.4L I4 | NA | 4-speed AT or 5-speed MT |
+| E170 (2014-2019) | 1.8L I4 | NA | CVT or 6-speed MT |
+| E210 (2020-present) | 2.0L I4; 1.8L hybrid system; 2.0L hybrid system | NA / Hybrid | CVT or eCVT |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| E140 sample (2010 Corolla 2.4L AT) | FWD | 22 | 30 | 25 |
+| E170 sample (2018 Corolla 1.8L CVT) | FWD | 28 | 35 | 31 |
+| E210 sample (2024 Corolla 2.0L CVT) | FWD | 32 | 41 | 35 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~182.5 in |
+| Width | ~70.1 in |
+| Height | ~56.5 in |
+| Wheelbase | ~106.3 in |
+| Cargo volume | ~13.1 cu ft |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- E140/E170: Occasional water pump and suspension wear reports are common in long-term ownership data.
+- CVT-equipped years: Some owner-reported drivability complaints; regular fluid service history is important.
+- NHTSA recalls are model-year specific and should be VIN-verified before final unit claims.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Low (Low / Medium / High)
+- Notes: Typically low routine service cost with strong reliability outcomes when maintenance intervals are respected.
 
 Pros:
-- TBD – Requires verification
+- Excellent fuel economy in mainstream trims.
+- Proven long-term durability and low ownership friction.
+- Easy city maneuverability and broad parts support.
 
 Cons:
-- TBD – Requires verification
+- Acceleration and NVH are modest in base trims.
+- Rear-seat space is tighter than some compact rivals.
+- Cabin materials vary significantly by trim/year.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -2583,42 +2742,57 @@ Last Verified: 2026-02-19
 - Performance baseline: Comfortable ride, family-oriented features
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- XU20 generation: 2001-2007.
+- XU40 generation: 2008-2013.
+- XU50 generation: 2014-2019.
+- XU70 generation: 2020-present.
+- Major refresh: MY2017 (XU50 facelift), MY2023 (XU70 update).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| XU40 (2008-2013) | 2.7L I4; 3.5L V6; hybrid system | NA / Hybrid | 5-speed AT or eCVT; FWD/AWD |
+| XU50 (2014-2019) | 2.7L I4; 3.5L V6; hybrid system | NA / Hybrid | 6-speed/8-speed AT (gas), eCVT (hybrid); FWD/AWD |
+| XU70 (2020-present) | 2.4L I4 turbo; hybrid system | Turbo / Hybrid | 8-speed AT (turbo), eCVT (hybrid); FWD/AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| XU40 sample (2010 Highlander 4WD 3.5L) | AWD | 17 | 23 | 19 |
+| XU50 sample (2018 Highlander AWD 3.5L) | AWD | 19 | 26 | 22 |
+| XU70 sample (2024 Highlander AWD 2.4T) | AWD | 21 | 28 | 24 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~194.9 in |
+| Width | ~76.0 in |
+| Height | ~68.1 in |
+| Wheelbase | ~112.2 in |
+| Cargo volume | ~16.0 cu ft (behind 3rd row) |
+| Passenger capacity | 7-8 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- XU40/XU50: Water pump, oil cooler line (certain years), and suspension wear are commonly discussed service items.
+- XU70: Early production years show mixed owner reports on infotainment/software behavior and turbo calibration refinement.
+- NHTSA recalls vary by year/powertrain; advisor should confirm VIN-specific campaigns.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Low (Low / Medium / High)
+- Notes: Family-SUV maintenance profile is generally predictable; hybrid variants retain low routine service burden.
 
 Pros:
-- TBD – Requires verification
+- Strong reliability reputation in 3-row segment.
+- Comfortable ride and family-focused interior packaging.
+- Good efficiency options including hybrid variants.
 
 Cons:
-- TBD – Requires verification
+- Third-row cargo space is limited compared with larger SUVs.
+- Acceleration depends strongly on powertrain selection.
+- Higher trims can become feature-complex for long-term repairs.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -2638,42 +2812,59 @@ Last Verified: 2026-02-19
 - Performance baseline: Body-on-frame construction, serious off-road capability
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 1st generation: 1984-1989.
+- 2nd generation: 1990-1995.
+- 3rd generation: 1996-2002.
+- 4th generation: 2003-2009.
+- 5th generation: 2010-2024.
+- 6th generation: 2025-present.
+- Major refresh: MY2014 and MY2020 within 5th generation.
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| 4th gen (2003-2009) | 4.0L V6; 4.7L V8 | NA | 5-speed AT; RWD/4WD |
+| 5th gen (2010-2024) | 4.0L V6 | NA | 5-speed AT; RWD/4WD |
+| 6th gen (2025-present) | 2.4L I4 turbo; hybrid system | Turbo / Hybrid | 8-speed AT; RWD/4WD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| 5th gen sample (2010 4Runner 4WD) | 4WD | 17 | 22 | 19 |
+| 5th gen mid sample (2018 4Runner 4WD) | 4WD | 17 | 20 | 18 |
+| 5th gen late sample (2024 4Runner 4WD) | 4WD | 16 | 19 | 17 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~194.9 in |
+| Width | ~75.8 in |
+| Height | ~71.5 in |
+| Wheelbase | ~109.8 in |
+| Cargo volume | ~47.2 cu ft (behind 2nd row, two-row setup) |
+| Passenger capacity | 5-7 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- 5th gen: Documented patterns include occasional brake/suspension wear and aging electronic accessory issues at higher mileage.
+- Body-on-frame setup prioritizes durability but can increase ride harshness and component wear in urban use.
+- NHTSA recall campaigns vary by year; advisor should confirm VIN-specific status.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Medium (Low / Medium / High)
+- Notes: Durable platform with predictable service intervals, but truck-based components and 4WD hardware raise consumable costs versus crossovers.
 
 Pros:
-- TBD – Requires verification
+- Proven durability and off-road capability.
+- Strong resale retention in U.S. market.
+- Straightforward mechanical layout in 5th generation.
 
 Cons:
-- TBD – Requires verification
+- Lower fuel economy than crossover-based SUVs.
+- On-road ride comfort and handling are less refined.
+- Interior tech in older years can feel dated.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -2693,42 +2884,57 @@ Last Verified: 2026-02-19
 - Performance baseline: Good resale value, moderate towing capacity
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 1st generation: 1995-2004.
+- 2nd generation: 2005-2015.
+- 3rd generation: 2016-2023.
+- 4th generation: 2024-present.
+- Major refresh: MY2012 (2nd-gen), MY2020 (3rd-gen update).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| 2nd gen (2005-2015) | 2.7L I4; 4.0L V6 | NA | 5-speed MT or 5-speed AT; RWD/4WD |
+| 3rd gen (2016-2023) | 2.7L I4; 3.5L V6 | NA | 6-speed AT or 6-speed MT; RWD/4WD |
+| 4th gen (2024-present) | 2.4L I4 turbo; hybrid system | Turbo / Hybrid | 8-speed AT; RWD/4WD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| 2nd gen sample (2010 Tacoma 4WD 4.0L) | 4WD | 16 | 20 | 18 |
+| 3rd gen sample (2018 Tacoma 4WD 3.5L) | 4WD | 18 | 22 | 20 |
+| 4th gen sample (2024 Tacoma 4WD 2.4T) | 4WD | 19 | 24 | 21 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~213.0 in (Double Cab short bed, approx) |
+| Width | ~77.9 in |
+| Height | ~74.6 in |
+| Wheelbase | ~131.9 in |
+| Cargo volume | ~49.9 cu ft (short bed approximation) |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- 2nd gen: Age-related suspension and steering wear are common at higher mileage.
+- 3rd gen: Owner-reported transmission shift-calibration and occasional rear differential noise complaints appear on some units.
+- NHTSA recalls and service campaigns are year-specific; advisor must verify VIN-level applicability.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Medium (Low / Medium / High)
+- Notes: Reliable long-term profile overall, but 4WD drivetrain service and truck-duty consumables increase maintenance versus compact crossovers.
 
 Pros:
-- TBD – Requires verification
+- Strong durability and resale retention.
+- Useful midsize-truck capability with manageable dimensions.
+- Broad aftermarket/off-road support.
 
 Cons:
-- TBD – Requires verification
+- Ride quality can be firm in unladen daily use.
+- Cabin noise and rear-seat comfort vary by generation.
+- Feature content in older years can lag newer competitors.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -2748,42 +2954,56 @@ Last Verified: 2026-02-19
 - Performance baseline: Strong towing capacity, modern powertrain options
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 1st generation: 2000-2006.
+- 2nd generation: 2007-2021.
+- 3rd generation: 2022-present.
+- Major refresh: MY2014 (2nd-gen facelift), MY2022 full redesign.
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| 1st gen (2000-2006) | 3.4L V6; 4.7L V8 | NA | 4-speed/5-speed AT; RWD/4WD |
+| 2nd gen (2007-2021) | 4.0L V6; 4.6L/5.7L V8 | NA | 5-speed/6-speed AT; RWD/4WD |
+| 3rd gen (2022-present) | 3.4L V6 turbo; hybrid system | Turbo / Hybrid | 10-speed AT; RWD/4WD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| 2nd gen sample (2010 Tundra 4WD 4.6L) | 4WD | 14 | 19 | 16 |
+| 2nd gen late sample (2018 Tundra 4WD 4.6L) | 4WD | 14 | 18 | 16 |
+| 3rd gen sample (2024 Tundra 4WD 3.4T) | 4WD | 17 | 23 | 19 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~233.6 in (CrewMax short bed, approx) |
+| Width | ~80.2 in |
+| Height | ~78.0 in |
+| Wheelbase | ~145.7 in |
+| Cargo volume | ~52.8 cu ft (short-bed approximation) |
+| Passenger capacity | 5-6 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- 2nd gen: Air-injection and secondary emissions-system service issues are commonly documented on specific year ranges.
+- 3rd gen: Early production years show owner-reported software and drivability calibration complaints on some trims.
+- NHTSA recalls are year/configuration dependent and require VIN-level verification.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Medium (Low / Medium / High)
+- Notes: Durable full-size truck profile with generally predictable service needs; consumable and fuel costs remain significant in heavy-duty use.
 
 Pros:
-- TBD – Requires verification
+- Strong towing and payload capability.
+- Good long-term durability reputation in U.S. market.
+- Modern powertrain efficiency improvement in current generation.
 
 Cons:
-- TBD – Requires verification
+- Large footprint and parking complexity in urban environments.
+- Fuel economy remains lower than midsize trucks.
+- Ride quality can be firm when unladen.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
