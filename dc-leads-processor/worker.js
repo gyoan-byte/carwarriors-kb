@@ -141,6 +141,9 @@ export default {
     const handlers = {
       // INVENTARIO (R2)
       "/health": () => handleHealth(),
+      "/robots-worker.txt": () => handleWorkerRobotsTxt(),
+      "/robots.txt": () => handleWorkerRobotsTxt(),
+      "/ai.txt": () => handleWorkerAiTxt(),
       "/latest/meta": () => handleLatestMeta(env),
       "/latest/raw": () => handleLatestRaw(env),
       "/stats": () => handleStats(env),
@@ -367,7 +370,8 @@ async function handleReady(url, env) {
   const modelFilter = normalizeSearchText(url.searchParams.get("model") || "");
   const bodyTypeFilter = normalizeSearchText(url.searchParams.get("bodyType") || "");
   const yearFilter = String(url.searchParams.get("year") || "").trim();
-  const includeKb = /^(1|true|yes)$/i.test(String(url.searchParams.get("includeKb") || "").trim());
+  const includeKbRaw = String(url.searchParams.get("includeKb") || "").trim().toLowerCase();
+  const includeKb = includeKbRaw === "" ? true : /^(1|true|yes)$/i.test(includeKbRaw);
   if (bodyTypeFilter && !includeKb) {
     return json(
       {
@@ -468,6 +472,71 @@ async function handleReady(url, env) {
       : { enabled: false },
     byMake: countBy(filtered, (v) => v.make),
     vehicles: filtered,
+  });
+}
+
+function handleWorkerRobotsTxt() {
+  const body = [
+    "User-agent: *",
+    "Allow: /",
+    "",
+    "# Worker API routes",
+    "Allow: /health",
+    "Allow: /status",
+    "Allow: /stats",
+    "Allow: /latest",
+    "Allow: /latest/meta",
+    "Allow: /latest/raw",
+    "Allow: /ready",
+    "Allow: /kb/lookup",
+    "Allow: /mail/latest",
+    "Allow: /mail/latest/raw",
+    "Allow: /mail/list",
+    "Allow: /mail/get",
+    "",
+    "# AI crawler hints",
+    "Allow: /ai.txt",
+    "Allow: /robots-worker.txt",
+    "",
+    "# Notes:",
+    "# /ready defaults to includeKb=true when includeKb param is omitted.",
+  ].join("\n");
+
+  return new Response(body, {
+    status: 200,
+    headers: {
+      "content-type": "text/plain; charset=utf-8",
+      ...corsHeaders(),
+    },
+  });
+}
+
+function handleWorkerAiTxt() {
+  const body = [
+    "service: dc-leads-processor",
+    "base_url: https://dc-leads-processor.gyoan.workers.dev",
+    "primary_routes:",
+    "- /ready",
+    "- /status",
+    "- /stats",
+    "- /latest",
+    "- /latest/meta",
+    "",
+    "ready_defaults:",
+    "- includeKb: true (if omitted)",
+    "- limit: all matched rows",
+    "",
+    "notes:",
+    "- bodyType filter requires includeKb=true",
+    "- source: CARROS LISTOS",
+  ].join("\n");
+
+  return new Response(body, {
+    status: 200,
+    headers: {
+      "content-type": "text/plain; charset=utf-8",
+      ...corsHeaders(),
+    },
   });
 }
 
@@ -717,6 +786,9 @@ function notFoundResponse() {
       ok: false,
       routes: [
         "/health",
+        "/robots.txt",
+        "/robots-worker.txt",
+        "/ai.txt",
         // inventario
         "/latest",
         "/ready",
@@ -729,7 +801,7 @@ function notFoundResponse() {
         "/latest?group=Make&sort=Year:desc,Odometer:asc",
         "/ready?q=toyota+corolla&limit=20",
         "/ready?make=toyota&model=corolla&year=2022",
-        "/ready?make=toyota&model=tacoma+double+cab&includeKb=1",
+        "/ready?make=toyota&model=tacoma+double+cab",
         "/kb/lookup?make=toyota&model=tacoma%20double%20cab",
         // mail
         "/mail/latest",

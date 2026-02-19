@@ -1,0 +1,16 @@
+service: dc-leads-processor
+base_url: https://dc-leads-processor.gyoan.workers.dev
+primary_routes:
+- /ready
+- /status
+- /stats
+- /latest
+- /latest/meta
+
+ready_defaults:
+- includeKb: true (if omitted)
+- limit: all matched rows
+
+notes:
+- bodyType filter requires includeKb=true
+- source: CARROS LISTOS

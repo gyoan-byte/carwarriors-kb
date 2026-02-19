@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Worker API routes
+Allow: /health
+Allow: /status
+Allow: /stats
+Allow: /latest
+Allow: /latest/meta
+Allow: /latest/raw
+Allow: /ready
+Allow: /kb/lookup
+Allow: /mail/latest
+Allow: /mail/latest/raw
+Allow: /mail/list
+Allow: /mail/get
+
+# AI crawler hints
+Allow: /ai.txt
+Allow: /robots-worker.txt
+
+# Notes:
+# /ready defaults to includeKb=true when includeKb param is omitted.
