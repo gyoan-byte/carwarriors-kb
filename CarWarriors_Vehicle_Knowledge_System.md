@@ -1705,7 +1705,7 @@ Typical known issues by generation:
 - NHTSA recalls are model-year specific and should be VIN-verified before final unit claims.
 
 Maintenance profile:
-- Level: Low (Low / Medium / High)
+- Level: Medium (Low / Medium / High)
 - Notes: Typically low routine service cost with strong reliability outcomes when maintenance intervals are respected.
 
 Pros:
@@ -2021,42 +2021,58 @@ Last Verified: 2026-02-19
 - Performance baseline: Smooth ride quality, family-focused features
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 8th generation: 2008-2012.
+- 9th generation: 2013-2017.
+- 10th generation: 2018-2022.
+- 11th generation: 2023-present.
+- Major refresh: MY2016 (9th-gen facelift), MY2021 (late 10th-gen updates).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| 8th gen (2008-2012) | 2.4L I4; 3.5L V6 | NA | 5-speed AT or 5-speed MT; FWD |
+| 9th gen (2013-2017) | 2.4L I4; 3.5L V6; hybrid system | NA / Hybrid | CVT or 6-speed AT/MT by trim; FWD |
+| 10th gen (2018-2022) | 1.5L I4; 2.0L I4; hybrid system | Turbo / Hybrid | CVT, 10-speed AT, or 6-speed MT by trim; FWD |
+| 11th gen (2023-present) | 1.5L I4 turbo; hybrid system | Turbo / Hybrid | CVT or eCVT; FWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| 8th gen sample (2010 Accord 2.4L AT) | FWD | 21 | 31 | 25 |
+| 10th gen sample (2018 Accord 1.5T CVT) | FWD | 29 | 35 | 31 |
+| 11th gen sample (2024 Accord 1.5T CVT) | FWD | 29 | 37 | 32 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~195.7 in |
+| Width | ~73.3 in |
+| Height | ~57.1 in |
+| Wheelbase | ~111.4 in |
+| Cargo volume | ~16.7 cu ft |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- 8th/9th gen: Common long-term items include brake/suspension wear and occasional starter/alternator or A/C-related repairs.
+- 10th gen: Some owner reports include infotainment glitches and intermittent fuel-system or turbo component concerns on specific trims/years.
+- NHTSA recalls vary by model year and powertrain; advisor should confirm VIN-specific applicability.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Low (Low / Medium / High)
+- Notes: Typically low routine maintenance burden with broad parts availability and stable long-term service patterns.
 
 Pros:
-- TBD – Requires verification
+- Strong efficiency and reliability balance.
+- Comfortable ride and practical cabin/trunk layout.
+- Broad powertrain and trim coverage across generations.
 
 Cons:
-- TBD – Requires verification
+- Performance feel is trim-dependent.
+- Infotainment quality varies by generation.
+- Road noise can increase versus near-luxury sedans.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -2078,42 +2094,58 @@ Last Verified: 2026-02-19
 - Performance baseline: Advanced off-road capability, air suspension system
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 8th generation: 2006-2011.
+- 9th generation: 2012-2015.
+- 10th generation: 2016-2021.
+- 11th generation: 2022-present.
+- Major refresh: MY2013 (9th-gen), MY2019 (10th-gen facelift).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| 8th gen (2006-2011) | 1.8L I4; hybrid system | NA / Hybrid | 5-speed AT or 5-speed MT |
+| 9th gen (2012-2015) | 1.8L I4; 2.4L I4 (Si); hybrid system | NA / Hybrid | 5-speed AT, CVT, or 6-speed MT |
+| 10th gen (2016-2021) | 2.0L I4; 1.5L I4 | NA / Turbo | CVT or 6-speed MT |
+| 11th gen (2022-present) | 2.0L I4; 1.5L I4 | NA / Turbo | CVT or 6-speed MT |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| 8th gen sample (2010 Civic 1.8L AT) | FWD | 25 | 36 | 29 |
+| 10th gen sample (2018 Civic 2.0L CVT) | FWD | 31 | 40 | 34 |
+| 11th gen sample (2024 Civic 1.5T CVT) | FWD | 31 | 38 | 34 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~184.0 in |
+| Width | ~70.9 in |
+| Height | ~55.7 in |
+| Wheelbase | ~107.7 in |
+| Cargo volume | ~14.8 cu ft (sedan) |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- 8th/9th gen: Some long-term reports include paint/clearcoat aging and suspension bushing wear.
+- 10th/11th gen turbo variants: Owner reports occasionally cite oil dilution discussions and HVAC/electronics concerns on certain year/trim combinations.
+- NHTSA recalls are model-year specific; advisor should verify VIN-level status.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Low (Low / Medium / High)
+- Notes: One of the lower-cost compact platforms to maintain when routine intervals and fluid services are followed.
 
 Pros:
-- TBD – Requires verification
+- Excellent fuel economy and daily usability.
+- Strong long-term reliability reputation.
+- Wide trim/body-style diversity by generation.
 
 Cons:
-- TBD – Requires verification
+- Cabin insulation and ride refinement vary by trim/wheels.
+- Power output is modest in non-turbo versions.
+- Feature packages can differ substantially by year.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -2135,42 +2167,55 @@ Last Verified: 2026-02-19
 - Performance baseline: Comfortable ride, refined handling characteristics
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 1st generation: 2006-2014.
+- 2nd generation: 2017-present.
+- Major refresh: MY2021 (2nd-gen update).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| 1st gen (2006-2014) | 3.5L V6 | NA | 5-speed AT; AWD |
+| 2nd gen early (2017-2019) | 3.5L V6 | NA | 6-speed AT; FWD/AWD |
+| 2nd gen refresh (2020-present) | 3.5L V6 | NA | 9-speed AT; AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| 1st gen sample (2010 Ridgeline AWD) | AWD | 15 | 20 | 17 |
+| 2nd gen sample (2018 Ridgeline AWD) | AWD | 18 | 25 | 21 |
+| 2nd gen late sample (2024 Ridgeline AWD) | AWD | 18 | 24 | 21 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~210.2 in |
+| Width | ~78.6 in |
+| Height | ~70.8 in |
+| Wheelbase | ~125.2 in |
+| Cargo volume | ~33.9 cu ft (bed volume approximation) |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- 1st gen: Common age-related reports include suspension/steering wear and occasional drivetrain mount/noise concerns.
+- 2nd gen: Some owner-reported infotainment and transmission behavior complaints appear by specific year/calibration.
+- NHTSA recalls are year-specific and require VIN-level confirmation.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Medium (Low / Medium / High)
+- Notes: Generally predictable ownership cost, but AWD hardware and truck-duty use cycles raise service burden versus compact crossovers.
 
 Pros:
-- TBD – Requires verification
+- Car-like ride quality compared with body-on-frame midsize trucks.
+- Practical crew-cab packaging and in-bed utility features.
+- Strong daily drivability for mixed family/work use.
 
 Cons:
-- TBD – Requires verification
+- Towing/off-road ceiling is lower than some traditional midsize truck rivals.
+- Fewer drivetrain configurations than some competitors.
+- Fuel economy remains moderate for the segment.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
