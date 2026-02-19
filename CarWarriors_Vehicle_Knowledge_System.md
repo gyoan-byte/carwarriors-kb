@@ -1810,59 +1810,56 @@ Last Verified: 2026-02-19
 - Performance baseline: Sport-tuned suspension, available turbocharged engines
 
 Generation overview (U.S.):
-- 1st generation: 1984-1989.
-- 2nd generation: 1990-1995.
-- 3rd generation: 1996-2002.
-- 4th generation: 2003-2009.
-- 5th generation: 2010-2024.
-- 6th generation: 2025-present.
-- Major refresh: MY2014 and MY2020 within 5th generation.
+- 1st generation (V37): 2014-2024.
+- U.S. predecessor lineage: Infiniti G sedan through MY2013.
+- Major refresh years: MY2018 and MY2020 (feature/trim and infotainment updates).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| 4th gen (2003-2009) | 4.0L V6; 4.7L V8 | NA | 5-speed AT; RWD/4WD |
-| 5th gen (2010-2024) | 4.0L V6 | NA | 5-speed AT; RWD/4WD |
-| 6th gen (2025-present) | 2.4L I4 turbo; hybrid system | Turbo / Hybrid | 8-speed AT; RWD/4WD |
+| V37 early (2014-2015) | 3.7L V6 | NA | 7-speed AT; RWD/AWD |
+| V37 variant (2014-2018) | 3.5L V6 hybrid system | Hybrid | 7-speed AT; RWD/AWD |
+| V37 variant (2016-2019) | 2.0L I4 | Turbo | 7-speed AT; RWD |
+| V37 late (2016-2024) | 3.0L V6 twin-turbo | Turbo | 7-speed AT; RWD/AWD |
 
 EPA MPG table (city/highway):
 
 | Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
 |---|---|---:|---:|---:|
-| 5th gen sample (2010 4Runner 4WD) | 4WD | 17 | 22 | 19 |
-| 5th gen mid sample (2018 4Runner 4WD) | 4WD | 17 | 20 | 18 |
-| 5th gen late sample (2024 4Runner 4WD) | 4WD | 16 | 19 | 17 |
+| V37 sample (2014 Q50 3.7 RWD) | RWD | 20 | 29 | 23 |
+| V37 mid sample (2018 Q50 3.0t RWD) | RWD | 20 | 29 | 23 |
+| V37 late sample (2024 Q50 3.0t RWD) | RWD | 20 | 29 | 23 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~194.9 in |
-| Width | ~75.8 in |
-| Height | ~71.5 in |
-| Wheelbase | ~109.8 in |
-| Cargo volume | ~47.2 cu ft (behind 2nd row, two-row setup) |
-| Passenger capacity | 5-7 |
+| Length | ~189.6 in |
+| Width | ~71.8 in |
+| Height | ~57.2 in |
+| Wheelbase | ~112.2 in |
+| Cargo volume | ~13.5 cu ft |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- 5th gen: Documented patterns include occasional brake/suspension wear and aging electronic accessory issues at higher mileage.
-- Body-on-frame setup prioritizes durability but can increase ride harshness and component wear in urban use.
-- NHTSA recall campaigns vary by year; advisor should confirm VIN-specific status.
+- V37 early/mid: Owner-reported patterns include infotainment lag/freezing and occasional accessory-electrical concerns on some year ranges.
+- 3.0t years: Community reports include turbo/cooling-system sensitivity on some units; maintenance history is important.
+- NHTSA recalls vary by model year/trim; VIN-specific recall status must be advisor-verified.
 
 Maintenance profile:
 - Level: Medium (Low / Medium / High)
-- Notes: Durable platform with predictable service intervals, but truck-based components and 4WD hardware raise consumable costs versus crossovers.
+- Notes: Moderate routine service burden, but turbocharged variants can increase long-term complexity and repair cost.
 
 Pros:
-- Proven durability and off-road capability.
-- Strong resale retention in U.S. market.
-- Straightforward mechanical layout in 5th generation.
+- Strong acceleration in 3.0t trims.
+- Comfortable highway ride and premium cabin design.
+- RWD/AWD flexibility across much of production.
 
 Cons:
-- Lower fuel economy than crossover-based SUVs.
-- On-road ride comfort and handling are less refined.
-- Interior tech in older years can feel dated.
+- Infotainment architecture is dated versus newer competitors.
+- Turbocharged variants may have higher long-term risk than NA alternatives.
+- Rear-seat packaging is moderate for class.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -1882,57 +1879,56 @@ Last Verified: 2026-02-19
 - Performance baseline: Strong acceleration, sport-oriented handling
 
 Generation overview (U.S.):
-- 1st generation: 1995-2004.
-- 2nd generation: 2005-2015.
-- 3rd generation: 2016-2023.
-- 4th generation: 2024-present.
-- Major refresh: MY2012 (2nd-gen), MY2020 (3rd-gen update).
+- 1st generation (CV36, G37 coupe/convertible lineage): 2008-2015.
+- 2nd generation (CV37, Q60): 2017-2022.
+- U.S. model-year gap occurred for MY2016 transition.
+- Major refresh years: MY2014 name transition (G37 to Q60 for prior generation), MY2020 trim/package updates.
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| 2nd gen (2005-2015) | 2.7L I4; 4.0L V6 | NA | 5-speed MT or 5-speed AT; RWD/4WD |
-| 3rd gen (2016-2023) | 2.7L I4; 3.5L V6 | NA | 6-speed AT or 6-speed MT; RWD/4WD |
-| 4th gen (2024-present) | 2.4L I4 turbo; hybrid system | Turbo / Hybrid | 8-speed AT; RWD/4WD |
+| CV36 (2008-2015) | 3.7L V6 | NA | 7-speed AT or 6-speed MT; RWD/AWD |
+| CV37 variant (2017) | 2.0L I4 | Turbo | 7-speed AT; RWD |
+| CV37 (2017-2022) | 3.0L V6 twin-turbo | Turbo | 7-speed AT; RWD/AWD |
 
 EPA MPG table (city/highway):
 
 | Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
 |---|---|---:|---:|---:|
-| 2nd gen sample (2010 Tacoma 4WD 4.0L) | 4WD | 16 | 20 | 18 |
-| 3rd gen sample (2018 Tacoma 4WD 3.5L) | 4WD | 18 | 22 | 20 |
-| 4th gen sample (2024 Tacoma 4WD 2.4T) | 4WD | 19 | 24 | 21 |
+| CV37 sample (2017 Q60 3.0t RWD) | RWD | 19 | 28 | 22 |
+| CV37 mid sample (2018 Q60 3.0t RWD) | RWD | 19 | 28 | 22 |
+| CV37 late sample (2022 Q60 3.0t RWD) | RWD | 19 | 28 | 22 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~213.0 in (Double Cab short bed, approx) |
-| Width | ~77.9 in |
-| Height | ~74.6 in |
-| Wheelbase | ~131.9 in |
-| Cargo volume | ~49.9 cu ft (short bed approximation) |
-| Passenger capacity | 5 |
+| Length | ~184.4 in |
+| Width | ~72.8 in |
+| Height | ~54.8 in |
+| Wheelbase | ~112.2 in |
+| Cargo volume | ~8.7 cu ft |
+| Passenger capacity | 4 |
 
 Typical known issues by generation:
-- 2nd gen: Age-related suspension and steering wear are common at higher mileage.
-- 3rd gen: Owner-reported transmission shift-calibration and occasional rear differential noise complaints appear on some units.
-- NHTSA recalls and service campaigns are year-specific; advisor must verify VIN-level applicability.
+- CV36: Typical age-related concerns include suspension bushing wear and electronics aging in higher-mileage units.
+- CV37: Owner-reported patterns include infotainment lag and some turbo/cooling related complaints on specific units.
+- NHTSA recalls are model-year/trim specific; VIN-level confirmation is required.
 
 Maintenance profile:
 - Level: Medium (Low / Medium / High)
-- Notes: Reliable long-term profile overall, but 4WD drivetrain service and truck-duty consumables increase maintenance versus compact crossovers.
+- Notes: Moderate service profile for luxury coupe segment; turbocharged drivetrain complexity can increase repair exposure over time.
 
 Pros:
-- Strong durability and resale retention.
-- Useful midsize-truck capability with manageable dimensions.
-- Broad aftermarket/off-road support.
+- Distinctive coupe styling with strong brand identity.
+- Strong acceleration in twin-turbo trims.
+- Comfortable highway manners for a performance coupe.
 
 Cons:
-- Ride quality can be firm in unladen daily use.
-- Cabin noise and rear-seat comfort vary by generation.
-- Feature content in older years can lag newer competitors.
+- Rear-seat and trunk practicality are limited.
+- Interior interface is dated compared with newer luxury coupes.
+- Turbo trim long-term ownership cost can be higher than NA peers.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -1952,56 +1948,56 @@ Last Verified: 2026-02-19
 - Performance baseline: Comfortable highway cruising, V6 engine options
 
 Generation overview (U.S.):
-- 1st generation: 2000-2006.
-- 2nd generation: 2007-2021.
-- 3rd generation: 2022-present.
-- Major refresh: MY2014 (2nd-gen facelift), MY2022 full redesign.
+- 1st generation (Y34, Infiniti M): 2003-2004.
+- 2nd generation (Y50, M35/M45): 2006-2010.
+- 3rd generation (Y51, M37/M56 then Q70): 2011-2019.
+- Major refresh years: MY2014 (name transition to Q70), MY2015 (LWB and feature updates).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| 1st gen (2000-2006) | 3.4L V6; 4.7L V8 | NA | 4-speed/5-speed AT; RWD/4WD |
-| 2nd gen (2007-2021) | 4.0L V6; 4.6L/5.7L V8 | NA | 5-speed/6-speed AT; RWD/4WD |
-| 3rd gen (2022-present) | 3.4L V6 turbo; hybrid system | Turbo / Hybrid | 10-speed AT; RWD/4WD |
+| Y34 (2003-2004) | 3.5L V6 | NA | 5-speed AT; RWD |
+| Y50 (2006-2010) | 3.5L V6; 4.5L V8 | NA | 5-speed AT; RWD/AWD |
+| Y51 (2011-2019) | 3.7L V6; 5.6L V8; 3.5L V6 hybrid system | NA / Hybrid | 7-speed AT; RWD/AWD |
 
 EPA MPG table (city/highway):
 
 | Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
 |---|---|---:|---:|---:|
-| 2nd gen sample (2010 Tundra 4WD 4.6L) | 4WD | 14 | 19 | 16 |
-| 2nd gen late sample (2018 Tundra 4WD 4.6L) | 4WD | 14 | 18 | 16 |
-| 3rd gen sample (2024 Tundra 4WD 3.4T) | 4WD | 17 | 23 | 19 |
+| Y51 sample (2014 Q70 3.7 RWD) | RWD | 18 | 26 | 21 |
+| Y51 mid sample (2018 Q70 3.7 AWD) | AWD | 18 | 24 | 20 |
+| Y51 late sample (2019 Q70 3.7 RWD) | RWD | 18 | 25 | 21 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~233.6 in (CrewMax short bed, approx) |
-| Width | ~80.2 in |
-| Height | ~78.0 in |
-| Wheelbase | ~145.7 in |
-| Cargo volume | ~52.8 cu ft (short-bed approximation) |
-| Passenger capacity | 5-6 |
+| Length | ~196.1 in |
+| Width | ~72.6 in |
+| Height | ~59.0 in |
+| Wheelbase | ~114.2 in |
+| Cargo volume | ~14.9 cu ft |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- 2nd gen: Air-injection and secondary emissions-system service issues are commonly documented on specific year ranges.
-- 3rd gen: Early production years show owner-reported software and drivability calibration complaints on some trims.
-- NHTSA recalls are year/configuration dependent and require VIN-level verification.
+- Y50/Y51 aging years: Typical higher-mileage service patterns include suspension component wear and electronics aging.
+- Y51: Documented owner feedback includes occasional infotainment and accessory-system issues in later years.
+- NHTSA recalls differ by year/powertrain; advisor should verify VIN-level campaign status.
 
 Maintenance profile:
-- Level: Medium (Low / Medium / High)
-- Notes: Durable full-size truck profile with generally predictable service needs; consumable and fuel costs remain significant in heavy-duty use.
+- Level: High (Low / Medium / High)
+- Notes: Full-size luxury sedan platform with larger-displacement engines and discontinued U.S. model support can raise long-term parts/service cost.
 
 Pros:
-- Strong towing and payload capability.
-- Good long-term durability reputation in U.S. market.
-- Modern powertrain efficiency improvement in current generation.
+- Smooth highway ride and strong V6 refinement.
+- Spacious cabin with traditional luxury-sedan comfort.
+- Distinctive alternative to German executive sedans.
 
 Cons:
-- Large footprint and parking complexity in urban environments.
-- Fuel economy remains lower than midsize trucks.
-- Ride quality can be firm when unladen.
+- Fuel economy trails newer turbo-hybrid competitors.
+- Older infotainment architecture versus newer rivals.
+- Discontinued model status can narrow future trim/parts selection.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
@@ -2021,58 +2017,55 @@ Last Verified: 2026-02-19
 - Performance baseline: Smooth ride quality, family-focused features
 
 Generation overview (U.S.):
-- 8th generation: 2008-2012.
-- 9th generation: 2013-2017.
-- 10th generation: 2018-2022.
-- 11th generation: 2023-present.
-- Major refresh: MY2016 (9th-gen facelift), MY2021 (late 10th-gen updates).
+- 1st generation (L50; launched as JX35 in MY2013, renamed QX60 in MY2014): 2013-2020.
+- 2nd generation (L51): 2022-present.
+- Major refresh years: MY2016 (L50 update cycle), MY2022 (full redesign and transmission change).
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| 8th gen (2008-2012) | 2.4L I4; 3.5L V6 | NA | 5-speed AT or 5-speed MT; FWD |
-| 9th gen (2013-2017) | 2.4L I4; 3.5L V6; hybrid system | NA / Hybrid | CVT or 6-speed AT/MT by trim; FWD |
-| 10th gen (2018-2022) | 1.5L I4; 2.0L I4; hybrid system | Turbo / Hybrid | CVT, 10-speed AT, or 6-speed MT by trim; FWD |
-| 11th gen (2023-present) | 1.5L I4 turbo; hybrid system | Turbo / Hybrid | CVT or eCVT; FWD |
+| L50 (2013-2020) | 3.5L V6 | NA | CVT; FWD/AWD |
+| L50 hybrid (2014-2017) | 2.5L I4 + electric motor | Supercharged Hybrid | CVT; FWD/AWD |
+| L51 (2022-present) | 3.5L V6 | NA | 9-speed AT; FWD/AWD |
 
 EPA MPG table (city/highway):
 
 | Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
 |---|---|---:|---:|---:|
-| 8th gen sample (2010 Accord 2.4L AT) | FWD | 21 | 31 | 25 |
-| 10th gen sample (2018 Accord 1.5T CVT) | FWD | 29 | 35 | 31 |
-| 11th gen sample (2024 Accord 1.5T CVT) | FWD | 29 | 37 | 32 |
+| L50 sample (2016 QX60 FWD 3.5L) | FWD | 21 | 27 | 23 |
+| L50 late sample (2018 QX60 FWD 3.5L) | FWD | 20 | 27 | 22 |
+| L51 sample (2024 QX60 FWD 3.5L) | FWD | 21 | 26 | 23 |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | ~195.7 in |
-| Width | ~73.3 in |
-| Height | ~57.1 in |
-| Wheelbase | ~111.4 in |
-| Cargo volume | ~16.7 cu ft |
-| Passenger capacity | 5 |
+| Length | ~198.2 in |
+| Width | ~78.0 in |
+| Height | ~69.7 in |
+| Wheelbase | ~114.2 in |
+| Cargo volume | ~14.5 cu ft (behind 3rd row, approx) |
+| Passenger capacity | 7 |
 
 Typical known issues by generation:
-- 8th/9th gen: Common long-term items include brake/suspension wear and occasional starter/alternator or A/C-related repairs.
-- 10th gen: Some owner reports include infotainment glitches and intermittent fuel-system or turbo component concerns on specific trims/years.
-- NHTSA recalls vary by model year and powertrain; advisor should confirm VIN-specific applicability.
+- L50: Commonly discussed ownership patterns include CVT durability concerns on some year ranges plus normal aging suspension/HVAC repairs.
+- L51: Early owner reports include occasional electronics/infotainment calibration complaints; 9-speed behavior varies by software update level.
+- NHTSA recalls are year/trim specific and should be checked at VIN level.
 
 Maintenance profile:
-- Level: Low (Low / Medium / High)
-- Notes: Typically low routine maintenance burden with broad parts availability and stable long-term service patterns.
+- Level: Medium (Low / Medium / High)
+- Notes: Moderate maintenance profile for 3-row luxury SUV class; L50 CVT history and L51 9-speed service history are key evaluation points.
 
 Pros:
-- Strong efficiency and reliability balance.
-- Comfortable ride and practical cabin/trunk layout.
-- Broad powertrain and trim coverage across generations.
+- Comfortable 3-row cabin with family-oriented layout.
+- Smooth V6 power delivery and refined ride.
+- Good highway comfort for long-distance family use.
 
 Cons:
-- Performance feel is trim-dependent.
-- Infotainment quality varies by generation.
-- Road noise can increase versus near-luxury sedans.
+- Cargo area behind third row is modest versus larger SUVs.
+- Fuel economy trails many 4-cylinder hybrid competitors.
+- L50 generation CVT reputation requires careful service-history review.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
