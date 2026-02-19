@@ -2516,42 +2516,53 @@ Last Verified: 2026-02-19
 - Performance baseline: Instant torque, Autopilot capability, over-the-air updates
 
 Generation overview (U.S.):
-- TBD – Requires verification
+- 1st generation: 2017-present.
+- Major refresh/update points: MY2021 efficiency/thermal-system updates; MY2024 exterior/interior refresh (\"Highland\") for U.S. market rollout.
 
 Engine and transmission table:
 
 | Generation/Years | Engine (L) | Induction | Transmission |
 |---|---:|---|---|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| 2017-present (RWD variants) | Single-motor EV drive unit | EV | Single-speed reduction gear (A1, AT-equivalent); RWD |
+| 2017-present (AWD variants) | Dual-motor EV drive unit | EV | Single-speed reduction gear (A1, AT-equivalent); AWD |
 
 EPA MPG table (city/highway):
 
-| Generation/Years | Drivetrain | City MPG | Highway MPG |
-|---|---|---:|---:|
-| TBD – Requires verification | TBD – Requires verification | TBD – Requires verification | TBD – Requires verification |
+| Generation/Years | Drivetrain | City MPG | Highway MPG | Combined MPG |
+|---|---|---:|---:|---:|
+| 1st gen sample (2018 Model 3 Long Range AWD) | AWD | 120 MPGe | 112 MPGe | 116 MPGe |
+| 1st gen mid sample (2021 Model 3 Long Range AWD) | AWD | 141 MPGe | 127 MPGe | 134 MPGe |
+| 1st gen refresh sample (2024 Model 3 Long Range RWD) | RWD | 145 MPGe | 128 MPGe | 137 MPGe |
 
 Approximate dimensions:
 
 | Metric | Value |
 |---|---|
-| Length | TBD – Requires verification |
-| Width | TBD – Requires verification |
-| Height | TBD – Requires verification |
-| Wheelbase | TBD – Requires verification |
-| Cargo volume | TBD – Requires verification |
+| Length | ~184.8 in |
+| Width | ~72.8 in |
+| Height | ~56.7 in |
+| Wheelbase | ~113.2 in |
+| Cargo volume | ~24.1 cu ft (trunk + front trunk, approx) |
+| Passenger capacity | 5 |
 
 Typical known issues by generation:
-- TBD – Requires verification
+- Early production years show recurring owner reports on build consistency, paint quality, and trim fit.
+- Common service themes include suspension/noise complaints, 12V battery service events, and infotainment/software updates.
+- NHTSA recalls and software campaigns vary by production period and should be confirmed at VIN level.
 
 Maintenance profile:
-- Level: TBD – Requires verification (Low / Medium / High)
-- Notes: TBD – Requires verification
+- Level: Low (Low / Medium / High)
+- Notes: Low routine mechanical maintenance profile; tire wear, brake fluid, cabin filtration, and software campaign compliance remain key service items.
 
 Pros:
-- TBD – Requires verification
+- Very strong EV efficiency and acceleration response.
+- Frequent software updates and mature charging ecosystem integration.
+- High-tech cabin and strong real-world daily usability.
 
 Cons:
-- TBD – Requires verification
+- Build/fit consistency perception varies by production period.
+- Ride firmness and road noise depend on wheel/tire configuration.
+- Long-distance convenience remains charging-infrastructure dependent.
 
 Qualification questions:
 - Is your daily driving mostly city traffic, highway, or mixed?
