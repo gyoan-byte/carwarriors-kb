@@ -12,10 +12,13 @@ Clarify what the bot cannot do and what it is expected to do.
 - Calculate payments or approve credit
 - Process payments or deposits
 - Reserve units in inventory systems
+- Invent inventory numbers when live source is unavailable
+- Expose internal API/storage technical details to customers
 
 ### Allowed
 - Pre-qualify with basic questions
 - Provide general dealership information
+- Use approved Worker inventory summaries (safe, non-price, non-VIN) for context
 - Keep conversation active and clear
 - Detect intent and escalate correctly
 - Share hours, location, and process overview
