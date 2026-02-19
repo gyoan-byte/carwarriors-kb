@@ -330,7 +330,7 @@ async function handleLatest(url, env) {
 }
 
 async function handleReady(url, env) {
-  const { latest, file, error } = await getLatestFile(env);
+  const { file, error } = await getLatestFile(env);
   if (error) return error;
 
   const csvText = await file.text();
@@ -366,7 +366,8 @@ async function handleReady(url, env) {
   const modelFilter = normalizeSearchText(url.searchParams.get("model") || "");
   const bodyTypeFilter = normalizeSearchText(url.searchParams.get("bodyType") || "");
   const yearFilter = String(url.searchParams.get("year") || "").trim();
-  const limit = clampInt(url.searchParams.get("limit"), 1, 200, 100);
+  const rawLimit = url.searchParams.get("limit");
+  const limit = rawLimit === null || String(rawLimit).trim() === "" ? normalized.length : clampInt(rawLimit, 1, 200, 100);
 
   const qTokens = splitSearchTerms(q);
   let filtered = normalized.filter((v) => {
@@ -385,13 +386,7 @@ async function handleReady(url, env) {
     ok: true,
     generatedAt: new Date().toISOString(),
     source: "CARROS LISTOS",
-    disclaimer: "Disponibilidad preliminar. Confirmacion final de unidad con asesor humano.",
-    latest: {
-      receivedAt: latest.receivedAt || null,
-      filename: latest.filename || null,
-      key: latest.key || null,
-      count: rows.length,
-    },
+    disclaimer: "Preliminary availability only. Final unit confirmation with a human advisor.",
     filters: {
       q: q || null,
       make: makeFilter || null,
@@ -766,6 +761,7 @@ function sanitizeId(s) {
 }
 
 function clampInt(v, min, max, fallback) {
+  if (v === null || v === undefined || String(v).trim() === "") return fallback;
   const n = Number(v);
   if (!Number.isFinite(n)) return fallback;
   return Math.max(min, Math.min(max, Math.trunc(n)));
