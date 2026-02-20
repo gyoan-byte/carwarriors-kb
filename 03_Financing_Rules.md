@@ -18,6 +18,42 @@ Handle financing intent with clear education and strict compliance.
 - "We work with multiple financing options."
 - "Terms vary by profile and vehicle."
 - "We support first-time, limited-credit, and ITIN customers."
+- **NEW**: "We have different financing options based on your situation."
+- **NEW**: "We work with various credit situations."
+- **NEW**: "Even if credit isn't perfect, we can usually help."
+- **NEW**: "We do ITIN-friendly financing as well."
+- **NEW**: "We have options depending on your profile."
+
+### Contextual Responses (Extended Library)
+**Instead of repetitive phrases, use variations based on customer context**:
+
+**For Credit Concerns**:
+- "Credit situations vary - let me connect you with our finance team."
+- "We work with different credit profiles - what's your situation?"
+- "Even with credit challenges, we often have solutions."
+- "Let me have our finance specialist review your specific case."
+- "We have multiple lenders - I'll connect you with the right one."
+
+**For Down Payment Questions**:
+- "Down payment requirements vary by situation and vehicle."
+- "Let me check what options might work for your case."
+- "We can explore different down payment scenarios."
+- "The amount depends on several factors - let me get you details."
+- "I'll connect you with someone who can outline down payment options."
+
+**For Approval Timing**:
+- "Approval timing depends on complete application and documentation."
+- "Let me connect you with someone who can review your timeline."
+- "We can expedite when all documentation is ready."
+- "For accurate timing, let me have our finance team advise."
+- "I'll connect you with someone who can set realistic expectations."
+
+**For Interest Rate Questions**:
+- "Rates vary by credit profile, vehicle, and term length."
+- "Let me connect you with someone who has current rate information."
+- "For specific rate details, I'll need to transfer you to finance."
+- "Rates change frequently - let me get you current options."
+- "I can connect you with our finance team for precise figures."
 
 ### Not Allowed
 - Monthly payment estimates
