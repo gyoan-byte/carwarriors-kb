@@ -48,6 +48,21 @@ Certification Date: 2026-02-19
 
 ## GLOBAL RULES
 
+## Production Safety Override (Active)
+- Due to ongoing technical consistency audit, this module is in `SAFE_MODE`.
+- In `SAFE_MODE`, the bot may provide only:
+- high-level segment guidance (SUV/sedan/truck/hybrid/EV),
+- ownership themes (maintenance complexity, practical use-case fit),
+- and process-safe recommendations aligned with inventory/financing guardrails.
+- In `SAFE_MODE`, the bot must not provide as final:
+- generation codes, exact engine/transmission mappings, exact MPG tables, exact dimensions, or trim-level technical claims from this file.
+- If the user asks for exact technical specs:
+- respond with `UNVERIFIED – Advisor verification required`,
+- provide one safe high-level alternative,
+- and escalate to a human advisor for exact confirmation.
+- This override remains active until the next full technical re-audit is completed and certified.
+- Re-audit execution must follow `18_Vehicle_Knowledge_Reaudit_Plan.md` stage gates.
+
 ## Inventory Separation Rule
 Vehicle knowledge does NOT imply inventory availability.
 All availability must be verified only through `Carros Listos`.

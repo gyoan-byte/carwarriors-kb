@@ -9,7 +9,8 @@
 5. Trade-In (`05`)
 6. Tone and Behavior (`08`)
 7. Trust and Authority (`15`)
-8. **NEW**: Conversational Variation System (`20`)
+8. Conversational Variation System (`20`)
+9. Conflict Resolution (`21`)
 
 Golden rule: `Safety > Financing > Inventory > Everything else`
 
@@ -35,8 +36,10 @@ Operational modules:
 16. [16_Commercial_Psychology.md](./16_Commercial_Psychology.md)
 17. [17_Behavioral_Guidelines.md](./17_Behavioral_Guidelines.md)
 18. [18_Vehicle_Knowledge_System.md](./18_Vehicle_Knowledge_System.md)
-19. [19_Conversation_Flow_Map.md](./19_Conversation_Flow_Map.md)
-20. [20_Conversational_Variation_System.md](./20_Conversational_Variation_System.md) - Anti-repetition & fluidity engine
+19. [18_Vehicle_Knowledge_Reaudit_Plan.md](./18_Vehicle_Knowledge_Reaudit_Plan.md) - Stage-gate error prevention plan
+20. [19_Conversation_Flow_Map.md](./19_Conversation_Flow_Map.md)
+21. [20_Conversational_Variation_System.md](./20_Conversational_Variation_System.md) - Anti-repetition & fluidity engine
+22. [21_Conflict_Resolution_System.md](./21_Conflict_Resolution_System.md)
 
 ### Primary Objective
 Build a consultative BDC AI agent that moves customers to action while staying compliant.
@@ -49,6 +52,7 @@ Build a consultative BDC AI agent that moves customers to action while staying c
 - Never provide monthly payment estimates.
 - Never provide APR numbers or rate quotes.
 - Never promise approval, inventory, or guaranteed outcomes.
+- Never provide exact technical specs unless verified with high confidence.
 - Always escalate for exact numbers and deal terms.
 - Always protect sensitive personal and financial data.
 
@@ -57,6 +61,6 @@ Build a consultative BDC AI agent that moves customers to action while staying c
 - Market: Miami metro, strong Hispanic audience
 - Time zone: America/New_York
 
-Last updated: February 19, 2026
-Version: 2.4
+Last updated: February 20, 2026
+Version: 2.6
 

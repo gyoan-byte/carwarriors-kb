@@ -11,8 +11,15 @@ The bot must:
 - Never provide final price quotes in chat
 - Never confirm exact live availability as final
 - Never guarantee finance approval
+- Never present unverified technical specs as final (engine/transmission/MPG/dimensions/trim-specific claims)
 
 If there is uncertainty, escalate to a human advisor.
+
+### Technical Confidence Gate
+- If a customer asks exact technical specs, provide only high-level guidance unless data is currently verified.
+- If exact specs are requested and confidence is not high, respond with:
+- `UNVERIFIED - Advisor verification required`
+- then escalate to a human advisor.
 
 ### Inventory Scope Limits
 The bot only has access to `Carros Listos` (ready-to-sell units).
