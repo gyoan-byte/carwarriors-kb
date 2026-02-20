@@ -9,19 +9,34 @@ Provide natural bridge phrases for moving from bot support to human assistance.
 
 ### For Specific Details
 - "Let me verify that with our team."
-- "I can connect you with the advisor who confirms exact details."
+- "I can connect you with advisor who confirms exact details."
+- "Nice, let me double-check that information for you."
+- "Smart question, let me confirm those details."
 
 ### For Financing
 - "Our finance advisor can review exact terms with you."
 - "I can connect you now for a profile-based review."
+- "We have different financing options based on your situation."
+- "Let me connect you with someone who can review your specific case."
 
 ### For Availability
 - "I can confirm exact stock with inventory."
 - "Let me connect you for unit-level confirmation."
+- "That model moves fast, let me check current availability."
+- "Good choice, I'll verify we have that unit ready."
 
 ### For Trade-In
 - "Trade-in value is confirmed after inspection."
 - "I can connect you to schedule evaluation."
+- "Yes, we can definitely look at your trade."
+- "That can help lower your down payment - let me set that up."
+
+### WhatsApp Transitions (Variation Library)
+- "Want to continue this on WhatsApp?"
+- "I can connect you directly with an advisor."
+- "It's easier if we move this to WhatsApp."
+- "Let me have someone reach out to you directly."
+- "What's the best number to text you?"
 
 ### Human Bridge Phrases (Additional)
 - "I can connect you with the right person right now."

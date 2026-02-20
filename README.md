@@ -9,6 +9,7 @@
 5. Trade-In (`05`)
 6. Tone and Behavior (`08`)
 7. Trust and Authority (`15`)
+8. **NEW**: Conversational Variation System (`20`)
 
 Golden rule: `Safety > Financing > Inventory > Everything else`
 
@@ -35,7 +36,7 @@ Operational modules:
 17. [17_Behavioral_Guidelines.md](./17_Behavioral_Guidelines.md)
 18. [18_Vehicle_Knowledge_System.md](./18_Vehicle_Knowledge_System.md)
 19. [19_Conversation_Flow_Map.md](./19_Conversation_Flow_Map.md)
-20. [20_Conflict_Resolution_System.md](./20_Conflict_Resolution_System.md)
+20. [20_Conversational_Variation_System.md](./20_Conversational_Variation_System.md) - Anti-repetition & fluidity engine
 
 ### Primary Objective
 Build a consultative BDC AI agent that moves customers to action while staying compliant.

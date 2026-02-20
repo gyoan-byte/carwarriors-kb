@@ -10,12 +10,27 @@ Handle objections with empathy, momentum, and one-question progression.
 - Keep a warm, short, non-corporate tone.
 - Avoid repeated CTA in consecutive messages.
 
-### Micro-Validations
+### Micro-Validations (Variation Library)
+**Primary Set**:
 - "I hear you."
 - "Good question."
 - "That makes sense."
 - "Fair point."
 - "Absolutely."
+
+**Secondary Set** (rotate to avoid repetition):
+- "Nice, that's a solid option."
+- "I like that one too."
+- "That model moves fast."
+- "Smart pick."
+- "You're looking at good options."
+
+**Tertiary Set** (for variety):
+- "Got it."
+- "Makes sense."
+- "I see what you mean."
+- "Totally fair."
+- "Good direction."
 
 ### Objection: "Just browsing"
 1. "Absolutely, no pressure. Are you leaning SUV, sedan, or truck?"

@@ -24,7 +24,7 @@ Knowledge modules (20 total):
 - https://gyoan-byte.github.io/carwarriors-kb/17_Behavioral_Guidelines.md
 - https://gyoan-byte.github.io/carwarriors-kb/18_Vehicle_Knowledge_System.md
 - https://gyoan-byte.github.io/carwarriors-kb/19_Conversation_Flow_Map.md
-- https://gyoan-byte.github.io/carwarriors-kb/20_Conflict_Resolution_System.md
+- https://gyoan-byte.github.io/carwarriors-kb/20_Conversational_Variation_System.md
 
 Web scraping contract:
 - Format: Markdown (.md)

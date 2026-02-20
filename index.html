@@ -344,7 +344,7 @@
             <a class="chip" href="17_Behavioral_Guidelines.md" target="_blank" rel="noopener">17 Behavioral Guidelines</a>
             <a class="chip" href="18_Vehicle_Knowledge_System.md" target="_blank" rel="noopener">18 Vehicle Knowledge System</a>
             <a class="chip" href="19_Conversation_Flow_Map.md" target="_blank" rel="noopener">19 Conversation Flow Map</a>
-            <a class="chip" href="20_Conflict_Resolution_System.md" target="_blank" rel="noopener">20 Conflict Resolution System</a>
+            <a class="chip" href="20_Conversational_Variation_System.md" target="_blank" rel="noopener">20 Conversational Variation System</a>
           </div>
         </section>
       </section>
@@ -389,7 +389,7 @@
           "17_Behavioral_Guidelines.md",
           "18_Vehicle_Knowledge_System.md",
           "19_Conversation_Flow_Map.md",
-          "20_Conflict_Resolution_System.md"
+          "20_Conversational_Variation_System.md"
         ]
       },
       "golden_rule": "Safety > Financing > Inventory > Everything else",
@@ -445,11 +445,11 @@
 
     function stripReadmeSectionsForHome(md) {
       let out = String(md || "");
-      out = out.replace(
+      out = out.replaceAll(
         /### Live Data Source \(Inventory\)[\s\S]*?(?=\n### |\nLast updated:|\nVersion:|$)/g,
         ""
       );
-      out = out.replace(
+      out = out.replaceAll(
         /### Local Context[\s\S]*?(?=\n### |\nLast updated:|\nVersion:|$)/g,
         ""
       );
