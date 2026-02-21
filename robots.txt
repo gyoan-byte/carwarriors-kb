@@ -1,36 +1,39 @@
 User-agent: *
 Allow: /
 
-# Allow direct access to all markdown knowledge modules
+# Allow direct access to all markdown modules
 Allow: *.md
 Allow: /README.md
-Allow: /01_Business_Identity.md
-Allow: /02_Inventory_Management.md
-Allow: /03_Financing_Rules.md
-Allow: /04_Purchase_Process.md
-Allow: /05_Trade_In.md
-Allow: /06_Objection_Handling.md
-Allow: /07_Safety_Compliance.md
-Allow: /08_Tone_Behavior.md
-Allow: /09_Escalation_Protocols.md
-Allow: /10_Bot_Limits.md
-Allow: /11_Conversation_Transitions.md
-Allow: /12_Difficult_Conversations.md
-Allow: /13_Conditional_Logic.md
-Allow: /14_Automotive_Basics.md
-Allow: /15_Trust_Authority.md
-Allow: /16_Commercial_Psychology.md
-Allow: /17_Behavioral_Guidelines.md
-Allow: /18_Vehicle_Knowledge_System.md
-Allow: /19_Conversation_Flow_Map.md
-Allow: /20_Conflict_Resolution_System.md
+
+# Knowledge Base modules
+Allow: /knowledge_base/01_Business_Identity.md
+Allow: /knowledge_base/02_Inventory_Policy.md
+Allow: /knowledge_base/03_Financing_Policy.md
+Allow: /knowledge_base/04_Purchase_Process.md
+Allow: /knowledge_base/05_Trade_In_Policy.md
+Allow: /knowledge_base/07_Safety_Compliance.md
+Allow: /knowledge_base/09_Escalation_Policy.md
+Allow: /knowledge_base/13_Conditional_Logic.md
+Allow: /knowledge_base/14_Automotive_Basics.md
+Allow: /knowledge_base/15_Trust_Authority.md
+Allow: /knowledge_base/18_Vehicle_Knowledge_System.md
+
+# Agent Engine modules
+Allow: /agent_engine/06_Objection_Handling.md
+Allow: /agent_engine/08_Tone_Behavior.md
+Allow: /agent_engine/10_Functional_Limits.md
+Allow: /agent_engine/11_Transitions.md
+Allow: /agent_engine/12_Difficult_Conversations.md
+Allow: /agent_engine/16_Commercial_Psychology.md
+Allow: /agent_engine/17_Behavioral_Guidelines.md
+Allow: /agent_engine/19_Conversation_Flow_Map.md
+Allow: /agent_engine/20_Conversational_Variation_System.md
+
+# Discovery files
 Allow: /llms.txt
 
 # Sitemap location
 Sitemap: https://gyoan-byte.github.io/carwarriors-kb/sitemap.xml
-
-# LLMs discovery file
-# https://gyoan-byte.github.io/carwarriors-kb/llms.txt
 
 # Crawl delay for polite crawling
 Crawl-delay: 1

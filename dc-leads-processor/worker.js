@@ -1,4 +1,4 @@
-export default {
+﻿export default {
   // 1) EMAIL: stores email text in KV (K2) ALWAYS + stores CSV attachments in R2 only for subject "CARROS LISTOS"
   async email(message, env, ctx) {
     try {
@@ -36,7 +36,7 @@ export default {
 
       await kv.put(mailKey, JSON.stringify(mailObj));
 
-      // puntero al último correo
+      // puntero al Ãºltimo correo
       await kv.put(
         "mail/latest.json",
         JSON.stringify({ id: mailKey, receivedAt, processedAt: new Date().toISOString(), subject, from, to }, null, 2)
@@ -206,8 +206,8 @@ function withCors(response) {
 
 function getInventoryBucket(env) {
   const bucket = env?.inventario || env?.INVENTARIO;
-  // OJO: en este worker se puede recibir correo NO CARROS LISTOS, pero igual llamamos a esta función arriba.
-  // Si tú quieres permitir operar sin R2, cambia esto a "return null" y protege usos del bucket.
+  // OJO: en este worker se puede recibir correo NO CARROS LISTOS, pero igual llamamos a esta funciÃ³n arriba.
+  // Si tÃº quieres permitir operar sin R2, cambia esto a "return null" y protege usos del bucket.
   if (!bucket) throw new Error('Missing R2 binding. Expected "inventario" (or legacy "INVENTARIO").');
   return bucket;
 }
@@ -450,7 +450,7 @@ async function handleReady(url, env) {
     ok: true,
     generatedAt: new Date().toISOString(),
     source: "CARROS LISTOS",
-    disclaimer: "Preliminary availability only. Final unit confirmation with a human advisor.",
+    disclaimer: "Preliminary availability only. Final unit confirmation with a team advisor.",
     filters: {
       q: q || null,
       make: makeFilter || null,
@@ -659,7 +659,7 @@ let kbCache = {
 function getKbSourceUrl(env) {
   return (
     env?.KB_SOURCE_URL ||
-    "https://gyoan-byte.github.io/carwarriors-kb/18_Vehicle_Knowledge_System.md"
+    "https://gyoan-byte.github.io/carwarriors-kb/knowledge_base/18_Vehicle_Knowledge_System.md"
   );
 }
 
@@ -945,7 +945,7 @@ async function handleMailList(url, env) {
 
   const limit = clampInt(url.searchParams.get("limit"), 1, 100, 50);
 
-  // lista simple por prefijo (orden lexicográfico por la key: mail/YYYY/MM/DD/...)
+  // lista simple por prefijo (orden lexicogrÃ¡fico por la key: mail/YYYY/MM/DD/...)
   let cursor = url.searchParams.get("cursor") || undefined;
   const listed = await kv.list({ prefix: "mail/", cursor, limit });
 
@@ -1134,7 +1134,7 @@ function stripHtml(html) {
 }
 
 function decodeQuotedPrintable(input) {
-  // básico y suficiente para emails comunes
+  // bÃ¡sico y suficiente para emails comunes
   let s = String(input || "");
   // soft line breaks: =\r\n
   s = s.replaceAll(/=\r?\n/g, "");
@@ -1445,3 +1445,5 @@ function countBy(arr, keyFn) {
   }
   return out;
 }
+
+

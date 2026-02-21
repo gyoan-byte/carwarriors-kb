@@ -1,34 +1,30 @@
-CarWarriors Knowledge Base
+﻿CarWarriors Knowledge Architecture
 
 Canonical site:
 - https://gyoan-byte.github.io/carwarriors-kb/
 
-Knowledge modules (20 total):
-- https://gyoan-byte.github.io/carwarriors-kb/README.md
-- https://gyoan-byte.github.io/carwarriors-kb/01_Business_Identity.md
-- https://gyoan-byte.github.io/carwarriors-kb/02_Inventory_Management.md
-- https://gyoan-byte.github.io/carwarriors-kb/03_Financing_Rules.md
-- https://gyoan-byte.github.io/carwarriors-kb/04_Purchase_Process.md
-- https://gyoan-byte.github.io/carwarriors-kb/05_Trade_In.md
-- https://gyoan-byte.github.io/carwarriors-kb/06_Objection_Handling.md
-- https://gyoan-byte.github.io/carwarriors-kb/07_Safety_Compliance.md
-- https://gyoan-byte.github.io/carwarriors-kb/08_Tone_Behavior.md
-- https://gyoan-byte.github.io/carwarriors-kb/09_Escalation_Protocols.md
-- https://gyoan-byte.github.io/carwarriors-kb/10_Bot_Limits.md
-- https://gyoan-byte.github.io/carwarriors-kb/11_Conversation_Transitions.md
-- https://gyoan-byte.github.io/carwarriors-kb/12_Difficult_Conversations.md
-- https://gyoan-byte.github.io/carwarriors-kb/13_Conditional_Logic.md
-- https://gyoan-byte.github.io/carwarriors-kb/14_Automotive_Basics.md
-- https://gyoan-byte.github.io/carwarriors-kb/15_Trust_Authority.md
-- https://gyoan-byte.github.io/carwarriors-kb/16_Commercial_Psychology.md
-- https://gyoan-byte.github.io/carwarriors-kb/17_Behavioral_Guidelines.md
-- https://gyoan-byte.github.io/carwarriors-kb/18_Vehicle_Knowledge_System.md
-- https://gyoan-byte.github.io/carwarriors-kb/19_Conversation_Flow_Map.md
-- https://gyoan-byte.github.io/carwarriors-kb/20_Conversational_Variation_System.md
+Knowledge Base modules:
+- https://gyoan-byte.github.io/carwarriors-kb/knowledge_base/01_Business_Identity.md
+- https://gyoan-byte.github.io/carwarriors-kb/knowledge_base/02_Inventory_Policy.md
+- https://gyoan-byte.github.io/carwarriors-kb/knowledge_base/03_Financing_Policy.md
+- https://gyoan-byte.github.io/carwarriors-kb/knowledge_base/04_Purchase_Process.md
+- https://gyoan-byte.github.io/carwarriors-kb/knowledge_base/05_Trade_In_Policy.md
+- https://gyoan-byte.github.io/carwarriors-kb/knowledge_base/07_Safety_Compliance.md
+- https://gyoan-byte.github.io/carwarriors-kb/knowledge_base/09_Escalation_Policy.md
+- https://gyoan-byte.github.io/carwarriors-kb/knowledge_base/13_Conditional_Logic.md
+- https://gyoan-byte.github.io/carwarriors-kb/knowledge_base/14_Automotive_Basics.md
+- https://gyoan-byte.github.io/carwarriors-kb/knowledge_base/15_Trust_Authority.md
+- https://gyoan-byte.github.io/carwarriors-kb/knowledge_base/18_Vehicle_Knowledge_System.md
 
-Web scraping contract:
-- Format: Markdown (.md)
-- Access: Direct URLs
-- Languages: English, Spanish
-- Update frequency: Manual (knowledge)
-- Last updated: 2026-02-19
+Agent Engine modules:
+- https://gyoan-byte.github.io/carwarriors-kb/agent_engine/06_Objection_Handling.md
+- https://gyoan-byte.github.io/carwarriors-kb/agent_engine/08_Tone_Behavior.md
+- https://gyoan-byte.github.io/carwarriors-kb/agent_engine/10_Functional_Limits.md
+- https://gyoan-byte.github.io/carwarriors-kb/agent_engine/11_Transitions.md
+- https://gyoan-byte.github.io/carwarriors-kb/agent_engine/12_Difficult_Conversations.md
+- https://gyoan-byte.github.io/carwarriors-kb/agent_engine/16_Commercial_Psychology.md
+- https://gyoan-byte.github.io/carwarriors-kb/agent_engine/17_Behavioral_Guidelines.md
+- https://gyoan-byte.github.io/carwarriors-kb/agent_engine/19_Conversation_Flow_Map.md
+- https://gyoan-byte.github.io/carwarriors-kb/agent_engine/20_Conversational_Variation_System.md
+
+Last updated: 2026-02-21
