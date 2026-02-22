@@ -12,3 +12,6 @@ bucket_name = "inventario"
 [[kv_namespaces]]
 binding = "K2"
 id = "a4f6789629f144e89699135601276486"
+
+[vars]
+KB_SOURCE_URL = "https://gyoan-byte.github.io/carwarriors-kb/knowledge_base/18_Vehicle_Knowledge_System.md"

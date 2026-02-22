@@ -204,6 +204,8 @@ function withCors(response) {
 
 /* ---------- Bindings ---------- */
 
+const KB_VEHICLE_MD_URL = "https://gyoan-byte.github.io/carwarriors-kb/knowledge_base/18_Vehicle_Knowledge_System.md";
+
 function getInventoryBucket(env) {
   const bucket = env?.inventario || env?.INVENTARIO;
   // OJO: en este worker se puede recibir correo NO CARROS LISTOS, pero igual llamamos a esta funciÃ³n arriba.
@@ -662,10 +664,7 @@ let kbCache = {
 };
 
 function getKbSourceUrl(env) {
-  return (
-    env?.KB_SOURCE_URL ||
-    "https://gyoan-byte.github.io/carwarriors-kb/knowledge_base/18_Vehicle_Knowledge_System.md"
-  );
+  return env?.KB_SOURCE_URL || KB_VEHICLE_MD_URL;
 }
 
 function buildKbLookupKey(make, model) {
