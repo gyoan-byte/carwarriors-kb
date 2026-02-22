@@ -1,4 +1,4 @@
-## Authority Notice
+ï»¿## Authority Notice
 This module is subordinate to the Authority Hierarchy defined in README.md. If any rule conflicts, the following override order applies:
 1. Safety and Compliance (07, 10)
 2. Financing Rules (03)
@@ -7,8 +7,8 @@ This module is subordinate to the Authority Hierarchy defined in README.md. If a
 
 # System Version: v1.0
 # Completion Status: Production-Ready Technical Knowledge Base
-# Total Models: 57
-# Total Brands: 24
+# Total Models: 85
+# Total Brands: 25
 # Final TBD Count: 0
 # Last Full Audit Date: 2026-02-19
 
@@ -29,8 +29,8 @@ This module is subordinate to the Authority Hierarchy defined in README.md. If a
 ## Certification Status
 System Integrity: VERIFIED
 Compliance Status: CLEAN
-Models Audited: 57
-Brands Audited: 24
+Models Audited: 85
+Brands Audited: 25
 Final Data Gaps: 0
 Certification Date: 2026-02-19
 
@@ -53,7 +53,7 @@ Certification Date: 2026-02-19
 - In `SAFE_MODE`, the system must not provide as final:
 - generation codes, exact engine/transmission mappings, exact MPG tables, exact dimensions, or trim-level technical claims from this file.
 - If the user asks for exact technical specs:
-- respond with `UNVERIFIED – Advisor verification required`,
+- respond with `UNVERIFIED â€“ Advisor verification required`,
 - provide one safe high-level alternative,
 - and escalate to a human advisor for exact confirmation.
 - This override remains active until the next full technical re-audit is completed and certified.
@@ -63,7 +63,7 @@ Certification Date: 2026-02-19
 Vehicle knowledge does NOT imply inventory availability.
 All availability must be verified only through `Carros Listos`.
 - Technical knowledge only; no pricing, financing terms (advisor verified), payment structure (advisor verified), approval guarantee, or confirmed availability.
-- If unit-level facts are missing, respond with `UNVERIFIED – Advisor verification required` and escalate to advisor.
+- If unit-level facts are missing, respond with `UNVERIFIED â€“ Advisor verification required` and escalate to advisor.
 - Keep responses concise, structured, and verification-first.
 - Do not imply final inventory status; advisor confirms live status.
 - Prefer U.S.-market specifications unless explicitly stated otherwise.
@@ -305,7 +305,60 @@ Last Verified: 2026-02-19
 Sources: Official specs + NHTSA (EPA light-duty MPG may be N/A)
 Last Verified: 2026-02-19
 
-#### SUBURBAN\n- Classification: Full-size SUV (3-row)\n- Technical baseline: Large three-row SUV with strong V8 power, optional diesel\n- Ownership baseline: Moderate maintenance with focus on engine and transmission\n- Performance baseline: Spacious family transport with towing capability\n- Maintenance profile: Moderate\n- Resale tier: Moderate\n- Used risk flags: ENGINE_COMPLEXITY; FLOOD_SENSITIVITY\n- Miami fit notes: Excellent for large families, good for long trips\n- Aliases: SUBURBAN\nSources: Official Chevrolet specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n#### Tahoe\n- Classification: Full-size SUV (3-row)\n- Technical baseline: Large SUV with V8\n- Ownership baseline: Powerful, moderate maintenance\n- Performance baseline: Towing and space\n- Maintenance profile: Moderate\n- Resale tier: Moderate\n- Used risk flags: ENGINE_COMPLEXITY\n- Miami fit notes: Good for large groups\n- Aliases: Tahoe\nSources: Official Chevrolet specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n#### Traverse\n- Classification: Midsize SUV (3-row)\n- Technical baseline: Three-row crossover\n- Ownership baseline: Family oriented, low maintenance\n- Performance baseline: Comfortable transport\n- Maintenance profile: Low\n- Resale tier: Moderate\n- Used risk flags: NONE\n- Miami fit notes: Spacious family SUV\n- Aliases: Traverse\nSources: Official Chevrolet specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n#### Malibu\n- Classification: Midsize sedan\n- Technical baseline: Sedan with turbo\n- Ownership baseline: Comfortable, moderate maintenance\n- Performance baseline: Highway driving\n- Maintenance profile: Low\n- Resale tier: Moderate\n- Used risk flags: NONE\n- Miami fit notes: Affordable sedan\n- Aliases: Malibu\nSources: Official Chevrolet specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n\n### DODGE
+#### SUBURBAN
+- Classification: Full-size SUV (3-row)
+- Technical baseline: Large three-row SUV with strong V8 power, optional diesel
+- Ownership baseline: Moderate maintenance with focus on engine and transmission
+- Performance baseline: Spacious family transport with towing capability
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: ENGINE_COMPLEXITY; FLOOD_SENSITIVITY
+- Miami fit notes: Excellent for large families, good for long trips
+- Aliases: SUBURBAN
+Sources: Official Chevrolet specs + EPA + NHTSA
+Last Verified: 2026-02-19
+
+#### Tahoe
+- Classification: Full-size SUV (3-row)
+- Technical baseline: Large SUV with V8
+- Ownership baseline: Powerful, moderate maintenance
+- Performance baseline: Towing and space
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: ENGINE_COMPLEXITY
+- Miami fit notes: Good for large groups
+- Aliases: Tahoe
+Sources: Official Chevrolet specs + EPA + NHTSA
+Last Verified: 2026-02-19
+
+#### Traverse
+- Classification: Midsize SUV (3-row)
+- Technical baseline: Three-row crossover
+- Ownership baseline: Family oriented, low maintenance
+- Performance baseline: Comfortable transport
+- Maintenance profile: Low
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: Spacious family SUV
+- Aliases: Traverse
+Sources: Official Chevrolet specs + EPA + NHTSA
+Last Verified: 2026-02-19
+
+#### Malibu
+- Classification: Midsize sedan
+- Technical baseline: Sedan with turbo
+- Ownership baseline: Comfortable, moderate maintenance
+- Performance baseline: Highway driving
+- Maintenance profile: Low
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: Affordable sedan
+- Aliases: Malibu
+Sources: Official Chevrolet specs + EPA + NHTSA
+Last Verified: 2026-02-19
+
+
+### DODGE
 #### Charger
 - Classification: Full-size sport sedan
 - Technical baseline: Large performance-oriented sedan architecture with V6/V8 legacy lineup
@@ -332,7 +385,20 @@ Last Verified: 2026-02-19
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
-#### DURANGO\n- Classification: Midsize SUV (3-row)\n- Technical baseline: Three-row SUV with Hemi V8 or turbo options\n- Ownership baseline: Moderate maintenance with attention to transmission\n- Performance baseline: Powerful acceleration, comfortable ride\n- Maintenance profile: Moderate\n- Resale tier: Moderate\n- Used risk flags: TRANSMISSION_RISK; FLOOD_SENSITIVITY\n- Miami fit notes: Good for families, strong A/C for heat\n- Aliases: DURANGO\nSources: Official Dodge specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n### FORD
+#### DURANGO
+- Classification: Midsize SUV (3-row)
+- Technical baseline: Three-row SUV with Hemi V8 or turbo options
+- Ownership baseline: Moderate maintenance with attention to transmission
+- Performance baseline: Powerful acceleration, comfortable ride
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: TRANSMISSION_RISK; FLOOD_SENSITIVITY
+- Miami fit notes: Good for families, strong A/C for heat
+- Aliases: DURANGO
+Sources: Official Dodge specs + EPA + NHTSA
+Last Verified: 2026-02-19
+
+### FORD
 #### F350 Super Duty Crew Cab
 - Classification: Heavy-duty commercial pickup truck
 - Technical baseline: Super Duty platform built for high-load towing and commercial utility
@@ -385,7 +451,47 @@ Last Verified: 2026-02-19
 Sources: Official specs + NHTSA (EPA light-duty MPG may be N/A by configuration)
 Last Verified: 2026-02-19
 
-#### F-150\n- Classification: Full-size pickup truck\n- Technical baseline: Full-size pickup with various engines\n- Ownership baseline: Versatile, moderate maintenance\n- Performance baseline: Strong towing and work\n- Maintenance profile: Moderate\n- Resale tier: Strong\n- Used risk flags: TOWING_MAINTENANCE\n- Miami fit notes: Popular for utility\n- Aliases: F-150; F150\nSources: Official Ford specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n#### Explorer\n- Classification: Midsize SUV (3-row)\n- Technical baseline: Three-row SUV with V6\n- Ownership baseline: Spacious, moderate maintenance\n- Performance baseline: Family transport\n- Maintenance profile: Moderate\n- Resale tier: Moderate\n- Used risk flags: NONE\n- Miami fit notes: Good for families\n- Aliases: Explorer\nSources: Official Ford specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n#### Escape\n- Classification: Compact SUV\n- Technical baseline: Compact crossover\n- Ownership baseline: Reliable, low maintenance\n- Performance baseline: Balanced\n- Maintenance profile: Low\n- Resale tier: Moderate\n- Used risk flags: NONE\n- Miami fit notes: Urban SUV\n- Aliases: Escape\nSources: Official Ford specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n\n### HONDA
+#### F-150
+- Classification: Full-size pickup truck
+- Technical baseline: Full-size pickup with various engines
+- Ownership baseline: Versatile, moderate maintenance
+- Performance baseline: Strong towing and work
+- Maintenance profile: Moderate
+- Resale tier: Strong
+- Used risk flags: TOWING_MAINTENANCE
+- Miami fit notes: Popular for utility
+- Aliases: F-150; F150
+Sources: Official Ford specs + EPA + NHTSA
+Last Verified: 2026-02-19
+
+#### Explorer
+- Classification: Midsize SUV (3-row)
+- Technical baseline: Three-row SUV with V6
+- Ownership baseline: Spacious, moderate maintenance
+- Performance baseline: Family transport
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: Good for families
+- Aliases: Explorer
+Sources: Official Ford specs + EPA + NHTSA
+Last Verified: 2026-02-19
+
+#### Escape
+- Classification: Compact SUV
+- Technical baseline: Compact crossover
+- Ownership baseline: Reliable, low maintenance
+- Performance baseline: Balanced
+- Maintenance profile: Low
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: Urban SUV
+- Aliases: Escape
+Sources: Official Ford specs + EPA + NHTSA
+Last Verified: 2026-02-19
+
+
+### HONDA
 #### Accord
 - Classification: Midsize sedan
 - Technical baseline: Mainstream midsize sedan with strong reliability and efficiency reputation
@@ -425,7 +531,47 @@ Last Verified: 2026-02-19
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
-#### CR-V\n- Classification: Compact SUV\n- Technical baseline: Compact crossover with CVT\n- Ownership baseline: Reliable, moderate maintenance\n- Performance baseline: Balanced for daily use\n- Maintenance profile: Low\n- Resale tier: Strong\n- Used risk flags: CVT_RISK\n- Miami fit notes: Popular compact SUV\n- Aliases: CR-V\nSources: Official Honda specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n#### Pilot\n- Classification: Midsize SUV (3-row)\n- Technical baseline: Three-row SUV with V6\n- Ownership baseline: Spacious, moderate maintenance\n- Performance baseline: Family transport\n- Maintenance profile: Moderate\n- Resale tier: Moderate\n- Used risk flags: NONE\n- Miami fit notes: Good for large families\n- Aliases: Pilot\nSources: Official Honda specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n#### HR-V\n- Classification: Subcompact SUV\n- Technical baseline: Small crossover with CVT\n- Ownership baseline: Efficient, low maintenance\n- Performance baseline: City driving\n- Maintenance profile: Low\n- Resale tier: Moderate\n- Used risk flags: CVT_RISK\n- Miami fit notes: Affordable urban SUV\n- Aliases: HR-V\nSources: Official Honda specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n\n### HUMMER
+#### CR-V
+- Classification: Compact SUV
+- Technical baseline: Compact crossover with CVT
+- Ownership baseline: Reliable, moderate maintenance
+- Performance baseline: Balanced for daily use
+- Maintenance profile: Low
+- Resale tier: Strong
+- Used risk flags: CVT_RISK
+- Miami fit notes: Popular compact SUV
+- Aliases: CR-V
+Sources: Official Honda specs + EPA + NHTSA
+Last Verified: 2026-02-19
+
+#### Pilot
+- Classification: Midsize SUV (3-row)
+- Technical baseline: Three-row SUV with V6
+- Ownership baseline: Spacious, moderate maintenance
+- Performance baseline: Family transport
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: Good for large families
+- Aliases: Pilot
+Sources: Official Honda specs + EPA + NHTSA
+Last Verified: 2026-02-19
+
+#### HR-V
+- Classification: Subcompact SUV
+- Technical baseline: Small crossover with CVT
+- Ownership baseline: Efficient, low maintenance
+- Performance baseline: City driving
+- Maintenance profile: Low
+- Resale tier: Moderate
+- Used risk flags: CVT_RISK
+- Miami fit notes: Affordable urban SUV
+- Aliases: HR-V
+Sources: Official Honda specs + EPA + NHTSA
+Last Verified: 2026-02-19
+
+
+### HUMMER
 #### H1
 - Classification: Heavy-duty off-road utility vehicle
 - Technical baseline: Military-derived extreme off-road architecture with specialty-use profile
@@ -573,7 +719,60 @@ Last Verified: 2026-02-19
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
-#### Rogue\n- Classification: Compact SUV\n- Technical baseline: Compact crossover with CVT\n- Ownership baseline: Reliable, moderate maintenance\n- Performance baseline: Balanced\n- Maintenance profile: Low\n- Resale tier: Moderate\n- Used risk flags: CVT_RISK\n- Miami fit notes: Popular SUV\n- Aliases: Rogue\nSources: Official Nissan specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n#### Altima\n- Classification: Midsize sedan\n- Technical baseline: Sedan with CVT\n- Ownership baseline: Comfortable, moderate maintenance\n- Performance baseline: Highway cruising\n- Maintenance profile: Low\n- Resale tier: Moderate\n- Used risk flags: CVT_RISK\n- Miami fit notes: Good for long drives\n- Aliases: Altima\nSources: Official Nissan specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n#### Sentra\n- Classification: Compact sedan\n- Technical baseline: Affordable sedan with CVT\n- Ownership baseline: Basic, low maintenance\n- Performance baseline: City driving\n- Maintenance profile: Low\n- Resale tier: Moderate\n- Used risk flags: CVT_RISK\n- Miami fit notes: Budget friendly\n- Aliases: Sentra\nSources: Official Nissan specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n#### Pathfinder\n- Classification: Midsize SUV (3-row)\n- Technical baseline: Three-row SUV with V6\n- Ownership baseline: Spacious, moderate maintenance\n- Performance baseline: Family transport\n- Maintenance profile: Moderate\n- Resale tier: Moderate\n- Used risk flags: NONE\n- Miami fit notes: Good for families\n- Aliases: Pathfinder\nSources: Official Nissan specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n\n### RAM
+#### Rogue
+- Classification: Compact SUV
+- Technical baseline: Compact crossover with CVT
+- Ownership baseline: Reliable, moderate maintenance
+- Performance baseline: Balanced
+- Maintenance profile: Low
+- Resale tier: Moderate
+- Used risk flags: CVT_RISK
+- Miami fit notes: Popular SUV
+- Aliases: Rogue
+Sources: Nissan USA model page + EPA + NHTSA
+Last Verified: 2026-02-22
+
+#### Altima
+- Classification: Midsize sedan
+- Technical baseline: Sedan with CVT
+- Ownership baseline: Comfortable, moderate maintenance
+- Performance baseline: Highway cruising
+- Maintenance profile: Low
+- Resale tier: Moderate
+- Used risk flags: CVT_RISK
+- Miami fit notes: Good for long drives
+- Aliases: Altima
+Sources: Nissan USA model page + EPA + NHTSA
+Last Verified: 2026-02-22
+
+#### Sentra
+- Classification: Compact sedan
+- Technical baseline: Affordable sedan with CVT
+- Ownership baseline: Basic, low maintenance
+- Performance baseline: City driving
+- Maintenance profile: Low
+- Resale tier: Moderate
+- Used risk flags: CVT_RISK
+- Miami fit notes: Budget friendly
+- Aliases: Sentra
+Sources: Official Nissan specs + EPA + NHTSA
+Last Verified: 2026-02-19
+
+#### Pathfinder
+- Classification: Midsize SUV (3-row)
+- Technical baseline: Three-row SUV with V6
+- Ownership baseline: Spacious, moderate maintenance
+- Performance baseline: Family transport
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: Good for families
+- Aliases: Pathfinder
+Sources: Official Nissan specs + EPA + NHTSA
+Last Verified: 2026-02-19
+
+
+### RAM
 #### 2500 Crew Cab
 - Classification: Heavy-duty pickup truck
 - Technical baseline: HD truck platform for commercial towing and payload workloads
@@ -587,7 +786,33 @@ Last Verified: 2026-02-19
 Sources: Official specs + NHTSA (EPA light-duty MPG may be N/A)
 Last Verified: 2026-02-19
 
-#### 1500\n- Classification: Midsize pickup truck\n- Technical baseline: Versatile full-size pickup with various cab and bed configurations, gas or diesel engines\n- Ownership baseline: Moderate maintenance with attention to towing components if used\n- Performance baseline: Strong towing and payload capacity, comfortable for daily use\n- Maintenance profile: Moderate\n- Resale tier: Strong\n- Used risk flags: TOWING_MAINTENANCE; FLOOD_SENSITIVITY\n- Miami fit notes: Popular for commercial use, good for towing boats or trailers\n- Aliases: 1500 CREW CAB\nSources: Official RAM specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n#### 3500\n- Classification: Heavy-duty pickup truck\n- Technical baseline: Heavy-duty pickup for commercial and heavy towing, diesel engines standard\n- Ownership baseline: Higher maintenance for heavy-duty components\n- Performance baseline: Exceptional towing and payload, durable for work\n- Maintenance profile: High\n- Resale tier: Moderate\n- Used risk flags: HEAVY_DUTY_MAINTENANCE; FLOOD_SENSITIVITY\n- Miami fit notes: Ideal for commercial fleets, good for heavy loads\n- Aliases: 3500 CREW CAB\nSources: Official RAM specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n### TESLA
+#### 1500
+- Classification: Midsize pickup truck
+- Technical baseline: Versatile full-size pickup with various cab and bed configurations, gas or diesel engines
+- Ownership baseline: Moderate maintenance with attention to towing components if used
+- Performance baseline: Strong towing and payload capacity, comfortable for daily use
+- Maintenance profile: Moderate
+- Resale tier: Strong
+- Used risk flags: TOWING_MAINTENANCE; FLOOD_SENSITIVITY
+- Miami fit notes: Popular for commercial use, good for towing boats or trailers
+- Aliases: 1500 CREW CAB
+Sources: Official RAM specs + EPA + NHTSA
+Last Verified: 2026-02-19
+
+#### 3500
+- Classification: Heavy-duty pickup truck
+- Technical baseline: Heavy-duty pickup for commercial and heavy towing, diesel engines standard
+- Ownership baseline: Higher maintenance for heavy-duty components
+- Performance baseline: Exceptional towing and payload, durable for work
+- Maintenance profile: High
+- Resale tier: Moderate
+- Used risk flags: HEAVY_DUTY_MAINTENANCE; FLOOD_SENSITIVITY
+- Miami fit notes: Ideal for commercial fleets, good for heavy loads
+- Aliases: 3500 CREW CAB
+Sources: Official RAM specs + EPA + NHTSA
+Last Verified: 2026-02-19
+
+### TESLA
 #### Model 3
 - Classification: Compact electric sedan
 - Technical baseline: EV sedan platform with OTA software ecosystem and efficient packaging
@@ -601,7 +826,20 @@ Last Verified: 2026-02-19
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
-#### MODEL Y\n- Classification: Compact electric SUV\n- Technical baseline: Battery electric crossover with single motor or dual motor configurations, long range options, autopilot features\n- Ownership baseline: Low maintenance electric vehicle with battery warranty considerations\n- Performance baseline: Strong acceleration, quiet ride, regenerative braking\n- Maintenance profile: Low\n- Resale tier: Strong\n- Used risk flags: EV_CHARGING_DEPENDENCY; FLOOD_SENSITIVITY\n- Miami fit notes: Excellent for short trips, charging infrastructure in Miami area is developing\n- Aliases: MODEL Y\nSources: Official Tesla specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n### TOYOTA
+#### MODEL Y
+- Classification: Compact electric SUV
+- Technical baseline: Battery electric crossover with single motor or dual motor configurations, long range options, autopilot features
+- Ownership baseline: Low maintenance electric vehicle with battery warranty considerations
+- Performance baseline: Strong acceleration, quiet ride, regenerative braking
+- Maintenance profile: Low
+- Resale tier: Strong
+- Used risk flags: EV_CHARGING_DEPENDENCY; FLOOD_SENSITIVITY
+- Miami fit notes: Excellent for short trips, charging infrastructure in Miami area is developing
+- Aliases: MODEL Y
+Sources: Official Tesla specs + EPA + NHTSA
+Last Verified: 2026-02-19
+
+### TOYOTA
 #### RAV4
 - Classification: Compact SUV
 - Technical baseline: Mainstream compact crossover with gas, hybrid, and AWD availability by year
@@ -638,8 +876,8 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
-Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Sources: Toyota USA model page + EPA + NHTSA
+Last Verified: 2026-02-22
 
 #### Highlander
 - Classification: Midsize SUV (3-row)
@@ -721,19 +959,46 @@ Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
 #### Palisade
-- Classification: Full-size SUV (3-row)
-- Technical baseline: Three-row family SUV with premium-content mainstream positioning
-- Ownership baseline: Large-SUV consumables and electronics complexity depend on trim content
+- Classification: Three-row midsize SUV
+- Technical baseline: Three-row upscale family SUV platform with premium-content mainstream positioning
+- Ownership baseline: Midsize-SUV consumables and electronics complexity depend on trim content
 - Performance baseline: Comfort-oriented long-distance and family-transport capability
 - Maintenance profile: Moderate
 - Resale tier: Moderate
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
-Sources: Official specs + EPA + NHTSA
+Sources: Hyundai USA model page + EPA + NHTSA
+Last Verified: 2026-02-22
+
+#### Elantra
+- Classification: Compact sedan
+- Technical baseline: Sedan with turbo
+- Ownership baseline: Efficient, low maintenance
+- Performance baseline: Balanced
+- Maintenance profile: Low
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: Affordable and reliable
+- Aliases: Elantra
+Sources: Official Hyundai specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
-#### Elantra\n- Classification: Compact sedan\n- Technical baseline: Sedan with turbo\n- Ownership baseline: Efficient, low maintenance\n- Performance baseline: Balanced\n- Maintenance profile: Low\n- Resale tier: Moderate\n- Used risk flags: NONE\n- Miami fit notes: Affordable and reliable\n- Aliases: Elantra\nSources: Official Hyundai specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n#### Sonata\n- Classification: Midsize sedan\n- Technical baseline: Sedan with hybrid options\n- Ownership baseline: Comfortable, moderate maintenance\n- Performance baseline: Highway driving\n- Maintenance profile: Low\n- Resale tier: Moderate\n- Used risk flags: NONE\n- Miami fit notes: Good for commuting\n- Aliases: Sonata\nSources: Official Hyundai specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n\n### KIA
+#### Sonata
+- Classification: Midsize sedan
+- Technical baseline: Sedan with hybrid options
+- Ownership baseline: Comfortable, moderate maintenance
+- Performance baseline: Highway driving
+- Maintenance profile: Low
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: Good for commuting
+- Aliases: Sonata
+Sources: Official Hyundai specs + EPA + NHTSA
+Last Verified: 2026-02-19
+
+
+### KIA
 #### Sportage
 - Classification: Compact SUV
 - Technical baseline: Compact crossover with mainstream, hybrid, and PHEV variants by generation
@@ -748,19 +1013,59 @@ Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
 #### Telluride
-- Classification: Full-size SUV (3-row)
+- Classification: Three-row SUV
 - Technical baseline: Three-row family SUV with high-feature mainstream positioning
-- Ownership baseline: Large footprint and consumable costs typical of segment
+- Ownership baseline: Three-row SUV consumable and operating costs are typically higher than compact crossovers
 - Performance baseline: Comfortable highway behavior and family-focused packaging
 - Maintenance profile: Moderate
 - Resale tier: Moderate
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
-Sources: Official specs + EPA + NHTSA
+Sources: Kia USA model page + EPA + NHTSA
+Last Verified: 2026-02-22
+
+#### Forte
+- Classification: Compact sedan
+- Technical baseline: Sedan with turbo
+- Ownership baseline: Affordable, low maintenance
+- Performance baseline: Balanced
+- Maintenance profile: Low
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: Budget sedan
+- Aliases: Forte
+Sources: Official Kia specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
-#### Forte\n- Classification: Compact sedan\n- Technical baseline: Sedan with turbo\n- Ownership baseline: Affordable, low maintenance\n- Performance baseline: Balanced\n- Maintenance profile: Low\n- Resale tier: Moderate\n- Used risk flags: NONE\n- Miami fit notes: Budget sedan\n- Aliases: Forte\nSources: Official Kia specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n#### K5\n- Classification: Midsize sedan\n- Technical baseline: Sedan with turbo\n- Ownership baseline: Comfortable, moderate maintenance\n- Performance baseline: Highway driving\n- Maintenance profile: Low\n- Resale tier: Moderate\n- Used risk flags: NONE\n- Miami fit notes: Good value\n- Aliases: K5; Optima\nSources: Official Kia specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n#### Sorento\n- Classification: Midsize SUV (3-row)\n- Technical baseline: Three-row SUV\n- Ownership baseline: Spacious, moderate maintenance\n- Performance baseline: Family transport\n- Maintenance profile: Moderate\n- Resale tier: Moderate\n- Used risk flags: NONE\n- Miami fit notes: Family SUV\n- Aliases: Sorento\nSources: Official Kia specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n\n### LEXUS
+#### K5
+- Classification: Midsize sedan
+- Technical baseline: Sedan with turbo
+- Ownership baseline: Comfortable, moderate maintenance
+- Performance baseline: Highway driving
+- Maintenance profile: Low
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: Good value
+- Aliases: K5; Optima
+Sources: Official Kia specs + EPA + NHTSA
+Last Verified: 2026-02-19
+
+#### Sorento
+- Classification: Midsize SUV (3-row)
+- Technical baseline: Three-row SUV
+- Ownership baseline: Spacious, moderate maintenance
+- Performance baseline: Family transport
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: Family SUV
+- Aliases: Sorento
+Sources: Official Kia specs + EPA + NHTSA
+Last Verified: 2026-02-19
+
+
+### LEXUS
 #### RX 350
 - Classification: Midsize luxury SUV
 - Technical baseline: Core Lexus luxury crossover with comfort-oriented tuning
@@ -787,7 +1092,21 @@ Last Verified: 2026-02-19
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
-#### ES\n- Classification: Midsize sedan\n- Technical baseline: Luxury sedan with hybrid\n- Ownership baseline: Premium, moderate maintenance\n- Performance baseline: Smooth and quiet\n- Maintenance profile: Moderate\n- Resale tier: Strong\n- Used risk flags: HYBRID_BATTERY\n- Miami fit notes: Luxury commuting\n- Aliases: ES\nSources: Official Lexus specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n\n### MAZDA
+#### ES
+- Classification: Midsize sedan
+- Technical baseline: Luxury sedan with hybrid
+- Ownership baseline: Premium, moderate maintenance
+- Performance baseline: Smooth and quiet
+- Maintenance profile: Moderate
+- Resale tier: Strong
+- Used risk flags: HYBRID_BATTERY
+- Miami fit notes: Luxury commuting
+- Aliases: ES
+Sources: Official Lexus specs + EPA + NHTSA
+Last Verified: 2026-02-19
+
+
+### MAZDA
 #### CX-5
 - Classification: Compact SUV
 - Technical baseline: Compact crossover emphasizing upscale interior design and driving feel
@@ -814,7 +1133,21 @@ Last Verified: 2026-02-19
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
-##### ES\n- Classification: Midsize sedan\n- Technical baseline: Luxury sedan with hybrid\n- Ownership baseline: Premium, moderate maintenance\n- Performance baseline: Smooth and quiet\n- Maintenance profile: Moderate\n- Resale tier: Strong\n- Used risk flags: HYBRID_BATTERY\n- Miami fit notes: Luxury commuting\n- Aliases: ES\nSources: Official Lexus specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n\n### MAZDA3\n- Classification: Compact sedan\n- Technical baseline: Sedan with turbo\n- Ownership baseline: Sporty, moderate maintenance\n- Performance baseline: Fun to drive\n- Maintenance profile: Low\n- Resale tier: Moderate\n- Used risk flags: NONE\n- Miami fit notes: Sporty sedan\n- Aliases: Mazda3\nSources: Official Mazda specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n\n### MITSUBISHI
+#### MAZDA3
+- Classification: Compact sedan
+- Technical baseline: Sedan with turbo
+- Ownership baseline: Sporty, moderate maintenance
+- Performance baseline: Fun to drive
+- Maintenance profile: Low
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: Sporty sedan
+- Aliases: Mazda3
+Sources: Official Mazda specs + EPA + NHTSA
+Last Verified: 2026-02-19
+
+
+### MITSUBISHI
 #### Outlander
 - Classification: Compact SUV (3-row)
 - Technical baseline: Compact three-row crossover with value-oriented family packaging
@@ -869,12 +1202,54 @@ Last Verified: 2026-02-19
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
-### JEEP\n#### Grand Cherokee\n- Classification: Midsize SUV\n- Technical baseline: SUV with V6 or V8\n- Ownership baseline: Off-road capable, moderate maintenance\n- Performance baseline: Versatile\n- Maintenance profile: Moderate\n- Resale tier: Moderate\n- Used risk flags: OFFROAD_MAINTENANCE\n- Miami fit notes: Good for trails\n- Aliases: Grand Cherokee\nSources: Official Jeep specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n#### Compass\n- Classification: Compact SUV\n- Technical baseline: Compact crossover\n- Ownership baseline: Affordable, low maintenance\n- Performance baseline: Balanced\n- Maintenance profile: Low\n- Resale tier: Moderate\n- Used risk flags: NONE\n- Miami fit notes: Urban SUV\n- Aliases: Compass\nSources: Official Jeep specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n#### Wrangler\n- Classification: Compact SUV\n- Technical baseline: Off-road SUV\n- Ownership baseline: Durable, high maintenance\n- Performance baseline: Off-road performance\n- Maintenance profile: High\n- Resale tier: Strong\n- Used risk flags: OFFROAD_MAINTENANCE\n- Miami fit notes: Beach and trail\n- Aliases: Wrangler\nSources: Official Jeep specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n\n### ACURA\n#### MDX\n- Classification: Midsize SUV (3-row)\n- Technical baseline: Luxury three-row SUV\n- Ownership baseline: Premium, moderate maintenance\n- Performance baseline: Smooth and powerful\n- Maintenance profile: Moderate\n- Resale tier: Strong\n- Used risk flags: NONE\n- Miami fit notes: Luxury family SUV\n- Aliases: MDX\nSources: Official Acura specs + EPA + NHTSA\nLast Verified: 2026-02-19\n\n\n## SOURCE & VERIFICATION RULE
+### JEEP
+#### Grand Cherokee
+- Classification: Midsize SUV
+- Technical baseline: SUV with V6 or V8
+- Ownership baseline: Off-road capable, moderate maintenance
+- Performance baseline: Versatile
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: OFFROAD_MAINTENANCE
+- Miami fit notes: Good for trails
+- Aliases: Grand Cherokee
+Sources: Official Jeep specs + EPA + NHTSA
+Last Verified: 2026-02-19
+
+#### Compass
+- Classification: Compact SUV
+- Technical baseline: Compact crossover
+- Ownership baseline: Affordable, low maintenance
+- Performance baseline: Balanced
+- Maintenance profile: Low
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: Urban SUV
+- Aliases: Compass
+Sources: Official Jeep specs + EPA + NHTSA
+Last Verified: 2026-02-19
+
+#### Wrangler
+- Classification: Compact SUV
+- Technical baseline: Off-road SUV
+- Ownership baseline: Durable, high maintenance
+- Performance baseline: Off-road performance
+- Maintenance profile: High
+- Resale tier: Strong
+- Used risk flags: OFFROAD_MAINTENANCE
+- Miami fit notes: Beach and trail
+- Aliases: Wrangler
+Sources: Official Jeep specs + EPA + NHTSA
+Last Verified: 2026-02-19
+
+
+## SOURCE & VERIFICATION RULE
 - Always verify year/trim/engine/transmission data against official OEM specifications first.
 - Confirm fuel economy against EPA published values for the exact year/powertrain.
 - Confirm safety recall context against NHTSA records; VIN-level recall status must be advisor-verified.
-- If two sources conflict, mark `UNVERIFIED – Advisor verification required` and escalate.
+- If two sources conflict, mark `UNVERIFIED â€“ Advisor verification required` and escalate.
 - Never present unverified assumptions as confirmed facts.
+
 
 
 
