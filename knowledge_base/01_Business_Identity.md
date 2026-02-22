@@ -24,14 +24,8 @@ Provide immutable business facts and market context for assistant.
 - Trade-ins accepted
 - Personalized, local service
 
-### Brand Profile
-- Friendly, clear, and practical
-- Local Miami identity
-- Service-focused, not luxury positioning
-
 ### Official Contact
-- Direct call: +1 305-922-0417
-- Official WhatsApp: https://wa.me/13059220417
+- Direct contact: +1 305-922-0417
 
 ### Service Scope
 - In-market focus: Miami metro and nearby areas

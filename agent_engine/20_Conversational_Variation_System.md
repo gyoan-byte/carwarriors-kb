@@ -51,31 +51,59 @@ Eliminate repetitive patterns while maintaining commercial objectives and qualif
 - "Should I prioritize quick availability?"
 - "Are you ready to schedule a visit now?"
 
-### Financing Response Variations
-**Instead of**: "We work with all credit types."
-- "We work with different credit situations."
-- "We have lenders for all credit profiles."
-- "Even if credit is not perfect, we can usually help."
-- "We offer ITIN-friendly financing options."
-- "We can tailor options based on your profile."
-- "We work with first-time buyers as well."
-- "We can review soft and strong options side by side."
-- "There are programs depending on income and down payment."
-- "We can pre-qualify and show realistic numbers first."
-- "We can usually structure options around your payment goal."
+**For Credit Concerns**:
+- "Credit situations vary - let me connect you with our finance team."
+- "We work with different credit profiles - what's your situation?"
+- "Even with credit challenges, we often have solutions."
+- "Let me have our finance specialist review your specific case."
+- "We have multiple lenders - I'll connect you with the right one."
 
-### Trade-In Response Variations
-**Instead of**: "We accept trade-ins."
-- "Yes, we do take trade-ins."
-- "We can definitely evaluate your trade."
-- "Bring it in and we can appraise it on-site."
-- "That can help lower your down payment."
-- "Trade value can reduce what you finance."
-- "We can give a same-day estimate."
-- "Condition and mileage drive final value."
-- "If you share VIN and miles, we can give a rough range first."
-- "We can apply the value directly to your purchase."
-- "It is a good way to lower monthly payment."
+**For Down Payment Questions**:
+- "Down payment requirements vary by situation and vehicle."
+- "Let me check what options might work for your case."
+- "We can explore different down payment scenarios."
+- "The amount depends on several factors - let me get you details."
+- "I'll connect you with someone who can outline down payment options."
+
+**For Approval Timing**:
+- "Approval timing depends on complete application and documentation."
+- "Let me connect you with someone who can review your timeline."
+- "We can expedite when all documentation is ready."
+- "For accurate timing, let me have our finance team advise."
+- "I'll connect you with someone who can set realistic expectations."
+
+**For Interest Rate Questions**:
+- "Rates vary by credit profile, vehicle, and term length."
+- "Let me connect you with someone who has current rate information."
+- "For specific rate details, I'll need to transfer you to finance."
+- "Rates change frequently - let me get you current options."
+- "I can connect you with our finance team for precise figures."
+
+**For Trade-in Interest**:
+- "Trade-ins can definitely help with your down payment."
+- "We'll need to evaluate your current vehicle in person."
+- "The inspection process usually takes about 30 minutes."
+- "Trade-in value depends on condition, mileage, and current market."
+- "We can work with your trade-in to reduce your down payment."
+
+**For Process Questions**:
+- "What year and model are you considering trading in?"
+- "Is the vehicle currently paid off or still financed?"
+- "What's the approximate mileage on your current vehicle?"
+- "Does it have any mechanical issues we should know about?"
+- "Are you hoping to use the trade-in as down payment?"
+
+**For Value Management**:
+- "Final trade-in value is confirmed after physical inspection."
+- "Market conditions affect what we can offer for trade-ins."
+- "We'll need to see the vehicle to give you an accurate appraisal."
+- "The inspection helps us determine the best value for your situation."
+
+**For Timing**:
+- "We can schedule the trade-in inspection when you visit."
+- "The appraisal process works best when you bring the vehicle."
+- "Trade-in evaluation typically happens during your visit."
+- "We can include trade-in value in your overall financing package."
 
 ### Availability and Inventory Variations
 **Instead of**: "It is available."
@@ -129,18 +157,51 @@ Eliminate repetitive patterns while maintaining commercial objectives and qualif
 - "Completely understandable."
 - "Thanks for being direct."
 
-### Price Framing Variations
-**Instead of**: "That is the price."
-- "That is the current listed price."
-- "That is the market price for this unit today."
-- "That number reflects condition, miles, and demand."
-- "I can also show close alternatives at lower price points."
-- "We can focus on total cost and monthly impact."
-- "I can compare two options so you can see value clearly."
-- "If payment is priority, I can rebalance structure."
-- "We can review down payment scenarios to improve terms."
-- "I can show what changes the monthly the most."
-- "Let us anchor this around your target payment."
+### Automotive Suggestion Variations
+
+**Compact SUV Suggestions**:
+- "If you want city comfort with family space, a compact SUV is a strong fit."
+- "Compact SUVs can balance comfort and practicality well in Miami."
+
+**Sedan Suggestions**:
+- "For daily commuting and efficiency, sedans are often very practical."
+- "Sedans are a strong option when daily driving comfort matters."
+
+**Pickup/Truck Suggestions**:
+- "If cargo or work utility matters, a truck is often the right direction."
+- "For heavy-duty use, trucks can be more practical."
+
+**Hybrid Suggestions**:
+- "For heavy city traffic, hybrids can be a smart efficiency path."
+- "If you drive mostly in urban areas, hybrid options may fit well."
+
+**For Payment Path**:
+- "Would you like to review cash and financing options side by side?"
+- "Are you leaning toward cash purchase or financing?"
+- "What payment approach works best for your situation?"
+- "Should we explore both payment paths to find your best fit?"
+- "Do you have a preference between cash and financing options?"
+
+**For Trade-in Integration**:
+- "Do you want to include your current vehicle as trade-in?"
+- "Are you considering trading in your current vehicle?"
+- "Would you like us to review trade-in plus financing options?"
+- "Should we look at how a trade-in might affect your down payment?"
+- "Is a trade-in part of your overall plan?"
+
+**For Next Steps**:
+- "What would be the best next step for you?"
+- "How would you like to proceed from here?"
+- "What works best for your schedule and timeline?"
+- "Should we move to reviewing specific options that match your needs?"
+- "Would you prefer to visit, call, or continue here?"
+
+**For Timing**:
+- "Are you looking to make a decision soon or just exploring?"
+- "What's your timeline for getting a vehicle?"
+- "Is there urgency around this purchase, or are you planning ahead?"
+- "When would be the ideal time to move forward?"
+- "Should we prioritize options based on your timing needs?"
 
 ## Vocabulary Banks
 

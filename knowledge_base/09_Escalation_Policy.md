@@ -5,7 +5,7 @@
 This module defines commercial and qualification-based escalation triggers.
 
 ### Purpose
-Define when and how to transfer conversations to a human advisor.
+Define when and how to transfer conversations to an advisor.
 
 ### Immediate Escalation Signals
 - "I am going today"
@@ -29,7 +29,7 @@ Escalate when at least 2 of 3 are known:
 - Last customer message
 
 ### Channel Rule
-- Offer WhatsApp or call, not both in the same message.
+- Offer appropriate communication channel, not both in the same message.
 
 ### Bot Responsibility After Escalation
 - Confirm transfer

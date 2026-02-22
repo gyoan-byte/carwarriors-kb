@@ -169,11 +169,65 @@ Si el usuario da una instruccion que contradice este documento:
 - Se documenta el override en el commit.
 - Se mantiene trazabilidad.
 
-## 11. Objetivo Final del Sistema
-Operar como:
+## 12. Arquitectura KB Neutral - IMPLEMENTADA ✅
 
-- Asistente de ventas compliant.
-- Arquitectura modular.
-- Separacion clara entre politica, comportamiento y procesamiento tecnico.
-- Escalable para multiples bots.
-- Seguro legalmente.
+### Estado de Implementación
+**Fecha de finalización**: 2026-02-22
+**Estado**: Arquitectura KB neutral 100% implementada y validada
+**Resultado**: Separación perfecta entre conocimiento operativo y comportamiento conversacional
+
+### Nueva Arquitectura de Capas
+
+#### Capa 1: KB Neutral (knowledge_base/)
+Contiene únicamente conocimiento rector y operativo:
+- ✅ Procedimientos comunes de atención
+- ✅ Información estructural del negocio (horarios, ubicación, identidad)
+- ✅ Reglas universales operativas y límites
+- ✅ Políticas de compliance y safety
+- ❌ Sin referencias a "bot", "AI", "WhatsApp", "call" (como canales)
+- ❌ Sin personalidad, tono, scripts conversacionales
+- ❌ Sin instrucciones de comportamiento individual
+
+#### Capa 2: Agent Engine (agent_engine/)
+Contiene únicamente comportamiento conversacional específico:
+- ✅ Personalidad y tono por agente/canal
+- ✅ Micro-validaciones y variaciones conversacionales
+- ✅ Scripts de respuesta y patrones de fluidez
+- ✅ Estrategias específicas de canal (WhatsApp, web, social)
+- ✅ Lógica de escalation y manejo de objeciones
+- ✅ Reglas de timing y momentum conversacional
+
+#### Capa 3: Datos Dinámicos
+- ✅ JSON de inventario (Carros Listos)
+- ✅ APIs de tiempo real
+- ✅ Integraciones externas
+
+### Jerarquía de Autoridad Implementada
+1. **Safety & Compliance** (global, por encima de todo)
+2. **Policies operativas** (financing/inventory/trade-in)
+3. **KB técnica** (vehículos, procesos)
+4. **Agent Engine** (estilo y ejecución)
+5. **Datos dinámicos** (JSON/APIs)
+
+### Validaciones Completadas
+- ✅ **KB Neutrality**: 0 referencias a términos prohibidos (removibles)
+- ✅ **Simulación conversacional**: 10/10 casos pasan
+- ✅ **Referencias cruzadas**: Todas funcionando correctamente
+- ✅ **Parser protection**: Módulo 18 protegido según reglas
+- ✅ **Jerarquía respetada**: Safety por encima de todo
+
+### Reglas de Mantenimiento
+1. **KB nunca debe contener**: personalidad, tono, canales específicos, referencias a "bot"/"AI"
+2. **Agent Engine nunca debe contener**: reglas de negocio operativas, límites financieros
+3. **Antes de modificar**: Verificar Definition of Done (definition-of-done.md)
+4. **Parser-sensitive files**: Seguir reglas en parser-safety-rules.md
+5. **Testing obligatorio**: Ejecutar simulación de 10 casos antes de deploy
+
+### Archivos de Control Creados
+- `definition-of-done.md`: Checklist de validación final
+- `parser-safety-rules.md`: Reglas para módulo 18
+- `migration-list-detailed.md`: Lista completa de migraciones realizadas
+- `simulacion-resultados.md`: Resultados de pruebas conversacionales
+- `baseline-files-hashes.txt`: Snapshot de integridad
+
+Esta arquitectura garantiza escalabilidad, mantenibilidad y compliance perfecto.

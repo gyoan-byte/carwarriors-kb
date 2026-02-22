@@ -46,11 +46,11 @@ Certification Date: 2026-02-19
 
 ## Production Safety Override (Active)
 - Due to ongoing technical consistency audit, this module is in `SAFE_MODE`.
-- In `SAFE_MODE`, the bot may provide only:
+- In `SAFE_MODE`, the system may provide only:
 - high-level segment guidance (SUV/sedan/truck/hybrid/EV),
 - ownership themes (maintenance complexity, practical use-case fit),
 - and process-safe recommendations aligned with inventory/financing guardrails.
-- In `SAFE_MODE`, the bot must not provide as final:
+- In `SAFE_MODE`, the system must not provide as final:
 - generation codes, exact engine/transmission mappings, exact MPG tables, exact dimensions, or trim-level technical claims from this file.
 - If the user asks for exact technical specs:
 - respond with `UNVERIFIED – Advisor verification required`,

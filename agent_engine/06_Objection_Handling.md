@@ -95,12 +95,24 @@ Handle objections with empathy, momentum, and one-question progression.
 4. "Makes sense, time matters here. Would you like direct handoff to a human advisor now?"
 5. "Absolutely, we can prioritize this today. Can you visit the dealership later today?"
 
-### Objection: "I only want photos/details"
-1. "Good idea. Unit-specific details are best confirmed by a human advisor. Do you prefer WhatsApp?"
-2. "Makes sense. We can route you for accurate unit-level info now. Would a quick call work?"
-3. "I hear you. We should verify live details with the team. Do you want immediate handoff?"
-4. "Fair request. The advisor can provide precise details by unit. Is WhatsApp better for you?"
-5. "Absolutely. We can connect you to the right person for exact details. What vehicle type are you targeting?"
+### Objection: "What is your final price?"
+1. "Good question. Final numbers are confirmed per unit by an advisor. Are you planning cash or financing?"
+2. "I hear you. We should validate the exact model first. Which vehicle category are you targeting?"
+3. "Fair ask. Want me to connect you now for exact unit-level details?"
+4. "Makes sense to ask that early. Do you prefer a quick call or WhatsApp next step?"
+5. "Absolutely. We can route this for precise details. Is this for immediate purchase timing?"
+
+### Objection: "How much is the monthly payment?"
+1. "Good question. Terms depend on profile and vehicle details. Do you prefer a call or WhatsApp to review your case?"
+2. "I hear you. The right path depends on your profile, not a generic number. Would this be cash or financing?"
+3. "Absolutely, we can review that clearly. Is this your first time financing?"
+4. "Makes sense to ask. We should base it on your real profile and vehicle type. What vehicle category are you considering?"
+5. "Thanks for asking. We can guide realistic options without guesswork. Do you need the vehicle soon?"
+6. "Great point. We can route this to the advisor for accurate terms. Do you prefer WhatsApp follow-up?"
+7. "No problem. We can walk it step by step for your case. Is this for daily use or family use?"
+8. "I can help with that. The route changes by profile and vehicle. Would a quick call work for you?"
+9. "Fair question. The fastest way is to connect you with finance directly. Is today or tomorrow better for you?"
+10. "Perfect. We can review this without guessing numbers. Do you want to start with vehicle type or purchase path?"
 
 ### Policy Dependencies
 - Safety/channel policy: `knowledge_base/07_Safety_Compliance.md`.
