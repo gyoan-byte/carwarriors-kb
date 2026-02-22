@@ -150,6 +150,7 @@
       "/latest": () => handleLatest(url, env),
       "/ready": () => handleReady(url, env),
       "/kb/lookup": () => handleKbLookup(url, env),
+      "/kb/test": handleKbTest,
       "/status": () => handleStatus(env),
 
       // MAIL (KV)
@@ -367,91 +368,22 @@ async function handleReady(url, env) {
     })
   );
 
-  const q = (url.searchParams.get("q") || "").trim();
-  const makeFilter = normalizeSearchText(url.searchParams.get("make") || "");
-  const modelFilter = normalizeSearchText(url.searchParams.get("model") || "");
-  const bodyTypeFilter = normalizeSearchText(url.searchParams.get("bodyType") || "");
-  const yearFilter = String(url.searchParams.get("year") || "").trim();
-  const includeKbRaw = String(url.searchParams.get("includeKb") || "").trim().toLowerCase();
-  const includeKb = includeKbRaw === "" ? true : /^(1|true|yes)$/i.test(includeKbRaw);
-  if (bodyTypeFilter && !includeKb) {
-    return json(
-      {
-        ok: false,
-        error: "bodyType filter requires includeKb=1 to avoid heuristic classification",
-      },
-      400
-    );
-  }
-  const rawLimit = url.searchParams.get("limit");
-  const limit = rawLimit === null || String(rawLimit).trim() === "" ? normalized.length : clampInt(rawLimit, 1, 200, 100);
+  const readyQuery = parseReadyQuery(url, normalized.length);
+  if (readyQuery.error) return readyQuery.error;
 
-  const qTokens = splitSearchTerms(q);
-  let filtered = normalized.filter((v) => {
-    if (makeFilter && v.search.makeNorm !== makeFilter) return false;
-    if (modelFilter && v.search.modelNorm !== modelFilter) return false;
-    if (yearFilter && String(v.year || "") !== yearFilter) return false;
-    if (qTokens.length && !qTokens.every((t) => v.search.text.includes(t))) return false;
-    return true;
-  });
+  const { q, makeFilter, modelFilter, bodyTypeFilter, yearFilter, includeKb, limit, qTokens } = readyQuery;
 
-  const totalMatched = filtered.length;
+  const filteredBase = normalized.filter((v) =>
+    matchesReadyFilters(v, { makeFilter, modelFilter, yearFilter, qTokens })
+  );
+
+  const totalMatched = filteredBase.length;
   const kb = includeKb ? await getKnowledgeIndex(env) : null;
-  const baseRows = bodyTypeFilter ? filtered : filtered.slice(0, limit);
-
-  const vehicles = baseRows.map((v) => {
-    const entry = includeKb && kb?.ok ? kb.index[v.kb.lookupKeyNorm] || null : null;
-    const detectedBodyType = entry ? detectBodyTypeFromClassification(entry.classification) : null;
-    const out = {
-      stockNumber: v.stockNumber,
-      year: v.year,
-      make: v.make,
-      model: v.model,
-      exteriorColor: v.exteriorColor,
-      odometer: v.odometer,
-      gpsProvider: v.gpsProvider,
-      createdDate: v.createdDate,
-      daysInInventory: v.daysInInventory,
-      bodyType: detectedBodyType,
-      saleReady: true,
-      status: "available_preliminary",
-      kb: {
-        makeKey: v.kb.makeKey,
-        modelKey: v.kb.modelKey,
-        lookupKey: v.kb.lookupKey,
-      },
-      query: {
-        text: v.queryText,
-        tokens: v.queryTokens,
-      },
-    };
-
-    if (includeKb) {
-      out.kbReference = entry
-        ? {
-            found: true,
-            classification: entry.classification,
-            technicalBaseline: entry.technicalBaseline,
-            ownershipBaseline: entry.ownershipBaseline,
-            performanceBaseline: entry.performanceBaseline,
-            maintenanceProfile: entry.maintenanceProfile,
-            resaleTier: entry.resaleTier,
-            usedRiskFlags: entry.usedRiskFlags,
-            miamiFitNotes: entry.miamiFitNotes,
-            sources: entry.sources,
-            lastVerified: entry.lastVerified,
-          }
-        : { found: false };
-    }
-
-    return out;
-  });
-
-  if (bodyTypeFilter) {
-    filtered = vehicles.filter((v) => normalizeSearchText(v.bodyType || "") === bodyTypeFilter).slice(0, limit);
-  } else {
-    filtered = vehicles;
-  }
+  const baseRows = bodyTypeFilter ? filteredBase : filteredBase.slice(0, limit);
+  const vehicles = baseRows.map((v) => buildReadyVehicle(v, includeKb, kb));
+  const filtered = bodyTypeFilter
+    ? vehicles.filter((v) => normalizeSearchText(v.bodyType || "") === bodyTypeFilter).slice(0, limit)
+    : vehicles;
 
   return json({
     ok: true,
@@ -480,6 +412,51 @@ async function handleReady(url, env) {
     byMake: countBy(filtered, (v) => v.make),
     vehicles: filtered,
   });
+}
+
+function parseReadyQuery(url, defaultLimit) {
+  const q = (url.searchParams.get("q") || "").trim();
+  const makeFilter = normalizeSearchText(url.searchParams.get("make") || "");
+  const modelFilter = normalizeSearchText(url.searchParams.get("model") || "");
+  const bodyTypeFilter = normalizeSearchText(url.searchParams.get("bodyType") || "");
+  const yearFilter = String(url.searchParams.get("year") || "").trim();
+  const includeKbRaw = String(url.searchParams.get("includeKb") || "").trim().toLowerCase();
+  const includeKb = includeKbRaw === "" ? true : /^(1|true|yes)$/i.test(includeKbRaw);
+
+  if (bodyTypeFilter && !includeKb) {
+    return {
+      error: json(
+        {
+          ok: false,
+          error: "bodyType filter requires includeKb=1 to avoid heuristic classification",
+        },
+        400
+      ),
+    };
+  }
+
+  const rawLimit = url.searchParams.get("limit");
+  const limit = rawLimit === null || String(rawLimit).trim() === "" ? defaultLimit : clampInt(rawLimit, 1, 200, 100);
+  return {
+    error: null,
+    q,
+    makeFilter,
+    modelFilter,
+    bodyTypeFilter,
+    yearFilter,
+    includeKb,
+    limit,
+    qTokens: splitSearchTerms(q),
+  };
+}
+
+function matchesReadyFilters(vehicle, filters) {
+  const { makeFilter, modelFilter, yearFilter, qTokens } = filters;
+  if (makeFilter && vehicle.search.makeNorm !== makeFilter) return false;
+  if (modelFilter && vehicle.search.modelNorm !== modelFilter) return false;
+  if (yearFilter && String(vehicle.year || "") !== yearFilter) return false;
+  if (qTokens.length && !qTokens.every((t) => vehicle.search.text.includes(t))) return false;
+  return true;
 }
 
 function handleWorkerRobotsTxt() {
@@ -547,6 +524,51 @@ function handleWorkerAiTxt() {
   });
 }
 
+async function handleKbTest(env) {
+  const kb = await getKnowledgeIndex(env);
+  if (!kb.ok) {
+    return json({ ok: false, error: "Knowledge source unavailable", detail: kb.error }, 503);
+  }
+
+  // Extraer marcas y modelos únicos del índice
+  const makes = new Set();
+  const modelsByMake = {};
+  let totalEntries = 0;
+
+  for (const key of Object.keys(kb.index)) {
+    const [make, model] = key.split('::');
+    if (make && model) {
+      makes.add(make);
+      if (!modelsByMake[make]) modelsByMake[make] = new Set();
+      modelsByMake[make].add(model);
+      totalEntries++;
+    }
+  }
+
+  // Convertir Sets a arrays ordenados
+  const makesArray = Array.from(makes).sort((a, b) => a.localeCompare(b));
+  const modelsByMakeArray = {};
+  for (const make of makesArray) {
+    modelsByMakeArray[make] = Array.from(modelsByMake[make]).sort((a, b) => a.localeCompare(b));
+  }
+
+  return json({
+    ok: true,
+    sourceUrl: kb.sourceUrl,
+    fetchedAt: kb.fetchedAt,
+    summary: {
+      totalEntries,
+      totalMakes: makesArray.length,
+      makes: makesArray,
+      modelsByMake: modelsByMakeArray,
+    },
+    sample: {
+      firstEntry: kb.index[Object.keys(kb.index)[0]],
+      lastEntry: kb.index[Object.keys(kb.index)[Object.keys(kb.index).length - 1]],
+    }
+  });
+}
+
 async function handleKbLookup(url, env) {
   const make = String(url.searchParams.get("make") || "").trim();
   const model = String(url.searchParams.get("model") || "").trim();
@@ -574,23 +596,24 @@ async function handleKbLookup(url, env) {
 }
 
 function normalizeReadyRow(row, cols) {
-  const createdDateRaw = cols.createdDateCol ? String(row[cols.createdDateCol] || "").trim() : "";
+  const createdDateRaw = getTrimmedCell(row, cols.createdDateCol);
   const createdTs = parseDateLoose(createdDateRaw);
   const daysInInventory = createdTs === null ? null : Math.max(0, Math.floor((cols.nowMs - createdTs) / 86_400_000));
 
-  const stockNumber = cols.stockCol ? String(row[cols.stockCol] || "").trim() : "";
-  const yearNum = cols.yearCol ? toNumber(row[cols.yearCol]) : null;
+  const stockNumber = getTrimmedCell(row, cols.stockCol);
+  const yearNum = getNumericCell(row, cols.yearCol);
   const year = yearNum === null ? null : Math.trunc(yearNum);
-  const make = toCanonicalUpper(cols.makeCol ? row[cols.makeCol] : "");
-  const model = toCanonicalUpper(cols.modelCol ? row[cols.modelCol] : "");
-  const exteriorColor = toCanonicalUpper(cols.colorCol ? row[cols.colorCol] : "");
-  const odometerNum = cols.odometerCol ? toNumber(row[cols.odometerCol]) : null;
+  const make = getUpperCell(row, cols.makeCol);
+  const model = getUpperCell(row, cols.modelCol);
+  const exteriorColor = getUpperCell(row, cols.colorCol);
+  const odometerNum = getNumericCell(row, cols.odometerCol);
   const odometer = odometerNum === null ? null : Math.trunc(odometerNum);
-  const gpsProvider = toCanonicalUpper(cols.gpsCol ? row[cols.gpsCol] : "");
+  const gpsProvider = getUpperCell(row, cols.gpsCol);
   const makeNorm = normalizeSearchText(make);
   const modelNorm = normalizeSearchText(model);
   const stockNorm = normalizeSearchText(stockNumber);
-  const yearText = year ? String(year) : "";
+  const yearText = year === null ? "" : String(year);
+  const { lookupKey, lookupKeyNorm } = buildLookupKeys(make, model);
   const queryText = [yearText, make, model, stockNumber].filter(Boolean).join(" ").trim();
   const queryTokens = Array.from(new Set(splitSearchTerms(queryText)));
   const searchText = [yearText, makeNorm, modelNorm, stockNorm].filter(Boolean).join(" ");
@@ -608,8 +631,8 @@ function normalizeReadyRow(row, cols) {
     kb: {
       makeKey: make,
       modelKey: model,
-      lookupKey: make && model ? `${make}::${model}` : "",
-      lookupKeyNorm: make && model ? buildKbLookupKey(make, model) : "",
+      lookupKey,
+      lookupKeyNorm,
     },
     queryText,
     queryTokens,
@@ -618,6 +641,29 @@ function normalizeReadyRow(row, cols) {
       makeNorm,
       modelNorm,
     },
+  };
+}
+
+function getTrimmedCell(row, col) {
+  if (!col) return "";
+  return String(row[col] || "").trim();
+}
+
+function getNumericCell(row, col) {
+  if (!col) return null;
+  return toNumber(row[col]);
+}
+
+function getUpperCell(row, col) {
+  if (!col) return "";
+  return toCanonicalUpper(row[col]);
+}
+
+function buildLookupKeys(make, model) {
+  if (!make || !model) return { lookupKey: "", lookupKeyNorm: "" };
+  return {
+    lookupKey: `${make}::${model}`,
+    lookupKeyNorm: buildKbLookupKey(make, model),
   };
 }
 
@@ -653,6 +699,58 @@ function detectBodyTypeFromClassification(classification) {
   if (c.includes("sedan")) return "sedan";
   if (c.includes("sports") || c.includes("sport") || c.includes("coupe")) return "sports";
   return null;
+}
+
+function getKbEntryForVehicle(includeKb, kb, lookupKeyNorm) {
+  if (!includeKb || !kb?.ok) return null;
+  return kb.index[lookupKeyNorm] || null;
+}
+
+function buildKbReference(entry) {
+  if (!entry) return { found: false };
+  return {
+    found: true,
+    classification: entry.classification,
+    technicalBaseline: entry.technicalBaseline,
+    ownershipBaseline: entry.ownershipBaseline,
+    performanceBaseline: entry.performanceBaseline,
+    maintenanceProfile: entry.maintenanceProfile,
+    resaleTier: entry.resaleTier,
+    usedRiskFlags: entry.usedRiskFlags,
+    miamiFitNotes: entry.miamiFitNotes,
+    sources: entry.sources,
+    lastVerified: entry.lastVerified,
+  };
+}
+
+function buildReadyVehicle(v, includeKb, kb) {
+  const entry = getKbEntryForVehicle(includeKb, kb, v.kb.lookupKeyNorm);
+  const detectedBodyType = entry ? detectBodyTypeFromClassification(entry.classification) : null;
+  const out = {
+    stockNumber: v.stockNumber,
+    year: v.year,
+    make: v.make,
+    model: v.model,
+    exteriorColor: v.exteriorColor,
+    odometer: v.odometer,
+    gpsProvider: v.gpsProvider,
+    createdDate: v.createdDate,
+    daysInInventory: v.daysInInventory,
+    bodyType: detectedBodyType,
+    saleReady: true,
+    status: "available_preliminary",
+    kb: {
+      makeKey: v.kb.makeKey,
+      modelKey: v.kb.modelKey,
+      lookupKey: v.kb.lookupKey,
+    },
+    query: {
+      text: v.queryText,
+      tokens: v.queryTokens,
+    },
+  };
+  if (includeKb) out.kbReference = buildKbReference(entry);
+  return out;
 }
 
 const KB_CACHE_TTL_MS = 6 * 60 * 60 * 1000;
@@ -747,41 +845,57 @@ function parseKnowledgeMarkdown(markdown) {
     if (modelMatch) {
       flushCurrentKbEntry(index, currentMake, currentModel, current);
       currentModel = toCanonicalUpper(modelMatch[1]);
-      current = {
-        make: currentMake,
-        model: currentModel,
-        classification: null,
-        technicalBaseline: null,
-        ownershipBaseline: null,
-        performanceBaseline: null,
-        sources: null,
-        lastVerified: null,
-        maintenanceProfile: null,
-        resaleTier: null,
-        usedRiskFlags: null,
-        miamiFitNotes: null,
-        aliases: null,
-      };
+      current = createKbEntry(currentMake, currentModel);
       continue;
     }
 
     if (!current) continue;
-
-    if (t.startsWith("- Classification:")) current.classification = stripLabel(t, "- Classification:");
-    else if (t.startsWith("- Technical baseline:")) current.technicalBaseline = stripLabel(t, "- Technical baseline:");
-    else if (t.startsWith("- Ownership baseline:")) current.ownershipBaseline = stripLabel(t, "- Ownership baseline:");
-    else if (t.startsWith("- Performance baseline:")) current.performanceBaseline = stripLabel(t, "- Performance baseline:");
-    else if (t.startsWith("- Maintenance profile:")) current.maintenanceProfile = stripLabel(t, "- Maintenance profile:");
-    else if (t.startsWith("- Resale tier:")) current.resaleTier = stripLabel(t, "- Resale tier:");
-    else if (t.startsWith("- Used risk flags:")) current.usedRiskFlags = stripLabel(t, "- Used risk flags:");
-    else if (t.startsWith("- Miami fit notes:")) current.miamiFitNotes = stripLabel(t, "- Miami fit notes:");
-    else if (t.startsWith("- Aliases:")) current.aliases = stripLabel(t, "- Aliases:");
-    else if (t.startsWith("Sources:")) current.sources = stripLabel(t, "Sources:");
-    else if (t.startsWith("Last Verified:")) current.lastVerified = stripLabel(t, "Last Verified:");
+    applyKbEntryField(current, t);
   }
 
   flushCurrentKbEntry(index, currentMake, currentModel, current);
   return index;
+}
+
+function createKbEntry(make, model) {
+  return {
+    make,
+    model,
+    classification: null,
+    technicalBaseline: null,
+    ownershipBaseline: null,
+    performanceBaseline: null,
+    sources: null,
+    lastVerified: null,
+    maintenanceProfile: null,
+    resaleTier: null,
+    usedRiskFlags: null,
+    miamiFitNotes: null,
+    aliases: null,
+  };
+}
+
+const KB_ENTRY_LABELS = [
+  ["- Classification:", "classification"],
+  ["- Technical baseline:", "technicalBaseline"],
+  ["- Ownership baseline:", "ownershipBaseline"],
+  ["- Performance baseline:", "performanceBaseline"],
+  ["- Maintenance profile:", "maintenanceProfile"],
+  ["- Resale tier:", "resaleTier"],
+  ["- Used risk flags:", "usedRiskFlags"],
+  ["- Miami fit notes:", "miamiFitNotes"],
+  ["- Aliases:", "aliases"],
+  ["Sources:", "sources"],
+  ["Last Verified:", "lastVerified"],
+];
+
+function applyKbEntryField(entry, line) {
+  for (const [label, field] of KB_ENTRY_LABELS) {
+    if (!line.startsWith(label)) continue;
+    entry[field] = stripLabel(line, label);
+    return true;
+  }
+  return false;
 }
 
 function stripLabel(line, label) {
@@ -824,6 +938,7 @@ function notFoundResponse() {
         "/ready?make=toyota&model=corolla&year=2022",
         "/ready?make=toyota&model=tacoma+double+cab",
         "/kb/lookup?make=toyota&model=tacoma%20double%20cab",
+        "/kb/test",
         // mail
         "/mail/latest",
         "/mail/latest/raw",
@@ -1201,7 +1316,7 @@ function extractBody(part) {
 function base64ToUint8(b64) {
   const bin = atob(b64);
   const out = new Uint8Array(bin.length);
-  for (let i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
+  for (let i = 0; i < bin.length; i++) out[i] = bin.codePointAt(i) ?? 0;
   return out;
 }
 
