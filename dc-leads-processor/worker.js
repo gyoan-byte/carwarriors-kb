@@ -432,6 +432,11 @@ async function handleReady(url, env) {
             technicalBaseline: entry.technicalBaseline,
             ownershipBaseline: entry.ownershipBaseline,
             performanceBaseline: entry.performanceBaseline,
+            maintenanceProfile: entry.maintenanceProfile,
+            resaleTier: entry.resaleTier,
+            usedRiskFlags: entry.usedRiskFlags,
+            miamiFitNotes: entry.miamiFitNotes,
+            sources: entry.sources,
             lastVerified: entry.lastVerified,
           }
         : { found: false };
@@ -752,6 +757,11 @@ function parseKnowledgeMarkdown(markdown) {
         performanceBaseline: null,
         sources: null,
         lastVerified: null,
+        maintenanceProfile: null,
+        resaleTier: null,
+        usedRiskFlags: null,
+        miamiFitNotes: null,
+        aliases: null,
       };
       continue;
     }
@@ -762,6 +772,11 @@ function parseKnowledgeMarkdown(markdown) {
     else if (t.startsWith("- Technical baseline:")) current.technicalBaseline = stripLabel(t, "- Technical baseline:");
     else if (t.startsWith("- Ownership baseline:")) current.ownershipBaseline = stripLabel(t, "- Ownership baseline:");
     else if (t.startsWith("- Performance baseline:")) current.performanceBaseline = stripLabel(t, "- Performance baseline:");
+    else if (t.startsWith("- Maintenance profile:")) current.maintenanceProfile = stripLabel(t, "- Maintenance profile:");
+    else if (t.startsWith("- Resale tier:")) current.resaleTier = stripLabel(t, "- Resale tier:");
+    else if (t.startsWith("- Used risk flags:")) current.usedRiskFlags = stripLabel(t, "- Used risk flags:");
+    else if (t.startsWith("- Miami fit notes:")) current.miamiFitNotes = stripLabel(t, "- Miami fit notes:");
+    else if (t.startsWith("- Aliases:")) current.aliases = stripLabel(t, "- Aliases:");
     else if (t.startsWith("Sources:")) current.sources = stripLabel(t, "Sources:");
     else if (t.startsWith("Last Verified:")) current.lastVerified = stripLabel(t, "Last Verified:");
   }
@@ -778,6 +793,13 @@ function flushCurrentKbEntry(index, make, model, entry) {
   if (!entry || !make || !model) return;
   const key = buildKbLookupKey(make, model);
   index[key] = entry;
+  if (entry.aliases) {
+    const aliasList = entry.aliases.split(';').map(a => a.trim()).filter(Boolean);
+    for (const alias of aliasList) {
+      const aliasKey = buildKbLookupKey(make, alias);
+      index[aliasKey] = entry;
+    }
+  }
 }
 
 function notFoundResponse() {
