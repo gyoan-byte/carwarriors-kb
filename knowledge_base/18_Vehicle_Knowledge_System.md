@@ -796,8 +796,8 @@ Last Verified: 2026-02-19
 - Used risk flags: TOWING_MAINTENANCE; FLOOD_SENSITIVITY
 - Miami fit notes: Popular for commercial use, good for towing boats or trailers
 - Aliases: 1500 CREW CAB
-Sources: Official RAM specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Sources: RAM Trucks model page + EPA + NHTSA
+Last Verified: 2026-02-22
 
 #### 3500
 - Classification: Heavy-duty pickup truck
@@ -1143,8 +1143,8 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: Sporty sedan
 - Aliases: Mazda3
-Sources: Official Mazda specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Sources: Mazda USA model page + EPA + NHTSA
+Last Verified: 2026-02-22
 
 
 ### MITSUBISHI
