@@ -110,6 +110,11 @@ All availability must be verified only through `Carros Listos`.
 - Technical baseline: Rear-drive sport-sedan architecture with turbocharged powertrain focus
 - Ownership baseline: Premium-brand service costs and lower dealer-network density than mainstream brands
 - Performance baseline: Sharp steering and handling-oriented chassis tuning
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -119,6 +124,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Turbocharged compact luxury crossover with available SH-AWD
 - Ownership baseline: Generally lower long-term cost than many European luxury competitors
 - Performance baseline: Balanced acceleration, comfort, and daily usability
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -127,6 +137,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Three-row luxury crossover with V6-oriented packaging and family focus
 - Ownership baseline: Predictable maintenance for luxury segment, with transmission/AWD servicing importance
 - Performance baseline: Smooth highway behavior and stable family-oriented ride
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -136,6 +151,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Quattro-based luxury compact SUV with technology-forward cabin
 - Ownership baseline: Above-mainstream maintenance cost profile typical of German luxury brands
 - Performance baseline: Balanced handling and strong all-weather confidence
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -144,6 +164,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Three-row premium SUV with advanced electronics and driver-assist systems
 - Ownership baseline: High-complexity luxury ownership with elevated repair/labor costs
 - Performance baseline: Strong highway comfort with capable premium powertrain options
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -153,6 +178,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Compact luxury crossover with rear-drive-based dynamics and xDrive availability
 - Ownership baseline: Premium parts/labor and drivetrain complexity influence lifetime cost
 - Performance baseline: Sport-oriented handling in compact SUV format
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -161,6 +191,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Core midsize luxury SUV platform with broad powertrain availability
 - Ownership baseline: Maintenance complexity increases with higher-performance and hybridized variants
 - Performance baseline: Refined ride with strong power and towing capability in segment
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -169,6 +204,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Coupe-roof luxury SUV derivative prioritizing style and performance image
 - Ownership baseline: Tire/brake and suspension costs can be higher than conventional midsize SUVs
 - Performance baseline: Strong acceleration and sport-biased tuning
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -178,6 +218,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Body-on-frame luxury full-size SUV with high-capacity utility profile
 - Ownership baseline: Large-vehicle fuel, tire, brake, and electronics costs are significant
 - Performance baseline: Strong towing and premium highway ride quality
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -186,6 +231,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Two-row luxury crossover tuned for comfort-first daily use
 - Ownership baseline: Moderate luxury maintenance burden versus segment peers
 - Performance baseline: Smooth, quiet operation with practical midsize packaging
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -195,6 +245,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Rear-wheel-drive performance coupe with multi-engine lineup
 - Ownership baseline: Practicality is limited and consumable costs rise in high-performance trims
 - Performance baseline: Strong straight-line performance and engaging handling
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -203,6 +258,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Mainstream compact crossover with broad trim/powertrain availability
 - Ownership baseline: Typical mainstream maintenance profile with high parts/service access
 - Performance baseline: Efficiency-focused daily transportation with comfortable ride
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -211,6 +271,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Battery-electric compact crossover platform with software-driven feature set
 - Ownership baseline: Low routine mechanical service but charging and software campaign compliance are key
 - Performance baseline: Instant torque and quiet urban operation
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -219,6 +284,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Light-duty full-size truck with broad engine and cab/bed configurations
 - Ownership baseline: Fuel and consumable costs depend heavily on duty cycle and drivetrain
 - Performance baseline: Strong towing and payload for mixed work/lifestyle use
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -227,6 +297,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Commercial-grade heavy-duty truck platform for high-load workloads
 - Ownership baseline: High operating cost profile with diesel/HD component service complexity
 - Performance baseline: Maximum towing/payload capability focus
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + NHTSA (EPA light-duty MPG may be N/A)
 Last Verified: 2026-02-19
 
@@ -236,6 +311,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Large performance-oriented sedan architecture with V6/V8 legacy lineup
 - Ownership baseline: Running costs rise substantially in V8 and performance variants
 - Performance baseline: Strong acceleration and highway presence
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -244,6 +324,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Discontinued compact sedan platform with economy-oriented configuration mix
 - Ownership baseline: Parts/support and transmission-specific service quality matter by unit
 - Performance baseline: Basic commuter performance with efficient trims available
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -253,6 +338,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Super Duty platform built for high-load towing and commercial utility
 - Ownership baseline: Heavy-use consumables and diesel service complexity can be substantial
 - Performance baseline: High payload/towing capability for work-duty cycles
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + NHTSA (EPA light-duty MPG may be N/A)
 Last Verified: 2026-02-19
 
@@ -261,6 +351,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Vintage wagon platform with period-correct mechanical simplicity
 - Ownership baseline: Restoration quality and classic-parts sourcing drive ownership experience
 - Performance baseline: Collector-focused operation rather than modern performance standards
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Historical OEM references + collector documentation
 Last Verified: 2026-02-19
 
@@ -269,6 +364,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Iconic rear-wheel-drive performance coupe with broad generation coverage
 - Ownership baseline: Insurance and consumables increase with performance-oriented trims
 - Performance baseline: Strong acceleration and enthusiast-focused dynamics
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -277,6 +377,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Full-size cargo van platform for fleet and trade applications
 - Ownership baseline: Duty cycle, idle hours, and upfit weight strongly affect service needs
 - Performance baseline: Cargo-hauling utility prioritized over passenger-car dynamics
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + NHTSA (EPA light-duty MPG may be N/A by configuration)
 Last Verified: 2026-02-19
 
@@ -286,6 +391,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Mainstream midsize sedan with strong reliability and efficiency reputation
 - Ownership baseline: Low-to-moderate service burden with broad parts and service network
 - Performance baseline: Balanced comfort, efficiency, and daily drivability
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -294,6 +404,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Compact platform with broad body-style and efficiency-oriented configurations
 - Ownership baseline: Generally low operating cost and strong parts availability
 - Performance baseline: Efficient daily-use tuning with optional sport trims
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -302,6 +417,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Unibody midsize truck emphasizing comfort and everyday usability
 - Ownership baseline: Predictable service profile with moderate truck consumable costs
 - Performance baseline: Smooth on-road dynamics versus body-on-frame truck rivals
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -311,6 +431,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Military-derived extreme off-road architecture with specialty-use profile
 - Ownership baseline: Specialized parts/service and high running costs are typical
 - Performance baseline: Off-road capability prioritized over comfort/efficiency
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Historical OEM references + NHTSA
 Last Verified: 2026-02-19
 
@@ -320,6 +445,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Rear-drive-based luxury sedan with turbo and AWD availability by year
 - Ownership baseline: Moderate luxury maintenance profile with electronics/turbo history checks recommended
 - Performance baseline: Strong straight-line performance in higher-output trims
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -328,6 +458,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Two-door luxury coupe platform with performance-focused trim mix
 - Ownership baseline: Lower practicality and potentially higher long-term turbo service burden
 - Performance baseline: Quick acceleration and coupe-oriented handling
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -336,6 +471,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Executive-size sedan with comfort-oriented premium layout
 - Ownership baseline: Discontinued-model status can affect long-term parts/trim availability
 - Performance baseline: Refined highway cruising with traditional luxury-sedan character
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -344,6 +484,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Family-focused three-row luxury crossover platform
 - Ownership baseline: Transmission history and electronics updates should be verified by unit
 - Performance baseline: Comfort-oriented ride and family usability
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -353,6 +498,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Flagship luxury off-road-capable SUV with high-feature platform complexity
 - Ownership baseline: High-maintenance risk profile if service history is inconsistent
 - Performance baseline: Strong blend of on-road comfort and off-road capability
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -362,6 +512,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Entry-luxury sedan platform with modern safety/infotainment integration
 - Ownership baseline: Premium diagnostics/labor and electronics complexity raise long-term costs
 - Performance baseline: Refined daily performance with balanced comfort and handling
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -370,6 +525,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Core executive sedan architecture with advanced comfort and driver-assist systems
 - Ownership baseline: High-feature variants increase maintenance and repair complexity over time
 - Performance baseline: Strong highway refinement and smooth power delivery
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -378,6 +538,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Coupe-roof compact luxury SUV emphasizing style and premium tech
 - Ownership baseline: Cargo/headroom trade-offs and premium consumable costs
 - Performance baseline: Sportier handling feel than conventional compact SUVs
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -386,6 +551,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Midsize premium SUV platform with broad powertrain and feature spread
 - Ownership baseline: Electronics/suspension complexity can increase long-term service costs
 - Performance baseline: Comfortable highway ride with strong premium-family utility
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -395,6 +565,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Rear-drive two-seat sports coupe/roadster platform
 - Ownership baseline: Practicality is limited; age and use history are key condition factors
 - Performance baseline: Responsive naturally aspirated sports-car character
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -404,6 +579,11 @@ Last Verified: 2026-02-19
 - Technical baseline: HD truck platform for commercial towing and payload workloads
 - Ownership baseline: Diesel aftertreatment and HD consumables drive high operating costs
 - Performance baseline: High-capacity work-truck performance and durability focus
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + NHTSA (EPA light-duty MPG may be N/A)
 Last Verified: 2026-02-19
 
@@ -413,6 +593,11 @@ Last Verified: 2026-02-19
 - Technical baseline: EV sedan platform with OTA software ecosystem and efficient packaging
 - Ownership baseline: Charging access and software/service campaign compliance are core ownership factors
 - Performance baseline: Strong EV efficiency and immediate torque response
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -422,6 +607,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Mainstream compact crossover with gas, hybrid, and AWD availability by year
 - Ownership baseline: Strong reliability/resale profile and broad service network
 - Performance baseline: Efficient daily-use tuning with practical cargo utility
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -430,6 +620,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Mainstream midsize sedan with gas/hybrid powertrain coverage by generation
 - Ownership baseline: Low-to-moderate long-term ownership cost profile
 - Performance baseline: Comfort-first ride with strong efficiency in hybrid variants
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -438,6 +633,11 @@ Last Verified: 2026-02-19
 - Technical baseline: High-volume compact platform with efficiency-oriented tuning
 - Ownership baseline: Predictable maintenance and strong parts availability
 - Performance baseline: Efficient commuter performance with low running complexity
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -446,6 +646,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Family-focused three-row crossover with hybrid availability
 - Ownership baseline: Reliable ownership profile with moderate midsize-SUV consumable costs
 - Performance baseline: Smooth daily comfort and practical long-trip capability
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -454,6 +659,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Body-on-frame midsize SUV with durability and off-road heritage
 - Ownership baseline: Truck-based consumables and lower fuel economy versus crossovers
 - Performance baseline: Off-road durability and utility focus over on-road refinement
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -462,6 +672,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Midsize truck platform with strong market demand and off-road ecosystem
 - Ownership baseline: Reliable profile with moderate truck-duty service requirements
 - Performance baseline: Balanced towing, utility, and daily drivability in midsize segment
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -470,6 +685,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Full-size truck platform with modern turbo/hybrid-era powertrains in current generation
 - Ownership baseline: Full-size fuel and consumable costs remain significant
 - Performance baseline: Strong towing/payload utility for mixed work and family use
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -479,6 +699,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Compact crossover with gas/hybrid/PHEV coverage by generation
 - Ownership baseline: Value-oriented ownership with warranty emphasis
 - Performance baseline: Efficiency-forward daily comfort in compact SUV class
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -487,6 +712,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Midsize crossover platform with broad feature content and family focus
 - Ownership baseline: Moderate maintenance profile with powertrain-specific variation by trim
 - Performance baseline: Comfortable ride with practical family utility
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -495,6 +725,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Three-row family SUV with premium-content mainstream positioning
 - Ownership baseline: Large-SUV consumables and electronics complexity depend on trim content
 - Performance baseline: Comfort-oriented long-distance and family-transport capability
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -504,6 +739,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Compact crossover with mainstream, hybrid, and PHEV variants by generation
 - Ownership baseline: Value and warranty-focused ownership profile
 - Performance baseline: Efficient daily-use performance with modern infotainment emphasis
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -512,6 +752,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Three-row family SUV with high-feature mainstream positioning
 - Ownership baseline: Large footprint and consumable costs typical of segment
 - Performance baseline: Comfortable highway behavior and family-focused packaging
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -521,6 +766,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Core Lexus luxury crossover with comfort-oriented tuning
 - Ownership baseline: Generally predictable luxury ownership versus higher-risk peers
 - Performance baseline: Quiet and refined daily-driving character
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -529,6 +779,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Compact luxury crossover with gas, turbo, hybrid, and PHEV options by generation
 - Ownership baseline: Moderate luxury maintenance complexity with strong reliability perception
 - Performance baseline: Balanced city-size usability with premium feature set
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -538,6 +793,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Compact crossover emphasizing upscale interior design and driving feel
 - Ownership baseline: Moderate service burden; turbo variants require tighter maintenance discipline
 - Performance baseline: Responsive handling relative to mainstream compact SUV peers
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -546,6 +806,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Three-row crossover with premium-leaning cabin and family focus
 - Ownership baseline: Turbo-era maintenance history should be checked by unit
 - Performance baseline: Smooth highway behavior with refined steering response
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -555,6 +820,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Compact three-row crossover with value-oriented family packaging
 - Ownership baseline: CVT/maintenance history is key for long-term ownership confidence
 - Performance baseline: Efficiency-focused daily-family performance
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -564,6 +834,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Standard AWD wagon/crossover architecture with high practicality
 - Ownership baseline: Tire matching and AWD/CVT service discipline are important
 - Performance baseline: Strong all-weather confidence and long-trip comfort
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -572,6 +847,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Standard AWD compact SUV with visibility and safety emphasis
 - Ownership baseline: Moderate cost profile with CVT service history relevance
 - Performance baseline: Practical, stable all-weather family transport
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -581,6 +861,11 @@ Last Verified: 2026-02-19
 - Technical baseline: Two-row midsize crossover with spacious cabin and comfort bias
 - Ownership baseline: Software/electronics update history should be reviewed by unit
 - Performance baseline: Stable highway ride with family-oriented usability
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-19
 
@@ -590,6 +875,8 @@ Last Verified: 2026-02-19
 - Confirm safety recall context against NHTSA records; VIN-level recall status must be advisor-verified.
 - If two sources conflict, mark `UNVERIFIED – Advisor verification required` and escalate.
 - Never present unverified assumptions as confirmed facts.
+
+
 
 
 
