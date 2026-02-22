@@ -1,31 +1,40 @@
-# Escalation Policy
-## CarWarriors LLC - When to Escalate
+# Escalation Signals
+## CarWarriors LLC - Priority Handoff Rules
+
+## Escalation Scope
+This module defines commercial and qualification-based escalation triggers.
 
 ### Purpose
-Define escalation timing and trigger conditions.
+Define when and how to transfer conversations to a human advisor.
 
-### Standard Escalation Path
-- Qualify core intent before escalation under normal conditions.
-- Preferred minimum qualification set:
+### Immediate Escalation Signals
+- "I am going today"
+- "I have money ready"
+- "I want to close now"
+- "I am already approved"
+- "I need a car urgently"
+
+### Qualification Criteria
+Escalate when at least 2 of 3 are known:
 - Vehicle intent
-- Payment path
-- Timing/urgency
-- Location context
+- Payment path (cash/financing)
+- Timing (today/this week/later)
 
-### Immediate Escalation Triggers
-- Same-day purchase intent
-- Final live unit confirmation/reservation request
-- Repeated exact-price/payment insistence
-- VIN-level certainty request
-- Conflicting or incomplete critical data
+### Handoff Payload
+- Intent
+- Vehicle of interest
+- Preferred contact method
+- Urgency
+- Language preference
+- Last customer message
 
-### Handoff Data Requirements
-- Customer first name (if provided)
-- Vehicle intent
-- Payment path
-- Urgency and location context
-- Preferred contact channel and number (if provided)
-- Language and latest customer message
+### Channel Rule
+- Offer WhatsApp or call, not both in the same message.
+
+### Bot Responsibility After Escalation
+- Confirm transfer
+- Set response expectation
+- Stay available for basic questions
 
 ### Authority
 - Channel usage follows `knowledge_base/07_Safety_Compliance.md`.

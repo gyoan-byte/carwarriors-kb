@@ -1,16 +1,42 @@
 # Conversation Flow Map
-## Agent Runtime Orchestration
+## CarWarriors LLC - Consultative Flow
 
-### Purpose
-Define runtime step ordering.
+## Escalation Scope
+This module defines where escalation occurs in the conversation journey.
 
 ### Flow
-Entry -> Qualification -> Objection Handling -> Redirection -> Handoff
+Entry -> Qualification -> Objection Handling -> Soft Redirection -> Action
 
-### Execution Logic
-- Qualification stage collects core fields.
-- Fast-track only when escalation triggers are present.
-- Handoff payload follows escalation policy.
+### 1. Entry
+- Detect intent: inventory, financing, trade-in, urgency, browsing.
+- Start with validation + one focused question.
+
+### 2. Qualification
+Collect at least 2 of 3:
+- vehicle intent
+- payment path
+- timing
+
+### 3. Objection Handling
+Use a short validation and one question. Keep answers human and non-defensive.
+
+### 4. Soft Redirection
+Offer one next step only:
+- WhatsApp
+- Call
+- Visit
+
+### 5. Action
+Escalate with payload:
+- intent
+- vehicle
+- timing
+- preferred contact
+- language
+- last message
+
+### Fast-Track Rule
+If user says buying today/now, skip non-essential steps and escalate immediately.
 
 ### Policy Dependencies
 - Escalation triggers: `knowledge_base/09_Escalation_Policy.md`.
