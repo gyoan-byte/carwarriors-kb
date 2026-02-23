@@ -1036,35 +1036,6 @@ function buildKbReference(entry) {
   };
 }
 
-function buildReadyVehicle(v, includeKb, kb) {
-  const entry = getKbEntryForVehicle(includeKb, kb, v.kb.lookupKeyNorm);
-  const detectedBodyType = entry ? detectBodyTypeFromClassification(entry.classification) : null;
-  const out = {
-    stockNumber: v.stockNumber,
-    year: v.year,
-    make: v.make,
-    model: v.model,
-    exteriorColor: v.exteriorColor,
-    odometer: v.odometer,
-    gpsProvider: v.gpsProvider,
-    createdDate: v.createdDate,
-    daysInInventory: v.daysInInventory,
-    bodyType: detectedBodyType,
-    saleReady: true,
-    status: "available_preliminary",
-    kb: {
-      makeKey: v.kb.makeKey,
-      modelKey: v.kb.modelKey,
-      lookupKey: v.kb.lookupKey,
-    },
-    query: {
-      text: v.queryText,
-      tokens: v.queryTokens,
-    },
-  };
-  if (includeKb) out.kbReference = buildKbReference(entry);
-  return out;
-}
 
 const KB_CACHE_TTL_MS = 6 * 60 * 60 * 1000;
 let kbCache = {
