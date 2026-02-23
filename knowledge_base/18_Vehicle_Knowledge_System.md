@@ -46,7 +46,7 @@ Certification Date: 2026-02-23
 Vehicle knowledge does NOT imply inventory availability.
 All availability must be verified only through `Carros Listos`.
 - Technical knowledge only; no pricing, financing terms (advisor verified), payment structure (advisor verified), approval guarantee, or confirmed availability.
-- If unit-level facts are missing, respond with `UNVERIFIED � Advisor verification required` and escalate to advisor.
+- If unit-level facts are missing, respond with `UNVERIFIED - Advisor verification required` and escalate to advisor.
 - Keep responses concise, structured, and verification-first.
 - Do not imply final inventory status; advisor confirms live status.
 - Prefer U.S.-market specifications unless explicitly stated otherwise.
@@ -1611,7 +1611,7 @@ Last Verified: 2026-02-23
 - Always verify year/trim/engine/transmission data against official OEM specifications first.
 - Confirm fuel economy against EPA published values for the exact year/powertrain.
 - Confirm safety recall context against NHTSA records; VIN-level recall status must be advisor-verified.
-- If two sources conflict, mark `UNVERIFIED � Advisor verification required` and escalate.
+- If two sources conflict, mark `UNVERIFIED - Advisor verification required` and escalate.
 - Never present unverified assumptions as confirmed facts.
 
 
