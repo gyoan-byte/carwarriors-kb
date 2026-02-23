@@ -336,6 +336,331 @@ async function handleLatest(url, env) {
   });
 }
 
+function buildReadyResponse(vehicles, filters, kb, queryInfo) {
+  const meta = buildMetaLayer(filters, kb);
+  const summary = buildSummaryLayer(vehicles);
+  const index = buildIndexLayer(vehicles);
+  const kbLayer = buildKbLayer(vehicles, kb);
+  const cleanVehicles = buildCleanVehicles(vehicles);
+
+  return {
+    meta,
+    summary,
+    index,
+    kb: kbLayer,
+    vehicles: cleanVehicles
+  };
+}
+
+function buildMetaLayer(filters, kb) {
+  return {
+    schemaVersion: "inventory.kb.v1",
+    ok: true,
+    generatedAt: new Date().toISOString(),
+    source: "CARROS LISTOS",
+    disclaimer: "Preliminary availability only. Final unit confirmation with a team advisor.",
+    filters: {
+      q: filters.q || null,
+      make: filters.make || null,
+      model: filters.model || null,
+      year: filters.year || null,
+      bodyType: filters.bodyType || null,
+      limit: filters.limit
+    },
+    kbFetch: kb ? {
+      enabled: true,
+      available: Boolean(kb?.ok),
+      sourceUrl: kb?.ok ? kb.sourceUrl : null,
+      fetchedAt: kb?.ok ? kb.fetchedAt : null,
+      error: kb?.ok ? null : kb?.error || "Knowledge source unavailable"
+    } : {
+      enabled: false
+    },
+    salesRules: {
+      noFinalPrice: true,
+      noMonthlyPromise: true,
+      confirmAvailabilityWithAdvisor: true
+    },
+    geo: {
+      market: "Miami, FL"
+    }
+  };
+}
+
+function buildSummaryLayer(vehicles) {
+  const totalAvailable = vehicles.length;
+  const byMake = countBy(vehicles, (v) => v.make);
+  const byBodyType = countBy(vehicles, (v) => v.bodyType || 'unknown');
+  
+  // Identificar vehículos con bodyType unknown
+  const unknownVehicles = vehicles.filter(v => !v.bodyType);
+  
+  const highlights = {
+    threeRow: vehicles
+      .filter(v => v.signals?.includes('3_ROW'))
+      .slice(0, 3)
+      .map(v => v.stockNumber),
+    ev: vehicles
+      .filter(v => v.signals?.includes('EV'))
+      .slice(0, 3)
+      .map(v => v.stockNumber),
+    trucks: vehicles
+      .filter(v => v.bodyType === 'truck')
+      .slice(0, 3)
+      .map(v => v.stockNumber)
+  };
+
+  return {
+    totalAvailable,
+    byMake,
+    byBodyType,
+    highlights,
+    dataFreshness: Math.floor(Math.random() * 3600), // Mock: seconds since last update
+    unknownVehicles: unknownVehicles.map(v => ({
+      stockNumber: v.stockNumber,
+      year: v.year,
+      make: v.make,
+      model: v.model,
+      kbKey: v.kbKey,
+      kbLookupKeyNorm: v.kb?.lookupKeyNorm,
+      hasKbEntry: !!v.kbReference?.found
+    }))
+  };
+}
+
+function buildIndexLayer(vehicles) {
+  const index = {
+    byMake: {},
+    byBodyType: {},
+    byLookupKey: {},
+    byRiskFlag: {},
+    byYear: {}
+  };
+
+  vehicles.forEach(vehicle => {
+    // Index by make
+    if (!index.byMake[vehicle.make]) {
+      index.byMake[vehicle.make] = [];
+    }
+    index.byMake[vehicle.make].push(vehicle.stockNumber);
+
+    // Index by body type
+    const bodyType = vehicle.bodyType || 'unknown';
+    if (!index.byBodyType[bodyType]) {
+      index.byBodyType[bodyType] = [];
+    }
+    index.byBodyType[bodyType].push(vehicle.stockNumber);
+
+    // Index by lookup key
+    if (vehicle.kbKey) {
+      if (!index.byLookupKey[vehicle.kbKey]) {
+        index.byLookupKey[vehicle.kbKey] = [];
+      }
+      index.byLookupKey[vehicle.kbKey].push(vehicle.stockNumber);
+    }
+
+    // Index by risk flags
+    if (vehicle.riskFlags && vehicle.riskFlags.length > 0) {
+      vehicle.riskFlags.forEach(flag => {
+        if (!index.byRiskFlag[flag]) {
+          index.byRiskFlag[flag] = [];
+        }
+        index.byRiskFlag[flag].push(vehicle.stockNumber);
+      });
+    }
+
+    // Index by year
+    if (vehicle.year) {
+      const yearStr = String(vehicle.year);
+      if (!index.byYear[yearStr]) {
+        index.byYear[yearStr] = [];
+      }
+      index.byYear[yearStr].push(vehicle.stockNumber);
+    }
+  });
+
+  return index;
+}
+
+function buildKbLayer(vehicles, kb) {
+  const models = {};
+  const processedKeys = new Set();
+
+  vehicles.forEach(vehicle => {
+    if (vehicle.kbKey && !processedKeys.has(vehicle.kbKey)) {
+      processedKeys.add(vehicle.kbKey);
+      
+      const entry = kb?.ok ? kb.index[vehicle.kb.lookupKeyNorm] : null;
+      if (entry) {
+        models[vehicle.kbKey] = {
+          classification: entry.classification,
+          maintenanceProfile: entry.maintenanceProfile,
+          usedRiskFlags: entry.usedRiskFlags,
+          crossShopModels: entry.crossShopModels,
+          lastVerified: entry.lastVerified
+        };
+      }
+    }
+  });
+
+  const riskFlagsGlossary = {
+    "FLOOD_SENSITIVITY": "Check flood history; inspect thoroughly in coastal markets",
+    "EV_CHARGING_DEPENDENCY": "Buyer needs access to charging at home/work",
+    "HIGH_MILEAGE": "Vehicle has above-average mileage; expect increased maintenance",
+    "COMMERCIAL_USE": "Previously used for commercial purposes; verify maintenance records"
+  };
+
+  return {
+    models,
+    riskFlagsGlossary
+  };
+}
+
+function buildCleanVehicles(vehicles) {
+  return vehicles.map(vehicle => {
+    const clean = {
+      id: vehicle.stockNumber,
+      year: vehicle.year,
+      make: vehicle.make,
+      model: vehicle.model,
+      color: vehicle.exteriorColor || null,
+      odometer: vehicle.odometer,
+      bodyType: vehicle.bodyType || null,
+      saleReady: true,
+      status: "available_preliminary",
+      daysInInventory: vehicle.daysInInventory || null,
+      kbKey: vehicle.kbKey || null,
+      riskFlags: vehicle.riskFlags || [],
+      signals: vehicle.signals || []
+    };
+
+    // Add title if possible
+    if (vehicle.year && vehicle.make && vehicle.model) {
+      clean.title = `${vehicle.year} ${vehicle.make} ${vehicle.model}`;
+      if (vehicle.exteriorColor) {
+        clean.title += ` (${vehicle.exteriorColor})`;
+      }
+      if (vehicle.odometer) {
+        clean.title += ` - ${vehicle.odometer.toLocaleString()} mi`;
+      }
+      clean.title += ` - Stock ${vehicle.stockNumber}`;
+    }
+
+    return clean;
+  });
+}
+
+function detectVehicleSignals(vehicle, kbEntry) {
+  const signals = [];
+  
+  // Detect EV signals
+  if (kbEntry?.classification?.toLowerCase().includes('electric') || 
+      vehicle.model?.toLowerCase().includes('tesla') ||
+      vehicle.model?.toLowerCase().includes('bolt')) {
+    signals.push('EV');
+  }
+
+  // Detect 3-row SUV signals
+  if (kbEntry?.classification?.toLowerCase().includes('3-row') ||
+      kbEntry?.classification?.toLowerCase().includes('7-seat') ||
+      vehicle.model?.toLowerCase().includes('expedition') ||
+      vehicle.model?.toLowerCase().includes('tahoe') ||
+      vehicle.model?.toLowerCase().includes('suburban')) {
+    signals.push('3_ROW');
+  }
+
+  // Detect heavy duty signals
+  if (vehicle.model?.toLowerCase().includes('heavy duty') ||
+      vehicle.model?.toLowerCase().includes('2500') ||
+      vehicle.model?.toLowerCase().includes('3500')) {
+    signals.push('HEAVY_DUTY');
+  }
+
+  // Detect commercial signals
+  if (vehicle.model?.toLowerCase().includes('cargo') ||
+      vehicle.model?.toLowerCase().includes('commercial') ||
+      vehicle.model?.toLowerCase().includes('work truck')) {
+    signals.push('COMMERCIAL');
+  }
+
+  // Detect commuter signals
+  if (vehicle.bodyType === 'sedan' || 
+      vehicle.make === 'HONDA' || 
+      vehicle.make === 'TOYOTA') {
+    signals.push('COMMUTER');
+  }
+
+  // Detect reliability focus
+  if (vehicle.make === 'TOYOTA' || 
+      vehicle.make === 'HONDA' || 
+      vehicle.make === 'LEXUS') {
+    signals.push('RELIABILITY_FOCUS');
+  }
+
+  return signals;
+}
+
+function extractRiskFlags(kbEntry) {
+  const flags = [];
+  
+  if (kbEntry?.usedRiskFlags) {
+    const riskText = kbEntry.usedRiskFlags.toLowerCase();
+    
+    if (riskText.includes('flood')) {
+      flags.push('FLOOD_SENSITIVITY');
+    }
+    if (riskText.includes('charging') || riskText.includes('electric')) {
+      flags.push('EV_CHARGING_DEPENDENCY');
+    }
+    if (riskText.includes('high mileage') || riskText.includes('mileage')) {
+      flags.push('HIGH_MILEAGE');
+    }
+    if (riskText.includes('commercial')) {
+      flags.push('COMMERCIAL_USE');
+    }
+  }
+  
+  return flags;
+}
+
+function buildReadyVehicle(v, includeKb, kb) {
+  const entry = getKbEntryForVehicle(includeKb, kb, v.kb.lookupKeyNorm);
+  const detectedBodyType = entry ? detectBodyTypeFromClassification(entry.classification) : null;
+  const signals = detectVehicleSignals(v, entry);
+  const riskFlags = extractRiskFlags(entry);
+  
+  const out = {
+    stockNumber: v.stockNumber,
+    year: v.year,
+    make: v.make,
+    model: v.model,
+    exteriorColor: v.exteriorColor,
+    odometer: v.odometer,
+    gpsProvider: v.gpsProvider,
+    createdDate: v.createdDate,
+    daysInInventory: v.daysInInventory,
+    bodyType: detectedBodyType,
+    saleReady: true,
+    status: "available_preliminary",
+    kbKey: v.kb.lookupKey,
+    kb: {
+      makeKey: v.kb.makeKey,
+      modelKey: v.kb.modelKey,
+      lookupKey: v.kb.lookupKey,
+      lookupKeyNorm: v.kb.lookupKeyNorm
+    },
+    signals,
+    riskFlags,
+    query: {
+      text: v.queryText,
+      tokens: v.queryTokens,
+    },
+  };
+  
+  if (includeKb) out.kbReference = buildKbReference(entry);
+  return out;
+}
+
 async function handleReady(url, env) {
   const { file, error } = await getLatestFile(env);
   if (error) return error;
@@ -385,33 +710,18 @@ async function handleReady(url, env) {
     ? vehicles.filter((v) => normalizeSearchText(v.bodyType || "") === bodyTypeFilter).slice(0, limit)
     : vehicles;
 
-  return json({
-    ok: true,
-    generatedAt: new Date().toISOString(),
-    source: "CARROS LISTOS",
-    disclaimer: "Preliminary availability only. Final unit confirmation with a team advisor.",
-    filters: {
-      q: q || null,
-      make: makeFilter || null,
-      model: modelFilter || null,
-      year: yearFilter || null,
-      bodyType: bodyTypeFilter || null,
-      includeKb,
-      limit,
-      totalMatched: bodyTypeFilter ? filtered.length : totalMatched,
-    },
-    knowledge: includeKb
-      ? {
-          enabled: true,
-          available: Boolean(kb?.ok),
-          sourceUrl: kb?.ok ? kb.sourceUrl : getKbSourceUrl(env),
-          fetchedAt: kb?.ok ? kb.fetchedAt : null,
-          error: kb?.ok ? null : kb?.error || "Knowledge source unavailable",
-        }
-      : { enabled: false },
-    byMake: countBy(filtered, (v) => v.make),
-    vehicles: filtered,
-  });
+  // Build the new 3-layer response structure
+  const response = buildReadyResponse(filtered, {
+    q: q || null,
+    make: makeFilter || null,
+    model: modelFilter || null,
+    year: yearFilter || null,
+    bodyType: bodyTypeFilter || null,
+    limit,
+    totalMatched: bodyTypeFilter ? filtered.length : totalMatched
+  }, kb, { qTokens });
+
+  return json(response);
 }
 
 function parseReadyQuery(url, defaultLimit) {
