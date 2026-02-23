@@ -1,4 +1,4 @@
-ï»¿## Authority Notice
+## Authority Notice
 This module is subordinate to the Authority Hierarchy defined in README.md. If any rule conflicts, the following override order applies:
 1. Safety and Compliance (07, 10)
 2. Financing Rules (03)
@@ -22,6 +22,14 @@ This module is subordinate to the Authority Hierarchy defined in README.md. If a
 - `- Technical baseline:`
 - `- Ownership baseline:`
 - `- Performance baseline:`
+- `- Maintenance profile:`
+- `- Resale tier:`
+- `- Used risk flags:`
+- `- Miami fit notes:`
+- `- Buyer profile fit:`
+- `- Cross-shop models:`
+- `- Inventory mapping key:`
+- `- Aliases:`
 - `Sources:`
 - `Last Verified:`
 - Keep these labels and header levels stable to avoid parser breaks.
@@ -34,16 +42,6 @@ Brands Audited: 25
 Final Data Gaps: 0
 Certification Date: 2026-02-19
 
-## Release Notes (v1.0)
-- Includes: U.S.-market generation mapping, engine/transmission references, EPA context, dimensions context, known issues, maintenance profiles, and advisory transitions for all listed models.
-- Does not include: pricing, financing decisions, payment commitments, legal approval language, or confirmed live inventory.
-- N/A/TBD scope: heavy-duty and classic models may show N/A for EPA light-duty MPG fields where publication is not consistent or not applicable.
-- Update method: verify changes using OEM technical specs first, then EPA fuel economy data, then NHTSA recall records.
-
-# CarWarriors_Vehicle_Knowledge_System
-
-## GLOBAL RULES
-
 ## Production Safety Override (Active)
 - Due to ongoing technical consistency audit, this module is in `SAFE_MODE`.
 - In `SAFE_MODE`, the system may provide only:
@@ -53,7 +51,7 @@ Certification Date: 2026-02-19
 - In `SAFE_MODE`, the system must not provide as final:
 - generation codes, exact engine/transmission mappings, exact MPG tables, exact dimensions, or trim-level technical claims from this file.
 - If the user asks for exact technical specs:
-- respond with `UNVERIFIED â€“ Advisor verification required`,
+- respond with `UNVERIFIED – Advisor verification required`,
 - provide one safe high-level alternative,
 - and escalate to a human advisor for exact confirmation.
 - This override remains active until the next full technical re-audit is completed and certified.
@@ -63,7 +61,7 @@ Certification Date: 2026-02-19
 Vehicle knowledge does NOT imply inventory availability.
 All availability must be verified only through `Carros Listos`.
 - Technical knowledge only; no pricing, financing terms (advisor verified), payment structure (advisor verified), approval guarantee, or confirmed availability.
-- If unit-level facts are missing, respond with `UNVERIFIED â€“ Advisor verification required` and escalate to advisor.
+- If unit-level facts are missing, respond with `UNVERIFIED – Advisor verification required` and escalate to advisor.
 - Keep responses concise, structured, and verification-first.
 - Do not imply final inventory status; advisor confirms live status.
 - Prefer U.S.-market specifications unless explicitly stated otherwise.
@@ -115,8 +113,11 @@ All availability must be verified only through `Carros Listos`.
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Luxury sport-sedan enthusiast; style-focused commuter; premium driving-dynamics buyer
+- Cross-shop models: BMW 3 Series; Audi A4; Mercedes-Benz C-Class; Infiniti Q50
+- Inventory mapping key: ALFA ROMEO_GIULIA
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 ### ACURA
 #### RDX
@@ -129,8 +130,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Compact luxury SUV commuter; reliability-focused premium buyer; tech-oriented family user
+- Cross-shop models: Lexus NX; BMW X3; Audi Q5; Mercedes-Benz GLC Coupe
+- Inventory mapping key: ACURA_RDX
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### MDX
 - Classification: Midsize luxury SUV (3-row)
@@ -142,8 +146,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: 3-row luxury family buyer; reliability-first premium shopper; long-distance household user
+- Cross-shop models: Lexus RX 350L; Audi Q7; BMW X5; Infiniti QX60
+- Inventory mapping key: ACURA_MDX
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 ### AUDI
 #### Q5
@@ -156,8 +163,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Luxury compact SUV buyer; tech-focused commuter; premium family user
+- Cross-shop models: BMW X3; Mercedes-Benz GLC Coupe; Lexus NX; Acura RDX
+- Inventory mapping key: AUDI_Q5
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### Q7
 - Classification: Full-size luxury SUV (3-row)
@@ -169,8 +179,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: 3-row luxury family buyer; highway comfort shopper; premium SUV owner
+- Cross-shop models: BMW X5; Mercedes-Benz GLE; Volvo XC90; Acura MDX
+- Inventory mapping key: AUDI_Q7
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 ### BMW
 #### X3
@@ -183,8 +196,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Luxury compact SUV commuter; performance-leaning premium buyer; urban family owner
+- Cross-shop models: Audi Q5; Mercedes-Benz GLC Coupe; Lexus NX; Volvo XC60
+- Inventory mapping key: BMW_X3
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### X5
 - Classification: Midsize luxury SUV
@@ -196,8 +212,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Luxury midsize SUV buyer; premium family driver; long-distance commuter
+- Cross-shop models: Audi Q7; Mercedes-Benz GLE; Lexus RX 350; Acura MDX
+- Inventory mapping key: BMW_X5
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### X6
 - Classification: Midsize luxury SUV coupe
@@ -209,8 +228,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Style-focused luxury SUV coupe buyer; performance-oriented owner; premium image shopper
+- Cross-shop models: Mercedes-Benz GLE Coupe; Audi Q8; Porsche Cayenne Coupe; BMW X5
+- Inventory mapping key: BMW_X6
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 ### CADILLAC
 #### ESCALADE
@@ -223,8 +245,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Large luxury SUV buyer; executive/family transport owner; premium towing-capable shopper
+- Cross-shop models: Lincoln Navigator; Jeep Wagoneer; GMC Yukon Denali; Lexus LX
+- Inventory mapping key: CADILLAC_ESCALADE
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### XT5
 - Classification: Midsize luxury SUV
@@ -236,8 +261,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Luxury midsize crossover buyer; comfort-focused commuter; premium value shopper
+- Cross-shop models: Lexus RX 350; Acura RDX; BMW X3; Audi Q5
+- Inventory mapping key: CADILLAC_XT5
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 ### CHEVROLET
 #### Camaro
@@ -250,8 +278,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Muscle-car enthusiast; weekend performance buyer; style-focused coupe owner
+- Cross-shop models: Ford Mustang; Dodge Challenger; Nissan 370Z; Toyota GR86
+- Inventory mapping key: CHEVROLET_CAMARO
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### Equinox
 - Classification: Compact SUV
@@ -263,8 +294,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Compact SUV commuter; value-focused household; daily driver
+- Cross-shop models: Honda CR-V; Toyota RAV4; Nissan Rogue; Hyundai Tucson
+- Inventory mapping key: CHEVROLET_EQUINOX
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### Equinox EV
 - Classification: Compact electric SUV
@@ -276,8 +310,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: EV commuter; first-time EV buyer; tech-focused urban owner
+- Cross-shop models: Tesla Model Y; Hyundai Ioniq 5; Kia EV6; Volkswagen ID.4
+- Inventory mapping key: CHEVROLET_EQUINOX_EV
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### Silverado 1500 Crew Cab
 - Classification: Full-size half-ton pickup truck
@@ -289,8 +326,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Light-duty contractor; towing user; family/work truck owner
+- Cross-shop models: Ford F-150; RAM 1500; Toyota Tundra; GMC Sierra 1500
+- Inventory mapping key: CHEVROLET_SILVERADO_1500_CREW_CAB
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### Silverado 3500 HD Crew Cab
 - Classification: Heavy-duty pickup truck
@@ -302,8 +342,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Commercial heavy-duty buyer; trailer operator; work-fleet manager
+- Cross-shop models: Ford F350 Super Duty Crew Cab; RAM 3500; GMC Sierra 3500 HD
+- Inventory mapping key: CHEVROLET_SILVERADO_3500_HD_CREW_CAB
 Sources: Official specs + NHTSA (EPA light-duty MPG may be N/A)
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### SUBURBAN
 - Classification: Full-size SUV (3-row)
@@ -315,8 +358,11 @@ Last Verified: 2026-02-19
 - Used risk flags: ENGINE_COMPLEXITY; FLOOD_SENSITIVITY
 - Miami fit notes: Excellent for large families, good for long trips
 - Aliases: SUBURBAN
+- Buyer profile fit: Large family buyer; shuttle/commercial passenger operator; long-trip user
+- Cross-shop models: Chevrolet Tahoe; Ford Expedition Max; GMC Yukon XL; Jeep Wagoneer L
+- Inventory mapping key: CHEVROLET_SUBURBAN
 Sources: Official Chevrolet specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### Tahoe
 - Classification: Full-size SUV (3-row)
@@ -328,8 +374,11 @@ Last Verified: 2026-02-19
 - Used risk flags: ENGINE_COMPLEXITY
 - Miami fit notes: Good for large groups
 - Aliases: Tahoe
+- Buyer profile fit: Large household SUV buyer; towing-capable family user; mixed city/highway owner
+- Cross-shop models: Chevrolet Suburban; Ford Expedition; GMC Yukon; Nissan Armada
+- Inventory mapping key: CHEVROLET_TAHOE
 Sources: Official Chevrolet specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### Traverse
 - Classification: Midsize SUV (3-row)
@@ -341,8 +390,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: Spacious family SUV
 - Aliases: Traverse
+- Buyer profile fit: 3-row crossover family buyer; practical commuter household; value-focused SUV shopper
+- Cross-shop models: Honda Pilot; Toyota Highlander; Kia Telluride; Hyundai Palisade
+- Inventory mapping key: CHEVROLET_TRAVERSE
 Sources: Official Chevrolet specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### Malibu
 - Classification: Midsize sedan
@@ -354,8 +406,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: Affordable sedan
 - Aliases: Malibu
+- Buyer profile fit: Budget midsize sedan commuter; first-time family sedan buyer; value-focused owner
+- Cross-shop models: Toyota Camry; Honda Accord; Hyundai Sonata; Nissan Altima
+- Inventory mapping key: CHEVROLET_MALIBU
 Sources: Official Chevrolet specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 
 ### DODGE
@@ -369,8 +424,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Performance sedan enthusiast; highway commuter wanting power; full-size sedan shopper
+- Cross-shop models: Chrysler 300; Nissan Maxima (used market); Kia Stinger (used market); Ford Mustang (performance alternative)
+- Inventory mapping key: DODGE_CHARGER
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### Dart
 - Classification: Compact sedan
@@ -382,8 +440,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Budget used-car buyer; first-time owner; commuter seeking low entry price
+- Cross-shop models: Chevrolet Cruze; Ford Focus; Hyundai Elantra; Kia Forte
+- Inventory mapping key: DODGE_DART
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### DURANGO
 - Classification: Midsize SUV (3-row)
@@ -395,8 +456,11 @@ Last Verified: 2026-02-19
 - Used risk flags: TRANSMISSION_RISK; FLOOD_SENSITIVITY
 - Miami fit notes: Good for families, strong A/C for heat
 - Aliases: DURANGO
+- Buyer profile fit: 3-row SUV buyer needing towing capability; family + utility owner; V8-capable SUV shopper
+- Cross-shop models: Ford Explorer; Toyota Highlander; Jeep Grand Cherokee L; Kia Telluride
+- Inventory mapping key: DODGE_DURANGO
 Sources: Official Dodge specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 ### FORD
 #### F350 Super Duty Crew Cab
@@ -409,8 +473,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Commercial fleet; heavy towing operator; construction user
+- Cross-shop models: RAM 3500; Chevrolet Silverado 3500 HD Crew Cab; GMC Sierra HD
+- Inventory mapping key: FORD_F350_SUPER_DUTY_CREW_CAB
 Sources: Official specs + NHTSA (EPA light-duty MPG may be N/A)
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 #### Falcon Wagon (1964)
 - Classification: Classic station wagon
@@ -422,8 +489,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Classic collector; restoration buyer; weekend enthusiast
+- Cross-shop models: Chevrolet Nova Wagon (classic); Plymouth Valiant Wagon (classic); Ford Fairlane Wagon (classic)
+- Inventory mapping key: FORD_FALCON_WAGON_1964
 Sources: Historical OEM references + collector documentation
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 #### Mustang
 - Classification: Sports car / muscle car
@@ -435,8 +505,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Enthusiast buyer; weekend driver; style-focused commuter
+- Cross-shop models: Chevrolet Camaro; Dodge Challenger; Nissan 370Z; Toyota GR86
+- Inventory mapping key: FORD_MUSTANG
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 #### Transit 250 Cargo Van
 - Classification: Commercial cargo van
@@ -448,8 +521,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Small business fleet; tradesperson; delivery operator
+- Cross-shop models: Mercedes-Benz Sprinter Cargo Van; RAM ProMaster; Nissan NV (used market)
+- Inventory mapping key: FORD_TRANSIT_250_CARGO_VAN
 Sources: Official specs + NHTSA (EPA light-duty MPG may be N/A by configuration)
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 #### F-150
 - Classification: Full-size pickup truck
@@ -461,8 +537,11 @@ Last Verified: 2026-02-19
 - Used risk flags: TOWING_MAINTENANCE
 - Miami fit notes: Popular for utility
 - Aliases: F-150; F150
+- Buyer profile fit: Contractor; towing user; mixed work/personal owner
+- Cross-shop models: Chevrolet Silverado 1500 Crew Cab; RAM 1500; Toyota Tundra; Nissan Titan
+- Inventory mapping key: FORD_F_150
 Sources: Official Ford specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 #### Explorer
 - Classification: Midsize SUV (3-row)
@@ -474,8 +553,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: Good for families
 - Aliases: Explorer
+- Buyer profile fit: Growing family; 3-row shopper; highway commuter
+- Cross-shop models: Toyota Highlander; Honda Pilot; Kia Sorento; Hyundai Palisade
+- Inventory mapping key: FORD_EXPLORER
 Sources: Official Ford specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 #### Escape
 - Classification: Compact SUV
@@ -487,8 +569,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: Urban SUV
 - Aliases: Escape
+- Buyer profile fit: Commuter; first-time SUV buyer; small family
+- Cross-shop models: Honda CR-V; Toyota RAV4; Hyundai Tucson; Nissan Rogue
+- Inventory mapping key: FORD_ESCAPE
 Sources: Official Ford specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 
 ### HONDA
@@ -502,8 +587,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Daily commuter; small family; reliability-focused buyer
+- Cross-shop models: Toyota Camry; Hyundai Sonata; Kia K5; Nissan Altima
+- Inventory mapping key: HONDA_ACCORD
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 #### Civic
 - Classification: Compact sedan/hatchback
@@ -515,8 +603,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: First-time buyer; student; urban commuter
+- Cross-shop models: Toyota Corolla; Hyundai Elantra; Kia Forte; Nissan Sentra
+- Inventory mapping key: HONDA_CIVIC
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 #### Ridgeline
 - Classification: Midsize pickup truck
@@ -528,8 +619,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Lifestyle truck buyer; weekend utility user; comfort-first pickup shopper
+- Cross-shop models: Toyota Tacoma Double Cab; Chevrolet Colorado Crew Cab; Nissan Frontier Crew Cab
+- Inventory mapping key: HONDA_RIDGELINE
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 #### CR-V
 - Classification: Compact SUV
@@ -541,8 +635,11 @@ Last Verified: 2026-02-19
 - Used risk flags: CVT_RISK
 - Miami fit notes: Popular compact SUV
 - Aliases: CR-V
+- Buyer profile fit: Compact family SUV buyer; commuter; reliability-focused owner
+- Cross-shop models: Toyota RAV4; Nissan Rogue; Hyundai Tucson; Kia Sportage
+- Inventory mapping key: HONDA_CR_V
 Sources: Official Honda specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 #### Pilot
 - Classification: Midsize SUV (3-row)
@@ -554,8 +651,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: Good for large families
 - Aliases: Pilot
+- Buyer profile fit: Family with 2-3 children; road-trip user; 3-row SUV shopper
+- Cross-shop models: Toyota Highlander; Hyundai Palisade; Kia Telluride; Ford Explorer
+- Inventory mapping key: HONDA_PILOT
 Sources: Official Honda specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 #### HR-V
 - Classification: Subcompact SUV
@@ -567,8 +667,11 @@ Last Verified: 2026-02-19
 - Used risk flags: CVT_RISK
 - Miami fit notes: Affordable urban SUV
 - Aliases: HR-V
+- Buyer profile fit: Urban buyer; first SUV owner; budget-conscious commuter
+- Cross-shop models: Toyota Corolla Cross; Hyundai Kona; Kia Seltos; Nissan Kicks
+- Inventory mapping key: HONDA_HR_V
 Sources: Official Honda specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 
 ### HUMMER
@@ -582,8 +685,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Collector/off-road enthusiast; specialty vehicle buyer; restoration-focused owner
+- Cross-shop models: AM General HMMWV (civilian conversions); Land Rover Defender classic; Jeep Wrangler (off-road alternative); Toyota Land Cruiser classic
+- Inventory mapping key: HUMMER_H1
 Sources: Historical OEM references + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 ### INFINITI
 #### Q50
@@ -596,8 +702,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Luxury sport sedan shopper; performance-value buyer; commuter wanting premium badge
+- Cross-shop models: BMW 3 Series; Audi A4; Mercedes-Benz C-Class; Lexus IS
+- Inventory mapping key: INFINITI_Q50
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### Q60
 - Classification: Luxury sport coupe
@@ -609,8 +718,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Luxury coupe buyer; style/performance enthusiast; weekend + daily dual-use owner
+- Cross-shop models: BMW 4 Series Coupe; Audi A5 Coupe; Mercedes-Benz C-Class Coupe; Ford Mustang GT
+- Inventory mapping key: INFINITI_Q60
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### Q70
 - Classification: Full-size luxury sedan
@@ -622,8 +734,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Used-market luxury sedan buyer; comfort-oriented highway commuter; executive-style shopper
+- Cross-shop models: Lexus ES; BMW 5 Series; Mercedes-Benz E-Class; Acura TLX
+- Inventory mapping key: INFINITI_Q70
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### QX60
 - Classification: Midsize luxury SUV (3-row)
@@ -635,8 +750,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: 3-row luxury family buyer; comfort-focused household; premium practical SUV shopper
+- Cross-shop models: Acura MDX; Lexus RX 350L; Volvo XC90; Audi Q7
+- Inventory mapping key: INFINITI_QX60
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 ### LAND ROVER
 #### Range Rover
@@ -649,8 +767,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Flagship luxury SUV buyer; premium image shopper; comfort + capability owner
+- Cross-shop models: Mercedes-Benz GLE; BMW X7; Cadillac Escalade; Lexus LX
+- Inventory mapping key: LAND ROVER_RANGE_ROVER
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 ### MERCEDES-BENZ
 #### C-Class
@@ -663,8 +784,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Entry-luxury sedan commuter; premium badge buyer; tech-focused urban professional
+- Cross-shop models: BMW 3 Series; Audi A4; Lexus IS; Infiniti Q50
+- Inventory mapping key: MERCEDES-BENZ_C_CLASS
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### E-Class
 - Classification: Midsize executive luxury sedan
@@ -676,8 +800,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Executive sedan buyer; comfort-first highway commuter; premium long-term owner
+- Cross-shop models: BMW 5 Series; Audi A6; Lexus ES; Genesis G80
+- Inventory mapping key: MERCEDES-BENZ_E_CLASS
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### GLC Coupe
 - Classification: Compact luxury SUV coupe
@@ -689,8 +816,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Luxury compact SUV coupe shopper; style-priority buyer; premium commuter
+- Cross-shop models: BMW X4; Audi Q5 Sportback; BMW X3; Lexus NX
+- Inventory mapping key: MERCEDES-BENZ_GLC_COUPE
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### GLE
 - Classification: Midsize luxury SUV
@@ -702,8 +832,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Luxury midsize SUV family buyer; premium comfort shopper; long-distance driver
+- Cross-shop models: BMW X5; Audi Q7; Lexus RX 350; Volvo XC90
+- Inventory mapping key: MERCEDES-BENZ_GLE
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 ### NISSAN
 #### 370Z
@@ -716,8 +849,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Sports-car enthusiast; weekend driver; coupe shopper
+- Cross-shop models: Ford Mustang; Subaru BRZ; Toyota GR86; Chevrolet Camaro
+- Inventory mapping key: NISSAN_370Z
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 #### Rogue
 - Classification: Compact SUV
@@ -729,6 +865,9 @@ Last Verified: 2026-02-19
 - Used risk flags: CVT_RISK
 - Miami fit notes: Popular SUV
 - Aliases: Rogue
+- Buyer profile fit: Compact SUV commuter; small family; practical daily-use buyer
+- Cross-shop models: Toyota RAV4; Honda CR-V; Hyundai Tucson; Kia Sportage
+- Inventory mapping key: NISSAN_ROGUE
 Sources: Nissan USA model page + EPA + NHTSA
 Last Verified: 2026-02-22
 
@@ -742,6 +881,9 @@ Last Verified: 2026-02-22
 - Used risk flags: CVT_RISK
 - Miami fit notes: Good for long drives
 - Aliases: Altima
+- Buyer profile fit: Midsize sedan commuter; highway driver; value-focused buyer
+- Cross-shop models: Toyota Camry; Honda Accord; Hyundai Sonata; Kia K5
+- Inventory mapping key: NISSAN_ALTIMA
 Sources: Nissan USA model page + EPA + NHTSA
 Last Verified: 2026-02-22
 
@@ -755,8 +897,11 @@ Last Verified: 2026-02-22
 - Used risk flags: CVT_RISK
 - Miami fit notes: Budget friendly
 - Aliases: Sentra
+- Buyer profile fit: First-time buyer; budget commuter; student
+- Cross-shop models: Toyota Corolla; Honda Civic; Hyundai Elantra; Kia Forte
+- Inventory mapping key: NISSAN_SENTRA
 Sources: Official Nissan specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 #### Pathfinder
 - Classification: Midsize SUV (3-row)
@@ -768,8 +913,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: Good for families
 - Aliases: Pathfinder
+- Buyer profile fit: 3-row family buyer; towing-capable SUV shopper; road-trip user
+- Cross-shop models: Honda Pilot; Toyota Highlander; Kia Telluride; Hyundai Palisade
+- Inventory mapping key: NISSAN_PATHFINDER
 Sources: Official Nissan specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 
 ### RAM
@@ -783,8 +931,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Heavy towing operator; commercial user; fleet buyer
+- Cross-shop models: Ford F250 Super Duty Crew Cab; Chevrolet Silverado 2500 HD Crew Cab; GMC Sierra 2500 HD
+- Inventory mapping key: RAM_2500_CREW_CAB
 Sources: Official specs + NHTSA (EPA light-duty MPG may be N/A)
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### 1500
 - Classification: Midsize pickup truck
@@ -796,8 +947,11 @@ Last Verified: 2026-02-19
 - Used risk flags: TOWING_MAINTENANCE; FLOOD_SENSITIVITY
 - Miami fit notes: Popular for commercial use, good for towing boats or trailers
 - Aliases: 1500 CREW CAB
+- Buyer profile fit: Contractor; towing user; personal/work truck owner
+- Cross-shop models: Ford F-150; Chevrolet Silverado 1500 Crew Cab; Toyota Tundra; GMC Sierra 1500
+- Inventory mapping key: RAM_1500
 Sources: RAM Trucks model page + EPA + NHTSA
-Last Verified: 2026-02-22
+Last Verified: 2026-02-23
 
 #### 3500
 - Classification: Heavy-duty pickup truck
@@ -809,8 +963,11 @@ Last Verified: 2026-02-22
 - Used risk flags: HEAVY_DUTY_MAINTENANCE; FLOOD_SENSITIVITY
 - Miami fit notes: Ideal for commercial fleets, good for heavy loads
 - Aliases: 3500 CREW CAB
+- Buyer profile fit: Commercial heavy-duty user; maximum towing operator; fleet manager
+- Cross-shop models: Ford F350 Super Duty Crew Cab; Chevrolet Silverado 3500 HD Crew Cab; GMC Sierra 3500 HD
+- Inventory mapping key: RAM_3500
 Sources: Official RAM specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 ### TESLA
 #### Model 3
@@ -823,8 +980,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: EV commuter; tech-first buyer; cost-of-operation-focused owner
+- Cross-shop models: Hyundai Ioniq 6; BMW i4; Polestar 2; Kia EV6
+- Inventory mapping key: TESLA_MODEL_3
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### MODEL Y
 - Classification: Compact electric SUV
@@ -836,8 +996,11 @@ Last Verified: 2026-02-19
 - Used risk flags: EV_CHARGING_DEPENDENCY; FLOOD_SENSITIVITY
 - Miami fit notes: Excellent for short trips, charging infrastructure in Miami area is developing
 - Aliases: MODEL Y
+- Buyer profile fit: EV family crossover buyer; tech-first commuter household; charging-ready urban/suburban owner
+- Cross-shop models: Hyundai Ioniq 5; Kia EV6; Ford Mustang Mach-E; Volkswagen ID.4
+- Inventory mapping key: TESLA_MODEL_Y
 Sources: Official Tesla specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 ### TOYOTA
 #### RAV4
@@ -850,8 +1013,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Compact SUV commuter; family daily-use buyer; reliability-focused owner
+- Cross-shop models: Honda CR-V; Nissan Rogue; Hyundai Tucson; Kia Sportage
+- Inventory mapping key: TOYOTA_RAV4
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 #### Camry
 - Classification: Midsize sedan
@@ -863,8 +1029,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Midsize commuter; rideshare driver; long-term ownership buyer
+- Cross-shop models: Honda Accord; Hyundai Sonata; Kia K5; Nissan Altima
+- Inventory mapping key: TOYOTA_CAMRY
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 #### Corolla
 - Classification: Compact sedan/hatchback
@@ -876,6 +1045,9 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: First-time buyer; student; commuter; rideshare driver
+- Cross-shop models: Honda Civic; Hyundai Elantra; Nissan Sentra; Mazda3
+- Inventory mapping key: TOYOTA_COROLLA
 Sources: Toyota USA model page + EPA + NHTSA
 Last Verified: 2026-02-22
 
@@ -889,8 +1061,11 @@ Last Verified: 2026-02-22
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Family with children; 3-row commuter; practical long-trip buyer
+- Cross-shop models: Honda Pilot; Kia Telluride; Hyundai Palisade; Nissan Pathfinder
+- Inventory mapping key: TOYOTA_HIGHLANDER
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 #### 4Runner
 - Classification: Midsize SUV
@@ -902,8 +1077,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Outdoor-focused owner; body-on-frame SUV buyer; durability-first shopper
+- Cross-shop models: Jeep Grand Cherokee; Ford Explorer; Nissan Pathfinder; Toyota Land Cruiser (used)
+- Inventory mapping key: TOYOTA_4RUNNER
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 #### Tacoma Double Cab
 - Classification: Midsize pickup truck
@@ -915,8 +1093,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Midsize truck user; weekend adventure owner; light-duty contractor
+- Cross-shop models: Ford Ranger Crew Cab; Chevrolet Colorado Crew Cab; Nissan Frontier Crew Cab; Honda Ridgeline
+- Inventory mapping key: TOYOTA_TACOMA_DOUBLE_CAB
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 #### Tundra
 - Classification: Full-size pickup truck
@@ -928,8 +1109,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Full-size truck buyer; towing user; mixed family/work owner
+- Cross-shop models: Ford F-150; Chevrolet Silverado 1500 Crew Cab; RAM 1500; Nissan Titan
+- Inventory mapping key: TOYOTA_TUNDRA
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 ### HYUNDAI
 #### Tucson
@@ -942,8 +1126,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Compact SUV commuter; value-focused family; warranty-conscious buyer
+- Cross-shop models: Honda CR-V; Toyota RAV4; Kia Sportage; Nissan Rogue
+- Inventory mapping key: HYUNDAI_TUCSON
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 #### Santa Fe
 - Classification: Midsize SUV
@@ -955,8 +1142,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Small family SUV buyer; comfort-first commuter; midsize crossover shopper
+- Cross-shop models: Kia Sorento; Honda Passport; Nissan Murano; Toyota Highlander
+- Inventory mapping key: HYUNDAI_SANTA_FE
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 #### Palisade
 - Classification: Three-row midsize SUV
@@ -968,6 +1158,9 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: 3-row family buyer; comfort-focused long-distance user; premium-mainstream shopper
+- Cross-shop models: Kia Telluride; Honda Pilot; Toyota Highlander; Ford Explorer
+- Inventory mapping key: HYUNDAI_PALISADE
 Sources: Hyundai USA model page + EPA + NHTSA
 Last Verified: 2026-02-22
 
@@ -981,8 +1174,11 @@ Last Verified: 2026-02-22
 - Used risk flags: NONE
 - Miami fit notes: Affordable and reliable
 - Aliases: Elantra
+- Buyer profile fit: Budget commuter; first-time buyer; student
+- Cross-shop models: Toyota Corolla; Honda Civic; Kia Forte; Nissan Sentra
+- Inventory mapping key: HYUNDAI_ELANTRA
 Sources: Official Hyundai specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 #### Sonata
 - Classification: Midsize sedan
@@ -994,8 +1190,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: Good for commuting
 - Aliases: Sonata
+- Buyer profile fit: Midsize commuter; value sedan buyer; highway user
+- Cross-shop models: Toyota Camry; Honda Accord; Kia K5; Nissan Altima
+- Inventory mapping key: HYUNDAI_SONATA
 Sources: Official Hyundai specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 
 ### KIA
@@ -1009,8 +1208,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Compact SUV commuter; value-focused family; tech-focused daily user
+- Cross-shop models: Hyundai Tucson; Honda CR-V; Toyota RAV4; Nissan Rogue
+- Inventory mapping key: KIA_SPORTAGE
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 #### Telluride
 - Classification: Three-row SUV
@@ -1022,6 +1224,9 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: 3-row family buyer; practical premium-mainstream shopper; road-trip household
+- Cross-shop models: Hyundai Palisade; Honda Pilot; Toyota Highlander; Nissan Pathfinder
+- Inventory mapping key: KIA_TELLURIDE
 Sources: Kia USA model page + EPA + NHTSA
 Last Verified: 2026-02-22
 
@@ -1035,8 +1240,11 @@ Last Verified: 2026-02-22
 - Used risk flags: NONE
 - Miami fit notes: Budget sedan
 - Aliases: Forte
+- Buyer profile fit: Budget commuter; first-time buyer; cost-conscious owner
+- Cross-shop models: Toyota Corolla; Honda Civic; Hyundai Elantra; Nissan Sentra
+- Inventory mapping key: KIA_FORTE
 Sources: Official Kia specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 #### K5
 - Classification: Midsize sedan
@@ -1048,8 +1256,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: Good value
 - Aliases: K5; Optima
+- Buyer profile fit: Midsize sedan commuter; style-focused value buyer; highway driver
+- Cross-shop models: Honda Accord; Toyota Camry; Hyundai Sonata; Nissan Altima
+- Inventory mapping key: KIA_K5
 Sources: Official Kia specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 #### Sorento
 - Classification: Midsize SUV (3-row)
@@ -1061,8 +1272,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: Family SUV
 - Aliases: Sorento
+- Buyer profile fit: Family 3-row crossover buyer; value-focused household; daily+weekend user
+- Cross-shop models: Hyundai Santa Fe; Honda Pilot; Toyota Highlander; Nissan Pathfinder
+- Inventory mapping key: KIA_SORENTO
 Sources: Official Kia specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-22
 
 
 ### LEXUS
@@ -1076,8 +1290,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Luxury reliability-focused SUV buyer; comfort commuter; premium family owner
+- Cross-shop models: Acura MDX; BMW X5; Mercedes-Benz GLE; Cadillac XT5
+- Inventory mapping key: LEXUS_RX_350
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### NX
 - Classification: Compact luxury SUV
@@ -1089,8 +1306,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Compact luxury SUV commuter; premium efficiency buyer; urban family user
+- Cross-shop models: BMW X3; Audi Q5; Mercedes-Benz GLC Coupe; Acura RDX
+- Inventory mapping key: LEXUS_NX
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### ES
 - Classification: Midsize sedan
@@ -1102,8 +1322,11 @@ Last Verified: 2026-02-19
 - Used risk flags: HYBRID_BATTERY
 - Miami fit notes: Luxury commuting
 - Aliases: ES
+- Buyer profile fit: Luxury sedan comfort buyer; reliability-focused commuter; executive daily driver
+- Cross-shop models: Mercedes-Benz E-Class; BMW 5 Series; Acura TLX; Infiniti Q70
+- Inventory mapping key: LEXUS_ES
 Sources: Official Lexus specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 
 ### MAZDA
@@ -1117,8 +1340,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Compact SUV buyer wanting upscale feel; commuter valuing handling; small family user
+- Cross-shop models: Honda CR-V; Toyota RAV4; Subaru Forester; Hyundai Tucson
+- Inventory mapping key: MAZDA_CX_5
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### CX-9
 - Classification: Midsize SUV (3-row)
@@ -1130,8 +1356,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: 3-row family crossover buyer; comfort-focused commuter; premium-leaning mainstream shopper
+- Cross-shop models: Kia Sorento; Hyundai Palisade; Honda Pilot; Toyota Highlander
+- Inventory mapping key: MAZDA_CX_9
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### MAZDA3
 - Classification: Compact sedan
@@ -1143,8 +1372,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: Sporty sedan
 - Aliases: Mazda3
+- Buyer profile fit: Compact sedan/hatch buyer; driving-dynamics-focused commuter; first-time premium-feel shopper
+- Cross-shop models: Honda Civic; Toyota Corolla; Hyundai Elantra; Volkswagen Jetta
+- Inventory mapping key: MAZDA_MAZDA3
 Sources: Mazda USA model page + EPA + NHTSA
-Last Verified: 2026-02-22
+Last Verified: 2026-02-23
 
 
 ### MITSUBISHI
@@ -1158,8 +1390,11 @@ Last Verified: 2026-02-22
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Value-oriented family crossover buyer; warranty-focused owner; practical 3-row occasional-use shopper
+- Cross-shop models: Nissan Rogue; Hyundai Tucson; Kia Sportage; Subaru Forester
+- Inventory mapping key: MITSUBISHI_OUTLANDER
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 ### SUBARU
 #### Outback
@@ -1172,8 +1407,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Active lifestyle buyer; all-weather commuter; cargo-practical family owner
+- Cross-shop models: Toyota RAV4; Honda CR-V; Mazda CX-5; Volkswagen Atlas Cross Sport
+- Inventory mapping key: SUBARU_OUTBACK
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### Forester
 - Classification: Compact SUV
@@ -1185,8 +1423,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: Safety-focused family buyer; all-weather commuter; practical compact SUV owner
+- Cross-shop models: Honda CR-V; Toyota RAV4; Mazda CX-5; Nissan Rogue
+- Inventory mapping key: SUBARU_FORESTER
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 ### VOLKSWAGEN
 #### Atlas Cross Sport
@@ -1199,8 +1440,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: General fit for Miami
 - Aliases: 
+- Buyer profile fit: 2-row midsize SUV family buyer; comfort-focused commuter; value premium-mainstream shopper
+- Cross-shop models: Honda Passport; Hyundai Santa Fe; Jeep Grand Cherokee; Ford Edge (used market)
+- Inventory mapping key: VOLKSWAGEN_ATLAS_CROSS_SPORT
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 ### JEEP
 #### Grand Cherokee
@@ -1213,8 +1457,11 @@ Last Verified: 2026-02-19
 - Used risk flags: OFFROAD_MAINTENANCE
 - Miami fit notes: Good for trails
 - Aliases: Grand Cherokee
+- Buyer profile fit: SUV buyer wanting comfort + off-road image; family commuter; weekend traveler
+- Cross-shop models: Toyota 4Runner; Ford Explorer; Honda Passport; Nissan Pathfinder
+- Inventory mapping key: JEEP_GRAND_CHEROKEE
 Sources: Official Jeep specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### Compass
 - Classification: Compact SUV
@@ -1226,8 +1473,11 @@ Last Verified: 2026-02-19
 - Used risk flags: NONE
 - Miami fit notes: Urban SUV
 - Aliases: Compass
+- Buyer profile fit: Urban compact SUV buyer; first SUV owner; budget-conscious commuter
+- Cross-shop models: Honda HR-V; Hyundai Tucson; Kia Sportage; Nissan Rogue
+- Inventory mapping key: JEEP_COMPASS
 Sources: Official Jeep specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 #### Wrangler
 - Classification: Compact SUV
@@ -1239,15 +1489,18 @@ Last Verified: 2026-02-19
 - Used risk flags: OFFROAD_MAINTENANCE
 - Miami fit notes: Beach and trail
 - Aliases: Wrangler
+- Buyer profile fit: Off-road enthusiast; adventure-focused owner; second-vehicle recreational buyer
+- Cross-shop models: Ford Bronco; Toyota 4Runner; Jeep Gladiator; Land Rover Defender
+- Inventory mapping key: JEEP_WRANGLER
 Sources: Official Jeep specs + EPA + NHTSA
-Last Verified: 2026-02-19
+Last Verified: 2026-02-23
 
 
 ## SOURCE & VERIFICATION RULE
 - Always verify year/trim/engine/transmission data against official OEM specifications first.
 - Confirm fuel economy against EPA published values for the exact year/powertrain.
 - Confirm safety recall context against NHTSA records; VIN-level recall status must be advisor-verified.
-- If two sources conflict, mark `UNVERIFIED â€“ Advisor verification required` and escalate.
+- If two sources conflict, mark `UNVERIFIED – Advisor verification required` and escalate.
 - Never present unverified assumptions as confirmed facts.
 
 
