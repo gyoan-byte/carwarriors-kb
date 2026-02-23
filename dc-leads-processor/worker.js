@@ -718,6 +718,9 @@ function buildKbReference(entry) {
     resaleTier: entry.resaleTier,
     usedRiskFlags: entry.usedRiskFlags,
     miamiFitNotes: entry.miamiFitNotes,
+    buyerProfileFit: entry.buyerProfileFit,
+    crossShopModels: entry.crossShopModels,
+    inventoryMappingKey: entry.inventoryMappingKey,
     sources: entry.sources,
     lastVerified: entry.lastVerified,
   };
@@ -871,6 +874,9 @@ function createKbEntry(make, model) {
     resaleTier: null,
     usedRiskFlags: null,
     miamiFitNotes: null,
+    buyerProfileFit: null,
+    crossShopModels: null,
+    inventoryMappingKey: null,
     aliases: null,
   };
 }
@@ -884,6 +890,9 @@ const KB_ENTRY_LABELS = [
   ["- Resale tier:", "resaleTier"],
   ["- Used risk flags:", "usedRiskFlags"],
   ["- Miami fit notes:", "miamiFitNotes"],
+  ["- Buyer profile fit:", "buyerProfileFit"],
+  ["- Cross-shop models:", "crossShopModels"],
+  ["- Inventory mapping key:", "inventoryMappingKey"],
   ["- Aliases:", "aliases"],
   ["Sources:", "sources"],
   ["Last Verified:", "lastVerified"],
