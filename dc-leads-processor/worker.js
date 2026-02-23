@@ -1008,6 +1008,7 @@ function detectBodyTypeFromClassification(classification) {
   if (c.includes("van")) return "van";
   if (c.includes("sedan")) return "sedan";
   if (c.includes("sports") || c.includes("sport") || c.includes("coupe")) return "sports";
+  if (c.includes("off-road") || c.includes("offroad") || c.includes("utility")) return "truck";
   return null;
 }
 
