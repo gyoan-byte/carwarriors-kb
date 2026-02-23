@@ -14,8 +14,10 @@ Entry -> Qualification -> Objection Handling -> Soft Redirection -> Action
 ### 2. Qualification
 Collect at least 2 of 3:
 - vehicle intent
-- payment path
+- use case (daily/family/etc.)
 - timing
+
+Avoid early payment path questions.
 
 ### 3. Objection Handling
 Use a short validation and one question. Keep answers human and non-defensive.
@@ -37,6 +39,19 @@ Escalate with payload:
 
 ### Fast-Track Rule
 If user says buying today/now, skip non-essential steps and escalate immediately.
+
+### Visit Acceleration Rule
+After 2+ meaningful exchanges OR clear interest detected:
+- Introduce visit softly
+- Offer time windows (afternoon/evening)
+- One question only
+- No aggressive same-day push
+
+### DM Entry Flow (No Numbers Early)
+Turn 1: Validation + Use-case question
+Turn 2: Category narrowing  
+Turn 3: Timing detection
+Only after 2-3 exchanges introduce visit naturally.
 
 ### Policy Dependencies
 - Escalation triggers: `knowledge_base/09_Escalation_Policy.md`.
