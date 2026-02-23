@@ -40,7 +40,7 @@ Compliance Status: CLEAN
 Models Audited: 85
 Brands Audited: 25
 Final Data Gaps: 0
-Certification Date: 2026-02-23
+Certification Date: 2026-02-22
 
 ## Inventory Separation Rule
 Vehicle knowledge does NOT imply inventory availability.
@@ -478,7 +478,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: RAM 3500; Chevrolet Silverado 3500 HD Crew Cab; GMC Sierra HD
 - Inventory mapping key: FORD_F350_SUPER_DUTY_CREW_CAB
 Sources: Official specs + NHTSA (EPA light-duty MPG may be N/A)
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 #### Falcon Wagon (1964)
 - Classification: Classic station wagon
@@ -494,7 +494,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Chevrolet Nova Wagon (classic); Plymouth Valiant Wagon (classic); Ford Fairlane Wagon (classic)
 - Inventory mapping key: FORD_FALCON_WAGON_1964
 Sources: Historical OEM references + collector documentation
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 #### Mustang
 - Classification: Sports car / muscle car
@@ -510,7 +510,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Chevrolet Camaro; Dodge Challenger; Nissan 370Z; Toyota GR86
 - Inventory mapping key: FORD_MUSTANG
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 #### Transit 250 Cargo Van
 - Classification: Commercial cargo van
@@ -526,7 +526,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Mercedes-Benz Sprinter Cargo Van; RAM ProMaster; Nissan NV (used market)
 - Inventory mapping key: FORD_TRANSIT_250_CARGO_VAN
 Sources: Official specs + NHTSA (EPA light-duty MPG may be N/A by configuration)
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 #### F-150
 - Classification: Full-size pickup truck
@@ -542,7 +542,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Chevrolet Silverado 1500 Crew Cab; RAM 1500; Toyota Tundra; Nissan Titan
 - Inventory mapping key: FORD_F_150
 Sources: Official Ford specs + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 #### Maverick
 - Classification: Compact pickup truck
@@ -574,7 +574,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Toyota Highlander; Honda Pilot; Kia Sorento; Hyundai Palisade
 - Inventory mapping key: FORD_EXPLORER
 Sources: Official Ford specs + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 #### Escape
 - Classification: Compact SUV
@@ -590,7 +590,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Honda CR-V; Toyota RAV4; Hyundai Tucson; Nissan Rogue
 - Inventory mapping key: FORD_ESCAPE
 Sources: Official Ford specs + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 
 ### HONDA
@@ -608,7 +608,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Toyota Camry; Hyundai Sonata; Kia K5; Nissan Altima
 - Inventory mapping key: HONDA_ACCORD
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 #### Civic
 - Classification: Compact sedan/hatchback
@@ -624,7 +624,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Toyota Corolla; Hyundai Elantra; Kia Forte; Nissan Sentra
 - Inventory mapping key: HONDA_CIVIC
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 #### Fit
 - Classification: Subcompact hatchback
@@ -656,7 +656,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Toyota Tacoma Double Cab; Chevrolet Colorado Crew Cab; Nissan Frontier Crew Cab
 - Inventory mapping key: HONDA_RIDGELINE
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 #### CR-V
 - Classification: Compact SUV
@@ -672,7 +672,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Toyota RAV4; Nissan Rogue; Hyundai Tucson; Kia Sportage
 - Inventory mapping key: HONDA_CR_V
 Sources: Official Honda specs + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 #### Pilot
 - Classification: Midsize SUV (3-row)
@@ -688,7 +688,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Toyota Highlander; Hyundai Palisade; Kia Telluride; Ford Explorer
 - Inventory mapping key: HONDA_PILOT
 Sources: Official Honda specs + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 #### HR-V
 - Classification: Subcompact SUV
@@ -704,7 +704,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Toyota Corolla Cross; Hyundai Kona; Kia Seltos; Nissan Kicks
 - Inventory mapping key: HONDA_HR_V
 Sources: Official Honda specs + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 
 ### HUMMER
@@ -886,7 +886,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Ford Mustang; Subaru BRZ; Toyota GR86; Chevrolet Camaro
 - Inventory mapping key: NISSAN_370Z
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 #### Rogue
 - Classification: Compact SUV
@@ -902,7 +902,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Toyota RAV4; Honda CR-V; Hyundai Tucson; Kia Sportage
 - Inventory mapping key: NISSAN_ROGUE
 Sources: Nissan USA model page + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 #### Altima
 - Classification: Midsize sedan
@@ -918,7 +918,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Toyota Camry; Honda Accord; Hyundai Sonata; Kia K5
 - Inventory mapping key: NISSAN_ALTIMA
 Sources: Nissan USA model page + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 #### Sentra
 - Classification: Compact sedan
@@ -934,7 +934,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Toyota Corolla; Honda Civic; Hyundai Elantra; Kia Forte
 - Inventory mapping key: NISSAN_SENTRA
 Sources: Nissan USA model page + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 #### Leaf
 - Classification: Compact electric SUV/hatchback
@@ -966,7 +966,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Honda Pilot; Toyota Highlander; Kia Telluride; Hyundai Palisade
 - Inventory mapping key: NISSAN_PATHFINDER
 Sources: Official Nissan specs + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 
 ### RAM
@@ -1066,7 +1066,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Honda CR-V; Nissan Rogue; Hyundai Tucson; Kia Sportage
 - Inventory mapping key: TOYOTA_RAV4
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 #### Camry
 - Classification: Midsize sedan
@@ -1082,7 +1082,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Honda Accord; Hyundai Sonata; Kia K5; Nissan Altima
 - Inventory mapping key: TOYOTA_CAMRY
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 #### Corolla
 - Classification: Compact sedan/hatchback
@@ -1098,7 +1098,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Honda Civic; Hyundai Elantra; Nissan Sentra; Mazda3
 - Inventory mapping key: TOYOTA_COROLLA
 Sources: Toyota USA model page + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 #### Highlander
 - Classification: Midsize SUV (3-row)
@@ -1114,7 +1114,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Honda Pilot; Kia Telluride; Hyundai Palisade; Nissan Pathfinder
 - Inventory mapping key: TOYOTA_HIGHLANDER
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 #### 4Runner
 - Classification: Midsize SUV
@@ -1130,7 +1130,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Jeep Grand Cherokee; Ford Explorer; Nissan Pathfinder; Toyota Land Cruiser (used)
 - Inventory mapping key: TOYOTA_4RUNNER
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 #### Tacoma Double Cab
 - Classification: Midsize pickup truck
@@ -1146,7 +1146,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Ford Ranger Crew Cab; Chevrolet Colorado Crew Cab; Nissan Frontier Crew Cab; Honda Ridgeline
 - Inventory mapping key: TOYOTA_TACOMA_DOUBLE_CAB
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 #### Tundra
 - Classification: Full-size pickup truck
@@ -1162,7 +1162,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Ford F-150; Chevrolet Silverado 1500 Crew Cab; RAM 1500; Nissan Titan
 - Inventory mapping key: TOYOTA_TUNDRA
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 ### HYUNDAI
 #### Tucson
@@ -1179,7 +1179,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Honda CR-V; Toyota RAV4; Kia Sportage; Nissan Rogue
 - Inventory mapping key: HYUNDAI_TUCSON
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 #### Ioniq
 - Classification: Compact hatchback/liftback
@@ -1211,7 +1211,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Kia Sorento; Honda Passport; Nissan Murano; Toyota Highlander
 - Inventory mapping key: HYUNDAI_SANTA_FE
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 #### Palisade
 - Classification: Three-row midsize SUV
@@ -1227,7 +1227,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Kia Telluride; Honda Pilot; Toyota Highlander; Ford Explorer
 - Inventory mapping key: HYUNDAI_PALISADE
 Sources: Hyundai USA model page + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 #### Elantra
 - Classification: Compact sedan
@@ -1243,7 +1243,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Toyota Corolla; Honda Civic; Kia Forte; Nissan Sentra
 - Inventory mapping key: HYUNDAI_ELANTRA
 Sources: Official Hyundai specs + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 #### Sonata
 - Classification: Midsize sedan
@@ -1259,7 +1259,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Toyota Camry; Honda Accord; Kia K5; Nissan Altima
 - Inventory mapping key: HYUNDAI_SONATA
 Sources: Official Hyundai specs + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 
 ### KIA
@@ -1277,7 +1277,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Hyundai Tucson; Honda CR-V; Toyota RAV4; Nissan Rogue
 - Inventory mapping key: KIA_SPORTAGE
 Sources: Official specs + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 #### Telluride
 - Classification: Three-row SUV
@@ -1293,7 +1293,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Hyundai Palisade; Honda Pilot; Toyota Highlander; Nissan Pathfinder
 - Inventory mapping key: KIA_TELLURIDE
 Sources: Kia USA model page + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 #### Forte
 - Classification: Compact sedan
@@ -1309,7 +1309,7 @@ Last Verified: 2026-02-23
 - Cross-shop models: Toyota Corolla; Honda Civic; Hyundai Elantra; Nissan Sentra
 - Inventory mapping key: KIA_FORTE
 Sources: Official Kia specs + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 #### K5
 - Classification: Midsize sedan
@@ -1317,13 +1317,13 @@ Last Verified: 2026-02-23
 - Maintenance profile: Moderate
 - Resale tier: Moderate
 - Used risk flags: NONE
-- Miami fit notes: Family sedan
-- Aliases: K5
-- Buyer profile fit: Midsize sedan buyer; value-focused household; daily+weekend user
-- Cross-shop models: Hyundai Sonata; Honda Accord; Toyota Camry; Nissan Altima
-- Inventory mapping key: KIA_K5
+- Miami fit notes: Family SUV
+- Aliases: Sorento
+- Buyer profile fit: Family 3-row crossover buyer; value-focused household; daily+weekend user
+- Cross-shop models: Hyundai Santa Fe; Honda Pilot; Toyota Highlander; Nissan Pathfinder
+- Inventory mapping key: KIA_SORENTO
 Sources: Official Kia specs + EPA + NHTSA
-Last Verified: 2026-02-23
+Last Verified: 2026-02-22
 
 
 ### LEXUS
