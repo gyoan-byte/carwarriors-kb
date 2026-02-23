@@ -7,10 +7,10 @@ This module is subordinate to the Authority Hierarchy defined in README.md. If a
 
 # System Version: v1.0
 # Completion Status: Production-Ready Technical Knowledge Base
-# Total Models: 85
+# Total Models: 87
 # Total Brands: 25
 # Final TBD Count: 0
-# Last Full Audit Date: 2026-02-19
+# Last Full Audit Date: 2026-02-23
 
 ## Worker Parsing Contract
 - This file is machine-readable by the inventory Worker.
@@ -37,7 +37,7 @@ This module is subordinate to the Authority Hierarchy defined in README.md. If a
 ## Certification Status
 System Integrity: VERIFIED
 Compliance Status: CLEAN
-Models Audited: 85
+Models Audited: 87
 Brands Audited: 25
 Final Data Gaps: 0
 Certification Date: 2026-02-23
@@ -167,6 +167,38 @@ Last Verified: 2026-02-23
 - Buyer profile fit: 3-row luxury family buyer; highway comfort shopper; premium SUV owner
 - Cross-shop models: BMW X5; Mercedes-Benz GLE; Volvo XC90; Acura MDX
 - Inventory mapping key: AUDI_Q7
+Sources: Official specs + EPA + NHTSA
+Last Verified: 2026-02-23
+
+#### S4
+- Classification: Compact luxury sport sedan
+- Technical baseline: Quattro-based compact sport sedan with turbocharged performance focus
+- Ownership baseline: Premium German luxury maintenance with turbo/AWD complexity considerations
+- Performance baseline: Sport-tuned handling with strong acceleration capability
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
+- Buyer profile fit: Luxury sport sedan enthusiast; performance-focused commuter; premium driving dynamics buyer
+- Cross-shop models: BMW 3 Series; Mercedes-Benz C-Class; Alfa Romeo Giulia; Cadillac CT4-V
+- Inventory mapping key: AUDI_S4
+Sources: Official specs + EPA + NHTSA
+Last Verified: 2026-02-23
+
+#### S5
+- Classification: Compact luxury sport coupe/sedan
+- Technical baseline: Quattro-based luxury sport model with enhanced performance over A5 platform
+- Ownership baseline: Premium maintenance profile with performance-oriented consumable costs
+- Performance baseline: Strong acceleration with sport-biased chassis tuning
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: 
+- Buyer profile fit: Luxury sport coupe buyer; performance enthusiast; style-focused premium owner
+- Cross-shop models: BMW 4 Series; Mercedes-Benz C-Class Coupe; Lexus RC; Cadillac CT5-V
+- Inventory mapping key: AUDI_S5
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-23
 
