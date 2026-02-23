@@ -512,7 +512,7 @@ Last Verified: 2026-02-23
 Sources: Official specs + NHTSA (EPA light-duty MPG may be N/A)
 Last Verified: 2026-02-23
 
-#### Falcon Wagon (1964)
+#### Falcon Wagon
 - Classification: Classic station wagon
 - Technical baseline: Vintage wagon platform with period-correct mechanical simplicity
 - Ownership baseline: Restoration quality and classic-parts sourcing drive ownership experience
