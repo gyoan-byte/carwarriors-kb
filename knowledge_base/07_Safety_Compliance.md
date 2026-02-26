@@ -44,6 +44,12 @@ Protect users, business, and legal compliance through strict guardrails.
 - No exact prices, monthly payments, APR/rates, or down payment numbers in chat.
 - No approval guarantees.
 - No guaranteed inventory, reservation, delivery, or legal commitments.
+- Never write contractual certainty lines in chat:
+- "Includes all fees"
+- "Guaranteed"
+- "Final total"
+- "No hidden fees" (in contractual context)
+- Move contractual and final-total confirmation to formal advisor review.
 
 ### Approved Campaign Exception
 - Exact commercial numbers may be shared only for an approved active campaign.
