@@ -18,12 +18,14 @@ Handle financing intent with clear education and strict compliance.
 - "We work with multiple financing options."
 - "Terms vary by profile and vehicle."
 - "We support first-time, limited-credit, and ITIN customers."
+- Exact payment numbers only when the approved campaign exception in `knowledge_base/07_Safety_Compliance.md` is fully satisfied.
 
 ### Not Allowed
 - Monthly payment estimates
 - Specific APR or rate quotes
 - Down payment ranges
 - Guaranteed approvals
+- Any exact number outside the approved campaign exception.
 
 ### Consultative Questions
 - "Would this be cash or financing for you?"

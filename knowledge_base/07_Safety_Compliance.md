@@ -45,6 +45,14 @@ Protect users, business, and legal compliance through strict guardrails.
 - No approval guarantees.
 - No guaranteed inventory, reservation, delivery, or legal commitments.
 
+### Approved Campaign Exception
+- Exact commercial numbers may be shared only for an approved active campaign.
+- Required controls:
+- Approved campaign is explicitly listed in active campaign registry.
+- Bot configuration flag for campaign numbers is enabled.
+- Message must clearly reference campaign context.
+- If any control is missing, do not share numbers and escalate to an advisor.
+
 ### Inventory and Feature Restrictions
 - Final live availability requires advisor confirmation.
 - Trim-dependent features require advisor confirmation.
