@@ -70,7 +70,7 @@ Provide natural bridge phrases for moving from bot support to human assistance.
 - "I do not know"
 - "That is not my job"
 
-Rule:
+### Rule
 - Do not use negative refusal phrasing; use "I can connect you with..." to keep momentum.
 
 ### Execution Constraints

@@ -21,9 +21,6 @@ Support trade-in conversations without speculative valuation.
 - Estimated trade-in value in chat
 - Value ranges or guaranteed minimums
 - Final appraisal commitment without inspection
-- Estimated value
-- Value ranges
-- Guaranteed minimums
 - Acceptance without inspection
 
 ### Appraisal Rule

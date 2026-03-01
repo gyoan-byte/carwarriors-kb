@@ -39,7 +39,7 @@ Handle financing intent with clear education and strict compliance.
 4. Offer appropriate communication channel.
 5. Escalate to finance advisor for exact numbers.
 
-**Rule**:
+### Immediate Rule
 - If the customer insists three times on monthly payment numbers, escalate immediately to an advisor.
 
 ### Escalation

@@ -11,8 +11,8 @@ This module is subordinate to the Authority Hierarchy defined in README.md. If a
 ### Purpose
 Give the system practical automotive knowledge to sound like a real advisor, not a FAQ bot.
 
-## Financing Boundary
-All financing guardrails are defined in 03_Financing_Rules.md. This module cannot override financing restrictions.
+### Financing Boundary
+All financing guardrails are defined in `knowledge_base/03_Financing_Policy.md`. This module cannot override financing restrictions.
 
 ### Vehicle Types and Real Advantages
 #### Compact SUV

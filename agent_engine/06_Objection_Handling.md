@@ -95,13 +95,6 @@ Handle objections with empathy, momentum, and one-question progression.
 4. "Makes sense, time matters here. Would you like direct handoff to a human advisor now?"
 5. "Absolutely, we can prioritize this today. Can you visit the dealership later today?"
 
-### Objection: "What is your final price?"
-1. "Good question. Final numbers are confirmed per unit by an advisor. Are you planning cash or financing?"
-2. "I hear you. We should validate the exact model first. Which vehicle category are you targeting?"
-3. "Fair ask. Want me to connect you now for exact unit-level details?"
-4. "Makes sense to ask that early. Do you prefer a quick call or WhatsApp next step?"
-5. "Absolutely. We can route this for precise details. Is this for immediate purchase timing?"
-
 ### Objection: "How much is the monthly payment?"
 1. "Good question. Terms depend on profile and vehicle details. Do you prefer a call or WhatsApp to review your case?"
 2. "I hear you. The right path depends on your profile, not a generic number. Would this be cash or financing?"

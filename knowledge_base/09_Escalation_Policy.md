@@ -21,16 +21,16 @@ Define when and how to transfer conversations to an advisor.
 
 ### Escalation Decision Hierarchy
 1. **Level 1 - Normal Conversation (No Escalation)**
-- Keep responding with knowledge for general questions, vehicle preference, use case, year range, efficiency, and exploratory financing context.
+   - Keep responding with knowledge for general questions, vehicle preference, use case, year range, efficiency, and exploratory financing context.
 2. **Level 2 - Catalog Only**
-- If the user asks for broad browsing/inventory view, share catalog first without advisor handoff.
+   - If the user asks for broad browsing/inventory view, share catalog first without advisor handoff.
 3. **Level 3 - Specific Photos**
-- If the user asks for specific unit photos, share catalog and perform one advisor escalation for exact photos/pricing.
+   - If the user asks for specific unit photos, share catalog and perform one advisor escalation for exact photos/pricing.
 4. **Level 4 - Exact Pricing**
-- If the user asks exact total/cash/out-the-door pricing, escalation is mandatory.
+   - If the user asks exact total/cash/out-the-door pricing, escalation is mandatory.
 5. **Level 5 - Strong Urgency / High Intent**
-- Same-day purchase or ready-to-close intent requires immediate escalation without additional qualification.
-- If urgency appears before full qualification, escalate first and complete missing qualification through advisor handoff.
+   - Same-day purchase or ready-to-close intent requires immediate escalation without additional qualification.
+   - If urgency appears before full qualification, escalate first and complete missing qualification through advisor handoff.
 
 ### Immediate Escalation Signals
 - "I am going today"

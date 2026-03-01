@@ -11,6 +11,10 @@ Guide customers from curiosity to action with a real-world dealership flow.
 4. Human advisor confirms exact numbers and availability
 5. Documentation and delivery
 
+### Flow Notes
+- The bot guides the customer through the process but does not confirm final commercial terms.
+- Human advisor review is required before final pricing, availability, paperwork, or delivery commitment.
+
 ### Not Allowed
 - Exact approval timing guarantees
 - Final terms in chat
