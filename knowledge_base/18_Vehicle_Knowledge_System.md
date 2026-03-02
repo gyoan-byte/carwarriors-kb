@@ -7,7 +7,7 @@ This module is subordinate to the Authority Hierarchy defined in README.md. If a
 
 # System Version: v1.0
 # Completion Status: Production-Ready Technical Knowledge Base
-# Total Models: 87
+# Total Models: 88
 # Total Brands: 25
 # Final TBD Count: 0
 # Last Full Audit Date: 2026-02-23
@@ -37,7 +37,7 @@ This module is subordinate to the Authority Hierarchy defined in README.md. If a
 ## Certification Status
 System Integrity: VERIFIED
 Compliance Status: CLEAN
-Models Audited: 87
+Models Audited: 88
 Brands Audited: 25
 Final Data Gaps: 0
 Certification Date: 2026-02-23
@@ -852,6 +852,22 @@ Last Verified: 2026-02-23
 - Buyer profile fit: Entry-luxury sedan commuter; premium badge buyer; tech-focused urban professional
 - Cross-shop models: BMW 3 Series; Audi A4; Lexus IS; Infiniti Q50
 - Inventory mapping key: MERCEDES-BENZ_C_CLASS
+Sources: Official specs + EPA + NHTSA
+Last Verified: 2026-02-23
+
+#### CLS
+- Classification: Midsize luxury four-door coupe/sedan
+- Technical baseline: Coupe-roof executive sedan architecture with turbocharged luxury powertrain focus
+- Ownership baseline: Premium electronics, air-suspension-equipped variants, and German-luxury service costs can raise long-term expense
+- Performance baseline: Strong highway refinement with smooth acceleration and style-forward grand-touring character
+- Maintenance profile: Moderate
+- Resale tier: Moderate
+- Used risk flags: NONE
+- Miami fit notes: General fit for Miami
+- Aliases: CLS-Class; CLS Class
+- Buyer profile fit: Style-priority luxury sedan buyer; executive commuter; premium comfort/performance shopper
+- Cross-shop models: Audi A7; BMW 6 Series Gran Coupe; Lexus GS; Mercedes-Benz E-Class
+- Inventory mapping key: MERCEDES-BENZ_CLS
 Sources: Official specs + EPA + NHTSA
 Last Verified: 2026-02-23
 
