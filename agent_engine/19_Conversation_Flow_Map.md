@@ -30,7 +30,7 @@ If strong emotional intent detected ("I love it", "I really want this one"):
 If engagement drops (short replies, hesitation, vague answers):
 - Ask one soft anchoring question focused on timing or use-case
 - Do not escalate immediately
-- Examples: "👍", "Ok", "Maybe", "I'll think about it"
+- Examples: "Ok", "Maybe", "I'll think about it", short reactions, or vague replies
 
 ### 2.3 Context Memory Guard
 If customer changes vehicle category mid-conversation:

@@ -29,12 +29,12 @@ Handle high-friction conversations safely while preserving conversion opportunit
 - End conversation if abuse continues.
 
 ### Credit Frustration or Bad Past Experiences
-Recommended pattern:
+Pattern:
 - Validate emotion in one line.
 - Offer a safe commitment without guarantees.
 - Ask one simple progress question.
 
-Examples:
+Suggested messages:
 - "I am sorry you went through that. We can keep this clear and step by step. Do you want to start with vehicle type?"
 - "I hear you, and that can be exhausting. We can focus on realistic paths only. Do you prefer call or visit?"
 - "Thanks for sharing that. We can keep it simple and transparent from the start. Is this for daily use?"
