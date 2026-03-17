@@ -1,0 +1,17 @@
+﻿name = "ghl-multi-agent-scheduler"
+main = "ghl-miami-scheduler.js"
+compatibility_date = "2026-02-18"
+workers_dev = true
+
+# Environment variables for the worker
+[vars]
+ACCOUNTS_CONFIG_JSON = '{"accounts":[{"accountId":"DSe5PdPEScZL8cbZTkKI","name":"Carwarriors Subcuenta","ghlApiKey":"pit-9dadc933-7d23-4769-a443-5fc9a55ab47b","agents":[{"agentId":"gVKgcA7UScwA2hdB3kfW","name":"Agente Secundario","locationId":"DSe5PdPEScZL8cbZTkKI","schedule":{"timezone":"America/New_York","rules":[{"days":["monday","tuesday","wednesday","thursday","friday","saturday"],"timeRanges":[{"start":"00:00","end":"08:59","mode":"auto-pilot"},{"start":"23:01","end":"23:59","mode":"auto-pilot"}]},{"days":["sunday"],"timeRanges":[{"start":"00:00","end":"09:59","mode":"auto-pilot"},{"start":"19:01","end":"23:59","mode":"auto-pilot"}]}]}},{"agentId":"UFnIBDWtM64QJgjsaGJP","name":"Agente Primario","locationId":"DSe5PdPEScZL8cbZTkKI","schedule":{"timezone":"America/New_York","rules":[{"days":["monday","tuesday","wednesday","thursday","friday","saturday"],"timeRanges":[{"start":"00:00","end":"08:59","mode":"auto-pilot"},{"start":"23:01","end":"23:59","mode":"auto-pilot"}]},{"days":["sunday"],"timeRanges":[{"start":"00:00","end":"09:59","mode":"auto-pilot"},{"start":"19:01","end":"23:59","mode":"auto-pilot"}]}]}}]}]}'
+MODE_ON_DEFAULT = "auto-pilot"
+MODE_OFF_DEFAULT = "off"
+
+# Cron trigger for automatic scheduling
+[[triggers]]
+crons = ["*/15 * * * *"]  # Run every 15 minutes
+
+# Bind your production resources here.
+# Replace with your real bucket and KV IDs if needed.

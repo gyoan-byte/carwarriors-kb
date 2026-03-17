@@ -1,37 +1,48 @@
 /**
- * GHL Conversation AI Agent Scheduler (Miami TZ)
+ * GHL Multi-Account AI Agent Scheduler
  * 
- * Schedules GHL AI agents based on Miami business hours.
- * Weekends: Always ON
- * Weekdays: ON before 8am or after 5pm, OFF during business hours
+ * Manages GHL AI agents across multiple accounts with individual schedules.
+ * Each agent can have custom day-based schedules and time ranges.
  * 
  * Environment Variables:
- * - LOCATION_IDS: Comma-separated location IDs
- * - AGENT_MAP_JSON: JSON mapping locationId -> agentId
- * - AGENT_ID_DEFAULT: Default agent ID fallback
- * - MODE_ON: Agent mode when enabled (default: "auto-pilot")
- * - MODE_OFF: Agent mode when disabled (default: "off")
- * - GHL_API_KEY: GHL API key
+ * - ACCOUNTS_CONFIG_JSON: JSON configuration with accounts, agents, and schedules
+ * - MODE_ON_DEFAULT: Agent mode when enabled (default: "auto-pilot")
+ * - MODE_OFF_DEFAULT: Agent mode when disabled (default: "off")
  * 
  * API Endpoints:
  * - GET /health: Health check
- * - GET /on: Enable agent
- * - GET /off: Disable agent
- * - GET /status: Get agent status
- * - GET /debug: Debug agent info
+ * - GET /accounts: List all accounts
+ * - GET /accounts/{accountId}/agents: List agents in account
+ * - GET /accounts/{accountId}/agents/{agentId}/on: Enable agent
+ * - GET /accounts/{accountId}/agents/{agentId}/off: Disable agent
+ * - GET /accounts/{accountId}/agents/{agentId}/status: Get agent status
+ * - GET /accounts/{accountId}/agents/{agentId}/debug: Debug agent info
+ * - GET /config/validate: Validate configuration
  * - GET /cron/run: Manual cron trigger
  */
 
 const GHL_BASE = "https://services.leadconnectorhq.com";
 const API_VERSION = "2021-07-28";
 
-const BUILD = `ghl-agent-scheduler-build-${new Date().toISOString().split('T')[0].replace(/-/g, '')}-01`;
+const BUILD = `ghl-multi-agent-scheduler-build-${new Date().toISOString().split('T')[0].replace(/-/g, '')}-01`;
 
-// Enhanced error handling and logging
+// Day mapping constants
+const DAY_MAP = {
+  'sunday': 0,
+  'monday': 1,
+  'tuesday': 2,
+  'wednesday': 3,
+  'thursday': 4,
+  'friday': 5,
+  'saturday': 6
+};
+
+// Enhanced error handling and logging with account context
 function logError(operation, context, error) {
   console.error(JSON.stringify({
     timestamp: new Date().toISOString(),
     operation,
+    accountId: context.accountId,
     locationId: context.locationId,
     agentId: context.agentId,
     error: error?.message || String(error),
@@ -43,6 +54,7 @@ function logInfo(operation, context, data) {
   console.log(JSON.stringify({
     timestamp: new Date().toISOString(),
     operation,
+    accountId: context.accountId,
     locationId: context.locationId,
     agentId: context.agentId,
     ...data
@@ -71,23 +83,22 @@ function createSuccessResponse(data, context = {}) {
 
 export default {
   async fetch(request, env, ctx) {
-    const { path, params } = parseRequest(request);
+    const { path, pathParams, params } = parseRequest(request);
     
     if (path === "/health") {
       return json({
         ok: true,
-        worker: "ghl-conversation-ai-agent-scheduler",
+        worker: "ghl-multi-agent-scheduler",
         build: BUILD,
-        tz_rule: "America/New_York (Miami)",
         base: GHL_BASE,
         api_version_header: API_VERSION,
-        routes: ["/health", "/on", "/off", "/status", "/debug", "/cron/run"],
+        routes: ["/health", "/accounts", "/accounts/{accountId}/agents", "/accounts/{accountId}/agents/{agentId}/on", "/accounts/{accountId}/agents/{agentId}/off", "/accounts/{accountId}/agents/{agentId}/status", "/accounts/{accountId}/agents/{agentId}/debug", "/config/validate", "/cron/run"],
       });
     }
 
-    const context = await buildRequestContext(env, params);
+    const context = await buildRequestContext(env, pathParams, params);
     
-    if (needsLocationValidation(path) && !context.isValid) {
+    if (needsValidation(path) && !context.isValid) {
       return json(context.error, 400);
     }
 
@@ -95,29 +106,82 @@ export default {
   },
 
   async scheduled(event, env, ctx) {
-    const desired = desiredStateMiami();
-    await applyScheduleToAllLocations(env, desired);
+    await applyScheduleToAllAgents(env);
   },
 };
 
-// Miami timezone business rules
-function desiredStateMiami() {
-  const now = miamiNowParts();
-  const { weekday, minutes } = now;
-
-  // Weekend: always ON
-  if (weekday === 0 || weekday === 6) return true;
-
-  // Weekday: ON before 8am or after 5pm
-  const startWork = 8 * 60;
-  const endWork = 17 * 60;
-
-  return minutes < startWork || minutes >= endWork;
+// Configuration parsing functions
+function parseAccountsConfig(env) {
+  const rawConfig = (env.ACCOUNTS_CONFIG_JSON || "").trim();
+  if (!rawConfig) {
+    return { ok: false, error: "missing_accounts_config" };
+  }
+  
+  try {
+    const config = JSON.parse(rawConfig);
+    if (!config.accounts || !Array.isArray(config.accounts)) {
+      return { ok: false, error: "invalid_accounts_structure" };
+    }
+    return { ok: true, config };
+  } catch (error) {
+    return { ok: false, error: "invalid_json", details: error.message };
+  }
 }
 
-function miamiNowParts() {
+function findAgentConfig(config, accountId, agentId) {
+  const account = config.accounts.find(acc => acc.accountId === accountId);
+  if (!account) return null;
+  
+  const agent = account.agents.find(ag => ag.agentId === agentId);
+  if (!agent) return null;
+  
+  return { account, agent };
+}
+
+// Schedule evaluation functions
+function evaluateAgentSchedule(schedule, timezone) {
+  if (!schedule || !schedule.rules || !schedule.rules.length) {
+    return { enabled: false, mode: null };
+  }
+  
+  const now = getTimezoneParts(timezone);
+  const currentDay = now.weekday; // 0 = Sunday, 1 = Monday, etc.
+  const currentMinutes = now.minutes;
+  
+  // Check each rule in order
+  for (const rule of schedule.rules) {
+    if (!rule.days || !rule.timeRanges || !rule.timeRanges.length) continue;
+    
+    // Check if current day matches this rule
+    const dayMatches = rule.days.some(day => DAY_MAP[day.toLowerCase()] === currentDay);
+    if (!dayMatches) continue;
+    
+    // Check time ranges
+    for (const timeRange of rule.timeRanges) {
+      const startMinutes = timeToMinutes(timeRange.start);
+      const endMinutes = timeToMinutes(timeRange.end);
+      
+      if (currentMinutes >= startMinutes && currentMinutes <= endMinutes) {
+        return {
+          enabled: true,
+          mode: timeRange.mode || "auto-pilot",
+          matchedRule: { days: rule.days, timeRange }
+        };
+      }
+    }
+  }
+  
+  return { enabled: false, mode: null };
+}
+
+function timeToMinutes(timeStr) {
+  const [hours, minutes] = timeStr.split(':').map(Number);
+  return hours * 60 + minutes;
+}
+
+function getTimezoneParts(timezone = "America/New_York") {
   const dtf = new Intl.DateTimeFormat("en-US", {
-    timeZone: "America/New_York",
+    timeZone: timezone,
     weekday: "short",
     hour: "2-digit",
     minute: "2-digit",
@@ -136,7 +200,7 @@ function miamiNowParts() {
   return { weekday, hour, minute, minutes };
 }
 
-// Agent ID resolution from environment
+// Agent ID resolution from environment (legacy compatibility)
 function resolveAgentId(env, locationId) {
   const rawMap = (env.AGENT_MAP_JSON || "").trim();
   if (rawMap) {
@@ -151,11 +215,11 @@ function resolveAgentId(env, locationId) {
 
 // GHL API mode helpers
 function modeOn(env) {
-  return (env.MODE_ON || "auto-pilot").toString();
+  return (env.MODE_ON_DEFAULT || "auto-pilot").toString();
 }
 
 function modeOff(env) {
-  return (env.MODE_OFF || "off").toString();
+  return (env.MODE_OFF_DEFAULT || "off").toString();
 }
 
 async function getAgentRuntimeStatus(env, ids, apiKey) {
@@ -317,7 +381,7 @@ async function ghlUpdateAgent(env, ids, payload, apiKey) {
 }
 
 function ghlHeaders(env, apiKey, locationId) {
-  const key = (apiKey || env.GHL_API_KEY || "").toString().trim();
+  const key = (apiKey || "").toString().trim();
   const headers = { accept: "application/json", version: API_VERSION };
   if (key) headers.authorization = `Bearer ${key}`;
   if (locationId) headers.locationId = locationId;
@@ -340,55 +404,138 @@ function safeTrunc(s, max) {
 // Request parsing and context building
 function parseRequest(request) {
   const url = new URL(request.url);
+  const pathParts = url.pathname.split('/').filter(Boolean);
+  
+  // Extract path parameters for /accounts/{accountId}/agents/{agentId}/action patterns
+  let pathParams = {};
+  let path = url.pathname;
+  
+  if (pathParts[0] === 'accounts' && pathParts[2] === 'agents' && pathParts[4]) {
+    pathParams = {
+      accountId: pathParts[1],
+      agentId: pathParts[3],
+      action: pathParts[4]
+    };
+    // Normalize path for routing
+    path = `/accounts/{accountId}/agents/{agentId}/${pathParts[4]}`;
+  } else if (pathParts[0] === 'accounts' && pathParts[2] === 'agents') {
+    pathParams = {
+      accountId: pathParts[1]
+    };
+    path = '/accounts/{accountId}/agents';
+  } else if (pathParts[0] === 'accounts') {
+    path = '/accounts';
+  }
+  
   return {
-    path: url.pathname,
+    path,
+    pathParams,
     params: {
       apiKey: (url.searchParams.get("apiKey") || "").trim(),
-      locationId: (url.searchParams.get("locationId") || url.searchParams.get("loc") || "").trim(),
     }
   };
 }
 
-async function buildRequestContext(env, params) {
-  let { locationId } = params;
+async function buildRequestContext(env, pathParams, params) {
+  const configResult = parseAccountsConfig(env);
   
-  if (!locationId) {
-    locationId = getLocationIds(env)[0] || "";
+  if (!configResult.ok) {
+    return {
+      isValid: false,
+      error: {
+        ok: false,
+        error: configResult.error,
+        details: configResult.details,
+        hint: "Configura ACCOUNTS_CONFIG_JSON"
+      }
+    };
   }
-
-  const agentId = resolveAgentId(env, locationId);
-  const isValid = !!(locationId && agentId);
   
-  return {
-    locationId,
-    agentId,
-    apiKey: params.apiKey,
-    isValid,
-    error: isValid ? null : {
-      ok: false,
-      error: locationId ? "agentId_not_configured_for_location" : "missing_locationId",
-      locationId,
-      hint: locationId ? "Configura AGENT_MAP_JSON o AGENT_ID_DEFAULT" : undefined
+  const { config } = configResult;
+  const { accountId, agentId } = pathParams;
+  
+  // If we have accountId and agentId, validate they exist
+  if (accountId && agentId) {
+    const agentConfig = findAgentConfig(config, accountId, agentId);
+    if (!agentConfig) {
+      return {
+        isValid: false,
+        error: {
+          ok: false,
+          error: "agent_not_found",
+          accountId,
+          agentId,
+          hint: "Verifica que accountId y agentId existan en la configuración"
+        }
+      };
     }
+    
+    return {
+      isValid: true,
+      accountId,
+      agentId,
+      locationId: agentConfig.agent.locationId,
+      apiKey: params.apiKey || agentConfig.account.ghlApiKey,
+      accountConfig: agentConfig.account,
+      agentConfig: agentConfig.agent,
+      fullConfig: config
+    };
+  }
+  
+  // If we only have accountId, validate account exists
+  if (accountId) {
+    const account = config.accounts.find(acc => acc.accountId === accountId);
+    if (!account) {
+      return {
+        isValid: false,
+        error: {
+          ok: false,
+          error: "account_not_found",
+          accountId,
+          hint: "Verifica que accountId exista en la configuración"
+        }
+      };
+    }
+    
+    return {
+      isValid: true,
+      accountId,
+      apiKey: params.apiKey || account.ghlApiKey,
+      accountConfig: account,
+      fullConfig: config
+    };
+  }
+  
+  // No specific account/agent context (for /accounts, /config/validate, etc.)
+  return {
+    isValid: true,
+    apiKey: params.apiKey,
+    fullConfig: config
   };
 }
 
-function needsLocationValidation(path) {
-  return ["/on", "/off", "/status", "/debug"].includes(path);
+function needsValidation(path) {
+  return ["/accounts/{accountId}/agents/{agentId}/on", "/accounts/{accountId}/agents/{agentId}/off", "/accounts/{accountId}/agents/{agentId}/status", "/accounts/{accountId}/agents/{agentId}/debug"].includes(path);
 }
 
 async function handleRoute(path, context, env) {
-  const { locationId, agentId, apiKey } = context;
+  const { accountId, agentId, apiKey, accountConfig, agentConfig, fullConfig } = context;
   
   switch (path) {
-    case "/on":
-      return handleAgentToggle(env, locationId, agentId, true, apiKey);
-    case "/off":
-      return handleAgentToggle(env, locationId, agentId, false, apiKey);
-    case "/status":
-      return handleAgentStatus(env, locationId, agentId, apiKey);
-    case "/debug":
-      return handleAgentDebug(env, locationId, agentId, apiKey);
+    case "/accounts":
+      return handleAccountsList(fullConfig);
+    case "/accounts/{accountId}/agents":
+      return handleAccountAgents(accountConfig);
+    case "/accounts/{accountId}/agents/{agentId}/on":
+      return handleAgentToggle(env, accountId, agentId, agentConfig, true, apiKey);
+    case "/accounts/{accountId}/agents/{agentId}/off":
+      return handleAgentToggle(env, accountId, agentId, agentConfig, false, apiKey);
+    case "/accounts/{accountId}/agents/{agentId}/status":
+      return handleAgentStatus(env, accountId, agentId, agentConfig, apiKey);
+    case "/accounts/{accountId}/agents/{agentId}/debug":
+      return handleAgentDebug(env, accountId, agentId, agentConfig, apiKey);
+    case "/config/validate":
+      return handleConfigValidate(fullConfig);
     case "/cron/run":
       return handleCronRun(env, apiKey);
     default:
@@ -396,128 +543,241 @@ async function handleRoute(path, context, env) {
   }
 }
 
-async function handleAgentToggle(env, locationId, agentId, enabled, apiKey) {
+// New handler functions for multi-account support
+async function handleAccountsList(config) {
+  const accounts = config.accounts.map(acc => ({
+    accountId: acc.accountId,
+    name: acc.name,
+    agentCount: acc.agents ? acc.agents.length : 0
+  }));
+  
+  return createSuccessResponse({ accounts });
+}
+
+async function handleAccountAgents(account) {
+  const agents = account.agents.map(agent => ({
+    agentId: agent.agentId,
+    name: agent.name,
+    locationId: agent.locationId,
+    timezone: agent.schedule?.timezone || "America/New_York",
+    hasSchedule: !!(agent.schedule && agent.schedule.rules)
+  }));
+  
+  return createSuccessResponse({ accountId: account.accountId, accountName: account.name, agents });
+}
+
+async function handleConfigValidate(config) {
+  const issues = [];
+  const warnings = [];
+  
+  // Validate structure
+  if (!config.accounts || !Array.isArray(config.accounts)) {
+    issues.push("Estructura de configuración inválida: falta 'accounts' array");
+  }
+  
+  config.accounts.forEach((account, accIndex) => {
+    if (!account.accountId) issues.push(`Cuenta ${accIndex}: falta accountId`);
+    if (!account.name) warnings.push(`Cuenta ${accIndex}: falta name`);
+    if (!account.ghlApiKey) issues.push(`Cuenta ${account.accountId}: falta ghlApiKey`);
+    
+    if (account.agents && Array.isArray(account.agents)) {
+      account.agents.forEach((agent, agIndex) => {
+        if (!agent.agentId) issues.push(`Agente ${agIndex} en cuenta ${account.accountId}: falta agentId`);
+        if (!agent.locationId) issues.push(`Agente ${agent.agentId}: falta locationId`);
+        
+        if (agent.schedule) {
+          if (!agent.schedule.rules || !agent.schedule.rules.length) {
+            warnings.push(`Agente ${agent.agentId}: schedule sin reglas`);
+          } else {
+            agent.schedule.rules.forEach((rule, ruleIndex) => {
+              if (!rule.days || !rule.days.length) {
+                issues.push(`Agente ${agent.agentId} regla ${ruleIndex}: sin días`);
+              }
+              if (!rule.timeRanges || !rule.timeRanges.length) {
+                issues.push(`Agente ${agent.agentId} regla ${ruleIndex}: sin timeRanges`);
+              }
+            });
+          }
+        }
+      });
+    }
+  });
+  
+  return createSuccessResponse({
+    valid: issues.length === 0,
+    issues,
+    warnings,
+    summary: {
+      accounts: config.accounts?.length || 0,
+      totalAgents: config.accounts?.reduce((sum, acc) => sum + (acc.agents?.length || 0), 0) || 0,
+      issues: issues.length,
+      warnings: warnings.length
+    }
+  });
+}
+
+async function handleAgentToggle(env, accountId, agentId, agentConfig, enabled, apiKey) {
   try {
-    const context = { locationId, agentId, operation: 'toggle_agent' };
+    const context = { accountId, agentId, operation: 'toggle_agent' };
     logInfo('toggle_agent_start', context, { enabled });
     
-    const r = await setAgentEnabledByMode(env, { locationId, agentId }, enabled, apiKey);
+    const r = await setAgentEnabledByMode(env, { accountId, agentId, locationId: agentConfig.locationId }, enabled, apiKey);
     
     if (r.ok) {
       logInfo('toggle_agent_success', context, { enabled, mode: r.mode });
-      return createSuccessResponse({ locationId, agentId, enabled, result: r }, { status: 200 });
+      return createSuccessResponse({ accountId, agentId, enabled, result: r }, { status: 200 });
     } else {
       return createErrorResponse(r, 500, context);
     }
   } catch (error) {
-    return createErrorResponse({ operation: 'toggle_agent', error }, 500, { locationId, agentId });
+    return createErrorResponse({ operation: 'toggle_agent', error }, 500, { accountId, agentId });
   }
 }
 
-function handleAgentStatus(env, locationId, agentId, apiKey) {
-  return getAgentRuntimeStatus(env, { locationId, agentId }, apiKey)
+function handleAgentStatus(env, accountId, agentId, agentConfig, apiKey) {
+  return getAgentRuntimeStatus(env, { accountId, agentId, locationId: agentConfig.locationId }, apiKey)
     .then(r => {
       if (r.ok) {
-        return createSuccessResponse({ locationId, agentId, ...r }, { status: 200 });
+        return createSuccessResponse({ accountId, agentId, ...r }, { status: 200 });
       } else {
-        return createErrorResponse(r, 500, { locationId, agentId, operation: 'get_status' });
+        return createErrorResponse(r, 500, { accountId, agentId, operation: 'get_status' });
       }
     })
-    .catch(error => createErrorResponse({ operation: 'get_status', error }, 500, { locationId, agentId }));
+    .catch(error => createErrorResponse({ operation: 'get_status', error }, 500, { accountId, agentId }));
 }
 
-function handleAgentDebug(env, locationId, agentId, apiKey) {
-  return ghlGetAgentRaw(env, { locationId, agentId }, apiKey)
+function handleAgentDebug(env, accountId, agentId, agentConfig, apiKey) {
+  return ghlGetAgentRaw(env, { accountId, agentId, locationId: agentConfig.locationId }, apiKey)
     .then(r => {
       if (r.ok) {
-        return createSuccessResponse({ locationId, agentId, raw: r.raw, status: r.status, body: r.body }, { status: 200 });
+        return createSuccessResponse({ accountId, agentId, raw: r.raw, status: r.status, body: r.body }, { status: 200 });
       } else {
-        return createErrorResponse(r, 500, { locationId, agentId, operation: 'debug_agent' });
+        return createErrorResponse(r, 500, { accountId, agentId, operation: 'debug_agent' });
       }
     })
-    .catch(error => createErrorResponse({ operation: 'debug_agent', error }, 500, { locationId, agentId }));
+    .catch(error => createErrorResponse({ operation: 'debug_agent', error }, 500, { accountId, agentId }));
 }
 
 async function handleCronRun(env, apiKey) {
   try {
-    const ids = getLocationIds(env);
-    const desired = desiredStateMiami();
-    const results = [];
-    const context = { operation: 'cron_run', desired };
+    const configResult = parseAccountsConfig(env);
+    if (!configResult.ok) {
+      return createErrorResponse(configResult, 500, { operation: 'cron_run' });
+    }
     
-    logInfo('cron_run_start', context, { locationCount: ids.length });
+    const { config } = configResult;
+    const results = [];
+    const context = { operation: 'cron_run' };
+    
+    logInfo('cron_run_start', context, { accountCount: config.accounts.length });
 
-    for (const locationId of ids) {
-      const agentId = resolveAgentId(env, locationId);
-      if (!agentId) {
-        const error = { locationId, ok: false, error: 'missing_agentId' };
-        results.push(error);
-        logError('cron_run_missing_agent', { locationId }, error);
-        continue;
-      }
-      
-      try {
-        const r = await setAgentEnabledByMode(env, { locationId, agentId }, desired, apiKey);
-        const result = { locationId, agentId, ok: r.ok, step: r.step, desired, mode: r.mode ?? r.desiredMode ?? null };
-        results.push(result);
-        
-        if (r.ok) {
-          logInfo('cron_run_success', { locationId, agentId }, result);
-        } else {
-          logError('cron_run_failed', { locationId, agentId }, r);
+    for (const account of config.accounts) {
+      for (const agent of account.agents) {
+        try {
+          const scheduleResult = evaluateAgentSchedule(agent.schedule, agent.schedule?.timezone || "America/New_York");
+          const desired = scheduleResult.enabled;
+          const desiredMode = scheduleResult.mode || modeOff(env);
+          
+          const r = await setAgentEnabledByMode(env, 
+            { accountId: account.accountId, agentId: agent.agentId, locationId: agent.locationId }, 
+            desired, 
+            account.ghlApiKey
+          );
+          
+          const result = {
+            accountId: account.accountId,
+            agentId: agent.agentId,
+            ok: r.ok,
+            step: r.step,
+            desired,
+            desiredMode,
+            currentMode: r.mode ?? r.desiredMode ?? null,
+            matchedRule: scheduleResult.matchedRule
+          };
+          results.push(result);
+          
+          if (r.ok) {
+            logInfo('cron_run_success', { accountId: account.accountId, agentId: agent.agentId }, result);
+          } else {
+            logError('cron_run_failed', { accountId: account.accountId, agentId: agent.agentId }, r);
+          }
+        } catch (error) {
+          const result = { accountId: account.accountId, agentId: agent.agentId, ok: false, error: error.message };
+          results.push(result);
+          logError('cron_run_exception', { accountId: account.accountId, agentId: agent.agentId }, error);
         }
-      } catch (error) {
-        const result = { locationId, agentId, ok: false, error: error.message };
-        results.push(result);
-        logError('cron_run_exception', { locationId, agentId }, error);
       }
     }
 
-    return createSuccessResponse({ cronSimulated: true, desired, results }, { status: 200 });
+    return createSuccessResponse({ 
+      cronSimulated: true, 
+      results,
+      summary: {
+        total: results.length,
+        success: results.filter(r => r.ok).length,
+        failed: results.filter(r => !r.ok).length
+      }
+    }, { status: 200 });
   } catch (error) {
     return createErrorResponse({ operation: 'cron_run', error }, 500);
   }
 }
 
-function getLocationIds(env) {
-  return (env.LOCATION_IDS || "").split(",").map(s => s.trim()).filter(Boolean);
-}
-
-async function applyScheduleToAllLocations(env, desired) {
-  const ids = getLocationIds(env);
-  const context = { operation: 'scheduled_cron', desired };
-
-  if (!ids.length) {
-    logInfo('scheduled_cron_skip', context, { reason: 'no_locations' });
+async function applyScheduleToAllAgents(env) {
+  const configResult = parseAccountsConfig(env);
+  
+  if (!configResult.ok) {
+    logInfo('scheduled_cron_skip', { operation: 'scheduled_cron' }, { 
+      reason: 'invalid_config', 
+      error: configResult.error 
+    });
     return;
   }
+  
+  const { config } = configResult;
+  const context = { operation: 'scheduled_cron' };
 
-  logInfo('scheduled_cron_start', context, { locationCount: ids.length });
+  logInfo('scheduled_cron_start', context, { accountCount: config.accounts.length });
   let successCount = 0;
   let errorCount = 0;
+  let totalAgents = 0;
 
-  for (const locationId of ids) {
-    const agentId = resolveAgentId(env, locationId);
-    if (!agentId) {
-      logError('scheduled_cron_missing_agent', { locationId }, { error: 'missing_agentId' });
-      errorCount++;
-      continue;
-    }
-
-    try {
-      const r = await setAgentEnabledByMode(env, { locationId, agentId }, desired, "");
-      if (r.ok) {
-        logInfo('scheduled_cron_success', { locationId, agentId }, { mode: r.mode });
-        successCount++;
-      } else {
-        logError('scheduled_cron_failed', { locationId, agentId }, r);
+  for (const account of config.accounts) {
+    for (const agent of account.agents) {
+      totalAgents++;
+      
+      try {
+        const scheduleResult = evaluateAgentSchedule(agent.schedule, agent.schedule?.timezone || "America/New_York");
+        const desired = scheduleResult.enabled;
+        
+        const r = await setAgentEnabledByMode(env, 
+          { accountId: account.accountId, agentId: agent.agentId, locationId: agent.locationId }, 
+          desired, 
+          account.ghlApiKey
+        );
+        
+        if (r.ok) {
+          logInfo('scheduled_cron_success', { accountId: account.accountId, agentId: agent.agentId }, { 
+            mode: r.mode,
+            desired,
+            matchedRule: scheduleResult.matchedRule
+          });
+          successCount++;
+        } else {
+          logError('scheduled_cron_failed', { accountId: account.accountId, agentId: agent.agentId }, r);
+          errorCount++;
+        }
+      } catch (error) {
+        logError('scheduled_cron_exception', { accountId: account.accountId, agentId: agent.agentId }, error);
         errorCount++;
       }
-    } catch (error) {
-      logError('scheduled_cron_exception', { locationId, agentId }, error);
-      errorCount++;
     }
   }
 
-  logInfo('scheduled_cron_complete', context, { successCount, errorCount, total: ids.length });
+  logInfo('scheduled_cron_complete', context, { 
+    successCount, 
+    errorCount, 
+    total: totalAgents,
+    accounts: config.accounts.length
+  });
 }
