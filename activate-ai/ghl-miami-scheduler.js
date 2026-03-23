@@ -646,11 +646,47 @@ function handleAgentStatus(env, accountId, agentId, agentConfig, apiKey) {
     .catch(error => createErrorResponse({ operation: 'get_status', error }, 500, { accountId, agentId }));
 }
 
-function handleAgentDebug(env, accountId, agentId, agentConfig, apiKey) {
+async function handleAgentDebug(env, accountId, agentId, agentConfig, apiKey) {
   return ghlGetAgentRaw(env, { accountId, agentId, locationId: agentConfig.locationId }, apiKey)
     .then(r => {
       if (r.ok) {
-        return createSuccessResponse({ accountId, agentId, raw: r.raw, status: r.status, body: r.body }, { status: 200 });
+        // Add current schedule evaluation to debug info
+        const scheduleResult = evaluateAgentSchedule(agentConfig.schedule, agentConfig.schedule?.timezone || "America/New_York");
+        
+        // Extract and organize GHL agent configuration
+        const agent = r.raw || {};
+        const ghlConfig = {
+          id: agent.id,
+          name: agent.name,
+          mode: agent.mode,
+          status: agent.status,
+          personality: agent.personality,
+          goal: agent.goal,
+          instructions: agent.instructions,
+          channels: agent.channels,
+          waitTime: agent.waitTime,
+          waitTimeUnit: agent.waitTimeUnit,
+          sleepEnabled: agent.sleepEnabled,
+          sleepTime: agent.sleepTime,
+          sleepTimeUnit: agent.sleepTimeUnit,
+          createdAt: agent.createdAt,
+          updatedAt: agent.updatedAt
+        };
+        
+        return createSuccessResponse({ 
+          accountId, 
+          agentId, 
+          locationId: agentConfig.locationId,
+          ghlConfig,
+          raw: r.raw, 
+          status: r.status, 
+          body: r.body,
+          schedule: {
+            timezone: agentConfig.schedule?.timezone || "America/New_York",
+            rules: agentConfig.schedule?.rules || [],
+            currentEvaluation: scheduleResult
+          }
+        }, { status: 200 });
       } else {
         return createErrorResponse(r, 500, { accountId, agentId, operation: 'debug_agent' });
       }
